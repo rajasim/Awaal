@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./Navbar";
 import HomePage from "./Homepage";
 import Videosection from "./Videosection";
-import JourneySection from "./JourneySection";
+
 import AboutUs from "./AboutUs";
 import Services from "./Services";
 import ScrollingLogosSection from "./ScrollingLogosSection";
