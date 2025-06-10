@@ -1,0 +1,18 @@
+.cube-scene {
+  width: 99vw;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.floating-box {
+  width: 80px;
+  height: 50px;
+  background-color:#ffcd54;
+  position: absolute;
+  transition: transform 0.15s ease-out;
+  
+  border-radius: 4px;
+}

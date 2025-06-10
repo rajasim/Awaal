@@ -1,0 +1,135 @@
+.news-section {
+  padding: 90px 60px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: #1d1d1f;
+  text-align: center;
+  height: 105vh;
+}
+
+.news-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.news-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.news-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.news-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.652);
+  overflow: hidden;
+  flex: 1 1 calc(33.33% - 20px);
+  min-width: 360px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+}
+
+.news-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+.news-top {
+  background-color: #0b2f36;
+  padding: 32px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.news-top img {
+ width: 260px;     /* Increased from 120px */
+  height: 200px;
+  margin-top: 20px;
+}
+
+.news-tag {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  background-color: #ffc107;
+  color: #000;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.news-content {
+  padding: 26px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.news-date {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+.news-heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1d1d1f;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.news-text {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.read-more {
+  color: #00aa55;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.view-all-btn-wrapper {
+  margin-top: 60px;
+}
+
+.view-all-btn {
+  padding: 12px 26px;
+  font-size: 15px;
+  border: 2px solid #013c3c;
+  background: white;
+  color: #013c3c;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #013c3c;
+  color: #ffffff;
+}

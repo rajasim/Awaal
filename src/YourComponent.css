@@ -1,0 +1,13 @@
+.video-section {
+   /* Keeps space for navbar */
+  width: 100%;
+  position: relative;
+  
+}
+
+.video-section img {
+  width: 100%;
+  height: 840px; /* 👈 Makes the video height adjust based on width */
+   /* 👈 Keeps full video visible without cropping */
+  
+}

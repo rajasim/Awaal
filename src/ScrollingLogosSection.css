@@ -1,0 +1,46 @@
+.scrolling-section {
+  display: flex;
+  align-items: center;
+  background: #0d3338;
+  padding: 40px 60px;
+  overflow: hidden;
+}
+
+.fixed-text {
+  flex: 0 0 30%;
+}
+
+.fixed-text h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color:  #f89c45;
+  line-height: 1.5;
+}
+
+.logo-slider {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.logos-marquee {
+  display: inline-flex;
+  gap: 80px;
+  animation: scroll-left 15s linear infinite;
+  white-space: nowrap;
+}
+
+.logos-marquee img {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Keyframe scroll from far right to far left */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100vw); /* start offscreen right */
+  }
+  100% {
+    transform: translateX(-100%); /* end offscreen left */
+  }
+} 

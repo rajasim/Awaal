@@ -1,0 +1,75 @@
+.vapt-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:  #0d3338;
+  color: white;
+  padding: 80px 60px;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.vapt-left {
+  flex: 1.2;
+}
+
+.vapt-left h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.vapt-left h2 {
+  font-size: 40px;
+  color: #f89c45;
+  margin: 20px 0;
+}
+
+.vapt-left h2 span {
+  color:  #f89c45;
+}
+
+.vapt-left p {
+  font-size: 22px;
+  line-height: 2.0;
+  margin: 30px 0;
+  color: #fff;
+}
+
+.green {
+  color: #b5ff3e;
+  font-weight: bold;
+}
+
+.explore-btn {
+  background: #e9f4dd;
+  color: #0c3d16;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 26px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #cdebb1;
+  transform: translateY(-2px);
+}
+
+.vapt-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vapt-image {
+  width: 80%;
+  
+  height: 75vh;
+  border-radius: 30px;
+ ;
+}

@@ -1,0 +1,62 @@
+.services-section {
+  position: relative;       /* Needed for absolutely positioned video */
+  padding: 40px 60px;
+  /* background-color: #2d6f73; */  /* REMOVE this */
+  overflow: hidden;
+}
+
+.services-section video.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  position: relative;
+  z-index: 1;  /* Above video */
+}
+
+.service-card {
+  /* background-color: #054349; */  /* REMOVE this */
+  border: 1px solid #ccc;
+  width: 32%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+.card-image {
+  width: 100%;
+  height: 60%;
+}
+
+.card-content {
+  padding: 20px;
+  color: #ffffff;
+}
+
+.card-content h4 {
+  margin: 0 0 10px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #ffffffaa;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+}

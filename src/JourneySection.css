@@ -1,0 +1,47 @@
+.scrolling-section {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 40px 60px;
+  overflow: hidden;
+}
+
+.fixed-text {
+  flex: 0 0 30%;
+}
+
+.fixed-text h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #222;
+  line-height: 1.5;
+}
+
+.logo-slider {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.logos-track {
+  display: flex;
+  width: max-content;
+  gap: 80px;
+  align-items: center;
+  animation: scroll-right-to-left 20s linear infinite;
+}
+
+.logos-track img {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Animation: Scroll from right to left */
+@keyframes scroll-right-to-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,266 @@
+/* === NAVBAR CORE === */
+.navbar {
+  background: linear-gradient(to right, #000000, #011627);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Segoe UI', sans-serif;
+  border-bottom: 1px solid #1a1a1a;
+  position: relative;
+  padding-top: 1rem;
+}
+
+.navbar-left img {
+  height: 50px;
+}
+
+.navbar-left,
+.navbar-center,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* === NAVBAR CENTER MENU === */
+.navbar-center {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar-center ,
+.navbar-center a {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+
+}
+
+.nav-item{
+    padding: 25px;
+}
+
+.navbar-center a:hover {
+  color: #00aaff;
+}
+
+/* === NAVBAR RIGHT === */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.free-trial {
+  color: #ffff66;
+  font-weight: bold;
+}
+
+/* === MEGA DROPDOWN === */
+.mega-dropdown {
+  position: absolute;
+  top: 65px;
+  
+ right: 0;
+  width: 1100px;
+  height: 700px;
+  background-color: white;
+  color: black;
+  
+  display: flex;
+  z-index: 999;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.795);
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mega-left {
+  width: 350px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+}
+
+.mega-platform-box {
+  background-color: #0065b3;
+  color: white;
+  padding: 16px 10px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 11px;
+  flex-shrink: 0;
+  width: 260px;
+  box-sizing: border-box;
+  
+}
+
+.mega-platform-box h3 {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  line-height: 14px;
+}
+
+.mega-platform-box p {
+
+ 
+  margin: 0 0 8px 0;     /* adds 8px space below each paragraph */
+  font-size: 12px;
+  line-height: 11px;     /* keeps line height tight within paragraph */
+}
+
+
+.mega-platform-box a {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.mega-left {
+  width: 300px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+}
+
+.mega-platform-box {
+  background-color: #0065b3;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mega-platform-box h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+.mega-platform-box p {
+  font-size: 13px;
+  margin: 0 0 10px 0; /* Proper vertical spacing */
+  line-height: 16px;   /* Not too cramped */
+}
+
+.mega-platform-box a {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+.mega-platform-box a:hover {
+  text-decoration: none;
+}
+
+.mega-left-menu {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #ffffff;
+  flex-grow: 1;
+}
+
+.mega-left-menu div {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: none;
+  color: #000;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.mega-left-menu div:hover {
+  color: #0056b3;
+}
+
+/* === RIGHT CONTENT === */
+.mega-right {
+  flex: 1;
+  padding: 40px;
+}
+
+.mega-right h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #004080;
+  margin-bottom: 12px;
+}
+
+.mega-right p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 20px;
+  max-width: 600px;
+}
+
+.plans-btn {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.plans-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  
+}
+
+.links-grid a {
+  font-size: 14px;
+  color: #004080;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.links-grid a:hover {
+  color: #007acc;
+}
