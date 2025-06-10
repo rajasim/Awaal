@@ -35,12 +35,14 @@
   object-fit: contain;
 }
 
-/* Keyframe scroll from far right to far left */
 @keyframes scroll-left {
   0% {
-    transform: translateX(100vw); /* start offscreen right */
+    transform: translateX(100vw); 
+  }
+  50%{
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(-100%); /* end offscreen left */
+    transform: translateX(-100%); 
   }
 } 
