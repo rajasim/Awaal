@@ -10,7 +10,7 @@ import ScrollingLogosSection from "./ScrollingLogosSection";
 import DarkWebAlert from "./DarkWebAlert";
 import NewsSection from "./NewsSection";
 
-import Footer from "./footer";
+import Footer from "./Ooter";
 import Pagemd from "./Pagemd";
 import VaptSection from "./VaptSection";
 
