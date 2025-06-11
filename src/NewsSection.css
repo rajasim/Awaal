@@ -4,7 +4,7 @@
   background-color: #ffffff;
   color: #1d1d1f;
   text-align: center;
-  height: 105vh;
+  height: auto; /* Changed from fixed height to auto */
 }
 
 .news-title {
@@ -19,11 +19,11 @@
   margin-bottom: 50px;
 }
 
+/* UPDATED: Changed to grid for consistent layout */
 .news-grid {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: 30px;
-  flex-wrap: wrap;
 }
 
 .news-card {
@@ -31,14 +31,13 @@
   border-radius: 14px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.652);
   overflow: hidden;
-  flex: 1 1 calc(33.33% - 20px);
-  min-width: 360px;
-  height: 60vh;
   display: flex;
   flex-direction: column;
   text-align: left;
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform-origin: center;
+  align-self: stretch; /* Optional: ensures equal height visually */
+  /* height removed to prevent overflow */
 }
 
 .news-card:hover {
@@ -54,11 +53,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .news-top img {
- width: 260px;     /* Increased from 120px */
+  width: 260px;
   height: 200px;
   margin-top: 20px;
 }
