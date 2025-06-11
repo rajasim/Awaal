@@ -1,39 +1,39 @@
 .about-section {
   display: flex;
+  flex-wrap: wrap; /* Makes it responsive */
   justify-content: space-between;
   align-items: center;
   background-color: #0d3338;
   padding: 80px 100px;
-  height: 100vh;
+  min-height: 100vh; /* Allows content to expand */
   box-sizing: border-box;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  gap: 40px; /* spacing between left and right */
 }
 
 .about-left {
   flex: 1;
   display: flex;
   justify-content: center;
-  right: 200px;
   position: relative;
 }
 
 .about-left-video {
-  width: 90%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 700px;
   border: none;
   outline: none;
-  right: 80px;
 }
 
 .about-right {
   flex: 1;
-  padding-left: 80px;
+  padding-left: 40px;
 }
 
 .about-title {
-  font-size: 58px;
-  line-height: 1.2;
+  font-size: 48px;
+  line-height: 1.3;
   margin-bottom: 32px;
   font-weight: 600;
   color: #ffffff;
@@ -44,7 +44,7 @@
 }
 
 .about-description {
-  font-size: 28px;
+  font-size: 20px;
   line-height: 1.7;
   color: #d1dce5;
   margin-bottom: 40px;
