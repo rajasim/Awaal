@@ -9,7 +9,8 @@ function Videosection() {
         autoPlay
         loop
         muted
-        controls
+        playsInline
+        className="bg-video"
       >
         Your browser does not support the video tag.
       </video>

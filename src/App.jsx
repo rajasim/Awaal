@@ -1,7 +1,7 @@
-import React from "react";
+
 import "./App.css";
 import Navbar from "./Navbar";
-import HomePage from "./Homepage";
+
 import Videosection from "./Videosection";
 
 import AboutUs from "./AboutUs";
@@ -11,7 +11,7 @@ import DarkWebAlert from "./DarkWebAlert";
 import NewsSection from "./NewsSection";
 
 import Footer from "./Ooter";
-import Pagemd from "./Pagemd";
+
 import VaptSection from "./VaptSection";
 
 
