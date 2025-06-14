@@ -7,6 +7,7 @@
   background-color: #061e2c;
   color: #ffffff;
   font-family: 'Segoe UI', sans-serif;
+   
 }
 
 /* === Card Box === */
@@ -16,6 +17,10 @@
   padding: 30px;
   border: 1px solid #0c4f6b;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.deliverable-card-box:hover{
+   transform: scale(1.05);
+    transition: transform 0.3s ease
 }
 
 /* === Headings === */
