@@ -1,0 +1,164 @@
+/* === Grid Wrapper === */
+.deliverables-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 40px;
+  background-color: #061e2c;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* === Card Box === */
+.deliverable-card-box {
+  background-color: #072d3f;
+  border-radius: 10px;
+  padding: 30px;
+  border: 1px solid #0c4f6b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* === Headings === */
+.card-box-heading {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.card-box-subtext {
+  font-size: 14px;
+  color: #b1c7d1;
+  margin-bottom: 20px;
+}
+
+/* === Status Blocks === */
+.status-info-block {
+  margin-bottom: 20px;
+}
+
+.status-info-line {
+  margin-bottom: 10px;
+}
+
+.status-info-line span {
+  display: inline-block;
+  width: 49%;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.status-bar-line {
+  height: 6px;
+  background-color: #1e3c4c;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+/* === Fill Bar Animation === */
+.status-fill-animate {
+  height: 100%;
+  width: 0;
+  background-color: #ffc107;
+  border-radius: 4px;
+  transition: width 1.2s ease;
+}
+
+.fill-on-visible {
+  width: 100%;
+}
+
+/* === Themed Fill Bar Colors === */
+.status-bar-line.green .status-fill-animate {
+  background-color: #00d86c;
+}
+
+.status-bar-line.blue .status-fill-animate {
+  background-color: #2196f3;
+}
+
+.status-bar-line.teal .status-fill-animate {
+  background-color: #20c997;
+}
+
+/* === Key Highlights === */
+.key-highlights-list {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.key-highlights-list ul {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.key-highlights-list li {
+  margin-bottom: 6px;
+  list-style: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.key-highlights-list li::before {
+  content: "✔";
+  color: #ffc107;
+  position: absolute;
+  left: 0;
+}
+
+/* === Button Styles === */
+.action-request-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.yellow-theme {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.green-theme {
+  background-color: #00d86c;
+  color: #000;
+}
+
+.blue-theme {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.teal-theme {
+  background-color: #20c997;
+  color: #fff;
+}
+
+/* === Top Borders by Theme === */
+.box-highlight-mxdr {
+  border-top: 6px solid #ffc107;
+}
+
+.box-highlight-edr {
+  border-top: 6px solid #00d86c;
+}
+
+.box-highlight-blue {
+  border-top: 6px solid #2196f3;
+}
+
+.box-highlight-grc {
+  border-top: 6px solid #20c997;
+}
+
+/* === Responsive === */
+@media (max-width: 900px) {
+  .deliverables-grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

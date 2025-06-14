@@ -14,7 +14,7 @@ export default function NewsSection() {
         <div className="news-card">
           <div className="news-top">
             <span className="news-tag">Cybersecurity</span>
-            <img src="/images/box9.jpeg" alt="Cybersecurity News" />
+            <img src="/images/WhatsApp Image 2025-06-11 at 7.48.05 PM.jpeg" alt="Cybersecurity News" />
           </div>
           <div className="news-content">
             <p className="news-date">June 15, 2023</p>

@@ -11,8 +11,12 @@ import DarkWebAlert from "./DarkWebAlert";
 import NewsSection from "./NewsSection";
 
 import Footer from "./Ooter";
-
 import VaptSection from "./VaptSection";
+import TestingApproach from "./TestingApproach";
+import ProtectionSteps from "./ProtectionSteps";
+import SecuritySolutions from "./SecuritySolutions";
+import Deliverables from "./Deliverables";
+import DeliverablesGrid from "./DeliverablesGrid";
 
 
 function App() {
@@ -30,6 +34,11 @@ function App() {
       <NewsSection/>
       <Footer/>
       <VaptSection/>
+      <TestingApproach/>
+      <ProtectionSteps/>
+      <SecuritySolutions/>
+      <Deliverables/>
+      <DeliverablesGrid/>
 
 
     </div>

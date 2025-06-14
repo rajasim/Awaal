@@ -1,0 +1,57 @@
+.ta-section {
+  padding: 80px 40px;
+  background: white;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.ta-title {
+ font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.ta-flow {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.ta-box {
+  width: 220px;
+  height: 280px;
+  background-color: #2ea66f;
+  border-radius: 20px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.ta-box img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.ta-box p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.ta-arrow {
+   font-size: 32px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

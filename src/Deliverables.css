@@ -1,0 +1,216 @@
+/* Base layout */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Section */
+.deliverables-section {
+  background-color: #062028;
+  width: 100%;
+  height: 100vh;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container */
+.deliverables-container {
+  max-width: 1600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Headings */
+.deliverables-title {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.deliverables-subtitle {
+  font-size: 16px;
+  color: #b8b8b8;
+  margin-bottom: 50px;
+}
+
+/* Main Card */
+.deliverables-card {
+  background-color: #0b2f35;
+  border: 1px solid #3ba67e;
+  border-radius: 12px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  min-height: 480px;
+}
+
+/* Left Section */
+.left-box {
+  flex: 1.2;
+  text-align: left;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.card-description {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 24px;
+}
+
+/* Status List */
+.status-group {
+  margin-bottom: 30px;
+}
+
+.status-bar {
+  margin-bottom: 20px;
+}
+
+.status-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.status-bar .complete {
+  color: #00ff80;
+}
+
+.status-line {
+  width: 100%;
+  height: 6px;
+  background-color: #20493f;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.status-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #00ff80;
+  border-radius: 4px;
+  animation: fillLine 1.5s ease-in-out forwards;
+}
+
+/* Animation */
+@keyframes fillLine {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Deliverables List */
+.key-deliverables {
+  margin-bottom: 0;
+}
+
+.key-title {
+  color: #00ff80;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.key-deliverables ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 15px;
+  color: #aafac8;
+}
+
+.key-deliverables li {
+  margin-bottom: 8px;
+}
+
+/* Centered Button */
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.cta-button {
+  background-color: #00ff80;
+  color: black;
+  font-weight: 600;
+  padding: 12px 28px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00e673;
+}
+
+/* Right Image */
+/* Right Image */
+.right-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.right-box img {
+  width: 100%;
+  height: auto;
+  max-width: 500px; /* match your actual image width */
+  object-fit: contain;
+  display: block;
+}
+
+
+.status-line {
+  width: 100%;
+  height: 6px;
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.status-fill {
+  width: 0%;
+  height: 100%;
+  background-color: #4caf50;
+}
+
+.animate-bar {
+  animation: fillBar 1s ease-out forwards;
+}
+
+@keyframes fillBar {
+  to {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
