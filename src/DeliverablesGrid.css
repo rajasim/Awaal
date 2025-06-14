@@ -61,7 +61,6 @@
   width: 0;
   background-color: #ffc107;
   border-radius: 4px;
-  transition: width 1.2s ease;
 }
 
 .fill-on-visible {
