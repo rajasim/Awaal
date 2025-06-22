@@ -1,0 +1,158 @@
+.ai-hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.ai-background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.ai-content {
+  position: relative;
+  z-index: 1;
+  padding: 100px 80px 60px;
+  max-width: 800px;
+}
+
+.ai-badge {
+  display: inline-block;
+  background-color: rgba(0, 0, 100, 0.3);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #8ab4ff;
+}
+
+.ai-content h1 {
+  font-size: 72px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+  position: relative;
+}
+
+.ai-highlighted {
+  padding-right: 12px;
+  position: relative;
+  display: inline-block;
+}
+
+.ai-highlighted::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #38bdf8;
+  animation: ai-blink 1s step-start infinite;
+}
+
+@keyframes ai-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.ai-content h2 {
+  font-size: 52px;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-top: 20px;
+  line-height: 1.3;
+}
+
+.ai-content p {
+  font-size: 20px;
+  color: #ccc;
+  margin-top: 20px;
+  line-height: 1.8;
+}
+
+.ai-button-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.ai-btn-primary {
+  background-color: #3b82f6;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.ai-btn-secondary {
+  background-color: transparent;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.ai-avatars-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.ai-avatar {
+  background-color: #1e3a8a;
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ai-trust {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.ai-stats-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 30, 0.8);
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  z-index: 1;
+}
+
+.ai-stat-box h3 {
+  font-size: 28px;
+  color: #38bdf8;
+  margin: 0;
+  text-align: center;
+}
+
+.ai-stat-box p {
+  font-size: 14px;
+  color: #ccc;
+  margin: 5px 0 0;
+  text-align: center;
+}

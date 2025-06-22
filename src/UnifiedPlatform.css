@@ -1,0 +1,63 @@
+.unified-platform-section {
+  width: 100%;
+  padding: 80px 40px;
+  background-color:#022b2c;
+  color: white;
+}
+
+.unified-platform-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.unified-platform-left {
+  flex: 1;
+  min-width: 400px;
+}
+
+.unified-platform-heading {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.unified-platform-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.unified-platform-list li {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+
+.unified-platform-list li span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.unified-platform-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 400px;
+}
+
+.unified-platform-right img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+}

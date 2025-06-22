@@ -13,6 +13,7 @@
     "@react-three/drei": "^10.1.2",
     "@react-three/fiber": "^9.1.2",
     "aos": "^2.3.4",
+    "lucide-react": "^0.517.0",
     "plotly.js": "^3.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

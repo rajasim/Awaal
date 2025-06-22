@@ -1,0 +1,266 @@
+.rik-section {
+  padding: 80px 40px;
+  background: white;
+  font-family: sans-serif;
+  color: #111;
+}
+
+.rik-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.rik-heading .rik-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.rik-heading h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.rik-heading h1 span {
+  color: #246bff;
+}
+
+.rik-heading p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.rik-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.rik-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  position: relative;
+  overflow: hidden;
+  width: 90%;              /* Decrease width relative to container */
+  min-height: 160px;       /* Increase minimum height */
+  margin: 0 auto;          /* Center card horizontally */
+}
+.rik-top-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(36, 107, 255, 0.1); /* change color per card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.rik-top-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+/* Top line (not glowing anymore) */
+.rik-line {
+  height: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+  background: currentColor;
+}
+
+/* Headings */
+.rik-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.rik-card p {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Stats */
+.rik-stat {
+  margin-bottom: 12px;
+}
+
+.rik-stat label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+}
+
+.rik-bar {
+  background: #eee;
+  border-radius: 10px;
+  height: 6px;
+  margin-top: 4px;
+  position: relative;
+  overflow: visible;
+}
+
+.rik-fill {
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Glowing animation outside the bar */
+.rik-fill::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+/* Footer */
+.rik-footer {
+  font-size: 13px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* === Color styles === */
+.blue .rik-line { background: #246bff; }
+.purple .rik-line { background: #9b4dff; }
+.green .rik-line { background: #00c98d; }
+.yellow .rik-line { background: #ffb300; }
+.pink .rik-line { background: #ff4081; }
+.cyan .rik-line { background: #00cfe8; }
+
+.blue-fill {
+  background: #246bff;
+}
+.blue-fill::after {
+  animation: blueGlow 2s infinite ease-in-out;
+}
+
+.purple-fill {
+  background: #9b4dff;
+}
+.purple-fill::after {
+  animation: purpleGlow 2s infinite ease-in-out;
+}
+
+.green-fill {
+  background: #00c98d;
+}
+.green-fill::after {
+  animation: greenGlow 2s infinite ease-in-out;
+}
+
+.yellow-fill {
+  background: #ffb300;
+}
+.yellow-fill::after {
+  animation: yellowGlow 2s infinite ease-in-out;
+}
+
+.pink-fill {
+  background: #ff4081;
+}
+.pink-fill::after {
+  animation: pinkGlow 2s infinite ease-in-out;
+}
+
+.cyan-fill {
+  background: #00cfe8;
+}
+.cyan-fill::after {
+  animation: cyanGlow 2s infinite ease-in-out;
+}
+
+/* === Keyframes (separate for each color) === */
+@keyframes blueGlow {
+  0%, 100% { box-shadow: 0 0 0px #246bff; }
+  50%     { box-shadow: 0 0 20px #246bff; }
+}
+@keyframes purpleGlow {
+  0%, 100% { box-shadow: 0 0 0px #9b4dff; }
+  50%     { box-shadow: 0 0 20px #9b4dff; }
+}
+@keyframes greenGlow {
+  0%, 100% { box-shadow: 0 0 0px #00c98d; }
+  50%     { box-shadow: 0 0 20px #00c98d; }
+}
+@keyframes yellowGlow {
+  0%, 100% { box-shadow: 0 0 0px #ffb300; }
+  50%     { box-shadow: 0 0 20px #ffb300; }
+}
+@keyframes pinkGlow {
+  0%, 100% { box-shadow: 0 0 0px #ff4081; }
+  50%     { box-shadow: 0 0 10px #ff4081; }
+}
+@keyframes cyanGlow {
+  0%, 100% { box-shadow: 0 0 0px #00cfe8; }
+  50%     { box-shadow: 0 0 10px #00cfe8; }
+}
+
+/* CTA Section (unchanged) */
+.rik-cta {
+  text-align: center;
+  border: 2px solid #9b4dff;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.rik-cta h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rik-cta p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.rik-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.rik-btn-primary {
+  background: #6b3eff;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.rik-tags {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.rik-tags span::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.blue-dot::before { background: #246bff; }
+.pink-dot::before { background: #ff4081; }
+.green-dot::before { background: #00c98d; }

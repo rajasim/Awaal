@@ -1,0 +1,108 @@
+.tech-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.tech-content {
+  position: relative;
+  z-index: 1;
+  padding: 100px 60px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.4); /* Optional overlay */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 56px;
+}
+
+.icon-grid {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.icon-box {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 40px 50px;
+  border-radius: 16px;
+  text-align: center;
+  min-width: 200px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.icon-box p {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 36px;
+}
+
+.ecosystem-box {
+  text-align: center;
+}
+
+.ecosystem-box h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.ecosystem-video-element {
+  width: 100%;
+  max-width: 1300px;
+  height: 600px;
+  object-fit: cover;
+  border: none;
+  border-radius: 20px;
+}
+
+.feature-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 340px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h4 {
+  font-size: 22px;
+  color: #00ffc8;
+  margin-bottom: 16px;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.7;
+}

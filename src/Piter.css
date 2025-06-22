@@ -1,0 +1,183 @@
+/* Section Wrapper */
+.piter-section {
+  position: relative;
+  padding: 100px 40px;
+  
+  color: white;
+  overflow: hidden;
+}
+
+/* Background Image */
+.piter-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  
+}
+
+/* Inner Container */
+.piter-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Heading Section */
+.piter-heading {
+  font-size: 42px;
+  color: #5ff3e2;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.piter-subheading {
+  font-size: 21px;
+  color: #cbd5e1;
+  margin-bottom: 60px;
+}
+
+/* Feature Boxes */
+.piter-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.piter-box {
+  width: 300px;
+  height: 260px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.piter-box img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 12px;
+}
+
+.piter-box h4 {
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.piter-box p {
+  font-size: 16px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Tech Stack Heading */
+.piter-stack-heading {
+  font-size: 34px;
+  color: #5ff3e2;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.piter-stack-subheading {
+  font-size: 19px;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+}
+
+/* Tech Stack Icons */
+.piter-tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+
+.piter-icon-box {
+  width: 160px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.piter-icon-box img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+}
+
+.piter-icon-box span {
+  font-size: 14px;
+  color: white;
+}
+
+/* CTA Bottom Section */
+.piter-bottom-cta {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.piter-bottom-cta h2 {
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.piter-bottom-cta p {
+  font-size: 16px;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+.piter-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.piter-btn-primary {
+  background-color: #00ffbf;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  padding: 14px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.piter-btn-outline {
+  background-color: transparent;
+  border: 2px solid #00ffbf;
+  color: #00ffbf;
+  font-weight: bold;
+  padding: 14px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.piter-btn-primary:hover,
+.piter-btn-outline:hover {
+  opacity: 0.85;
+}

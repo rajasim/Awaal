@@ -1,15 +1,34 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Deliverables.css";
 
 const Deliverables = () => {
-  const [animate, setAnimate] = useState(false);
 
+  const observeref = useRef([]);
   useEffect(() => {
-    setAnimate(false); // reset
-    const timeout = setTimeout(() => {
-      setAnimate(true); // trigger after small delay
-    }, 50);
-    return () => clearTimeout(timeout);
+    const observer = (entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const bar= entry.target;
+          bar.style.width = "100%";
+            bar.style.transition = "width 3s ease"
+         
+
+        }
+      })
+    })
+    const options = {
+      root: null,
+      rootMargin: "10%",
+      threshold: 0.5
+    }
+
+    if (observeref.current) {
+      const intersectionObserver = new IntersectionObserver(observer, options);
+      observeref.current.forEach(x => intersectionObserver.observe(x))
+    }
+
+
+
   }, []);
 
   return (
@@ -35,7 +54,7 @@ const Deliverables = () => {
                     <span className="complete">Complete</span>
                   </div>
                   <div className="status-line">
-                    <div className={`status-fill ${animate ? "animate-bar" : ""}`}></div>
+                    <div className="status-fill" ref={el=>observeref.current[index]=el}></div>
                   </div>
                 </div>
               ))}

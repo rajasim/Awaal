@@ -1,0 +1,140 @@
+/* === Main fullscreen container === */
+.featured-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #062d2d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* === Flex container for split layout === */
+.featured-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* === Left text section === */
+.featured-left {
+  flex: 1;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+/* === Badge === */
+.featured-badge {
+  background-color: #d8a52d;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  display: inline-block;
+  width: fit-content;
+}
+
+
+/* === Heading === */
+.featured-heading {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+/* === Description === */
+.featured-description {
+  font-size: 20px;
+  color: #cfd8dc;
+  margin-bottom: 32px;
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+/* === Bullet list === */
+.featured-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.featured-list li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #d1e9e4;
+}
+
+.check-icon {
+  color: #00e676;
+  font-size: 20px;
+  margin-top: 3px;
+}
+
+/* === CTA Button === */
+.request-button {
+  background-color: #1dd19b;
+  color: white;
+  padding: 16px 36px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: fit-content;
+}
+
+.request-button:hover {
+  background-color: #18b988;
+}
+
+/* === Right image section === */
+.featured-right {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* === Responsive Layout === */
+@media (max-width: 1024px) {
+  .featured-container {
+    flex-direction: column;
+  }
+
+  .featured-left {
+    padding: 40px 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .featured-right {
+    height: 300px;
+  }
+
+  .featured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

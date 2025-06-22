@@ -1,0 +1,95 @@
+.platforms-section {
+ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 60px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.platforms-content {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.platforms-badge {
+  background-color: #d6f5e6;
+  color: #00a65a;
+  font-weight: 600;
+  padding: 8px 24px;
+  border-radius: 25px;
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.platforms-title {
+  font-size: 44px;
+  font-weight: bold;
+  color: #0a0a0a;
+  margin-bottom: 14px;
+}
+
+.platforms-underline {
+  height: 5px;
+  width: 100px;
+  background-color: #00a65a;
+  margin: 0 auto 30px auto;
+  border-radius: 2px;
+}
+
+.platforms-subtext {
+  font-size: 20px;
+  color: #444;
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  line-height: 1.6;
+}
+
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+.platform-card {
+  background-color: #ffffff;
+  width: 380px;
+  height: 440px;
+  padding: 50px 30px;
+  border-radius: 22px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.416);
+  transition: transform 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.platform-card:hover {
+  transform: translateY(-6px);
+}
+
+.platform-icon {
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+.platform-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0f1c2e;
+  margin-bottom: 18px;
+}
+
+.platform-card p {
+  font-size: 17px;
+  color: #333;
+  line-height: 1.6;
+}

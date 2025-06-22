@@ -85,7 +85,7 @@ function SecuritySolutions() {
                 </ul>
               </div>
               <div className="image-section">
-                <img src="/images/email.png" alt="Email Security" />
+                <img src="/images/box9.jpeg" alt="Email Security" />
               </div>
             </div>
           )}
@@ -102,7 +102,7 @@ function SecuritySolutions() {
                 </ul>
               </div>
               <div className="image-section">
-                <img src="/images/endpoint.png" alt="Endpoint Protection" />
+                <img src="/images/box9.jpeg" alt="Endpoint Protection" />
               </div>
             </div>
           )}

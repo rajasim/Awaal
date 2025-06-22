@@ -1,0 +1,145 @@
+.efficiency-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a0a23;
+}
+
+.efficiency-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.efficiency-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: none;
+  padding: 120px 80px 80px;
+}
+
+@media (min-width: 1200px) {
+  .efficiency-inner {
+    padding: 140px 100px 100px;
+  }
+}
+
+.efficiency-text h2 {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 32px;
+  color: #0d1550;
+}
+
+.efficiency-text p {
+  font-size: 22px;
+  line-height: 1.9;
+  color: #5c677e;
+  margin-bottom: 24px;
+  max-width: 1000px;
+}
+
+.efficiency-buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4f46e5;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #6366f1;
+  color: #6366f1;
+  padding: 18px 40px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #6366f1;
+  color: white;
+}
+
+.service-cards {
+  display: flex;
+  gap: 48px;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgba(35, 30, 30, 0.06);
+  padding: 40px;
+  border-radius: 24px;
+  flex: 1 1 32%;
+  min-width: 340px;
+  max-width: 440px;
+  min-height: 320px;
+  backdrop-filter: blur(12px);
+ border: #0a0a23;
+ box-shadow: #0a0a23;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.card-blue {
+  border-top: 6px solid #3b82f6;
+}
+
+.card-purple {
+  border-top: 6px solid #a855f7;
+}
+
+.card-green {
+  border-top: 6px solid #10b981;
+}
+
+.card .icon {
+  font-size: 38px;
+  margin-bottom: 24px;
+}
+
+.card h4 {
+  font-size: 26px;
+  margin-bottom: 14px;
+  color: rgb(18, 13, 13);
+}
+
+.card p {
+  font-size: 18px;
+  color: #43434b;
+  line-height: 1.8;
+}

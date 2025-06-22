@@ -1,0 +1,77 @@
+.kb-container {
+  padding: 80px 60px;
+  background-color: #f8fafc;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.kb-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1b2e37;
+  margin-bottom: 10px;
+}
+
+.kb-subheading {
+  font-size: 16px;
+  color: #6b7780;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.kb-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.kb-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 14px;
+  width: 300px;
+  min-height: 300px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.345);
+  transition: transform 0.3s ease;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.kb-card:hover {
+  transform: translateY(-8px);
+}
+
+.kb-icon {
+  color: #00c3a5;
+  margin-bottom: 20px;
+}
+
+.kb-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1b2e37;
+  margin-bottom: 12px;
+}
+
+.kb-desc {
+  font-size: 15px;
+  color: #6b7780;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.kb-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  width: 0%;
+  background-color: #00c3a5;
+  border-radius: 0 0 4px 4px;
+  transition: width 0.3s ease;
+}
+
+.kb-card:hover .kb-underline {
+  width: 100%;
+}

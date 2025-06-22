@@ -1,0 +1,108 @@
+.anicard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.anicard-box {
+  width: 48%;
+  min-width: 500px;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.386);
+  background: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.anicard-box:hover {
+  transform: translateY(-8px);
+}
+
+.anicard-top-img {
+ 
+  width: 100%;
+  height: 120px;
+  
+  
+  display: block;
+}
+
+
+.anicard-content {
+  padding: 30px 28px;
+  text-align: left;
+}
+
+.anicard-icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.anicard-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: #1d1d1d;
+}
+
+.anicard-content p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.anicard-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+}
+
+.anicard-content li {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #2b2b2b;
+}
+
+.anicard-button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.green-btn {
+  background-color: #00c600;
+  color: white;
+}
+
+.yellow-btn {
+  background-color: #ffc940;
+  color: #1d1d1d;
+}
+
+.blue-btn {
+  background-color: #4fb4f4;
+  color: white;
+}
+
+.darkgreen-btn {
+  background-color: #1c8733;
+  color: white;
+}
+
+/* Optional: make it stack on smaller screens */
+@media (max-width: 1100px) {
+  .anicard-box {
+    width: 100%;
+  }
+}

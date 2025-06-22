@@ -1,0 +1,107 @@
+.benefits-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 50px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.benefits-content {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1600px;
+  width: 100%;
+  z-index: 2;
+  margin-top: 60px;
+}
+
+.benefit-box {
+  background: rgba(0, 255, 136, 0.05); /* faint green glow */
+  border: 1px solid rgba(0, 255, 136, 0.4);
+  border-radius: 12px;
+  padding: 40px 25px;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow:
+    0 0 15px rgba(0, 255, 136, 0.25),
+    0 0 25px rgba(0, 255, 136, 0.1);
+  
+  transition: transform 0.3s ease;
+}
+
+.benefit-box:hover {
+  transform: translateY(-6px);
+}
+
+/* Bigger Top Icon Style */
+.benefit-icon {
+  width: 90px;
+  height: 90px;
+  background-color: rgba(0, 255, 195, 0.1);
+  border: 2px solid #00ffc3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px auto;
+  font-size: 40px;
+  color: #00ffc3;
+  box-shadow: 0 0 18px rgba(0, 255, 195, 0.3);
+}
+
+.benefit-box h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  color: #ccc;
+}
+
+.benefit-box p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.benefit-bottom {
+  font-size: 15px;
+  color: #00ff88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-top: 1px solid #333;
+  padding-top: 14px;
+  margin-top: 12px;
+}
+
+.benefit-button-wrapper {
+  margin-top: 60px;
+  z-index: 2;
+}
+
+.benefit-button {
+  background-color: #00ff88;
+  color: black;
+  font-weight: bold;
+  padding: 16px 38px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.benefit-button:hover {
+  background-color: #00e67a;
+}
