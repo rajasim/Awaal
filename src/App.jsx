@@ -37,6 +37,7 @@ import Pater from "./Pater";
 import Piter from "./Piter";
 import Rik from "./rik";
 import Ellish from "./Ellish";
+import Cloud from "./Cloud";
 
 
 
@@ -81,6 +82,7 @@ function App() {
       <Piter/>
       <Rik/>
       <Ellish/>
+      <Cloud/>
       
       
 
