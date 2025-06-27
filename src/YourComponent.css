@@ -12,6 +12,17 @@
   width: 100vw;
   height: 90vh;
   object-fit: cover;
-  z-index: -1;  /* keeps it behind any text if needed */
+  z-index: -1; /* keeps it behind any text if needed */
   pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .video-section video {
+    height: fit-content;
+    position: static;
+  }
+
+  .video-section {
+    height: fit-content !important;
+  }
 }

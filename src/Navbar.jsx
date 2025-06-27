@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Navbar.css";
 import { FaSearch, FaUser, FaPhone } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { FaBarsStaggered } from "react-icons/fa6";
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [navbaroption, setnavbaroption] = useState("");
   const [hoveredSubItem, setHoveredSubItem] = useState("");
+  const centernav = useRef();
+  const rightnav = useRef();
 
   const handleDropdown = (menu) => {
     setOpenDropdown(openDropdown === menu ? null : menu);
@@ -22,8 +25,15 @@ const Navbar = () => {
         />
       </div>
 
-      <div className="navbar-center">
-        {["PRODUCTS", "SOLUTIONS", "RESOURCES", "SUPPORT", "PARTNER & MSP", "SMALL BUSINESS CENTER"].map((item, i) => (
+      <div className="navbar-center" ref={centernav}>
+        {[
+          "PRODUCTS",
+          "SOLUTIONS",
+          "RESOURCES",
+          "SUPPORT",
+          "PARTNER & MSP",
+          "SMALL BUSINESS CENTER",
+        ].map((item, i) => (
           <div
             key={i}
             style={{
@@ -50,43 +60,56 @@ const Navbar = () => {
                       Barracuda Cybersecurity Platform
                     </h3>
                     <p>
-                      Cyberattacks can come from anywhere.
-                      Barracuda protects you everywhere.
+                      Cyberattacks can come from anywhere. Barracuda protects
+                      you everywhere.
                     </p>
                     <a href="#">Explore the platform →</a>
                   </div>
                   <div className="mega-left-menu">
-                    <div onMouseEnter={() => setHoveredSubItem("email")}>VAPT</div>
-                    <div onMouseEnter={() => setHoveredSubItem("data")}>IT Infrastructure</div>
-                    <div onMouseEnter={() => setHoveredSubItem("xdr")}>AI & Automation Services</div>
-                    <div onMouseEnter={() => setHoveredSubItem("network")}>Software Development</div>
-                    <div onMouseEnter={() => setHoveredSubItem("app")}>Mobile & Web App Development</div>
+                    <div onMouseEnter={() => setHoveredSubItem("email")}>
+                      VAPT
+                    </div>
+                    <div onMouseEnter={() => setHoveredSubItem("data")}>
+                      IT Infrastructure
+                    </div>
+                    <div onMouseEnter={() => setHoveredSubItem("xdr")}>
+                      AI & Automation Services
+                    </div>
+                    <div onMouseEnter={() => setHoveredSubItem("network")}>
+                      Software Development
+                    </div>
+                    <div onMouseEnter={() => setHoveredSubItem("app")}>
+                      Mobile & Web App Development
+                    </div>
                     <div onMouseEnter={() => setHoveredSubItem("msps")}></div>
-                    <div onMouseEnter={() => setHoveredSubItem("all")}>All Products →</div>
+                    <div onMouseEnter={() => setHoveredSubItem("all")}>
+                      All Products →
+                    </div>
                   </div>
                 </div>
 
                 <div className="mega-right">
                   {hoveredSubItem === "email" && (
                     <>
-                  <h3>Strengthen Your Organization's Cyber Defence</h3>
+                      <h3>Strengthen Your Organization's Cyber Defence</h3>
                       <p>
-                        We provide end-to-end cybersecurity services that reduce risk, detect threats early, and improve your overall security posture.
+                        We provide end-to-end cybersecurity services that reduce
+                        risk, detect threats early, and improve your overall
+                        security posture.
                       </p>
                       <button className="plans-btn">Services →</button>
 
                       <div className="links-grid">
-                       <a href="#">Network Security</a>
-<a href="#">Endpoint Protection</a>
-<a href="#">Zero Trust Access</a>
-<a href="#">Firewall Management</a>
-<a href="#">Threat Intelligence</a>
-<a href="#">SIEM Integration</a>
-<a href="#">Cloud Security Posture Management</a>
-<a href="#">Identity & Access Management</a>
-<a href="#">Ransomware Defense</a>
-<a href="#">Data Loss Prevention (DLP)</a>
-
+                        <a href="#">Network Security</a>
+                        <a href="#">Endpoint Protection</a>
+                        <a href="#">Zero Trust Access</a>
+                        <a href="#">Firewall Management</a>
+                        <a href="#">Threat Intelligence</a>
+                        <a href="#">SIEM Integration</a>
+                        <a href="#">Cloud Security Posture Management</a>
+                        <a href="#">Identity & Access Management</a>
+                        <a href="#">Ransomware Defense</a>
+                        <a href="#">Data Loss Prevention (DLP)</a>
                       </div>
 
                       <hr style={{ margin: "1rem 0" }} />
@@ -95,24 +118,26 @@ const Navbar = () => {
                         <a href="#">Free Email Threat Scan</a>
                         <a href="#">Build and Price</a>
                       </div>
-                     
                     </>
                   )}
 
                   {hoveredSubItem === "data" && (
                     <>
-                      <h3>Designing Resilient, Scalable Networks for the Future</h3>
+                      <h3>
+                        Designing Resilient, Scalable Networks for the Future
+                      </h3>
                       <p>
-                        We engineer network infrastructure that supports your business today—and scales for tomorrow.
+                        We engineer network infrastructure that supports your
+                        business today—and scales for tomorrow.
                       </p>
                       <button className="plans-btn">Services →</button>
 
                       <div className="links-grid">
-                       <a href="#">LAN/WAN Design & Implementation</a>
-      <a href="#">Wireless Network Design & Optimization</a>
-      <a href="#">Data Center & Server Room Setup</a>
-      <a href="#">Load Balancing & High Availability</a>
-      <a href="#">AI-driven Performance Monitoring</a>
+                        <a href="#">LAN/WAN Design & Implementation</a>
+                        <a href="#">Wireless Network Design & Optimization</a>
+                        <a href="#">Data Center & Server Room Setup</a>
+                        <a href="#">Load Balancing & High Availability</a>
+                        <a href="#">AI-driven Performance Monitoring</a>
                       </div>
 
                       <hr style={{ margin: "1rem 0" }} />
@@ -129,25 +154,23 @@ const Navbar = () => {
                     <>
                       <h3>Strengthen Your Organization's Cyber Defence</h3>
                       <p>
-                        We provide end-to-end cybersecurity services that reduce risk, detect threats early, and improve your overall security posture.
+                        We provide end-to-end cybersecurity services that reduce
+                        risk, detect threats early, and improve your overall
+                        security posture.
                       </p>
                       <button className="plans-btn">Services →</button>
 
                       <div className="links-grid">
-                      
-   
-      <a href="#">Robotic Process Automation (RPA)</a>
-      <a href="#">Custom Machine Learning Solutions</a>
-      <a href="#">Real-Time Predictive Analytics</a>
-      <a href="#">AI Chatbots & Virtual Assistants</a>
-      <a href="#">Seamless System Integration</a>
+                        <a href="#">Robotic Process Automation (RPA)</a>
+                        <a href="#">Custom Machine Learning Solutions</a>
+                        <a href="#">Real-Time Predictive Analytics</a>
+                        <a href="#">AI Chatbots & Virtual Assistants</a>
+                        <a href="#">Seamless System Integration</a>
                       </div>
 
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Free Tools</h4>
-                      <div className="links-grid">
-                    
-                      </div>
+                      <div className="links-grid"></div>
                       <button className="plans-btn">View XDR →</button>
                     </>
                   )}
@@ -155,48 +178,45 @@ const Navbar = () => {
                   {hoveredSubItem === "network" && (
                     <>
                       <h3>Accelerate Innovation with Tailored Solutions</h3>
-                      <p>We turn your ideas into high-performance, scalable applications built with security and agility.</p>
+                      <p>
+                        We turn your ideas into high-performance, scalable
+                        applications built with security and agility.
+                      </p>
                       <button className="plans-btn">Explore Network →</button>
                       <div className="links-grid">
-                      
-   
-      <a href="#">Fully Customized Application Development</a>
-<a href="#">Agile Development & Continuous Delivery</a>
-<a href="#">Scalable Architecture & Secure Coding</a>
-<a href="#">Integration with Existing Systems</a>
-
+                        <a href="#">Fully Customized Application Development</a>
+                        <a href="#">Agile Development & Continuous Delivery</a>
+                        <a href="#">Scalable Architecture & Secure Coding</a>
+                        <a href="#">Integration with Existing Systems</a>
                       </div>
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Free Tools</h4>
-                      <div className="links-grid">
-                    
-                      </div>
+                      <div className="links-grid"></div>
                       <button className="plans-btn">View XDR →</button>
                     </>
                   )}
 
                   {hoveredSubItem === "app" && (
                     <>
-                      <h3>Build Engaging, Cross-Platform Digital Experiences</h3>
-                      <p>[We create responsive apps that deliver value across all devices.]</p>
+                      <h3>
+                        Build Engaging, Cross-Platform Digital Experiences
+                      </h3>
+                      <p>
+                        [We create responsive apps that deliver value across all
+                        devices.]
+                      </p>
                       <button className="plans-btn">View Details →</button>
-                        <div className="links-grid">
-                      
-   
-     <h3>Services</h3>
-<a href="#">iOS, Android & Web App Development</a>
-<a href="#">User-Centric UI/UX Design</a>
-<a href="#">Cloud-Backed, Scalable Architecture</a>
-<a href="#">Performance Optimization & Maintenance</a>
-
+                      <div className="links-grid">
+                        <h3>Services</h3>
+                        <a href="#">iOS, Android & Web App Development</a>
+                        <a href="#">User-Centric UI/UX Design</a>
+                        <a href="#">Cloud-Backed, Scalable Architecture</a>
+                        <a href="#">Performance Optimization & Maintenance</a>
                       </div>
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Free Tools</h4>
-                      <div className="links-grid">
-                    
-                      </div>
+                      <div className="links-grid"></div>
                       <button className="plans-btn">View XDR →</button>
-                    
                     </>
                   )}
 
@@ -220,7 +240,9 @@ const Navbar = () => {
                     <>
                       <h3>Strengthen Your Organization's Cyber Defence</h3>
                       <p>
-                        We provide end-to-end cybersecurity services that reduce risk, detect threats early, and improve your overall security posture.
+                        We provide end-to-end cybersecurity services that reduce
+                        risk, detect threats early, and improve your overall
+                        security posture.
                       </p>
                       <button className="plans-btn">Services →</button>
 
@@ -233,7 +255,9 @@ const Navbar = () => {
                         <a href="#">Microsoft 365 Backup</a>
                         <a href="#">Domain Fraud Protection (DMARC)</a>
                         <a href="#">Cloud Archiving</a>
-                        <a href="#">Spam, Malware, and Advanced Threat Protection</a>
+                        <a href="#">
+                          Spam, Malware, and Advanced Threat Protection
+                        </a>
                         <a href="#">Data Inspector™</a>
                       </div>
 
@@ -252,7 +276,7 @@ const Navbar = () => {
         ))}
       </div>
 
-      <div className="navbar-right">
+      <div className="navbar-right" ref={rightnav}>
         <span className="free-trial">FREE TRIAL</span>
         <FaSearch className="icon" />
         <FaUser className="icon" />
@@ -260,6 +284,23 @@ const Navbar = () => {
         <div className="language">
           English <IoMdArrowDropdown />
         </div>
+      </div>
+      <div
+        id="NavbarStaggeredBarsIcon"
+        onClick={() => {
+          if (
+            centernav.current.style.display === "flex" &&
+            rightnav.current.style.display === "flex"
+          ) {
+            centernav.current.style.display = "none";
+            rightnav.current.style.display = "none";
+          } else {
+            centernav.current.style.display = "flex";
+            rightnav.current.style.display = "flex";
+          }
+        }}
+      >
+        <FaBarsStaggered className="icon" color="white" />
       </div>
     </nav>
   );

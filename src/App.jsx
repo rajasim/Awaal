@@ -1,4 +1,3 @@
-
 import "./App.css";
 import Navbar from "./Navbar";
 
@@ -39,56 +38,48 @@ import Rik from "./rik";
 import Ellish from "./Ellish";
 import Cloud from "./Cloud";
 
-
-
-
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
-       <div style={{ width: '100vw', height: '100vh' }}>
-       <Videosection/>
-     
-      <AboutUs/>
-       <ScrollingLogosSection/>
-      <Services/>
-      <DarkWebAlert/>
-     
-      <NewsSection/>
-      <Footer/>
-      <VaptSection/>
-      <TestingApproach/>
-      <Featured/>
-      <ProtectionSteps/>
-      <Anicard/>
-      <SecuritySolutions/>
-      <Deliverables/>
-      <DeliverablesGrid/>
-      <SecurityDocumentation/>
-      <SupportedPlatforms/>
-      <UnifiedPlatform/>
-      <SecureOrganization/>
-      <ITInfrastructurePage/>
-      <CbSection/>
-      <Benefits/>
-      <Videofoot/>
-      <NextGen/>
-      <KeyBenefits/>
-      <Optimize/>
-      <TechnologyPlatforms/>
-      <AiHeroSection/>
-      <EfficiencySection/>
-      <Pater/>
-      <Piter/>
-      <Rik/>
-      <Ellish/>
-      <Cloud/>
-      
-      
 
+      <Videosection />
 
-    </div>
-    </div>
+      <AboutUs />
+      <ScrollingLogosSection />
+      <Services />
+      <DarkWebAlert />
+
+      <NewsSection />
+      <Footer />
+      <VaptSection />
+      <TestingApproach />
+      <Featured />
+      <ProtectionSteps />
+      <Anicard />
+      <SecuritySolutions />
+      <Deliverables />
+      <DeliverablesGrid />
+      <SecurityDocumentation />
+      <SupportedPlatforms />
+      <UnifiedPlatform />
+      <SecureOrganization />
+      <ITInfrastructurePage />
+      <CbSection />
+      <Benefits />
+      <Videofoot />
+      <NextGen />
+      <KeyBenefits />
+      <Optimize />
+      <TechnologyPlatforms />
+      <AiHeroSection />
+      <EfficiencySection />
+      <Pater />
+      <Piter />
+      <Rik />
+      <Ellish />
+      <Cloud />
+    </>
   );
 }
 
