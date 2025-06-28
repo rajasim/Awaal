@@ -1,0 +1,86 @@
+.tifeter-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* ✅ left aligned */
+  padding-left: 60px; /* ✅ pushes content from left edge */
+  box-sizing: border-box;
+}
+
+.tifeter-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 40px 20px;
+  color: #1a1a1a;
+}
+
+.tifeter-content h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.tifeter-content h2 span {
+  color: #00994c;
+}
+
+.tifeter-content p {
+  font-size: 1.05rem;
+  color: #555;
+  max-width: 520px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.tifeter-points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 24px;
+  margin-bottom: 40px;
+}
+
+.point-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1a1a1a;
+  border-left: 5px solid #00994c;
+  text-align: left;
+}
+
+.point-box img {
+  width: 22px;
+  height: 22px;
+}
+
+.tifeter-btn {
+  background: #00994c;
+  color: #fff;
+  font-size: 1rem;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.2s ease;
+  text-align: left;
+}
+
+.tifeter-btn:hover {
+  background: #007c3c;
+}

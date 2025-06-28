@@ -119,7 +119,7 @@ h1 {
   50% { opacity: 0.3; }
 }
 
-.infra-buttons {
+.infra-butns {
   display: flex;
   gap: 20px;
   margin-bottom: 30px;

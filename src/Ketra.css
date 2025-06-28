@@ -1,0 +1,150 @@
+.ketra-wrapper {
+  position: relative;
+  padding: 80px 50px;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.bg-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  
+}
+
+.ketra-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* smaller gap */
+}
+
+.ketra-left {
+  flex: 1;
+  min-width: 320px;
+  max-width: 55%;
+}
+
+.ketra-left h1 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.2;
+}
+
+.text-digital {
+  color: #6a5acd;
+}
+
+.text-presence {
+  color: #d63384;
+}
+
+.ketra-left p {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.ketra-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn-purple {
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  padding: 16px 28px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 16px 28px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.ketra-right {
+  flex: 1;
+  max-width: 40%;
+  min-width: 280px;
+}
+
+.right-img {
+  width: 100%;
+  height: auto;
+}
+
+.project-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.text-projects {
+  color: #d63384;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.521);
+  padding: 25px;
+  max-width: 320px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.tags {
+  margin-top: 12px;
+}
+
+.tags span {
+  background: #f0f0f0;
+  padding: 5px 12px;
+  margin-right: 6px;
+  font-size: 0.85rem;
+  border-radius: 5px;
+}

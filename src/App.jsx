@@ -38,6 +38,16 @@ import Piter from "./Piter";
 import Rik from "./rik";
 import Ellish from "./Ellish";
 import Cloud from "./Cloud";
+import Innovate from "./Innovate";
+import Azure from "./Azure";
+import Watrex from "./Watrex";
+import UniqueHero from "./UniqueHero";
+import Ketra from "./Ketra";
+import Ritex from "./Ritex";
+import Tifeter from "./Tifeter";
+import Rofter from "./Rofter";
+import Toll from "./Toll";
+
 
 
 
@@ -83,6 +93,15 @@ function App() {
       <Rik/>
       <Ellish/>
       <Cloud/>
+      <Innovate/>
+      <Azure/>
+      <Watrex/>
+      <UniqueHero/>
+      <Ketra/>
+      <Ritex/>
+      <Tifeter/>
+      <Rofter/>
+      <Toll/>
       
       
 

@@ -1,0 +1,95 @@
+.ko-section {
+  padding: 5rem 3rem;
+  background-color: #f8f9fc;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.ko-heading {
+  font-size: 3rem;
+  color: #6b2cd8;
+ 
+  margin-bottom: 1rem;
+  font-size: 38px;
+}
+
+.ko-subtext {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 3rem;
+}
+
+.ko-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+.ko-card {
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 340px;
+  width: 300px;
+}
+
+
+.ko-aws {
+  background-color: #1e293b;
+}
+
+.ko-azure {
+  background-color: #0078d4;
+}
+
+.ko-gcp {
+  background-color: #1a73e8;
+}
+
+.ko-private {
+  background-color: #6b2cd8;
+}
+
+.ko-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+}
+
+.ko-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.ko-desc {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.ko-button {
+  background: #000000;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  border-color: #1e2f80;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(42, 62, 177, 0.747);
+}
+
+.ko-button:hover {
+  background: #1e2f80;
+}

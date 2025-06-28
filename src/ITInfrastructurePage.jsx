@@ -42,7 +42,7 @@ const ITInfrastructurePage = () => {
         <div className="infra-point"><span className="infra-dot" />Disaster Recovery</div>
       </div>
 
-      <div className="infra-buttons">
+      <div className="infra-butns">
         <button className="get-started">Get Started</button>
         <button className="view-solutions">View Solutions</button>
       </div>

@@ -1,0 +1,111 @@
+.ritex-wrapper {
+  padding: 80px 40px;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.ritex-heading {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #4a00e0;
+  margin-bottom: 10px;
+}
+
+.ritex-subheading {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.ritex-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1020px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.ritex-card {
+  background: #fff;
+  border-radius: 12px;
+  width: 300px;
+  height: 450px; /* ✅ fixed height */
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.367);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.card-top {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  margin: -20px -20px 20px -20px;
+  padding: 10px;
+}
+
+.card-top img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+/* Colored tops */
+.top-purple { background-color: #6f42c1; }
+.top-orange { background-color: #fd7e14; }
+.top-teal   { background-color: #20c997; }
+.top-blue   { background-color: #007bff; }
+.top-pink   { background-color: #e83e8c; }
+
+.ritex-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.ritex-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.ritex-card ul {
+  padding-left: 18px;
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.ritex-card ul li {
+  margin-bottom: 6px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.tag-purple { background: #6f42c1; color: white; }
+.tag-orange { background: #fd7e14; color: white; }
+.tag-teal   { background: #20c997; color: white; }
+.tag-blue   { background: #007bff; color: white; }
+.tag-pink   { background: #e83e8c; color: white; }
+
+/* Center the last 2 cards on second row */
+.row-2:nth-child(4) {
+  margin-left: auto;
+}
+.row-2:nth-child(5) {
+  margin-right: auto;
+}

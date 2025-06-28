@@ -1,0 +1,148 @@
+.rof-wrapper {
+  padding: 60px 40px;
+  background: #f9f9ff;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.rof-heading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.rof-subtext {
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  font-size: 1.05rem;
+  font-weight: 600; /* a bit bolder */
+}
+
+/* Fixed 3 equal columns */
+.rof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.rof-box {
+  background: white;
+  border-radius: 14px;
+  padding: 32px 24px; /* a bit more vertical padding */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+ height: 350px; /* increased height */
+}
+
+.rof-step {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #e0e4ff;
+  color: #333;
+  font-weight: 700;
+  padding: 6px 14px; /* slightly bigger */
+  border-radius: 30px;
+  font-size: 1rem;
+}
+
+.rof-box h3 {
+  margin-top: 28px;
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+  font-weight: 700; /* bolder */
+  color: #222;
+}
+
+.rof-box img {
+  width: 60vh;   /* increased size */
+  height: 90px;  /* increased size */
+  object-fit: contain;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.rof-box p {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 600; /* bolder */
+  line-height: 1.4;
+}
+
+/* Purple CTA box no fixed height, same width as others */
+.rof-cta {
+  background: #5e3dea;
+  color: white;
+  align-items: flex-start;
+  text-align: left;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 400px; /* slightly smaller but still tall */
+}
+
+.rof-cta h3,
+.rof-cta p {
+  color: white;
+  font-weight: 700; /* bolder text */
+}
+
+.rof-cta button {
+  background: white;
+  color: #5e3dea;
+  font-weight: 700;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: auto;
+  transition: 0.2s ease;
+  font-size: 1rem;
+}
+
+.rof-cta button:hover {
+  background: #ddd;
+}
+
+/* Bottom section */
+.rof-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.rof-bottom-box {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  max-width: 380px;
+  text-align: left;
+}
+
+.rof-bottom-box h4 {
+  color: #5e3dea;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.rof-bottom-box p {
+  color: #444;
+  font-size: 0.95rem;
+  font-weight: 600;
+}

@@ -1,0 +1,17 @@
+.video-sectionn {
+  position: relative;
+  width: 100vw;
+  height: 100vh; /* Full screen */
+  overflow: hidden;
+}
+
+.bgo-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+  z-index: -1;  /* keeps it behind any text if needed */
+  pointer-events: none;
+}
