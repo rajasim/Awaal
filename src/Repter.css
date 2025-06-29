@@ -1,0 +1,117 @@
+.repter-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 4rem 6%; /* reduced padding for upward shift */
+  display: flex;
+  align-items: flex-start; /* moves content upward */
+  justify-content: flex-start;
+}
+
+/* Background video */
+.repter-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.repter-content {
+  max-width: 750px;
+  height: 90vh; /* slightly less than 100vh to shift upward */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* align to top */
+  z-index: 1;
+}
+
+/* Badge */
+.repter-badge {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+/* Big Bold Heading */
+.repter-content h1 {
+  font-size: 3.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.5px;
+}
+
+.highlight-blue {
+  color: #35c8ff;
+}
+
+.highlight-purple {
+  color: #b384ff;
+}
+
+/* Paragraph */
+.repter-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2.2rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.repter-buttons {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #4fd1ff, #3b82f6);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+/* Tech Stack */
+.repter-tech span {
+  font-size: 0.95rem;
+  color: #999;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.tech-icons img {
+  height: 36px;
+  width: auto;
+}

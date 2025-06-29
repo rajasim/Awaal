@@ -1,0 +1,91 @@
+.laptor-container {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f9fbff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.laptor-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #4c5eff;
+  border-bottom: 2px solid #4c5eff;
+}
+
+.laptor-subtitle {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+.laptor-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.laptor-box {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.258);
+  padding: 2.5rem 2rem;
+  width: 320px; /* increased width */
+  min-height: 420px; /* increased height */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.laptor-icon {
+  width: 60px; /* increased size */
+  height: 60px; /* increased size */
+  margin: 0 auto 1rem;
+}
+
+.laptor-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.laptor-box p {
+  font-size: 19px;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.laptor-bottom-img {
+  width: 85%;
+  height: auto;
+  margin-top: auto;
+  margin-left: 20px; /* ⬅️ Added to shift image slightly right */
+}
+
+.laptor-button {
+  background-color: #6a5fff;
+  color: white;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.laptor-button:hover {
+  background-color: #5047d3;
+}
+
+.laptor-footer {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}

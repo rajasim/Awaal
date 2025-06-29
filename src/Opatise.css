@@ -1,0 +1,125 @@
+.opatise-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  color: white;
+  font-family: sans-serif;
+}
+
+/* Background video */
+.opatise-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Header */
+.opatise-header {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.opatise-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #ff007a, #7f00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.opatise-header p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* Main area with absolute positioned feature blocks */
+.opatise-main {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+/* Feature text blocks — no background, just text alignment */
+.feature-block {
+  position: absolute;
+  width: 260px;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text styling inside feature blocks */
+.feature-block h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: #fff;
+}
+
+.feature-block p {
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.4;
+  max-width: 220px;
+}
+
+/* Text positioning to match the background ovals */
+.feature-smart {
+  top: 12%;
+  left: 9%;
+}
+
+.feature-ssl {
+  top: 65%;
+  left: 2%;
+}
+
+.feature-integration {
+  top: 78%;
+  left: 19%;
+}
+
+.feature-animations {
+  top: 4%;
+  right: 12%;
+}
+
+.feature-seo {
+  top: 45%;
+  right: 7%;
+}
+
+.feature-global {
+  top: 88%;
+  right: 24%;
+}
+
+/* Footer CTA button */
+.opatise-footer {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.launch-button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to right, #ff007a, #7f00ff);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.launch-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

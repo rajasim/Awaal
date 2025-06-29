@@ -47,6 +47,9 @@ import Ritex from "./Ritex";
 import Tifeter from "./Tifeter";
 import Rofter from "./Rofter";
 import Toll from "./Toll";
+import Opatise from "./Opatise";
+import Repter from "./Repter";
+import Laptor from "./Laptor";
 
 
 
@@ -102,6 +105,9 @@ function App() {
       <Tifeter/>
       <Rofter/>
       <Toll/>
+      <Opatise/>
+      <Repter/>
+      <Laptor/>
       
       
 
