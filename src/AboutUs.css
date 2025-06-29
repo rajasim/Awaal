@@ -8,7 +8,7 @@
   min-height: 100vh; /* Allows content to expand */
   box-sizing: border-box;
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   gap: 40px; /* spacing between left and right */
 }
 
@@ -73,8 +73,13 @@
 .about-button-icon {
   font-size: 18px;
 }
-@media (max-width:480px){
-  .about-section{
+@media (max-width: 480px) {
+  .about-section {
     flex-direction: column;
+    padding: 0;
+  }
+
+  .about-right {
+    padding-left: 1rem;
   }
 }

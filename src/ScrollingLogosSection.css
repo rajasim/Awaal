@@ -13,7 +13,7 @@
 .fixed-text h2 {
   font-size: 28px;
   font-weight: 500;
-  color:  #f89c45;
+  color: #f89c45;
   line-height: 1.5;
 }
 
@@ -32,3 +32,8 @@
   object-fit: contain;
 }
 
+@media (max-width: 480px) {
+  .scrolling-section {
+    padding: 1rem;
+  }
+}

@@ -88,3 +88,13 @@
   background-color: #00804f;
   color: white;
 }
+
+@media (max-width: 480px) {
+  .darkweb-alert {
+    padding: 0;
+  }
+
+  .left {
+    padding: 0.5rem;
+  }
+}

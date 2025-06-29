@@ -131,3 +131,13 @@
   background-color: #013c3c;
   color: #ffffff;
 }
+
+@media (max-width: 480px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .news-section {
+    padding: 1rem;
+  }
+}

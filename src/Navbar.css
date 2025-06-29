@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   border-bottom: 1px solid #1a1a1a;
   position: relative;
   padding-top: 1rem;
@@ -29,7 +29,7 @@
   list-style: none;
 }
 
-.navbar-center ,
+.navbar-center,
 .navbar-center a {
   position: relative;
   cursor: pointer;
@@ -39,11 +39,10 @@
   font-size: 15px;
   text-transform: uppercase;
   transition: color 0.3s;
-
 }
 
-.nav-item{
-    padding: 25px;
+.nav-item {
+  padding: 25px;
 }
 
 .navbar-center a:hover {
@@ -72,18 +71,18 @@
 .mega-dropdown {
   position: absolute;
   top: 65px;
-  
- right: 0;
+
+  right: 0;
   width: 1100px;
   height: 550px;
   background-color: white;
   color: black;
-  
+
   display: flex;
   z-index: 999;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.795);
   padding: 20px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   animation: fadeIn 0.2s ease-in-out;
 }
 
@@ -116,7 +115,6 @@
   flex-shrink: 0;
   width: 260px;
   box-sizing: border-box;
-  
 }
 
 .mega-platform-box h3 {
@@ -128,13 +126,10 @@
 }
 
 .mega-platform-box p {
-
- 
-  margin: 0 0 8px 0;     /* adds 8px space below each paragraph */
+  margin: 0 0 8px 0; /* adds 8px space below each paragraph */
   font-size: 12px;
-  line-height: 11px;     /* keeps line height tight within paragraph */
+  line-height: 11px; /* keeps line height tight within paragraph */
 }
-
 
 .mega-platform-box a {
   display: inline-block;
@@ -172,7 +167,7 @@
 .mega-platform-box p {
   font-size: 13px;
   margin: 0 0 10px 0; /* Proper vertical spacing */
-  line-height: 16px;   /* Not too cramped */
+  line-height: 16px; /* Not too cramped */
 }
 
 .mega-platform-box a {
@@ -250,7 +245,6 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
   row-gap: 2rem;
-  
 }
 
 .links-grid a {
@@ -263,4 +257,42 @@
 
 .links-grid a:hover {
   color: #007acc;
+}
+
+#NavbarStaggeredBarsIcon {
+  padding: 0 1rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 480px) {
+  #NavbarStaggeredBarsIcon {
+    display: block;
+  }
+
+  .navbar-center,
+  .navbar-right {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    z-index: 5;
+    background-color: red;
+    align-items: start;
+  }
+
+  .navbar-center {
+    right: 0;
+  }
+
+  .navbar-right {
+    left: 0;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-item {
+    padding: 1rem;
+  }
 }
