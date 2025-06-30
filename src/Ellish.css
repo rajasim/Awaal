@@ -1,0 +1,78 @@
+
+
+.ellish-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.ellish-content {
+  position: relative;
+  z-index: 2;
+  max-width: 580px;
+}
+
+.ellish-content h1 {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.ellish-content h1 span {
+  color: #29b6f6;
+}
+
+.ellish-content p {
+  font-size: 17px;
+  color: #d0d0d0;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.ellish-tags {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.ellish-tags .tag {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  backdrop-filter: blur(6px);
+}
+
+.ellish-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-primary {
+  background-color: #2196f3;
+  color: white;
+  padding: 11px 22px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: white;
+  padding: 11px 22px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
