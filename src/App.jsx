@@ -50,6 +50,9 @@ import Toll from "./Toll";
 import Opatise from "./Opatise";
 import Repter from "./Repter";
 import Laptor from "./Laptor";
+import Ktrox from "./Ktrox";
+import Waxter from "./Waxter";
+import Migration from "./Migration";
 
 
 
@@ -108,6 +111,9 @@ function App() {
       <Opatise/>
       <Repter/>
       <Laptor/>
+      <Ktrox/>
+      <Waxter/>
+      <Migration/>
       
       
 
