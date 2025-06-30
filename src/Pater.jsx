@@ -1,5 +1,5 @@
 import React from "react";
-import "./pater.css";
+import "./Pater.css";
 
 function Pater() {
   return (
