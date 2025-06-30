@@ -35,7 +35,7 @@ import AiHeroSection from "./AiHeroSection";
 import EfficiencySection from "./EfficiencySection";
 import Pater from "./Pater";
 import Piter from "./Piter";
-import Rik from "./Rik";
+import Pik from "./Pik";
 import Ellish from "./Ellish";
 import Cloud from "./Cloud";
 import Innovate from "./Innovate";
@@ -93,7 +93,7 @@ function App() {
       <EfficiencySection/>
       <Pater/>
       <Piter/>
-      <Rik/>
+      <Pik/>
       <Ellish/>
       <Cloud/>
       <Innovate/>

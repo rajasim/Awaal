@@ -1,7 +1,7 @@
 import React from "react";
 import "./Rik.css";
 
-function Rik() {
+function Pik() {
   return (
     <div className="rik-section">
       <div className="rik-heading">
@@ -128,4 +128,4 @@ function Rik() {
   );
 }
 
-export default Rik;
+export default Pik;
