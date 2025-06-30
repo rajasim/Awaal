@@ -1,7 +1,7 @@
 import React from "react";
-import "./Pater.css";
+import "./Eater.css";
 
-function Pater() {
+function Eater() {
   return (
     <div className="pater-section">
       {/* Background image */}
@@ -99,4 +99,4 @@ function Pater() {
   );
 }
 
-export default Pater;
+export default Eater;

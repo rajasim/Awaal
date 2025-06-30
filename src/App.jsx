@@ -33,7 +33,7 @@ import Optimize from "./Optimize";
 import TechnologyPlatforms from "./TechnologyPlatforms";
 import AiHeroSection from "./AiHeroSection";
 import EfficiencySection from "./EfficiencySection";
-import Pater from "./Pater";
+import Eater from "./Eater";
 import Piter from "./Piter";
 import Pik from "./Pik";
 import Ellish from "./Ellish";
