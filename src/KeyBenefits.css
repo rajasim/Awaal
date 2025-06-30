@@ -1,18 +1,25 @@
-/* Reset and Global Styles */
+/* Reset and Base Styles */
 * {
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8fafc;
+}
 
-
-/* Container */
+/* Main Container */
 .kb-container {
   padding: 80px 20px;
-  background-color: #f8fafc;
+  max-width: 1700px;
+  margin: 0 auto;
   text-align: center;
 }
 
-/* Heading */
+/* Headings */
 .kb-heading {
   font-size: 36px;
   font-weight: bold;
@@ -20,7 +27,6 @@
   margin-bottom: 10px;
 }
 
-/* Subheading */
 .kb-subheading {
   font-size: 16px;
   color: #6b7780;
@@ -28,27 +34,26 @@
   margin: 0 auto 50px;
 }
 
-/* Responsive Card Row */
+/* Grid Layout for Cards */
 .kb-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 30px;
-  padding: 0 10px;
+  justify-items: center;
+  padding: 0 20px;
 }
 
-/* Card */
+/* Individual Card */
 .kb-card {
   background: #fff;
   padding: 40px 30px;
   border-radius: 14px;
   width: 100%;
-  max-width: 300px;
+  max-width: 280px;
   min-height: 300px;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.345);
   transition: transform 0.3s ease;
   position: relative;
-  flex-shrink: 0;
   text-align: left;
 }
 
@@ -63,7 +68,7 @@
   font-size: 32px;
 }
 
-/* Title */
+/* Card Title */
 .kb-title {
   font-size: 20px;
   font-weight: 600;
@@ -71,7 +76,7 @@
   margin-bottom: 12px;
 }
 
-/* Description */
+/* Card Description */
 .kb-desc {
   font-size: 15px;
   color: #6b7780;
@@ -79,7 +84,7 @@
   margin-bottom: 30px;
 }
 
-/* Animated Underline */
+/* Hover Underline */
 .kb-underline {
   position: absolute;
   bottom: 0;
@@ -93,4 +98,11 @@
 
 .kb-card:hover .kb-underline {
   width: 100%;
+}
+
+/* Responsive: Auto-fit cards below 1400px */
+@media (max-width: 1400px) {
+  .kb-row {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
 }
