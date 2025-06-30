@@ -1,5 +1,5 @@
 import React from 'react';
-import './Extrabox.css';
+import './ExtraBox.css';
 
 export default function Extrabox() {
   return (

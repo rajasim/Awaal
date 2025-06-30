@@ -91,7 +91,7 @@ function App() {
       <TechnologyPlatforms/>
       <AiHeroSection/>
       <EfficiencySection/>
-      <Pater/>
+      <Eater/>
       <Piter/>
       <Pik/>
       <Ellish/>
