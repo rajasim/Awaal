@@ -35,7 +35,7 @@ import AiHeroSection from "./AiHeroSection";
 import EfficiencySection from "./EfficiencySection";
 import Pater from "./Pater";
 import Piter from "./Piter";
-import Rik from "./rik";
+import Rik from "./Rik";
 import Ellish from "./Ellish";
 import Cloud from "./Cloud";
 import Innovate from "./Innovate";
