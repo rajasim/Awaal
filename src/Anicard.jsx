@@ -1,5 +1,5 @@
 import React from 'react';
-import './anicard.css';
+import './Anicard.css';
 
 const Anicard = () => {
   return (
