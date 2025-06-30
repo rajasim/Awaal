@@ -1,5 +1,5 @@
 import React from 'react';
-import './watrex.css';
+import './Watrex.css';
 
 const Watrex = () => {
   return (
