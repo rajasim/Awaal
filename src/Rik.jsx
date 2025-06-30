@@ -1,5 +1,5 @@
 import React from "react";
-import "./rik.css";
+import "./Rik.css";
 
 function Rik() {
   return (
