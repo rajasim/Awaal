@@ -1,10 +1,18 @@
+/* Reset and Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Container */
 .kb-container {
-  padding: 80px 60px;
+  padding: 80px 20px;
   background-color: #f8fafc;
-  font-family: 'Segoe UI', sans-serif;
   text-align: center;
 }
 
+/* Heading */
 .kb-heading {
   font-size: 36px;
   font-weight: bold;
@@ -12,6 +20,7 @@
   margin-bottom: 10px;
 }
 
+/* Subheading */
 .kb-subheading {
   font-size: 16px;
   color: #6b7780;
@@ -19,34 +28,42 @@
   margin: 0 auto 50px;
 }
 
+/* Responsive Card Row */
 .kb-row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  padding: 0 10px;
 }
 
+/* Card */
 .kb-card {
   background: #fff;
   padding: 40px 30px;
   border-radius: 14px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   min-height: 300px;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.345);
   transition: transform 0.3s ease;
   position: relative;
   flex-shrink: 0;
+  text-align: left;
 }
 
 .kb-card:hover {
   transform: translateY(-8px);
 }
 
+/* Icon */
 .kb-icon {
   color: #00c3a5;
   margin-bottom: 20px;
+  font-size: 32px;
 }
 
+/* Title */
 .kb-title {
   font-size: 20px;
   font-weight: 600;
@@ -54,6 +71,7 @@
   margin-bottom: 12px;
 }
 
+/* Description */
 .kb-desc {
   font-size: 15px;
   color: #6b7780;
@@ -61,6 +79,7 @@
   margin-bottom: 30px;
 }
 
+/* Animated Underline */
 .kb-underline {
   position: absolute;
   bottom: 0;
