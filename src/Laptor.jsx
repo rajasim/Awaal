@@ -1,5 +1,5 @@
 import React from 'react';
-import './laptor.css';
+import './Yaptor.css';
 
 const Laptor = () => {
   return (
