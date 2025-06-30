@@ -1,5 +1,5 @@
 import React from "react";
-import "./piter.css";
+import "./Piter.css";
 
 const Piter = () => {
   return (
