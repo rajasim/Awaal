@@ -1,9 +1,16 @@
+/* General reset and layout */
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Platforms Section Styles */
 .platforms-section {
- 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 100px 60px;
+  padding: 100px 20px;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -14,6 +21,7 @@
   max-width: 1600px;
   margin: 0 auto;
   text-align: center;
+  padding: 0 20px;
 }
 
 .platforms-badge {
@@ -50,16 +58,20 @@
   line-height: 1.6;
 }
 
+/* Grid Section */
 .platforms-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
   justify-items: center;
+  padding: 0 20px;
 }
 
+/* Individual Cards */
 .platform-card {
   background-color: #ffffff;
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
   height: 440px;
   padding: 50px 30px;
   border-radius: 22px;
@@ -75,12 +87,14 @@
   transform: translateY(-6px);
 }
 
+/* Card Image */
 .platform-icon {
   height: 110px;
   object-fit: contain;
   margin-bottom: 30px;
 }
 
+/* Card Text */
 .platform-card h3 {
   font-size: 22px;
   font-weight: 600;
