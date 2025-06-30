@@ -1,5 +1,5 @@
 import React from "react";
-import "./ellish.css";
+import "./Rllish.css";
 
 function Ellish() {
   return (
