@@ -60,72 +60,92 @@ import Hitoera from "./Hitoera";
 import Haftrop from "./Haftrop";
 import Harirtox from "./Harirtox";
 import Digital from "./Digital";
-import { Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <Routes>
-      <Navbar />
-
-      <Videosection />
-
-      <AboutUs />
-      <ScrollingLogosSection />
-      <Services />
-      <DarkWebAlert />
-
-      <NewsSection />
-      <Footer />
-      <VaptSection />
-      <TestingApproach />
-      <Featured />
-      <ProtectionSteps />
-      <Anicard />
-      <SecuritySolutions />
-      <Deliverables />
-      <DeliverablesGrid />
-      <SecurityDocumentation />
-      <SupportedPlatforms />
-      <UnifiedPlatform />
-      <SecureOrganization />
-      <ITInfrastructurePage />
-      <CbSection />
-      <Benefits />
-      <Videofoot />
-      <NextGen />
-      <KeyBenefits />
-      <Optimize />
-      <TechnologyPlatforms />
-      <AiHeroSection />
-      <EfficiencySection />
-      <Eater />
-      <Piter />
-      <Pik />
-      <Ellish />
-      <Cloud />
-      <Innovate />
-      <Azure />
-      <Watrex />
-      <UniqueHero />
-      <Ketra />
-      <Ritex />
-      <Tifeter />
-      <Rofter />
-      <Toll />
-      <Opatise />
-      <Repter />
-      <Laptor />
-      <Ktrox />
-      <Waxter />
-      <Migration />
-      <Atifex />
-      <Hefter />
-      <Betrex />
-      <Hatrex />
-      <Hitoera />
-      <Haftrop />
-      <Harirtox />
-      <Digital />
+      <Route
+        path="/"
+        element={
+          <>
+            <Navbar />
+            <Videosection />
+            <AboutUs />
+            <ScrollingLogosSection />
+            <Services />
+            <DarkWebAlert />
+            <Piter />
+            <Pik />
+            <Ellish />
+            <Cloud />
+            <Innovate />
+            <Azure />
+            <Watrex />
+            <UniqueHero />
+            <Ketra />
+            <Ritex />
+            <Tifeter />
+            <Rofter />
+            <Toll />
+          </>
+        }
+      />
+      <Route
+        path="/vapt"
+        element={
+          <>
+            <Navbar />
+            <NewsSection />
+            <Footer />
+            <VaptSection />
+            <TestingApproach />
+            <Featured />
+            <ProtectionSteps />
+            <Anicard />
+            <SecuritySolutions />
+            <Deliverables />
+            <DeliverablesGrid />
+            <SecurityDocumentation />
+            <SupportedPlatforms />
+            <UnifiedPlatform />
+            <SecureOrganization />
+            <Haftrop />
+            <Harirtox />
+            <Digital />
+          </>
+        }
+      />
+      <Route
+        path="/it-infrastructure"
+        element={
+          <>
+            <Navbar />
+            <ITInfrastructurePage />
+            <CbSection />
+            <Benefits />
+            <Videofoot />
+            <NextGen />
+            <KeyBenefits />
+            <Optimize />
+            <TechnologyPlatforms />
+            <AiHeroSection />
+            <EfficiencySection />
+            <Eater />
+            <Opatise />
+            <Repter />
+            <Laptor />
+            <Ktrox />
+            <Waxter />
+            <Migration />
+            <Atifex />
+            <Hefter />
+            <Betrex />
+            <Hatrex />
+            <Hitoera />
+          </>
+        }
+      />
     </Routes>
   );
 }
