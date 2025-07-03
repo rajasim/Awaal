@@ -23,7 +23,7 @@ const Migration = () => {
         Your browser does not support the video tag.
       </video>
 
-      <div className="migration-overlay">
+      <center><div className="migration-overlay">
         <div className="migration-tag">✅ Trusted Migration Experts</div>
         <h1 className="migration-title">Migration Services</h1>
         <h2 className="migration-subtitle">by Awwal Security</h2>
@@ -50,6 +50,7 @@ const Migration = () => {
           <span>⚡ 24/7 Support</span>
         </div>
       </div>
+      </center>
     </div>
   );
 };

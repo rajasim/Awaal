@@ -66,21 +66,34 @@ const Navbar = () => {
                     <a href="#">Explore the platform →</a>
                   </div>
                   <div className="mega-left-menu">
-                    <div onMouseEnter={() => setHoveredSubItem("email")}>
-                      VAPT
-                    </div>
-                    <div onMouseEnter={() => setHoveredSubItem("data")}>
-                      IT Infrastructure
-                    </div>
-                    <div onMouseEnter={() => setHoveredSubItem("xdr")}>
-                      AI & Automation Services
-                    </div>
-                    <div onMouseEnter={() => setHoveredSubItem("network")}>
-                      Software Development
-                    </div>
-                    <div onMouseEnter={() => setHoveredSubItem("app")}>
-                      Mobile & Web App Development
-                    </div>
+                   <div onMouseEnter={() => setHoveredSubItem("VAPT")}>
+                     VAPT
+                       </div>
+                    <div onMouseEnter={() => setHoveredSubItem("IT Infrastructure")}>
+                           IT Infrastructure
+                       </div>
+                      <div onMouseEnter={() => setHoveredSubItem("AI & Automation Services")}>
+                                AI & Automation Services
+                       </div>
+                         <div onMouseEnter={() => setHoveredSubItem("Software Development")}>
+                                                Software Development
+                             </div>
+                            <div onMouseEnter={() => setHoveredSubItem("Mobile & Web App Development")}>
+                                   Mobile & Web App Development
+                                      </div>
+                    <div onMouseEnter={() => setHoveredSubItem("Website Development")}>
+                       Website Development
+                 </div>
+                <div onMouseEnter={() => setHoveredSubItem("Cybersecurity Audits")}>
+                 Cybersecurity Audits
+          </div>
+           <div onMouseEnter={() => setHoveredSubItem("Tech Consulting")}>
+              Tech Consulting
+           </div>
+             <div onMouseEnter={() => setHoveredSubItem("Data Analytics")}>
+                   Data Analytics
+              </div>
+
                     <div onMouseEnter={() => setHoveredSubItem("msps")}></div>
                     <div onMouseEnter={() => setHoveredSubItem("all")}>
                       All Products →
@@ -89,7 +102,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="mega-right">
-                  {hoveredSubItem === "email" && (
+                  {hoveredSubItem === "VAPT" && (
                     <>
                       <h3>Strengthen Your Organization's Cyber Defence</h3>
                       <p>
@@ -121,7 +134,7 @@ const Navbar = () => {
                     </>
                   )}
 
-                  {hoveredSubItem === "data" && (
+                  {hoveredSubItem === "IT Infrastructure" && (
                     <>
                       <h3>
                         Designing Resilient, Scalable Networks for the Future
@@ -150,7 +163,7 @@ const Navbar = () => {
                     </>
                   )}
 
-                  {hoveredSubItem === "xdr" && (
+                  {hoveredSubItem === "AI & Automation Services" && (
                     <>
                       <h3>Strengthen Your Organization's Cyber Defence</h3>
                       <p>
@@ -175,7 +188,7 @@ const Navbar = () => {
                     </>
                   )}
 
-                  {hoveredSubItem === "network" && (
+                  {hoveredSubItem === "Software Development" && (
                     <>
                       <h3>Accelerate Innovation with Tailored Solutions</h3>
                       <p>
@@ -196,7 +209,7 @@ const Navbar = () => {
                     </>
                   )}
 
-                  {hoveredSubItem === "app" && (
+                  {hoveredSubItem === "Mobile & Web App Development" && (
                     <>
                       <h3>
                         Build Engaging, Cross-Platform Digital Experiences

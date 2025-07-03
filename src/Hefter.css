@@ -1,0 +1,109 @@
+.hefter-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 100px;
+  box-sizing: border-box;
+  color: white;
+}
+
+/* Content Container */
+.hefter-content {
+  max-width: 700px;
+  z-index: 1;
+}
+
+/* Badge */
+.badge {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #f59e0b;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Title */
+.hefter-title {
+  font-size: 4.2rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Description */
+.hefter-description {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: #d1d5db;
+  margin-bottom: 40px;
+}
+
+/* Tags */
+.hefter-tags {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 1.05rem;
+  color: #f3f4f6;
+  font-weight: 600;
+}
+
+/* Buttons */
+.hefter-buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.btn-primary {
+  padding: 16px 28px;
+  background: linear-gradient(to right, #6366f1, #a855f7);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+
+.btn-outline {
+  padding: 16px 28px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s ease, border 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}

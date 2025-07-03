@@ -88,17 +88,18 @@
   margin-bottom: 6px;
 }
 
-.tag {
+.tagg {
   font-size: 0.75rem;
   padding: 6px 12px;
   border-radius: 20px;
   font-weight: 600;
   margin-top: auto;
+  color: #007bff;
 }
 
 .tag-purple { background: #6f42c1; color: white; }
 .tag-orange { background: #fd7e14; color: white; }
-.tag-teal   { background: #20c997; color: white; }
+.tag-teal   { background: #20c997; color: rgb(30, 118, 25); }
 .tag-blue   { background: #007bff; color: white; }
 .tag-pink   { background: #e83e8c; color: white; }
 

@@ -53,6 +53,15 @@ import Laptor from "./Laptor";
 import Ktrox from "./Ktrox";
 import Waxter from "./Waxter";
 import Migration from "./Migration";
+import Atifex from "./Atifex";
+import Hefter from "./Hefter";
+import Betrex from "./Betrex";
+import Hatrex from "./Hatrex";
+import Hitoera from "./Hitoera";
+import Haftrop from "./Haftrop";
+import Harirtox from "./Harirtox";
+import Digital from "./Digital";
+import { Routes } from "react-router-dom";
 
 
 
@@ -60,9 +69,9 @@ import Migration from "./Migration";
 
 function App() {
   return (
-    <div>
+    <Routes>
       <Navbar />
-       <div style={{ width: '100vw', height: '100vh' }}>
+       
        <Videosection/>
      
       <AboutUs/>
@@ -114,12 +123,20 @@ function App() {
       <Ktrox/>
       <Waxter/>
       <Migration/>
+      <Atifex/>
+      <Hefter/>
+      <Betrex/>
+      <Hatrex/>
+      <Hitoera/>
+      <Haftrop/>
+      <Harirtox/>
+      <Digital/>
       
       
 
 
-    </div>
-    </div>
+    </Routes>
+    
   );
 }
 

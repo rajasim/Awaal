@@ -5,7 +5,7 @@ const Anicard = () => {
   return (
     <div className="anicard-container">
       <div className="anicard-box">
-        <img src="/images/box9.jpeg" alt="MXDR top" className="anicard-top-img" />
+        <img src="/images/Your paragraph text .gif" alt="MXDR top" className="anicard-top-img" />
         <div className="anicard-content">
           <div className="anicard-icon">🛡️</div>
           <h3>Managed XDR / MXDR</h3>
