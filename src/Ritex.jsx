@@ -23,7 +23,7 @@ const Ritex = () => {
             <li>Database integration</li>
             <li>Built using HTML5, CSS3, JS, React, Laravel, etc.</li>
           </ul>
-          <span className="tag tag-purple">Ideal for Startups, Enterprises, Tech Products, B2B Portals</span>
+          <span className="tagg tag-purple">Ideal for Startups, Enterprises, Tech Products, B2B Portals</span>
         </div>
 
         {/* Card 2 */}
@@ -39,7 +39,7 @@ const Ritex = () => {
             <li>Secure payment gateway integration</li>
             <li>Order tracking & CRM integration</li>
           </ul>
-          <span className="tag tag-orange">Designed for: Retailers, D2C Brands, Marketplaces</span>
+          <span className="tagg tag-orange">Designed for: Retailers, D2C Brands, Marketplaces</span>
         </div>
 
         {/* Card 3 */}
@@ -55,7 +55,7 @@ const Ritex = () => {
             <li>Cross-browser compatibility</li>
             <li>Fast load speeds & performance tuning</li>
           </ul>
-          <span className="tag tag-teal">100% tested on all major browsers and screen sizes</span>
+          <span className="tagg tag-teal">100% tested on all major browsers and screen sizes</span>
         </div>
 
         {/* Row 2 — Card 4 */}
@@ -71,7 +71,7 @@ const Ritex = () => {
             <li>Blog/news modules, media galleries</li>
             <li>Role-based access & version control</li>
           </ul>
-          <span className="tag tag-blue">Best for: Blogs, News Portals, Corporate Sites, Intranets</span>
+          <span className="tagg tag-blue">Best for: Blogs, News Portals, Corporate Sites, Intranets</span>
         </div>
 
         {/* Row 2 — Card 5 */}
@@ -87,7 +87,7 @@ const Ritex = () => {
             <li>SEO-ready, fast loading</li>
             <li>Integrated with marketing tools</li>
           </ul>
-          <span className="tag tag-pink">Great for: Campaigns, Product Launches, Lead Capture</span>
+          <span className="tagg tag-pink">Great for: Campaigns, Product Launches, Lead Capture</span>
         </div>
       </div>
     </div>

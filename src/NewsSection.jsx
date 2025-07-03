@@ -14,7 +14,7 @@ export default function NewsSection() {
         <div className="news-card">
           <div className="news-top">
             <span className="news-tag">Cybersecurity</span>
-            <img src="/images/WhatsApp Image 2025-06-11 at 7.48.05 PM.jpeg" alt="Cybersecurity News" />
+            <img src="/images/Untitled design .gif" alt="Cybersecurity News" />
           </div>
           <div className="news-content">
             <p className="news-date">June 15, 2023</p>
@@ -32,7 +32,7 @@ export default function NewsSection() {
         <div className="news-card">
           <div className="news-top">
             <span className="news-tag">Technology</span>
-            <img src="/images/box9.jpeg" alt="AI in Security" />
+            <img src="/images/Awwal News Image .gif" alt="AI in Security" />
           </div>
           <div className="news-content">
             <p className="news-date">June 8, 2023</p>
@@ -50,7 +50,7 @@ export default function NewsSection() {
         <div className="news-card">
           <div className="news-top">
             <span className="news-tag">Cloud</span>
-            <img src="/images/box9.jpeg" alt="Cloud Security" />
+            <img src="/images/Awwal News Image size .gif" alt="Cloud Security" />
           </div>
           <div className="news-content">
             <p className="news-date">May 30, 2023</p>

@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { FaSearch, FaUser, FaPhone } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaBarsStaggered } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -14,6 +15,8 @@ const Navbar = () => {
   const handleDropdown = (menu) => {
     setOpenDropdown(openDropdown === menu ? null : menu);
   };
+
+  const nav = useNavigate();
 
   return (
     <nav className="navbar">
@@ -66,21 +69,62 @@ const Navbar = () => {
                     <a href="#">Explore the platform →</a>
                   </div>
                   <div className="mega-left-menu">
-                    <div onMouseEnter={() => setHoveredSubItem("email")}>
+                    <div onMouseEnter={() => setHoveredSubItem("VAPT")}>
                       VAPT
                     </div>
-                    <div onMouseEnter={() => setHoveredSubItem("data")}>
+                    <div
+                      onMouseEnter={() =>
+                        setHoveredSubItem("IT Infrastructure")
+                      }
+                    >
                       IT Infrastructure
                     </div>
-                    <div onMouseEnter={() => setHoveredSubItem("xdr")}>
+                    <div
+                      onMouseEnter={() =>
+                        setHoveredSubItem("AI & Automation Services")
+                      }
+                    >
                       AI & Automation Services
                     </div>
-                    <div onMouseEnter={() => setHoveredSubItem("network")}>
+                    <div
+                      onMouseEnter={() =>
+                        setHoveredSubItem("Software Development")
+                      }
+                    >
                       Software Development
                     </div>
-                    <div onMouseEnter={() => setHoveredSubItem("app")}>
+                    <div
+                      onMouseEnter={() =>
+                        setHoveredSubItem("Mobile & Web App Development")
+                      }
+                    >
                       Mobile & Web App Development
                     </div>
+                    <div
+                      onMouseEnter={() =>
+                        setHoveredSubItem("Website Development")
+                      }
+                    >
+                      Website Development
+                    </div>
+                    <div
+                      onMouseEnter={() =>
+                        setHoveredSubItem("Cybersecurity Audits")
+                      }
+                    >
+                      Cybersecurity Audits
+                    </div>
+                    <div
+                      onMouseEnter={() => setHoveredSubItem("Tech Consulting")}
+                    >
+                      Tech Consulting
+                    </div>
+                    <div
+                      onMouseEnter={() => setHoveredSubItem("Data Analytics")}
+                    >
+                      Data Analytics
+                    </div>
+
                     <div onMouseEnter={() => setHoveredSubItem("msps")}></div>
                     <div onMouseEnter={() => setHoveredSubItem("all")}>
                       All Products →
@@ -89,7 +133,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="mega-right">
-                  {hoveredSubItem === "email" && (
+                  {hoveredSubItem === "VAPT" && (
                     <>
                       <h3>Strengthen Your Organization's Cyber Defence</h3>
                       <p>
@@ -99,7 +143,7 @@ const Navbar = () => {
                       </p>
                       <button className="plans-btn">Services →</button>
 
-                      <div className="links-grid">
+                      <div className="links-grid" onClick={() => nav("/vapt")}>
                         <a href="#">Network Security</a>
                         <a href="#">Endpoint Protection</a>
                         <a href="#">Zero Trust Access</a>
@@ -121,7 +165,7 @@ const Navbar = () => {
                     </>
                   )}
 
-                  {hoveredSubItem === "data" && (
+                  {hoveredSubItem === "IT Infrastructure" && (
                     <>
                       <h3>
                         Designing Resilient, Scalable Networks for the Future
@@ -132,7 +176,10 @@ const Navbar = () => {
                       </p>
                       <button className="plans-btn">Services →</button>
 
-                      <div className="links-grid">
+                      <div
+                        className="links-grid"
+                        onClick={() => nav("/it-infrastructure")}
+                      >
                         <a href="#">LAN/WAN Design & Implementation</a>
                         <a href="#">Wireless Network Design & Optimization</a>
                         <a href="#">Data Center & Server Room Setup</a>
@@ -150,7 +197,7 @@ const Navbar = () => {
                     </>
                   )}
 
-                  {hoveredSubItem === "xdr" && (
+                  {hoveredSubItem === "AI & Automation Services" && (
                     <>
                       <h3>Strengthen Your Organization's Cyber Defence</h3>
                       <p>
@@ -175,7 +222,7 @@ const Navbar = () => {
                     </>
                   )}
 
-                  {hoveredSubItem === "network" && (
+                  {hoveredSubItem === "Software Development" && (
                     <>
                       <h3>Accelerate Innovation with Tailored Solutions</h3>
                       <p>
@@ -196,7 +243,7 @@ const Navbar = () => {
                     </>
                   )}
 
-                  {hoveredSubItem === "app" && (
+                  {hoveredSubItem === "Mobile & Web App Development" && (
                     <>
                       <h3>
                         Build Engaging, Cross-Platform Digital Experiences

@@ -1,0 +1,111 @@
+/* Container */
+.migration-container {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Title */
+.migration-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* Subtitle */
+.migration-subtitle {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* Grid layout for cards */
+.migration-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual card */
+.migration-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 35px 30px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.277);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Card hover effect */
+.migration-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon styling */
+.icon {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+/* Card title */
+.migration-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+/* Description */
+.migration-card p {
+  font-size: 1rem;
+  color: #4b5563;
+  flex-grow: 1;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Highlight (green check) */
+.highlight {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #00b67a;
+}
+
+/* Responsive spacing */
+@media (max-width: 600px) {
+  .migration-container {
+    padding: 40px 15px;
+  }
+
+  .migration-title {
+    font-size: 2rem;
+  }
+
+  .migration-subtitle {
+    font-size: 1rem;
+  }
+
+  .migration-card {
+    padding: 25px 20px;
+    min-height: auto;
+  }
+
+  .icon {
+    font-size: 2.4rem;
+  }
+
+  .migration-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .migration-card p {
+    font-size: 0.95rem;
+  }
+}

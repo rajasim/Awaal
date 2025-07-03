@@ -1,0 +1,119 @@
+.hitoera-section {
+  padding: 100px 80px;
+  background-color: #f9fafc;
+  font-family: "Inter", sans-serif;
+}
+
+.hitoera-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.hitoera-left {
+  flex: 1;
+  min-width: 400px;
+  position: relative;
+}
+
+.hitoera-step-circle {
+  position: absolute;
+  top: -25px;  /* Adjusted vertical position */
+  left: -25px; /* Adjusted horizontal position */
+  width: 80px; /* Reduced circle size */
+  height: 80px; /* Reduced circle size */
+  background-color: #f97316;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px; /* Reduced font size */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.hitoera-image-box {
+  background-color: #ffefdb;
+  border-radius: 20px;
+  padding: 40px; /* Padding for the wrapper */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;     /* Align content vertically */
+  width: 100%;             /* Full width of the container */
+  max-width: 550px;        /* Limit the width */
+  height: 360px;           /* Set a fixed height to match the content */
+  box-sizing: border-box;  /* Ensure padding is included in the total height/width calculation */
+}
+
+.hitoera-image {
+  width: 100%;             /* Make the image take up the full width of its container */
+  height: 100%;            /* Make the image take the full height of its container */
+  border-radius: 20px;
+  object-fit: cover;       /* Ensure the image covers the container without distortion */
+}
+
+
+/* RIGHT SIDE */
+.hitoera-right {
+  flex: 1;
+  min-width: 400px;
+}
+
+.hitoera-tag {
+  background-color: #fff0d3;
+  color: #f97316;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.hitoera-heading {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1e1e1e;
+  margin-bottom: 20px;
+}
+
+.hitoera-description {
+  color: #444;
+  font-size: 20px;
+  line-height: 1.75;
+  margin-bottom: 36px;
+  font-weight: 500;
+}
+
+/* CARD */
+.hitoera-card {
+  background-color: #ffffff;
+  border: 2px solid #f97316;
+  border-radius: 18px;
+  padding: 30px 34px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.hitoera-card-heading {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1e1e1e;
+}
+
+.hitoera-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 28px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}

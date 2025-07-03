@@ -1,81 +1,132 @@
 import "./App.css";
-import { lazy } from "react";
-import LazyLoader from "./LazyLoader";
-const Navbar = lazy(() => import("./Navbar"));
-const Videosection = lazy(() => import("./Videosection"));
-const AboutUs = lazy(() => import("./AboutUs"));
-const Services = lazy(() => import("./Services"));
-const ScrollingLogosSection = lazy(() => import("./ScrollingLogosSection"));
-const DarkWebAlert = lazy(() => import("./DarkWebAlert"));
-const NewsSection = lazy(() => import("./NewsSection"));
-const Footer = lazy(() => import("./Ooter"));
-const VaptSection = lazy(() => import("./VaptSection"));
-const TestingApproach = lazy(() => import("./TestingApproach"));
-const ProtectionSteps = lazy(() => import("./ProtectionSteps"));
-const Featured = lazy(() => import("./Featured"));
-const SecuritySolutions = lazy(() => import("./SecuritySolutions"));
-const Deliverables = lazy(() => import("./Deliverables"));
-const DeliverablesGrid = lazy(() => import("./DeliverablesGrid"));
-const SecurityDocumentation = lazy(() => import("./SecurityDocumentation"));
-const Anicard = lazy(() => import("./Anicard"));
-const SupportedPlatforms = lazy(() => import("./SupportedPlatforms"));
-const UnifiedPlatform = lazy(() => import("./UnifiedPlatform"));
-const SecureOrganization = lazy(() => import("./SecureOrganization"));
-const ITInfrastructurePage = lazy(() => import("./ITInfrastructurePage"));
-const CbSection = lazy(() => import("./CbSection"));
-const Benefits = lazy(() => import("./Benefits"));
-const Videofoot = lazy(() => import("./Videofoot"));
-const NextGen = lazy(() => import("./NextGen"));
-const KeyBenefits = lazy(() => import("./KeyBenefits"));
-const Optimize = lazy(() => import("./Optimize"));
-const TechnologyPlatforms = lazy(() => import("./TechnologyPlatforms"));
-const AiHeroSection = lazy(() => import("./AiHeroSection"));
-const EfficiencySection = lazy(() => import("./EfficiencySection"));
-const Pater = lazy(() => import("./Pater"));
-const Piter = lazy(() => import("./Piter"));
-const Rik = lazy(() => import("./rik"));
-const Ellish = lazy(() => import("./Ellish"));
-const Cloud = lazy(() => import("./Cloud"));
+import Navbar from "./Navbar";
+
+import Videosection from "./Videosection";
+
+import AboutUs from "./AboutUs";
+import Services from "./Services";
+import ScrollingLogosSection from "./ScrollingLogosSection";
+import DarkWebAlert from "./DarkWebAlert";
+import NewsSection from "./NewsSection";
+
+import Footer from "./Ooter";
+import VaptSection from "./VaptSection";
+import TestingApproach from "./TestingApproach";
+import ProtectionSteps from "./ProtectionSteps";
+import Featured from "./Featured";
+import SecuritySolutions from "./SecuritySolutions";
+import Deliverables from "./Deliverables";
+import DeliverablesGrid from "./DeliverablesGrid";
+import SecurityDocumentation from "./SecurityDocumentation";
+import Anicard from "./Anicard";
+import SupportedPlatforms from "./SupportedPlatforms";
+import UnifiedPlatform from "./UnifiedPlatform";
+import SecureOrganization from "./SecureOrganization";
+import ITInfrastructurePage from "./ITInfrastructurePage";
+import CbSection from "./CbSection";
+import Benefits from "./Benefits";
+import Videofoot from "./Videofoot";
+import NextGen from "./NextGen";
+import KeyBenefits from "./KeyBenefits";
+import Optimize from "./Optimize";
+import TechnologyPlatforms from "./TechnologyPlatforms";
+import AiHeroSection from "./AiHeroSection";
+import EfficiencySection from "./EfficiencySection";
+import Eater from "./Eater";
+import Piter from "./Piter";
+import Pik from "./Pik";
+import Ellish from "./Ellish";
+import Cloud from "./Cloud";
+import Innovate from "./Innovate";
+import Azure from "./Azure";
+import Watrex from "./Watrex";
+import UniqueHero from "./UniqueHero";
+import Ketra from "./Ketra";
+import Ritex from "./Ritex";
+import Tifeter from "./Tifeter";
+import Rofter from "./Rofter";
+import Toll from "./Toll";
+import Opatise from "./Opatise";
+import Repter from "./Repter";
+import Laptor from "./Laptor";
+import Ktrox from "./Ktrox";
+import Waxter from "./Waxter";
+import Migration from "./Migration";
+import Atifex from "./Atifex";
+import Hefter from "./Hefter";
+import Betrex from "./Betrex";
+import Hatrex from "./Hatrex";
+import Hitoera from "./Hitoera";
+import Haftrop from "./Haftrop";
+import Harirtox from "./Harirtox";
+import Digital from "./Digital";
+import { Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <LazyLoader Component={Navbar} />
-      <LazyLoader Component={Videosection} />
-      <LazyLoader Component={AboutUs} />
-      <LazyLoader Component={ScrollingLogosSection} />
-      <LazyLoader Component={Services} />
-      <LazyLoader Component={DarkWebAlert} />
-      <LazyLoader Component={NewsSection} />
-      <LazyLoader Component={Footer} />
-      <LazyLoader Component={VaptSection} />
-      <LazyLoader Component={TestingApproach} />
-      <LazyLoader Component={Featured} />
-      <LazyLoader Component={ProtectionSteps} />
-      <LazyLoader Component={Anicard} />
-      <LazyLoader Component={SecuritySolutions} />
-      <LazyLoader Component={Deliverables} />
-      <LazyLoader Component={DeliverablesGrid} />
-      <LazyLoader Component={SecurityDocumentation} />
-      <LazyLoader Component={SupportedPlatforms} />
-      <LazyLoader Component={UnifiedPlatform} />
-      <LazyLoader Component={SecureOrganization} />
-      <LazyLoader Component={ITInfrastructurePage} />
-      <LazyLoader Component={CbSection} />
-      <LazyLoader Component={Benefits} />
-      <LazyLoader Component={Videofoot} />
-      <LazyLoader Component={NextGen} />
-      <LazyLoader Component={KeyBenefits} />
-      <LazyLoader Component={Optimize} />
-      <LazyLoader Component={TechnologyPlatforms} />
-      <LazyLoader Component={AiHeroSection} />
-      <LazyLoader Component={EfficiencySection} />
-      <LazyLoader Component={Pater} />
-      <LazyLoader Component={Piter} />
-      <LazyLoader Component={Rik} />
-      <LazyLoader Component={Ellish} />
-      <LazyLoader Component={Cloud} />
-    </>
+    <Routes>
+      <Navbar />
+
+      <Videosection />
+
+      <AboutUs />
+      <ScrollingLogosSection />
+      <Services />
+      <DarkWebAlert />
+
+      <NewsSection />
+      <Footer />
+      <VaptSection />
+      <TestingApproach />
+      <Featured />
+      <ProtectionSteps />
+      <Anicard />
+      <SecuritySolutions />
+      <Deliverables />
+      <DeliverablesGrid />
+      <SecurityDocumentation />
+      <SupportedPlatforms />
+      <UnifiedPlatform />
+      <SecureOrganization />
+      <ITInfrastructurePage />
+      <CbSection />
+      <Benefits />
+      <Videofoot />
+      <NextGen />
+      <KeyBenefits />
+      <Optimize />
+      <TechnologyPlatforms />
+      <AiHeroSection />
+      <EfficiencySection />
+      <Eater />
+      <Piter />
+      <Pik />
+      <Ellish />
+      <Cloud />
+      <Innovate />
+      <Azure />
+      <Watrex />
+      <UniqueHero />
+      <Ketra />
+      <Ritex />
+      <Tifeter />
+      <Rofter />
+      <Toll />
+      <Opatise />
+      <Repter />
+      <Laptor />
+      <Ktrox />
+      <Waxter />
+      <Migration />
+      <Atifex />
+      <Hefter />
+      <Betrex />
+      <Hatrex />
+      <Hitoera />
+      <Haftrop />
+      <Harirtox />
+      <Digital />
+    </Routes>
   );
 }
 

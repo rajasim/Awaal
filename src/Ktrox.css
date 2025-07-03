@@ -1,0 +1,143 @@
+/* ==== Section Layout ==== */
+.ktrox-section {
+  padding: 80px 40px;
+  background-color: #0d1025;
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.ktrox-heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #c864ff;
+  margin-bottom: 12px;
+}
+
+.ktrox-subtext {
+  font-size: 21px;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+}
+
+/* ==== Grid Layout ==== */
+.ktrox-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ⬅️ wider cards */
+  gap: 35px;
+  max-width: 1200px; /* ⬅️ increased width */
+  margin: 0 auto ;
+}
+
+
+/* ==== Tech Card ==== */
+.tech-card {
+  background: #1a1e3a;
+  border-radius: 15px;
+  padding: 40px 30px; /* Increased padding */
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04);
+  min-height: 330px; /* Makes cards taller */
+  width: 40vh;
+}
+
+.tech-card::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 4px;
+  height: calc(100% - 40px);
+  border-radius: 4px;
+}
+
+.card-header {
+  font-size: 20px; /* Larger font */
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.card-header img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* ==== List ==== */
+.tech-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tech-card li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px; /* Increased font size */
+  margin: 14px 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid;
+  color: white; /* fallback text color */
+}
+
+/* ==== Colored Overrides ==== */
+.tech-card li.dot-react        { border-color: #61dafb; color: #61dafb; }
+.tech-card li.dot-angular      { border-color: #dd0031; color: #dd0031; }
+.tech-card li.dot-vue          { border-color: #42b883; color: #42b883; }
+
+.tech-card li.dot-node         { border-color: #68a063; color: #68a063; }
+.tech-card li.dot-python       { border-color: #3776ab; color: #3776ab; }
+.tech-card li.dot-java         { border-color: #f89820; color: #f89820; }
+.tech-card li.dot-net          { border-color: #512bd4; color: #512bd4; }
+.tech-card li.dot-php          { border-color: #8892be; color: #8892be; }
+
+.tech-card li.dot-flutter      { border-color: #02569b; color: #02569b; }
+.tech-card li.dot-kotlin       { border-color: #a97bff; color: #a97bff; }
+.tech-card li.dot-swift        { border-color: #f05138; color: #f05138; }
+.tech-card li.dot-reactnative  { border-color: #00d8ff; color: #00d8ff; }
+
+.tech-card li.dot-postgres     { border-color: #336791; color: #336791; }
+.tech-card li.dot-mongo        { border-color: #4db33d; color: #4db33d; }
+.tech-card li.dot-mysql        { border-color: #f29111; color: #f29111; }
+.tech-card li.dot-firebase     { border-color: #ffca28; color: #ffca28; }
+
+.tech-card li.dot-aws          { border-color: #ff9900; color: #ff9900; }
+.tech-card li.dot-azure        { border-color: #007fff; color: #007fff; }
+.tech-card li.dot-docker       { border-color: #0db7ed; color: #0db7ed; }
+.tech-card li.dot-jenkins      { border-color: #d33833; color: #d33833; }
+.tech-card li.dot-actions      { border-color: #28a745; color: #28a745; }
+
+.tech-card li.dot-postman      { border-color: #ff6c37; color: #ff6c37; }
+.tech-card li.dot-swagger      { border-color: #85ea2d; color: #85ea2d; }
+.tech-card li.dot-graphql      { border-color: #e10098; color: #e10098; }
+.tech-card li.dot-rest         { border-color: #cccccc; color: #cccccc; }
+
+/* ==== Button ==== */
+.ktrox-button-wrapper {
+  margin-top: 60px;
+}
+
+.ktrox-button {
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(135deg, #a33df0, #6c4bf4);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ktrox-button:hover {
+  opacity: 0.85;
+}

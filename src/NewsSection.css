@@ -48,7 +48,7 @@
 
 .news-top {
   background-color: #0b2f36;
-  padding: 32px 20px;
+ 
   position: relative;
   display: flex;
   flex-direction: column;
@@ -56,9 +56,9 @@
 }
 
 .news-top img {
-  width: 260px;
-  height: 200px;
-  margin-top: 20px;
+  width: 579px;
+  height: 250px;
+ 
 }
 
 .news-tag {

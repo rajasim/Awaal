@@ -6,7 +6,7 @@ const Anicard = () => {
     <div className="anicard-container">
       <div className="anicard-box">
         <img
-          src="/images/box9.jpeg"
+          src="/images/Your paragraph text .gif"
           alt="MXDR top"
           className="anicard-top-img"
         />

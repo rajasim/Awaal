@@ -1,0 +1,82 @@
+.harirtox-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom right, #6d6bff, #9a3dfd);
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+.harirtox-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.harirtox-title span {
+  color: #80ffd3; /* bright aqua/green accent */
+}
+
+.harirtox-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+  color: #f3f3f3;
+}
+
+.harirtox-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 16px 28px;
+  font-size: 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.primary-btn {
+  background-color: white;
+  color: #6d6bff;
+}
+
+.primary-btn:hover {
+  background-color: #eaeaea;
+}
+
+.secondary-btn {
+  background-color: #886eff;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background-color: #7b61e9;
+}
+
+.harirtox-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.highlight-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 14px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

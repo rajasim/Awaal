@@ -16,7 +16,7 @@ function TechnologyPlatforms() {
 
       {/* Foreground Content */}
       <div className="tech-content">
-        <h2 className="section-title">Technology & Platforms</h2>
+        <h2 className="section-titlee">Technology & Platforms</h2>
 
         {/* Icon Boxes */}
         <div className="icon-grid">

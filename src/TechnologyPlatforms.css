@@ -28,9 +28,10 @@
   background: rgba(0, 0, 0, 0.4); /* Optional overlay */
 }
 
-.section-title {
+.section-titlee{
   text-align: center;
   font-size: 56px;
+  color: #ffffff;
 }
 
 .icon-grid {
@@ -45,7 +46,7 @@
   padding: 40px 50px;
   border-radius: 16px;
   text-align: center;
-  min-width: 200px;
+  min-width: 180px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
