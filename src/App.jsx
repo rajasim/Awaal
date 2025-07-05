@@ -65,6 +65,7 @@ import Lixs from "./Lixs";
 import Ioteor from "./Ioteor";
 import Wiptex from "./Wiptex";
 import WhyAwwal from "./WhyAwwal";
+import NewsMain from "./NewsMain";
 import { Routes, Route } from "react-router-dom";
 
 
@@ -99,6 +100,7 @@ function App() {
             <Ioteor/>
             <Wiptex/>
             <WhyAwwal/>
+            <NewsMain/>
           </>
         }
       />
