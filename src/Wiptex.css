@@ -1,0 +1,98 @@
+.wiptex-container {
+  background: #f3f5ff;
+  padding: 80px 40px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+}
+
+.wiptex-heading {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.wiptex-subheading {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.wiptex-box {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 18px;
+  margin: 0 auto 40px;
+  max-width: 900px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.46);
+}
+
+.wiptex-box-heading {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.wiptex-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.tag {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #eee;
+}
+
+.red { color: #e74c3c; }
+.blue { color: #2980b9; }
+.green { color: #27ae60; }
+.purple { color: #9b59b6; }
+.orange { color: #f39c12; }
+.teal { color: #16a085; }
+.pink { color: #d63384; }
+.gray { color: #7f8c8d; }
+
+.wiptex-actions {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.custom-solution-btn {
+  background: linear-gradient(90deg, #6e00ff, #c300ff);
+  color: #fff;
+  padding: 14px 26px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.case-study-btn {
+  background: #ffffff;
+  border: 2px solid #d3d3f7;
+  color: #5e5eaa;
+  padding: 14px 26px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.wiptex-benefits {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}

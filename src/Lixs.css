@@ -1,0 +1,79 @@
+.lixs-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  background-color: #f5f7fb;
+  color: #1f1f1f;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #376c85;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ff9900, #ff9900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.header p {
+  color: #ccc;
+  font-size: 19px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.comparison-section {
+  text-align: center;
+}
+
+.comparison-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.comparison-table {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.header-row .column {
+  font-weight: bold;
+  background-color: #ffeef0;
+  color: #d6336c;
+}
+
+.column {
+  flex: 1;
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.traditional {
+  background-color: #ffbbc3;
+}
+
+.awwad {
+  background-color: #a0ffc9;
+}

@@ -60,7 +60,13 @@ import Hitoera from "./Hitoera";
 import Haftrop from "./Haftrop";
 import Harirtox from "./Harirtox";
 import Digital from "./Digital";
+import Fotrom from "./Fotrom";
+import Lixs from "./Lixs";
+import Ioteor from "./Ioteor";
+import Wiptex from "./Wiptex";
+import WhyAwwal from "./WhyAwwal";
 import { Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
@@ -88,6 +94,11 @@ function App() {
             <Tifeter />
             <Rofter />
             <Toll />
+            <Fotrom/>
+            <Lixs/>
+            <Ioteor/>
+            <Wiptex/>
+            <WhyAwwal/>
           </>
         }
       />

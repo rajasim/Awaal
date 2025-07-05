@@ -109,16 +109,21 @@
 }
 
 .card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.521);
-  padding: 25px;
-  max-width: 320px;
-  transition: transform 0.3s;
+ background: #1c1f2c;
+    border-radius: 20px;
+    padding: 40px 36px;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    min-height: 360px;
+transition: transform 0.3s ease, background 0.3s ease;
+flex: 1 1 32%;
+    min-width: 340px;
+    max-width: 440px;
 }
 
 .card:hover {
   transform: translateY(-5px);
+  
 }
 
 .card-img {

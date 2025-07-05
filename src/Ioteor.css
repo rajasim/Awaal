@@ -1,0 +1,148 @@
+.ioteor-container {
+  background-color: #0b1220;
+  color: #ffffff;
+  padding: 100px 60px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.approach-button {
+  background: #1f2230;
+  color: #ffb347;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  cursor: default;
+}
+
+.ioteor-heading {
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.gradient-heading {
+  background: linear-gradient(90deg, #3ab0ff, #a56cf5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.ioteor-subtext {
+  color: #cccccc;
+  font-size: 22px;
+  margin-bottom: 80px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ioteor-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.card {
+  background: #1c1f2c;
+  border-radius: 20px;
+  padding: 40px 36px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  min-height: 360px;
+}
+
+.icon {
+  font-size: 48px;
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.icon.blue { background: #3a8dff; }
+.icon.green { background: #28c76f; }
+.icon.purple { background: #a56cf5; }
+.icon.orange { background: #ffa755; }
+
+.card h3 {
+  margin-bottom: 18px;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #dddddd;
+  margin-bottom: 16px;
+}
+
+.link-text {
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.link-text.blue { color: s#3a8dff; }
+.link-text.green { color: #28c76f; }
+.link-text.purple { color: #a56cf5; }
+.link-text.orange { color: #ffa755; }
+
+.process-flow {
+  background-color: #1c1f2c;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.process-flow h2 {
+  font-size: 28px;
+  margin-bottom: 28px;
+  color: #ffffff;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.step {
+  font-size: 20px;
+  font-weight: 600;
+  color: #eeeeee;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dash {
+  font-size: 30px;
+  color: #777;
+}
+
+.circle {
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+}
+
+.circle.blue { background: #3a8dff; }
+.circle.green { background: #28c76f; }
+.circle.purple { background: #a56cf5; }
+.circle.orange { background: #ffa755; }
