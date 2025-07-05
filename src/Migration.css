@@ -1,9 +1,10 @@
 .migration-container {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: fit-content;
+  min-height: 125vh;
   overflow: hidden;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   color: white;
 }
 
@@ -19,14 +20,18 @@
 
 .migration-overlay {
   position: absolute;
-  top: 5%;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   width: 100%;
+  height: 125vh;
   max-width: 550px;
-  padding: 0 40px;
+  padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .migration-tag {
