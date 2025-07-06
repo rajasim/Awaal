@@ -1,8 +1,18 @@
 .infra-wrapper {
   width: 100vw;
-  height: 100%; /* Increased from 100vh to 120vh */
+  height: 100%;
   position: relative;
   overflow: hidden;
+}
+
+.infra-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .infra-content {
@@ -26,17 +36,14 @@
 .infra-right {
   flex: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-  height: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
   padding-left: 40px;
 }
 
 .infra-dashboard-img {
   height: 620px;
-  max-width: 95%;
-
+  max-width: 100%;
   transition: transform 0.4s ease;
 }
 
@@ -77,13 +84,8 @@ h1 {
 }
 
 @keyframes blinkLine {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .infra-left p {
@@ -119,13 +121,8 @@ h1 {
 }
 
 @keyframes blinkDot {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.3;
-  }
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
 }
 
 .infra-butns {
