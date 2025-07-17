@@ -3,7 +3,7 @@ import './SupportedPlatforms.css';
 
 const SupportedPlatforms = () => {
   return (
-    <section className="platforms-section" style={{ backgroundImage: "url('/images/green-dots-on-white-background-30awtuhczbxaaqtq.jpg')" }}>
+    <section className="platforms-section" style={{ backgroundImage: "url('/images/support.jpg')" }}>
       <div className="platforms-content">
         <span className="platforms-badge">Cloud Expertise</span>
         <h2 className="platforms-title">Supported Platforms</h2>

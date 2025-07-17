@@ -1,0 +1,95 @@
+.aibox-wrapper {
+  background-color: #081f1c;
+  min-height: 100vh;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.aibox-card {
+  background: rgba(15, 35, 31, 0.753);
+  border-radius: 24px;
+  padding: 60px;
+  max-width: 1600px;
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 255, 132, 0.7);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e7fced;
+}
+
+/* Image Section */
+.aibox-image {
+  text-align: center;
+}
+
+.aibox-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  margin-bottom: 25px;
+}
+
+/* Bottom Section Layout */
+.aibox-bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 60px;
+  flex-wrap: nowrap;
+}
+
+/* Left: Bullet Points */
+.aibox-bullet-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  min-width: 450px;
+}
+
+.aibox-bullet-points li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #e0e0e0;
+}
+
+.aibox-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.aibox-green { background-color: #00ff88; }
+.aibox-blue { background-color: #3faaff; }
+.aibox-purple { background-color: #c080ff; }
+.aibox-yellow { background-color: #ffe066; }
+.aibox-red { background-color: #ff4c4c; }
+.aibox-orange { background-color: #ffa500; }
+.aibox-teal { background-color: #1abc9c; }
+
+/* Right: Heading & Paragraph */
+.aibox-text-info {
+  flex: 1;
+  padding-left: 40px;
+  align-self: flex-start;
+  max-width: 600px;
+}
+
+.aibox-text-info h2 {
+  color: #39ff88;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.aibox-text-info p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #c9d1d9;
+}

@@ -86,8 +86,8 @@
 }
 
 .cb-data-img {
-  max-width: 100%;
-  height: auto;
+  width: 382px;
+  height: 250px;
   display: block;
   margin: auto;
 }

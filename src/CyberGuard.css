@@ -1,0 +1,148 @@
+.cyberguard-container {
+  padding: 60px 30px;
+  background: #f9f9fc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cyberguard-heading {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cyberguard-subheading {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.cyberguard-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+.cyberguard-left {
+  flex: 1;
+  min-width: 350px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cyberguard-box {
+  background: #fff;
+  border-left: 6px solid #1cbf73;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  gap: 24px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  align-items: center;
+}
+
+.cyberguard-box h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.cyberguard-box p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+.cyberguard-right {
+  flex: 1;
+  min-width: 350px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cyberguard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.cyberguard-tile {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.cyberguard-tile h4 {
+  font-size: 18px;
+  margin: 12px 0 6px;
+}
+
+.cyberguard-tile p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+/* Bigger icons and uniform shape */
+.icon-wrapper {
+  width: 140px;
+  height: 80px;
+  background-color: #eafaf1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-wrapper img {
+  width: 140px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Industry block */
+.cyberguard-industry {
+  background: linear-gradient(to right, #1cbf73, #149e5c);
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+  border-radius: 16px;
+}
+
+.cyberguard-industry h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.cyberguard-industry p {
+  font-size: 19px;
+  margin: 0;
+}
+
+/* Certifications */
+.cyberguard-certifications {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.cyberguard-certifications span {
+  background: #9e9d9d;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #222;
+}

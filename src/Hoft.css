@@ -1,0 +1,101 @@
+.hm-wrapperer {
+  background-color: #181b2b;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.hm-headline h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.hm-green {
+  color: #00ff84;
+}
+
+.hm-yellow {
+  color: #ffcc33;
+}
+
+.hm-subscribe {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hm-input {
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  width: 380px;
+  border-radius: 10px;
+  border: none;
+}
+
+.hm-try-btn {
+  background-color: #dfffa9;
+  color: #000;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hm-try-btn:hover {
+  background-color: #c5f479;
+}
+
+.hm-video-section {
+  margin-top: 3rem;
+  position: relative;
+}
+
+.hm-radar-video {
+  width: 1200px; /* Fixed width */
+  height: 675px; /* Fixed height to maintain 16:9 aspect ratio */
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 132, 0.7);
+  object-fit: cover; /* Ensures image fits inside the container without cropping */
+}
+
+.hm-video-overlay {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #00ff84;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 0 6px #000;
+}
+
+.hm-priority {
+  color: #ffcc33;
+}
+
+.hm-tags {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hm-tag {
+  background-color: #072c3b;
+  border: 2px solid #00ff84;
+  color: #00ff84;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}

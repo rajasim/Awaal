@@ -1,0 +1,197 @@
+.bitriz {
+  background: #0b0d19;
+  padding: 100px 50px;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.bitriz-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #8ec3ff;
+  margin-bottom: 20px;
+}
+
+.bitriz-subtitle {
+  font-size: 20px;
+  color: #a0aec0;
+  margin-bottom: 50px;
+}
+
+.bitriz-box {
+  background: #1c1e2c;
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.bitriz-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 380px;           /* Fixed container height */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #1c1e2c;      /* Optional: to fill empty space */
+}
+
+.airport-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;      /* Ensures no cropping — full image always visible */
+  border-radius: 16px;
+  display: block;
+}
+
+.bitriz-image-labels {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.label.pink {
+  color: #ff69b4;
+}
+.label.purple {
+  color: #e28aff;
+}
+.label.blue {
+  color: #30d4ff;
+}
+
+.bitriz-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.bitriz-left {
+  flex: 1;
+  min-width: 350px;
+}
+
+.highlight-title {
+  font-size: 31px;
+  font-weight: 800;
+  background: linear-gradient(to right, #00ffc3, #b76bf5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 21px;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.features {
+  list-style: none;
+  padding-left: 0;
+  color: #eee;
+}
+
+.features li {
+  font-size: 17px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.dot.cyan {
+  background-color: #00ffc3;
+}
+.dot.pink {
+  background-color: #ff69b4;
+}
+.dot.blue {
+  background-color: #30d4ff;
+}
+.dot.green {
+  background-color: #00ff99;
+}
+
+.bitriz-right {
+  flex: 1;
+  min-width: 320px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.metric {
+  background: #2c2f40;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.metric-label {
+  font-size: 16px;
+  color: #bbb;
+  margin-top: 6px;
+}
+
+.metric-value.pink {
+  color: #ff69b4;
+}
+.metric-value.purple {
+  color: #e28aff;
+}
+.metric-value.red {
+  color: #ff5c5c;
+}
+.metric-value.green {
+  color: #00ff99;
+}
+
+@media (max-width: 768px) {
+  .bitriz-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bitriz-right {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .bitriz-title {
+    font-size: 36px;
+  }
+
+  .highlight-title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .airport-img {
+    width: 100%;
+    height: auto;
+  }
+}

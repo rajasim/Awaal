@@ -1,0 +1,114 @@
+.transform-wrapper {
+    background: linear-gradient(180deg, #551d82 20%, #6a1a68 50%, #a21b49 100%);
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.transform-content {
+  max-width: 1400px;
+  text-align: center;
+  color: #fff;
+}
+
+.transform-content h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.highlightt {
+  color: #ffc400;
+  font-size: larger;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.services-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;     /* Force one row */
+  gap: 20px;
+  margin-bottom: 30px;
+  overflow-x: auto;       /* Scroll if too wide */
+  padding-bottom: 10px;
+}
+
+.service-cardes {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 18px 12px;
+  width: 130px;
+  min-height: 140px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.service-cardes img {
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.service-cardes p {
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.service-cardes small {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.transform-btnnn {
+  background: linear-gradient(90deg, #ff7b00, #ff006a);
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.transform-btnnn img {
+  height: 20px;
+}
+
+.features-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  color: #bbb;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.guide-btn {
+  border: 1px solid #fff;
+  background: transparent;
+  padding: 10px 22px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}

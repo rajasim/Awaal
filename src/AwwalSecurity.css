@@ -1,0 +1,181 @@
+.awwal-section {
+  background: #0c0f1e;
+  color: #fff;
+  padding: 100px 60px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.awwal-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, #00ff99, #00b67a);
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.awwal-title {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.awwal-highlight {
+  background: linear-gradient(90deg, #343785, #cf7dd3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+
+.awwal-subtitle {
+  color: #adb3c1;
+  font-size: 20px;
+  margin-bottom: 60px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.awwal-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px; /* increased gap */
+}
+
+.awwal-left {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.awwal-card {
+  width: 450px; /* increased from 380px */
+  padding: 30px 25px;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.corporate {
+  border: 3px solid #e03f3f;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.security {
+  border: 3px solid #3f88e0;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(63, 136, 224, 0.4);
+}
+
+.awwal-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.points-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 25px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.awwal-right {
+  width: 500px; /* increased from 420px */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px 25px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.metrics-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.metric {
+  margin-bottom: 30px;
+}
+
+.metric-label {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #ccc;
+}
+
+.metric-bar {
+  height: 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.bar-green {
+  background: linear-gradient(to right, #30e179, #68e6a2);
+  width: 85%;
+}
+
+.bar-blue {
+  background: linear-gradient(to right, #46a4ff, #3d80ff);
+  width: 75%;
+}
+
+.bar-pink {
+  background: linear-gradient(to right, #ff70b5, #aa7bff);
+  width: 95%;
+}
+
+.metric-value {
+  font-size: 14px;
+  color: #a0aec0;
+}
+
+.awwal-savings {
+  background: linear-gradient(135deg, #266b57, #06297b);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.awwal-savings-subtext {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 6px;
+  color: #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .awwal-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .awwal-right,
+  .awwal-card {
+    width: 100%; /* ensure full width on mobile */
+  }
+
+  .points-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .awwal-title {
+    font-size: 36px;
+  }
+
+  .awwal-subtitle {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,109 @@
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 80px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #271a5c 40%,  #4b3084 100%);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.content-left {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-left h1 {
+  font-size: 68px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.connect {
+  color: #00f0ff;
+  text-shadow: 0 0 12px #00f0ff;
+}
+
+.create {
+  color: #937bff;
+}
+
+.subtextet {
+  font-size: 24px;
+  line-height: 1.7;
+  margin: 20px 0 35px;
+  max-width: 95%;
+}
+
+.tagses {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 45px;
+  flex-wrap: wrap;
+}
+
+.tages {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.tages img {
+  width: 18px;
+  height: 18px;
+}
+
+.buttons {
+  display: flex;
+  gap: 25px;
+}
+
+.launch-btn, .consult-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.launch-btn {
+  background-color: #a678ff;
+  color: white;
+}
+
+.consult-btn {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+.launch-btn img,
+.consult-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.content-right {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphic-img {
+ 
+  max-width: 700px;
+  height: 800px;
+  object-fit: contain;
+}

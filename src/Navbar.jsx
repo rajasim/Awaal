@@ -30,12 +30,11 @@ const Navbar = () => {
 
       <div className="navbar-center" ref={centernav}>
         {[
-          "PRODUCTS",
-          "SOLUTIONS",
-          "RESOURCES",
-          "SUPPORT",
-          "PARTNER & MSP",
-          "SMALL BUSINESS CENTER",
+          "SERVICES",
+          "WHY AWWAL",
+          "WHAT WE DO",
+          "CONTACT US",
+         
         ].map((item, i) => (
           <div
             key={i}
@@ -55,7 +54,7 @@ const Navbar = () => {
             }}
           >
             {item}
-            {item === "PRODUCTS" && openDropdown === "products" && (
+            {item === "SERVICES" && openDropdown === "services" && (
               <div className="mega-dropdown">
                 <div className="mega-left">
                   <div className="mega-platform-box">
@@ -69,71 +68,59 @@ const Navbar = () => {
                     <a href="#">Explore the platform →</a>
                   </div>
                   <div className="mega-left-menu">
-                    <div onMouseEnter={() => setHoveredSubItem("VAPT")}>
-                      VAPT
+                    <div onMouseEnter={() => setHoveredSubItem("CYBERSECURITY")}>
+                     CYBERSECURITY
                     </div>
-                    <div
-                      onMouseEnter={() =>
-                        setHoveredSubItem("IT Infrastructure")
-                      }
-                    >
-                      IT Infrastructure
-                    </div>
+                    
                     <div
                       onMouseEnter={() =>
                         setHoveredSubItem("AI & Automation Services")
                       }
                     >
-                      AI & Automation Services
+                      AI & Automation 
                     </div>
                     <div
                       onMouseEnter={() =>
-                        setHoveredSubItem("Software Development")
+                        setHoveredSubItem("CLOUD")
                       }
                     >
-                      Software Development
+                      CLOUD
                     </div>
                     <div
                       onMouseEnter={() =>
-                        setHoveredSubItem("Mobile & Web App Development")
+                        setHoveredSubItem("SOFTWARE DEV")
                       }
                     >
-                      Mobile & Web App Development
+                      SOFTWARE DEV
                     </div>
                     <div
                       onMouseEnter={() =>
-                        setHoveredSubItem("Website Development")
+                        setHoveredSubItem("IT INFRA")
                       }
                     >
-                      Website Development
+                      IT INFRA
                     </div>
                     <div
                       onMouseEnter={() =>
-                        setHoveredSubItem("Cybersecurity Audits")
+                        setHoveredSubItem("WEBSITE DEV")
                       }
                     >
-                      Cybersecurity Audits
+                      WEBSITE DEV
                     </div>
                     <div
-                      onMouseEnter={() => setHoveredSubItem("Tech Consulting")}
+                      onMouseEnter={() =>
+                        setHoveredSubItem("MIGRATION")
+                      }
                     >
-                      Tech Consulting
+                      MIGRATION
                     </div>
-                    <div
-                      onMouseEnter={() => setHoveredSubItem("Data Analytics")}
-                    >
-                      Data Analytics
-                    </div>
-
-                    <div onMouseEnter={() => setHoveredSubItem("msps")}></div>
-                    <div onMouseEnter={() => setHoveredSubItem("all")}>
-                      All Products →
-                    </div>
+                    
+                    
                   </div>
                 </div>
 
                 <div className="mega-right">
-                  {hoveredSubItem === "VAPT" && (
+                  {hoveredSubItem === "CYBERSECURITY" && (
                     <>
                       <h3>Strengthen Your Organization's Cyber Defence</h3>
                       <p>
@@ -141,7 +128,7 @@ const Navbar = () => {
                         risk, detect threats early, and improve your overall
                         security posture.
                       </p>
-                      <button className="plans-btn">Services →</button>
+                      <button className="plans-btnon">Services →</button>
 
                       <div className="links-grid" onClick={() => nav("/vapt")}>
                         <a href="#">Network Security</a>
@@ -165,7 +152,7 @@ const Navbar = () => {
                     </>
                   )}
 
-                  {hoveredSubItem === "IT Infrastructure" && (
+                  {hoveredSubItem === "CLOUD" && (
                     <>
                       <h3>
                         Designing Resilient, Scalable Networks for the Future
@@ -174,11 +161,11 @@ const Navbar = () => {
                         We engineer network infrastructure that supports your
                         business today—and scales for tomorrow.
                       </p>
-                      <button className="plans-btn">Services →</button>
+                      <button className="plans-btnon">Services →</button>
 
                       <div
                         className="links-grid"
-                        onClick={() => nav("/it-infrastructure")}
+                        onClick={() => nav("/CLOUD")}
                       >
                         <a href="#">LAN/WAN Design & Implementation</a>
                         <a href="#">Wireless Network Design & Optimization</a>
@@ -205,9 +192,10 @@ const Navbar = () => {
                         risk, detect threats early, and improve your overall
                         security posture.
                       </p>
-                      <button className="plans-btn">Services →</button>
+                      <button className="plans-btnon">Services →</button>
 
-                      <div className="links-grid">
+                      <div className="links-grid"
+                       onClick={() => nav("/AI & Automation Services")}>
                         <a href="#">Robotic Process Automation (RPA)</a>
                         <a href="#">Custom Machine Learning Solutions</a>
                         <a href="#">Real-Time Predictive Analytics</a>
@@ -222,15 +210,16 @@ const Navbar = () => {
                     </>
                   )}
 
-                  {hoveredSubItem === "Software Development" && (
+                  {hoveredSubItem === "SOFTWARE DEV" && (
                     <>
                       <h3>Accelerate Innovation with Tailored Solutions</h3>
                       <p>
                         We turn your ideas into high-performance, scalable
                         applications built with security and agility.
                       </p>
-                      <button className="plans-btn">Explore Network →</button>
-                      <div className="links-grid">
+                      <button className="plans-btnon">Explore Network →</button>
+                      <div className="links-grid"
+                      onClick={() => nav("/SOFTWARE DEV")}>
                         <a href="#">Fully Customized Application Development</a>
                         <a href="#">Agile Development & Continuous Delivery</a>
                         <a href="#">Scalable Architecture & Secure Coding</a>
@@ -239,11 +228,11 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Free Tools</h4>
                       <div className="links-grid"></div>
-                      <button className="plans-btn">View XDR →</button>
+                      <button className="plans-btnon">View XDR →</button>
                     </>
                   )}
 
-                  {hoveredSubItem === "Mobile & Web App Development" && (
+                  {hoveredSubItem === "IT INFRA" && (
                     <>
                       <h3>
                         Build Engaging, Cross-Platform Digital Experiences
@@ -252,8 +241,9 @@ const Navbar = () => {
                         [We create responsive apps that deliver value across all
                         devices.]
                       </p>
-                      <button className="plans-btn">View Details →</button>
-                      <div className="links-grid">
+                      <button className="plans-btnon">View Details →</button>
+                      <div className="links-grid"
+                       onClick={() => nav("/IT INFRA")}>
                         <h3>Services</h3>
                         <a href="#">iOS, Android & Web App Development</a>
                         <a href="#">User-Centric UI/UX Design</a>
@@ -263,7 +253,7 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Free Tools</h4>
                       <div className="links-grid"></div>
-                      <button className="plans-btn">View XDR →</button>
+                      <button className="plans-btnon">View XDR →</button>
                     </>
                   )}
 
@@ -271,15 +261,140 @@ const Navbar = () => {
                     <>
                       <h3>Security for MSPs</h3>
                       <p>[Insert MSPs content here]</p>
-                      <button className="plans-btn">See MSP Solutions →</button>
+                      <button className="plans-btnon">See MSP Solutions →</button>
                     </>
                   )}
+                   {hoveredSubItem === "WEBSITE DEV" && (
+                    <>
+                      <h3>Accelerate Innovation with Tailored Solutions</h3>
+<p>
+  We turn your ideas into high-performance, scalable applications built with security and agility.
+</p>
+<button className="plans-btnon">Services →</button>
+
+<div className="links-grid"
+ onClick={() => nav("/WEBSITE DEV")}>
+  <a href="#">Fully Customized Application Development</a>
+  <a href="#">Agile Development & Continuous Delivery</a>
+  <a href="#">Scalable Architecture & Secure Coding</a>
+  <a href="#">Integration with Existing Systems</a>
+</div>
+                      <hr style={{ margin: "1rem 0" }} />
+                      <h4>Free Tools</h4>
+                      <div className="links-grid">
+                        <a href="#">Free Email Threat Scan</a>
+                        <a href="#">Build and Price</a>
+                      </div>
+                    </>
+                  )}
+                   {hoveredSubItem === "MIGRATION" && (
+                    <>
+                      <h3>Protect & Control Your Network Infrastructure</h3>
+<p>
+  We implement intelligent network protection using AI and modern segmentation strategies.
+</p>
+<button className="plans-btnon">Services →</button>
+
+<div className="links-grid"  
+onClick={() => nav("/MIGRATION")}>
+  <a href="#">Firewall Configuration & Management</a>
+  <a href="#">IDS/IPS with AI Enhancement</a>
+  <a href="#">Data Loss Prevention (DLP)</a>
+  <a href="#">AI-based Network Behavior Analytics (NBA)</a>
+  <a href="#">Network Segmentation & Microsegmentation</a>
+</div>
+                      <hr style={{ margin: "1rem 0" }} />
+                      <h4>Free Tools</h4>
+                      <div className="links-grid">
+                        <a href="#">Free Email Threat Scan</a>
+                        <a href="#">Build and Price</a>
+                      </div>
+                    </>
+                  )}
+                  {hoveredSubItem === "Managed XDR/MXDR" && (
+                    <>
+                     <h3>Enhance Your Security with Advanced Detection & Response</h3>
+<p>
+  Our XDR/MXDR solutions provide real-time threat detection, automated responses, and 24/7 monitoring for complete protection of your infrastructure.
+</p>
+<button className="plans-btnon">Services →</button>
+
+<div className="links-grid"
+ onClick={() => nav("/Managed XDR/MXDR")}>
+  <a href="#">Zero Trust Endpoint Access</a>
+  <a href="#">AI-powered Endpoint Detection & Response (EDR)</a>
+  <a href="#">Unified Threat Detection (Endpoint, Network, Cloud)</a>
+  <a href="#">Cloud & SaaS Security Monitoring</a>
+  <a href="#">Threat Intelligence-Driven Detection</a>
+</div>
+                      <hr style={{ margin: "1rem 0" }} />
+                      <h4>Free Tools</h4>
+                      <div className="links-grid">
+                        <a href="#">Free Email Threat Scan</a>
+                        <a href="#">Build and Price</a>
+                      </div>
+                    </>
+                  )}
+                  {hoveredSubItem === "EDR/NGAV Protection" && (
+                    <>
+                     <h3>Next-Gen Endpoint Security for Proactive Threat Prevention</h3>
+<p>
+  Our EDR/NGAV solutions combine advanced AI-driven prevention and real-time behavioral analytics to secure your endpoints against modern cyber threats.
+</p>
+<button className="plans-btnon">Services →</button>
+
+<div className="links-grid"
+ onClick={() => nav("/EDR/NGAV Protection")}>
+  <a href="#">AI-Powered Malware & Ransomware Prevention</a>
+  <a href="#">Behavior-Based Threat Detection & Response</a>
+  <a href="#">Real-Time Endpoint Activity Monitoring</a>
+  <a href="#">Automated Threat Containment & Remediation</a>
+  <a href="#">Centralized Visibility with Threat Intelligence Integration</a>
+</div>
+
+                      <hr style={{ margin: "1rem 0" }} />
+                      <h4>Free Tools</h4>
+                      <div className="links-grid">
+                        <a href="#">Free Email Threat Scan</a>
+                        <a href="#">Build and Price</a>
+                      </div>
+                    </>
+                  )}
+                  {hoveredSubItem === "Email Protection" && (
+                    <>
+                     <h3>Prevent Threats Before They Reach Your Inbox</h3>
+<p>
+  Advanced email security solutions to detect, prevent, and neutralize threats.
+</p>
+<button className="plans-btnon">Services →</button>
+
+<div className="links-grid" 
+ onClick={() => nav("/Email Protection")}>
+  <a href="#">Anti-Phishing & Spoofing Protection</a>
+  <a href="#">Email Encryption</a>
+  <a href="#">Spam Filtering & ATP</a>
+  <a href="#">DMARC, DKIM & SPF Setup</a>
+  <a href="#">AI-driven Phishing Defense</a>
+</div>
+
+
+                      <hr style={{ margin: "1rem 0" }} />
+                      <h4>Free Tools</h4>
+                      <div className="links-grid">
+                        <a href="#">Free Email Threat Scan</a>
+                        <a href="#">Build and Price</a>
+                      </div>
+                    </>
+                  )}
+                  
+
+
 
                   {hoveredSubItem === "all" && (
                     <>
                       <h3>All Products</h3>
                       <p>[Insert overview of all products]</p>
-                      <button className="plans-btn">Browse All →</button>
+                      <button className="plans-btnon">Browse All →</button>
                     </>
                   )}
 
@@ -291,7 +406,7 @@ const Navbar = () => {
                         risk, detect threats early, and improve your overall
                         security posture.
                       </p>
-                      <button className="plans-btn">Services →</button>
+                      <button className="plans-btnon">Services →</button>
 
                       <div className="links-grid">
                         <a href="#">Phishing and Impersonation Protection</a>

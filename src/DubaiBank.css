@@ -1,0 +1,139 @@
+.bank-wrapper {
+  background-color: #0b0c10;
+  min-height: 100vh;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.bank-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 24px;
+  padding: 60px;
+  max-width: 1600px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 255, 180, 0.08);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e7fced;
+}
+
+/* Top Section: Image and Labels */
+.network-image {
+  text-align: center;
+}
+
+.network-image img {
+ width: 100%;                /* Fill container width */
+  height: 400px;              /* Fixed consistent height */
+  object-fit: contain;        /* Entire image visible without cropping */
+  
+  margin-bottom: 25px;
+}
+
+.network-labels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  font-size: 18px;
+  color: #00ffbf;
+  margin-top: 16px;
+}
+
+/* Bottom Section: Two Columns */
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  margin-top: 60px;
+  flex-wrap: nowrap;  /* Prevent wrapping */
+}
+
+/* Left Side: Text */
+.bank-info {
+  flex: 1;
+  min-width: 500px;
+}
+
+.bank-info h2 {
+  color: #39ff88;
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+.bank-info p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #c9d1d9;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.bullet-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bullet-points li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #e0e0e0;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.greene { background-color: #00ff88; }
+.bluer { background-color: #3faaff; }
+.purplep { background-color: #c080ff; }
+.yellowe { background-color: #ffe066; }
+
+/* Right Side: Cards */
+.glass-cards-row {
+  flex: 1;
+  display: flex;
+  justify-content: center;  /* Center the cards horizontally */
+  align-items: flex-start;
+  gap: 30px;                /* Space between cards */
+  flex-wrap: nowrap;        /* Force single row */
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 36px;
+  text-align: center;
+  color: #fff;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 6px 24px rgba(0, 255, 191, 0.12);
+  width: 240px;     /* Fixed equal width */
+  height: 240px;    /* Fixed equal height */
+  transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+}
+
+.glass-card img {
+  height: 40px;
+  width: 140px;
+  margin-bottom: 16px;
+}
+
+.glass-card p {
+  font-size: 18px;
+  font-weight: 500;
+}

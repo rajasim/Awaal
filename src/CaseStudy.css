@@ -1,0 +1,138 @@
+.case-study-section {
+  padding: 100px 60px;
+  background: #ffffff;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.case-study-title {
+  font-size: 42px;
+  color: #0d1b2a;
+  margin-bottom: 16px;
+}
+
+.case-study-subtext {
+  color: #7a8b99;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.case-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.case-card {
+  width: 440px;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  background-color: #0f172a;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* 50% image container */
+.case-image {
+  height: 50%;
+  background: linear-gradient(to right, #facc15, #22c55e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-image img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* 50% content */
+.case-content {
+  height: 50%;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.case-tags {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: #1e293b;
+  font-weight: 500;
+}
+
+.tag.yellow {
+  color: #facc15;
+}
+
+.tag.gold {
+  color: #fbbf24;
+}
+
+.tag.orange {
+  color: #f97316;
+}
+
+.location {
+  color: #cbd5e1;
+}
+
+.case-content h3 {
+  font-size: 18px;
+  margin: 8px 0;
+  font-weight: 600;
+}
+
+.case-content p {
+  font-size: 15px;
+  color: #cbd5e1;
+  margin: 8px 0 14px;
+  line-height: 1.5;
+}
+
+.case-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.green {
+  color: #22c55e;
+}
+
+.duration {
+  color: #94a3b8;
+}
+
+.view-all-btn {
+  margin-top: 50px;
+}
+
+.view-all-btn button {
+  padding: 14px 30px;
+  background-color: #22c55e;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-btn button:hover {
+  background-color: #16a34a;
+}

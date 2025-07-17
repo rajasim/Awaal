@@ -66,7 +66,33 @@ import Ioteor from "./Ioteor";
 import Wiptex from "./Wiptex";
 import WhyAwwal from "./WhyAwwal";
 import NewsMain from "./NewsMain";
+import Azul from "./Azul";
+import AwwalSecurity from "./AwwalSecurity";
+import Bitriz from "./Bitriz";
+import Hotel from "./Hotel";
+import DubaiBank from "./Dubaibank";
+import SmartPharmacy from "./SmartPharmacy";
+import Tranfrom from "./Tranfrom";
+import Contact from "./Contact";
+import Homepageser from "./Homepageser";
+import CyberGuard from "./CyberGuard";
+import HomeMain from "./HomeMain";
+import TechSecurer from "./TechSecurer";
+import Aibox from "./Aibox";
+import Approach from "./Approach";
+import CaseStudy from "./CaseStudy";
+import Industrial from "./Industrial";
+import Poteker from "./Poteker";
+import DarkMain from "./DarkMain";
+import Hofpt from "./Hofpt";
+import Waptexr from "./Waptexr";
+import Form from "./Form";
+import CloudIndustriel from "./CloudIndustriel";
+import SoftDevlop from "./SoftDevlop";
+import Softwarelap from "./Softwarelap";
+import Cyberlap from "./Cyberlap";
 import { Routes, Route } from "react-router-dom";
+import Pater from "./Pater";
 
 
 function App() {
@@ -77,20 +103,54 @@ function App() {
         element={
           <>
             <Navbar />
+            <HomeMain/>
+            <TechSecurer/>
+            <Homepageser/>
+            <Aibox/>
+            <CyberGuard/>
+            <Industrial/>
+            <DarkWebAlert />
+            <Approach/>
+            <CaseStudy/>
+            <Poteker/>
+             <NewsSection />
+             <Footer />
+            <Ketra />
             <Videosection />
             <AboutUs />
             <ScrollingLogosSection />
             <Services />
             <DarkWebAlert />
-            <Piter />
-            <Pik />
-            <Ellish />
-            <Cloud />
-            <Innovate />
-            <Azure />
-            <Watrex />
+            <CbSection />
+            <TechnologyPlatforms />
+            
+            <Videofoot />
+           
+            
+           
+            
+            
+            <Eater />
+            <Opatise />
+            
+            
+            <Ktrox />
+            
+            <Migration />
+            <Atifex />
+            <Hefter />
+            <Betrex />
+            <Hatrex />
+            <Hitoera />
+            
+           
+            
+            
+            
+           
+            
             <UniqueHero />
-            <Ketra />
+            
             <Ritex />
             <Tifeter />
             <Rofter />
@@ -101,6 +161,26 @@ function App() {
             <Wiptex/>
             <WhyAwwal/>
             <NewsMain/>
+            <Azul/>
+            <AwwalSecurity/>
+            <Bitriz/>
+            <Hotel/>
+            <DubaiBank/>
+            <SmartPharmacy/>
+            <Tranfrom/>
+            <Contact/>
+            
+            
+           
+            
+            
+            
+           
+            <DarkMain/>
+             
+             <Waptexr/>
+           
+            
           </>
         }
       />
@@ -109,56 +189,123 @@ function App() {
         element={
           <>
             <Navbar />
-            <NewsSection />
-            <Footer />
-            <VaptSection />
-            <TestingApproach />
-            <Featured />
-            <ProtectionSteps />
-            <Anicard />
-            <SecuritySolutions />
+           
+             <Hofpt/>
+             <TestingApproach />
+             <ProtectionSteps />
+            
+              <Anicard />
+               <Featured />
+               <DarkWebAlert />
+            
+           
+            
+           
+           
             <Deliverables />
             <DeliverablesGrid />
             <SecurityDocumentation />
             <SupportedPlatforms />
             <UnifiedPlatform />
             <SecureOrganization />
-            <Haftrop />
-            <Harirtox />
-            <Digital />
+            
           </>
         }
       />
       <Route
-        path="/it-infrastructure"
+        path="/AI & Automation Services"
+        element={
+          <>
+       <AiHeroSection />
+       <EfficiencySection />
+       <Pater/>
+       <Piter />
+        <Pik />
+       
+       
+          </>
+          }
+      />
+      <Route
+        path="/CLOUD"
         element={
           <>
             <Navbar />
-            <ITInfrastructurePage />
-            <CbSection />
-            <Benefits />
-            <Videofoot />
-            <NextGen />
-            <KeyBenefits />
-            <Optimize />
-            <TechnologyPlatforms />
-            <AiHeroSection />
-            <EfficiencySection />
-            <Eater />
-            <Opatise />
-            <Repter />
-            <Laptor />
-            <Ktrox />
-            <Waxter />
-            <Migration />
-            <Atifex />
-            <Hefter />
-            <Betrex />
-            <Hatrex />
-            <Hitoera />
+           <Ellish />
+           <Cloud />
+            <SecuritySolutions />
+            <Innovate />
+            <CloudIndustriel/>
+             <Azure />
+             <Watrex />
+            
+            
+
+            
           </>
         }
       />
+      
+      
+       <Route
+        path="/SOFTWARE DEV"
+        element={
+          <>
+          <Repter />
+           <SoftDevlop/>
+          <Softwarelap/>
+           <Ktrox />
+           <Laptor />
+           <Waxter />
+          </>
+          }
+      />
+       <Route
+        path="/IT INFRA"
+        element={
+          <>
+          <ITInfrastructurePage/>
+          <SoftDevlop/>
+         <Benefits />
+          <NextGen />
+            <KeyBenefits />
+            <Videofoot/>
+            <Optimize />
+          </>
+          }
+      />
+       <Route
+        path="/WEBSITE DEV"
+        element={
+          <>
+          <UniqueHero/>
+          <Ketra/>
+           <Tifeter/>
+          <Ritex/>
+          <Rofter/>
+          <Opatise/>
+          <Toll/>
+          
+         
+          </>
+          }
+      />
+        <Route
+        path="/MIGRATION"
+        element={
+          <>
+         <Migration />
+         <Atifex />
+         <Hefter/>
+         <Betrex/>
+         <Hatrex/>
+         <Hitoera/>
+         <Tranfrom/>
+          </>
+          }
+      />
+       
+      
     </Routes>
   );
 }

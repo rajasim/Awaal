@@ -51,7 +51,7 @@ const Featured = () => {
 
         <div className="featured-right">
           <img
-            src="/images/Screenshot 2025-06-14 224536.png"
+            src="/images/Recording2025-07-14034819-vmake-ezgif.com-video-to-gif-converter.gif"
             alt="Threat Dashboard"
             className="featured-img"
           />

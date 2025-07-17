@@ -1,7 +1,7 @@
 .unified-platform-section {
   width: 100%;
   padding: 80px 40px;
-  background-color:#022b2c;
+  background-color: #022b2c;
   color: white;
 }
 
@@ -9,7 +9,7 @@
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 60px;
   flex-wrap: wrap;
@@ -17,7 +17,7 @@
 
 .unified-platform-left {
   flex: 1;
-  min-width: 400px;
+  min-width: 480px;
 }
 
 .unified-platform-heading {
@@ -25,6 +25,7 @@
   font-weight: 500;
   margin-bottom: 40px;
   line-height: 1.4;
+  text-transform: uppercase;
 }
 
 .unified-platform-list {
@@ -34,19 +35,50 @@
 }
 
 .unified-platform-list li {
-  font-size: 18px;
-  font-weight: 500;
   margin-bottom: 28px;
-  display: flex;
-  justify-content: space-between;
   border-bottom: 1px solid #444;
   padding-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.unified-platform-list li .item-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .unified-platform-list li span {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   color: #ccc;
+}
+
+.platform-content {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #eee;
+  padding-left: 2px;
+}
+
+.platform-content p {
+  margin-bottom: 12px;
+}
+
+.platform-content ul {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.platform-content ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #ddd;
+  list-style-type: disc;
 }
 
 .unified-platform-right {

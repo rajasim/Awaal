@@ -12,14 +12,15 @@ const Wiptex = () => {
       <div className="wiptex-box">
         <h3 className="wiptex-box-heading">Complete Technology Solutions</h3>
         <div className="wiptex-tags">
-          <span className="tag red">Cybersecurity (VAPT)</span>
-          <span className="tag blue">AI & Automation</span>
-          <span className="tag green">Cloud Services</span>
-          <span className="tag purple">IT Infrastructure</span>
-          <span className="tag orange">Software Development</span>
-          <span className="tag teal">Website Development</span>
-          <span className="tag pink">System Migration</span>
-          <span className="tag gray">& More...</span>
+          <span className="service-tag tag-cyber">Cybersecurity (VAPT)</span>
+<span className="service-tag tag-ai">AI & Automation</span>
+<span className="service-tag tag-cloud">Cloud Services</span>
+<span className="service-tag tag-infra">IT Infrastructure</span>
+<span className="service-tag tag-software">Software Development</span>
+<span className="service-tag tag-web">Website Development</span>
+<span className="service-tag tag-migration">System Migration</span>
+<span className="service-tag tag-more"> & More...</span>
+
         </div>
       </div>
 
