@@ -1,5 +1,5 @@
 import React from 'react';
-import './bitriz.css';
+import './Bitriz.css';
 
 const Bitriz = () => {
   return (

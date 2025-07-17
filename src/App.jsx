@@ -70,7 +70,7 @@ import Azul from "./Azul";
 import AwwalSecurity from "./AwwalSecurity";
 import Bitriz from "./Bitriz";
 import Hotel from "./Hotel";
-import DubaiBank from "./Dubaibank";
+import DubaiBank from "./DubaiBank";
 import SmartPharmacy from "./SmartPharmacy";
 import Tranfrom from "./Tranfrom";
 import Contact from "./Contact";
