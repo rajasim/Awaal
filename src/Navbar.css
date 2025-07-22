@@ -164,10 +164,10 @@
 /* === MEGA DROPDOWN === */
 .mega-dropdown {
   position: absolute;
-  top: 65px;
+  top: 100%;
 
   right: 0;
-  width: 1000px;
+  width: 1100px;
   height: 590px;
   background-color: white;
   color: black;
@@ -394,7 +394,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  width: 1100px; /* Increased width */
+  width: 1300px; /* Increased width */
   display: flex;
   background: #fff;
   border-radius: 14px;
