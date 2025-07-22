@@ -29,6 +29,99 @@
   list-style: none;
   gap: 54px;
 }
+.insights-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  z-index: 100;
+}
+
+.insight-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  color: #333;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.insight-box:hover {
+  transform: translateX(5px);
+}
+
+.insight-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.insight-content h4 {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.insight-content .count {
+  font-size: 13px;
+  background: #f1f1f1;
+  padding: 2px 6px;
+  border-radius: 6px;
+  color: #444;
+}
+
+.insight-content p {
+  margin: 6px 0;
+  font-size: 13px;
+  color: #555;
+}
+
+.tags {
+  font-size: 12px;
+  display: flex;
+  gap: 10px;
+  color: #777;
+}
+
+/* Background gradients for each category */
+.insight-box.blog {
+  background: linear-gradient(90deg, #ffd6d6, #ffeaea);
+}
+.insight-box.news {
+  background: linear-gradient(90deg, #d6eaff, #eaf5ff);
+}
+.insight-box.insights {
+  background: linear-gradient(90deg, #ffe7d1, #fff4e7);
+}
+.insight-box.case-studies {
+  background: linear-gradient(90deg, #dcdcff, #f0f0ff);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .insights-dropdown {
+    width: 90%;
+    left: 5%;
+  }
+  .insight-box {
+    gap: 8px;
+  }
+  .insight-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 
 .navbar-center,
 .navbar-center a {
@@ -74,8 +167,8 @@
   top: 65px;
 
   right: 0;
-  width: 1100px;
-  height: 690px;
+  width: 1000px;
+  height: 590px;
   background-color: white;
   color: black;
 
@@ -127,9 +220,9 @@
 }
 
 .mega-platform-box p {
-  margin: 0 0 8px 0; /* adds 8px space below each paragraph */
+  margin: 0 0 8px 0; 
   font-size: 12px;
-  line-height: 11px; /* keeps line height tight within paragraph */
+  line-height: 11px;
 }
 
 .mega-platform-box a {
@@ -297,3 +390,137 @@
     padding: 1rem;
   }
 }
+.insights-hub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 1100px; /* Increased width */
+  display: flex;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  z-index: 100;
+  padding: 10px;
+}
+
+/* LEFT PANEL */
+.insights-left-panel {
+  flex: 1;
+  background: linear-gradient(135deg, #4e0db9, #8226ff);
+  color: #fff;
+  padding: 40px; /* Increased padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 12px 0 0 12px;
+}
+
+.featured-badge {
+  display: inline-block;
+  background: #f8b400;
+  color: #222;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px; /* Increased font */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.insights-main-title {
+  font-size: 26px; /* Increased */
+  font-weight: 800;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.insights-main-desc {
+  font-size: 15px; /* Bigger text */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.insights-stats-box {
+  display: flex;
+  gap: 25px;
+  margin-top: auto;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.stat-item img {
+  width: 28px;
+  height: 28px;
+}
+
+/* RIGHT PANEL */
+.insights-right-panel {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.categories-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.category-box {
+  display: flex;
+  gap: 15px;
+  background: #f5f6f8;
+  padding: 16px; /* Bigger padding */
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  align-items: center;
+}
+.category-box:hover {
+  transform: translateX(6px);
+}
+
+.category-icon img {
+  width: 48px; /* Larger icon */
+  height: 48px;
+  object-fit: contain;
+}
+
+.category-info h4 {
+  font-size: 16px; /* Bigger font */
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.category-info p {
+  font-size: 13px; /* Bigger text */
+  color: #333;
+  margin: 4px 0;
+}
+
+.category-tags {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+.highlight {
+  background: #e1e1e1;
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 5px;
+  margin-left: 6px;
+}
+

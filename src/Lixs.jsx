@@ -15,7 +15,7 @@ const Lixs = () => {
 
       <section className="comparison-section">
         <h2>Traditional vs. Revolutionary</h2>
-        <p className="subtitle">
+        <p className="subtitler">
           See the stark differences that set us apart from conventional IT firms
         </p>
 

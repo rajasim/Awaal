@@ -17,7 +17,7 @@ function Rik() {
   <div className="rik-card blue">
     <div className="rik-line"></div>
     <div className="rik-top-icon">
-      <img src="/icons/gear.svg" alt="Productivity Icon" />
+      <img src="/images/Automation Benefits1.png" alt="Productivity Icon" />
     </div>
     <h4>Increased Productivity</h4>
     <p>Automate <b>40–70%</b> of repetitive tasks, freeing your team to focus on high-value work.</p>
@@ -33,7 +33,7 @@ function Rik() {
   <div className="rik-card purple">
     <div className="rik-line"></div>
     <div className="rik-top-icon">
-      <img src="/icons/speed.svg" alt="Speed Icon" />
+      <img src="/images/Automation Benefits2.png" alt="Speed Icon" />
     </div>
     <h4>Faster Decision-Making</h4>
     <p>Access <b>real-time</b> insights based on live data, enabling immediate and informed decisions.</p>
@@ -49,7 +49,7 @@ function Rik() {
   <div className="rik-card green">
     <div className="rik-line"></div>
     <div className="rik-top-icon">
-      <img src="/icons/cost.svg" alt="Cost Icon" />
+      <img src="/images/Automation Benefits3.png" alt="Cost Icon" />
     </div>
     <h4>Lower Operational Costs</h4>
     <p>Achieve significant cost savings through streamlined processes and reduced manual intervention.</p>
@@ -65,7 +65,7 @@ function Rik() {
   <div className="rik-card yellow">
     <div className="rik-line"></div>
     <div className="rik-top-icon">
-      <img src="/icons/accuracy.svg" alt="Accuracy Icon" />
+      <img src="/images/1.gif" alt="Accuracy Icon" />
     </div>
     <h4>Higher Accuracy</h4>
     <p>Eliminate human error and ensure consistent outputs across all your business processes.</p>
@@ -81,7 +81,7 @@ function Rik() {
   <div className="rik-card pink">
     <div className="rik-line"></div>
     <div className="rik-top-icon">
-      <img src="/icons/customer.svg" alt="Customer Experience Icon" />
+      <img src="/images/Automation Benefits5.png" alt="Customer Experience Icon" />
     </div>
     <h4>Better Customer Experience</h4>
     <p>Deliver faster response times and personalized engagement that delights your customers.</p>
@@ -97,7 +97,7 @@ function Rik() {
   <div className="rik-card cyan">
     <div className="rik-line"></div>
     <div className="rik-top-icon">
-      <img src="/icons/architecture.svg" alt="Scalable Icon" />
+      <img src="/images/Automation Benefits6.png" alt="Scalable Icon" />
     </div>
     <h4>Scalable Architecture</h4>
     <p>Build once, scale across your entire organization without additional development costs.</p>

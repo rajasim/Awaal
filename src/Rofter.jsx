@@ -13,35 +13,35 @@ const Rofter = () => {
         <div className="rof-box">
           <div className="rof-step">1</div>
           <h3>Discovery & Strategy</h3>
-          <img src="/images/box9.jpeg" alt="Step 1" />
+          <img src="/images/Our Web Development Process1.png" alt="Step 1" />
           <p>Define goals, target audience, and technical scope to create a solid foundation for your project.</p>
         </div>
 
         <div className="rof-box">
           <div className="rof-step">2</div>
           <h3>Wireframes & UI Design</h3>
-          <img src="/images/step2.png" alt="Step 2" />
+          <img src="/images/Our Web Development Process2.png" alt="Step 2" />
           <p>Create visual architecture, branding elements, and user flows that deliver exceptional user experiences.</p>
         </div>
 
         <div className="rof-box">
           <div className="rof-step">3</div>
           <h3>Development & Testing</h3>
-          <img src="/images/step3.png" alt="Step 3" />
+          <img src="/images/Our Web Development Process3.png" alt="Step 3" />
           <p>Build responsive websites with modern coding practices, set up CMS, and perform thorough testing.</p>
         </div>
 
         <div className="rof-box">
           <div className="rof-step">4</div>
           <h3>Launch & Optimization</h3>
-          <img src="/images/step4.png" alt="Step 4" />
+          <img src="/images/Our Web Development Process4.png" alt="Step 4" />
           <p>Implement SEO best practices, optimize site speed, and set up reliable hosting for your website.</p>
         </div>
 
         <div className="rof-box">
           <div className="rof-step">5</div>
           <h3>Support & Maintenance</h3>
-          <img src="/images/step5.png" alt="Step 5" />
+          <img src="/images/Our Web Development Process5.png" alt="Step 5" />
           <p>Provide ongoing updates, regular backups, and continuous performance monitoring to keep your site running smoothly.</p>
         </div>
 

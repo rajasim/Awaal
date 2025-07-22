@@ -5,7 +5,7 @@ function Pater() {
   return (
     <div className="pater-section">
       {/* Background image */}
-      <img src="/images/Responsive Service Section Design with Animation .png" alt="Background" className="pater-bg-img" />
+      <img src="/images/AI bg.jpg" alt="Background" className="pater-bg-img" />
 
       <div className="pater-inner">
         {/* Header */}
@@ -17,7 +17,7 @@ function Pater() {
         {/* Cards */}
         <div className="pater-cards">
           <div className="pater-card">
-            <img src="/images/box9.jpeg" alt="" className="pater-card-img" />
+            <img src="/images/Next-Gen AI Solutions1.png" alt="" className="pater-card-img" />
             <h4>AI-driven Process Automation</h4>
             <p>
               Intelligent systems that learn your operations, eliminate bottlenecks,
@@ -27,7 +27,7 @@ function Pater() {
           </div>
 
           <div className="pater-card">
-            <img src="/icons/workflow.png" alt="" className="pater-card-img" />
+            <img src="/images/Next-Gen AI Solutions2.png" alt="" className="pater-card-img" />
             <h4>Intelligent Workflow Design</h4>
             <p>
               Adaptive workflow architectures that dynamically reconfigure based on
@@ -37,7 +37,7 @@ function Pater() {
           </div>
 
           <div className="pater-card">
-            <img src="/icons/decision.png" alt="" className="pater-card-img" />
+            <img src="/images/Next-Gen AI Solutions3.png" alt="" className="pater-card-img" />
             <h4>Data-driven Decision Support</h4>
             <p>
               Quantum-inspired analytics that process vast datasets to surface
@@ -47,7 +47,7 @@ function Pater() {
           </div>
 
           <div className="pater-card">
-            <img src="/icons/vision.png" alt="" className="pater-card-img" />
+            <img src="/images/Next-Gen AI Solutions4.png" alt="" className="pater-card-img" />
             <h4>Computer Vision Solutions</h4>
             <p>
               Neural network-powered visual systems that recognize patterns,
@@ -57,7 +57,7 @@ function Pater() {
           </div>
 
           <div className="pater-card">
-            <img src="/icons/model-dev.png" alt="" className="pater-card-img" />
+            <img src="/images/Next-Gen AI Solutions5.png" alt="" className="pater-card-img" />
             <h4>AI Model Development</h4>
             <p>
               Custom neural architectures designed for your specific business
@@ -67,7 +67,7 @@ function Pater() {
           </div>
 
           <div className="pater-card">
-            <img src="/icons/nlp.png" alt="" className="pater-card-img" />
+            <img src="/images/Next-Gen AI Solutions6.png" alt="" className="pater-card-img" />
             <h4>Natural Language Processing</h4>
             <p>
               Advanced language models that understand context, sentiment, and

@@ -10,7 +10,7 @@ const Hitoera = () => {
           <div className="hitoera-step-circle">03</div>
           <div className="hitoera-image-box">
             <img
-              src="/images/box9.jpeg" // Replace with your actual path
+              src="/images/Our Revolutionary Process3.png"
               alt="Secure Transfer Visual"
               className="hitoera-image"
             />

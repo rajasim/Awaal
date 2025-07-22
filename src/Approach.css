@@ -155,3 +155,92 @@
   border-radius: 8px;
   font-size: 15px;
 }
+@media (max-width: 480px) {
+  .approach-section {
+    padding: 60px 20px;
+  }
+
+  .approach-title {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+
+  .approach-subtext {
+    font-size: 16px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .approach-steps {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .approach-card {
+    width: 100%;
+    padding: 26px;
+  }
+
+  .step-number {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    top: -12px;
+    left: -12px;
+  }
+
+  .step-image {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 14px;
+  }
+
+  .approach-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .approach-card p {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .approach-card li {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .approach-bottom {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+  }
+
+  .partners, .certifications {
+    min-width: 100%;
+  }
+
+  .partners h4, .certifications h4 {
+    font-size: 22px;
+  }
+
+  .partners p, .certifications p {
+    font-size: 15px;
+  }
+
+  .partner-logos {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .partner-logos img {
+    height: 40px;
+    padding: 6px 10px;
+  }
+
+  .cert-tags span {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}

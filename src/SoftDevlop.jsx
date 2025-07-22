@@ -1,63 +1,48 @@
 import React from "react";
-import "./CbSection.css";
+import "./SoftDevelopSection.css";
 
-const SoftDevlop = () => {
+const SoftDevelop = () => {
   return (
-    <div className="cb-section">
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          zIndex: -1,
-          
-        }}
-      >
-        <source
-          src="/video/WhatsApp Video 2025-06-17 at 11.46.51 AM.mp4"
-          type="video/mp4"
-        />
-      </video>
+    <div className="softdevelop-section">
+      {/* Background Image */}
+      <img
+        src="/images/webdevlobg.jpg"
+        alt="Background"
+        className="softdevelop-bg-img"
+      />
 
-      <div className="cb-content-wrapper">
-        <div className="cb-heading-tag">● STRATEGIC ADVANTAGE</div>
+      <div className="softdevelop-content-wrapper">
+        <div className="softdevelop-heading-tag">● STRATEGIC ADVANTAGE</div>
 
-        <h1 className="cb-title">
+        <h1 className="softdevelop-title">
           Why IT <span>Infrastructure</span> Matters
         </h1>
 
-        <p className="cb-subtitle">
+        <p className="softdevelop-subtitle">
           In today’s digital-first business landscape, your IT infrastructure isn’t just a
           technical foundation—it’s a strategic asset that directly impacts your organization’s
           performance, security, and ability to innovate.
         </p>
 
-        <div className="cb-content">
-          <div className="cb-left-box">
-            <h3 className="cb-box-title">MODERN DATA CENTER</h3>
+        <div className="softdevelop-content">
+          <div className="softdevelop-left-box">
+            <h3 className="softdevelop-box-title">MODERN DATA CENTER</h3>
             <img
-              src="/images/software.gif"
+              src="/images/robot side.gif"
               alt="Modern Data Center"
-              className="cb-data-img"
+              className="softdevelop-data-img"
             />
           </div>
 
-          <div className="cb-right-box">
-            <h3 className="cb-box-title-right">The Foundation of Digital Success</h3>
-            <p className="cb-right-text">
+          <div className="softdevelop-right-box">
+            <h3 className="softdevelop-box-title-right">The Foundation of Digital Success</h3>
+            <p className="softdevelop-right-text">
               Your IT infrastructure is the backbone that supports every digital initiative,
               from day-to-day operations to transformative innovations. As businesses increasingly
               rely on technology, the quality and resilience of your infrastructure directly impacts:
             </p>
 
-            <ul className="cb-points">
+            <ul className="softdevelop-points">
               <li>
                 <strong>Operational Efficiency</strong><br />
                 Modern infrastructure reduces maintenance costs and increases productivity through
@@ -81,4 +66,4 @@ const SoftDevlop = () => {
   );
 };
 
-export default SoftDevlop;
+export default SoftDevelop;

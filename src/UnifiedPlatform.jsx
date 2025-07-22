@@ -96,7 +96,7 @@ const UnifiedPlatform = () => {
         </div>
 
         <div className="unified-platform-right">
-          <img src="/images/Screenshot 2025-06-15 132811.png" alt="Unified Platform Cube" />
+          <img src="/images/cyber.gif" alt="Unified Platform Cube" />
         </div>
       </div>
     </section>

@@ -5,6 +5,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
+
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [navbaroption, setnavbaroption] = useState("");
@@ -30,9 +31,11 @@ const Navbar = () => {
 
       <div className="navbar-center" ref={centernav}>
         {[
-          "SERVICES",
+          
           "WHY AWWAL",
+          "SERVICES",
           "WHAT WE DO",
+          "Insights Hub",
           "CONTACT US",
          
         ].map((item, i) => (
@@ -52,8 +55,89 @@ const Navbar = () => {
               setnavbaroption("");
               setHoveredSubItem("");
             }}
+            onClick={() => {
+              if (item === "WHY AWWAL") nav("/why-awwal");
+              else if (item === "CONTACT US") nav("/contact");
+              else if (item === "WHAT WE DO") nav("/what-we-do");
+            }}
           >
             {item}
+            {item === "Insights Hub" && openDropdown === "insights hub" && (
+  <div className="insights-hub-menu">
+    {/* LEFT SIDE */}
+    <div className="insights-left-panel">
+      <span className="featured-badge">FEATURED THIS WEEK</span>
+      <h2 className="insights-main-title">THE FUTURE OF DIGITAL INNOVATION</h2>
+      <p className="insights-main-desc">
+        DISCOVER CUTTING-EDGE INSIGHTS, INDUSTRY TRENDS, AND EXPERT ANALYSIS THAT'S SHAPING TOMORROW'S DIGITAL LANDSCAPE.
+      </p>
+      <div className="insights-stats-box">
+        <div className="stat-item">
+          <img src="/images/articles-icon.png" alt="Articles" />
+          <span>250+ ARTICLES</span>
+        </div>
+        <div className="stat-item">
+          <img src="/images/readers-icon.png" alt="Readers" />
+          <span>50K+ READERS</span>
+        </div>
+      </div>
+    </div>
+
+    {/* RIGHT SIDE */}
+    <div className="insights-right-panel">
+      <h3 className="categories-title">EXPLORE CATEGORIES</h3>
+
+      <div className="category-box">
+        <div className="category-icon"><img src="/images/blog-icon.png" alt="Blog" /></div>
+        <div className="category-info">
+          <h4>BLOG </h4>
+          <p>LATEST ARTICLES AND INSIGHTS FROM OUR TEAM</p>
+          <div className="category-tags">
+            <span>DAILY UPDATES</span>
+            <span>MOST POPULAR</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="category-box">
+        <div className="category-icon"><img src="/images/news-icon.png" alt="News" /></div>
+        <div className="category-info">
+          <h4>NEWS </h4>
+          <p>INDUSTRY UPDATES AND ANNOUNCEMENTS</p>
+          <div className="category-tags">
+            <span>BREAKING NEWS</span>
+            <span>LIVE UPDATES</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="category-box">
+        <div className="category-icon"><img src="/images/insights-icon.png" alt="Insights" /></div>
+        <div className="category-info">
+          <h4>INSIGHTS </h4>
+          <p>DATA-DRIVEN ANALYSIS AND RESEARCH</p>
+          <div className="category-tags">
+            <span>ANALYTICS</span>
+            <span>TRENDING</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="category-box">
+        <div className="category-icon"><img src="/images/case-icon.png" alt="Case Studies" /></div>
+        <div className="category-info">
+          <h4>CASE STUDIES </h4>
+          <p>REAL-WORLD SUCCESS STORIES</p>
+          <div className="category-tags">
+            <span>BUSINESS</span>
+            <span>PREMIUM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
             {item === "SERVICES" && openDropdown === "services" && (
               <div className="mega-dropdown">
                 <div className="mega-left">

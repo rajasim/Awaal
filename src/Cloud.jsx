@@ -1,7 +1,7 @@
 import React from 'react';
 import './Cloud.css';
 
-const Cloud = () => {
+const Cloud = () => { 
   return (
     <section className="section-wrapper">
       {/* Background Video */}
@@ -27,7 +27,7 @@ const Cloud = () => {
 
         <div className="features">
           <div className="feature">
-            <div className="icon">⚡</div>
+           <div className="iconss"><img src="/images/Why Choose Our Cloud Services1.png" alt="Learning" /></div>
             <div>
               <h3 className="feature-title">Accelerate time-to-market</h3>
               <p className="feature-desc">
@@ -37,7 +37,7 @@ const Cloud = () => {
           </div>
 
           <div className="feature">
-            <div className="icon">💰</div>
+            <div className="iconss"><img src="/images/Why Choose Our Cloud Services2.png" alt="Learning" /></div>
             <div>
               <h3 className="feature-title">Reduce infrastructure costs</h3>
               <p className="feature-desc">
@@ -47,7 +47,7 @@ const Cloud = () => {
           </div>
 
           <div className="feature">
-            <div className="icon">🛡️</div>
+            <div className="iconss"><img src="/images/Why Choose Our Cloud Services3.png" alt="Learning" /></div>
             <div>
               <h3 className="feature-title">Boost system reliability</h3>
               <p className="feature-desc">
@@ -57,7 +57,7 @@ const Cloud = () => {
           </div>
 
           <div className="feature">
-            <div className="icon">✔️</div>
+            <div className="iconss"><img src="/images/Why Choose Our Cloud Services4.png" alt="Learning" /></div>
             <div>
               <h3 className="feature-title">Ensure regulatory compliance</h3>
               <p className="feature-desc">

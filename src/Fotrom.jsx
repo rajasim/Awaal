@@ -13,7 +13,7 @@ const Fotrom = () => {
           expertise across all domains.
         </p>
         <div className="fotrom-icon">
-          <img src="/images/gear-icon.png" alt="Gear Icon" />
+          <img src="/images/Our Integrated Service Framework1.png" alt="Gear Icon" />
         </div>
       </div>
 
@@ -21,7 +21,7 @@ const Fotrom = () => {
       <div className="fotrom-services">
 
         <div className="fotrom-card fotrom-red">
-          <img src="/images/box9.jpeg" alt="Security Icon" />
+          <img src="/images/Our Integrated Service Framework2.png" alt="Security Icon" />
           <h3>Security</h3>
           <p>Securing your foundation</p>
           <ul>
@@ -32,7 +32,7 @@ const Fotrom = () => {
         </div>
 
         <div className="fotrom-card fotrom-blue">
-          <img src="/images/intelligence-icon.png" alt="Intelligence Icon" />
+          <img src="/images/Our Integrated Service Framework3.png" alt="Intelligence Icon" />
           <h3>Intelligence</h3>
           <p>Automating your operations</p>
           <ul>
@@ -43,7 +43,7 @@ const Fotrom = () => {
         </div>
 
         <div className="fotrom-card fotrom-green">
-          <img src="/images/infrastructure-icon.png" alt="Infrastructure Icon" />
+          <img src="/images/Our Integrated Service Framework2.png" alt="Infrastructure Icon" />
           <h3>Infrastructure</h3>
           <p>Building robust foundations</p>
           <ul>
@@ -54,7 +54,7 @@ const Fotrom = () => {
         </div>
 
         <div className="fotrom-card fotrom-purple">
-          <img src="/images/experience-icon.png" alt="Experience Icon" />
+          <img src="/images/Our Integrated Service Framework4.png" alt="Experience Icon" />
           <h3>Experience</h3>
           <p>Delivering seamless interactions</p>
           <ul>
@@ -76,19 +76,19 @@ const Fotrom = () => {
 
         <div className="fotrom-icons">
           <div className="fotrom-icon-box">
-            <img src="/images/security-icon.png" alt="Security" />
+          
             <span>Security</span>
           </div>
           <div className="fotrom-icon-box">
-            <img src="/images/intelligence-icon.png" alt="Intelligence" />
+          
             <span>Intelligence</span>
           </div>
           <div className="fotrom-icon-box">
-            <img src="/images/infrastructure-icon.png" alt="Infrastructure" />
+           
             <span>Infrastructure</span>
           </div>
           <div className="fotrom-icon-box">
-            <img src="/images/experience-icon.png" alt="Experience" />
+           
             <span>Experience</span>
           </div>
         </div>

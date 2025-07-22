@@ -50,7 +50,7 @@ export default function NewsMain() {
         <div className="news-card">
           <div className="news-top">
 
-            <img src="/images/purpose.gif" alt="Cloud Security" />
+            <img src="/images/Cyber Security News .gif" alt="Cloud Security" />
           </div>
           <div className="news-content">
            

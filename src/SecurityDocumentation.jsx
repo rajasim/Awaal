@@ -20,7 +20,7 @@ const SecurityDocumentation = () => {
         </div>
 
         <div className="doc-right-section">
-          <img src="/images/Screenshot 2025-06-14 225224.png" alt="Documentation Icon" className="doc-icon" />
+          <img src="/images/Complete Security Documentation.png" alt="Documentation Icon" className="doc-icon" />
         </div>
       </div>
     </div>

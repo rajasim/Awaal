@@ -18,7 +18,7 @@ function Azure() {
 
         <div className="boxes-row">
           <div className="azure-box">
-            <img src="/images/aws.png" className="box-img" />
+            <img src="/images/Certifications & Compliance Readiness1.png" className="box-img" />
             <h3 className="box-title">AWS Certified Solutions Architects</h3>
             <p className="box-desc">
               Expert architects designing secure, robust, and scalable cloud infrastructure
@@ -26,7 +26,7 @@ function Azure() {
           </div>
 
           <div className="azure-box">
-            <img src="/images/azure.png" className="box-img" />
+            <img src="/images/Certifications & Compliance Readiness2.png" className="box-img" />
             <h3 className="box-title">Microsoft Azure Security Engineers</h3>
             <p className="box-desc">
               Specialized in implementing security controls and threat protection
@@ -34,7 +34,7 @@ function Azure() {
           </div>
 
           <div className="azure-box">
-            <img src="/images/box8.jpeg" className="box-img" />
+            <img src="/images/Certifications & Compliance Readiness3.png" className="box-img" />
             <h3 className="box-title">ISO/IEC 27001:2022 Lead Auditors</h3>
             <p className="box-desc">
               Ensuring compliance with international information security standards
@@ -42,7 +42,7 @@ function Azure() {
           </div>
 
           <div className="azure-box">
-            <img src="/images/box9.jpeg" className="box-img" />
+            <img src="/images/Certifications & Compliance Readiness4.png" className="box-img" />
             <h3 className="box-title">CompTIA Security+ Certified Experts</h3>
             <p className="box-desc">
               Professionals with validated security foundations and practical skills

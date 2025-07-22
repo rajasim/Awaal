@@ -13,7 +13,7 @@ const Ritex = () => {
         {/* Card 1 */}
         <div className="ritex-card">
           <div className="card-top top-purple">
-            <img src="/images/icon-custom.png" alt="Custom Website" />
+          
           </div>
           <h3>Custom Website Development</h3>
           <p>Tailored websites built from the ground up. No templates — just purpose-built solutions that drive engagement and results.</p>
@@ -29,7 +29,7 @@ const Ritex = () => {
         {/* Card 2 */}
         <div className="ritex-card">
           <div className="card-top top-orange">
-            <img src="/images/box9.jpeg" alt="eCommerce" />
+           
           </div>
           <h3>eCommerce Website Development</h3>
           <p>Feature-rich online stores with secure payment systems, inventory management, and smooth shopping flows.</p>
@@ -45,7 +45,7 @@ const Ritex = () => {
         {/* Card 3 */}
         <div className="ritex-card">
           <div className="card-top top-teal">
-            <img src="/images/icon-responsive.png" alt="Responsive Design" />
+           
           </div>
           <h3>Responsive Web Design</h3>
           <p>Your site. Perfect on every device. We design responsive websites for desktop, tablet, and mobile for consistent experience.</p>
@@ -61,7 +61,7 @@ const Ritex = () => {
         {/* Row 2 — Card 4 */}
         <div className="ritex-card row-2">
           <div className="card-top top-blue">
-            <img src="/images/icon-cms.png" alt="CMS" />
+         
           </div>
           <h3>CMS Development</h3>
           <p>We develop flexible CMS platforms so your team can update and manage content without developers.</p>
@@ -77,7 +77,7 @@ const Ritex = () => {
         {/* Row 2 — Card 5 */}
         <div className="ritex-card row-2">
           <div className="card-top top-pink">
-            <img src="/images/icon-landing.png" alt="Landing Page" />
+          
           </div>
           <h3>Landing Page & Microsite Design</h3>
           <p>Focused pages that convert — optimized for marketing, events, product launches, and lead capture.</p>

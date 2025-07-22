@@ -39,7 +39,7 @@ function NextGen() {
         {/* Row 1 */}
         <div className="nextgen-row">
           <div className="nextgen-box">
-            <img className="nextgen-icon" src="/icons/ai.svg" alt="AI" />
+            <img className="nextgen-icon" src="/images/Next Generation Platform1.png" alt="AI" />
             <h3 className="nextgen-title">AI Optimization</h3>
             <p className="nextgen-desc">
               Smart algorithms to automate and enhance performance.
@@ -52,7 +52,7 @@ function NextGen() {
           </div>
 
           <div className="nextgen-box">
-            <img className="nextgen-icon" src="/icons/security.svg" alt="Security" />
+            <img className="nextgen-icon" src="/images/Next Generation Platform2.png" alt="Security" />
             <h3 className="nextgen-title">Advanced Security</h3>
             <p className="nextgen-desc">
               Protecting your data with multi-layered security.
@@ -68,7 +68,7 @@ function NextGen() {
         {/* Row 2 */}
         <div className="nextgen-row">
           <div className="nextgen-box">
-            <img className="nextgen-icon" src="/icons/cloud.svg" alt="Cloud" />
+            <img className="nextgen-icon" src="/images/Next Generation Platform3.png" alt="Cloud" />
             <h3 className="nextgen-title">Cloud Integration</h3>
             <p className="nextgen-desc">
               Seamless integration with all major cloud platforms.
@@ -81,7 +81,7 @@ function NextGen() {
           </div>
 
           <div className="nextgen-box">
-            <img className="nextgen-icon" src="/icons/support.svg" alt="Support" />
+            <img className="nextgen-icon" src="/images/Next Generation Platform4.png" alt="Support" />
             <h3 className="nextgen-title">24/7 Support</h3>
             <p className="nextgen-desc">
               Round-the-clock assistance to keep you going.

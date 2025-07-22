@@ -15,7 +15,7 @@ const Approach = () => {
       <div className="approach-steps">
         <div className="approach-card">
           <div className="step-number">1</div>
-          <img src="/images/assessment.png" alt="Assessment" className="step-image" />
+          <img src="/images/Apporouch 1.png" alt="Assessment" className="step-image" />
           <h3>Assessment</h3>
           <p>We begin with a comprehensive analysis of your current infrastructure, business requirements, and growth projections.</p>
           <ul>
@@ -27,7 +27,7 @@ const Approach = () => {
 
         <div className="approach-card">
           <div className="step-number">2</div>
-          <img src="/images/design.png" alt="Design" className="step-image" />
+          <img src="/images/Appourch 2.png" alt="Design" className="step-image" />
           <h3>Design</h3>
           <p>Our experts create a tailored infrastructure blueprint that optimizes performance, security, and scalability.</p>
           <ul>
@@ -39,7 +39,7 @@ const Approach = () => {
 
         <div className="approach-card">
           <div className="step-number">3</div>
-          <img src="/images/implementation.png" alt="Implementation" className="step-image" />
+          <img src="/images/Apporouch 3 .png" alt="Implementation" className="step-image" />
           <h3>Implementation</h3>
           <p>We deploy solutions with minimal disruption to your operations, following industry best practices and rigorous testing.</p>
           <ul>
@@ -51,7 +51,7 @@ const Approach = () => {
 
         <div className="approach-card">
           <div className="step-number">4</div>
-          <img src="/images/optimization.png" alt="Optimization" className="step-image" />
+          <img src="/images/Apporouch 4.png" alt="Optimization" className="step-image" />
           <h3>Optimization</h3>
           <p>Continuous monitoring and improvement to ensure your infrastructure evolves with your business needs.</p>
           <ul>

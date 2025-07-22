@@ -91,10 +91,51 @@
 
 @media (max-width: 480px) {
   .darkweb-alert {
-    padding: 0;
+    flex-direction: column;
+    padding: 20px;
   }
 
-  .left {
-    padding: 0.5rem;
+  .left, .right {
+    flex: unset;
+    width: 100%;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .left h2 {
+    font-size: 24px;
+  }
+
+  .left p {
+    font-size: 16px;
+    margin: 16px 0;
+  }
+
+  .scan-now {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .right {
+    margin-top: 20px;
+    min-height: 220px;
+  }
+
+  .lock-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .top-buttons {
+    top: 10px;
+    right: 10px;
+    gap: 6px;
+  }
+
+  .top-buttons button {
+    font-size: 12px;
+    padding: 4px 10px;
   }
 }
+

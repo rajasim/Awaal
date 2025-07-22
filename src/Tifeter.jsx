@@ -36,19 +36,19 @@ const Tifeter = () => {
 
         <div className="tifeter-points">
           <div className="point-box">
-            <img src="/images/check-icon.png" alt="Check" />
+            <img src="/images/Why Invest in Professional Website Development1.png" alt="Check" />
             <span>SEO & conversion optimized</span>
           </div>
           <div className="point-box">
-            <img src="/images/check-icon.png" alt="Check" />
+            <img src="/images/Why Invest in Professional Website Development2.png" alt="Check" />
             <span>Mobile-first & lightning fast</span>
           </div>
           <div className="point-box">
-            <img src="/images/check-icon.png" alt="Check" />
+            <img src="/images/Why Invest in Professional Website Development3.png" alt="Check" />
             <span>Secure & scalable</span>
           </div>
           <div className="point-box">
-            <img src="/images/check-icon.png" alt="Check" />
+            <img src="/images/Why Invest in Professional Website Development4.png" alt="Check" />
             <span>Integrated with business tools</span>
           </div>
         </div>

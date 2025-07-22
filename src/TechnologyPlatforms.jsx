@@ -20,11 +20,11 @@ function TechnologyPlatforms() {
 
         {/* Icon Boxes */}
         <div className="icon-grid">
-          <div className="icon-box"><div className="icon">🖧</div><p>Hardware & Network</p></div>
-          <div className="icon-box"><div className="icon">🖥️</div><p>Virtualization & OS</p></div>
-          <div className="icon-box"><div className="icon">☁️</div><p>Cloud & Storage</p></div>
-          <div className="icon-box"><div className="icon">📊</div><p>Monitoring Tools</p></div>
-          <div className="icon-box"><div className="icon">🛡️</div><p>Compliance</p></div>
+          <div className="icon-box"><div className="icones">🖧</div><p>Hardware & Network</p></div>
+          <div className="icon-box"><div className="icones">🖥️</div><p>Virtualization & OS</p></div>
+          <div className="icon-box"><div className="icones">☁️</div><p>Cloud & Storage</p></div>
+          <div className="icon-box"><div className="icones">📊</div><p>Monitoring Tools</p></div>
+          <div className="icon-box"><div className="icones">🛡️</div><p>Compliance</p></div>
         </div>
 
         {/* CENTER Video Box (not removed!) */}

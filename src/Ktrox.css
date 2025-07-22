@@ -66,8 +66,8 @@
 }
 
 .card-header img {
-  width: 30px;
-  height: 30px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
 }
 
@@ -140,4 +140,63 @@
 
 .ktrox-button:hover {
   opacity: 0.85;
+}
+@media (max-width: 480px) {
+  /* Section Layout */
+  .ktrox-section {
+    padding: 50px 20px;
+  }
+
+  .ktrox-heading {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .ktrox-subtext {
+    font-size: 16px;
+    max-width: 100%;
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }
+
+  /* Grid Layout */
+  .ktrox-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Tech Card */
+  .tech-card {
+    padding: 24px 20px;
+    min-height: auto;
+    width: 100%;
+  }
+
+  .card-header {
+    font-size: 18px;
+    margin-bottom: 18px;
+    gap: 10px;
+  }
+
+  .card-header img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* List Items */
+  .tech-card li {
+    font-size: 14px;
+    margin: 10px 0;
+    padding-bottom: 5px;
+  }
+
+  /* Button */
+  .ktrox-button-wrapper {
+    margin-top: 40px;
+  }
+
+  .ktrox-button {
+    padding: 12px 26px;
+    font-size: 15px;
+  }
 }

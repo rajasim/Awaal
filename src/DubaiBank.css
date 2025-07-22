@@ -128,12 +128,84 @@
 }
 
 .glass-card img {
-  height: 40px;
-  width: 140px;
+  height: 80px;
+  width: 80px;
   margin-bottom: 16px;
 }
 
 .glass-card p {
   font-size: 18px;
   font-weight: 500;
+}
+@media (max-width: 480px) {
+  .bank-wrapper {
+    padding: 40px 20px;
+  }
+
+  .bank-card {
+    padding: 30px 20px;
+  }
+
+  .network-image img {
+    height: 200px;
+  }
+
+  .network-labels {
+    flex-direction: column;
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .bank-info {
+    min-width: unset;
+    text-align: center;
+  }
+
+  .bank-info h2 {
+    font-size: 26px;
+  }
+
+  .bank-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .bullet-points li {
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .glass-cards-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .glass-card {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    padding: 24px;
+  }
+
+  .glass-card img {
+    width: 100px;
+    height: auto;
+  }
+
+  .glass-card p {
+    font-size: 16px;
+  }
 }

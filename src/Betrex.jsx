@@ -15,7 +15,7 @@ const Betrex = () => {
         <div className="betrex-left">
           <div className="betrex-step-circle">01</div>
           <img
-            src="/images/box9.jpeg" // Replace with your actual image path
+            src="/images/Our Revolutionary Process1.png" 
             alt="Migration Diagram"
             className="betrex-illustration"
           />

@@ -26,7 +26,7 @@ const Hatrex = () => {
         <div className="hatrex-right">
           <div className="hatrex-step-circle">02</div>
           <img
-            src="/images/box9.jpeg" // Replace with your actual path
+            src="/images/Our Revolutionary Process2.png" 
             alt="Roadmap Visual"
             className="hatrex-illustration"
           />

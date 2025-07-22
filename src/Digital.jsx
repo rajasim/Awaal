@@ -17,7 +17,7 @@ const Digital = () => {
 
       <div className="digital-cards">
         <div className="digital-card">
-          <img src="/images/box9.jpeg" alt="Cybersecurity" />
+          <img src="/images/Secure What we do1.png" alt="Cybersecurity" />
           <h3>Cybersecurity (VAPT)</h3>
           <p>Vulnerability Assessment & Penetration Testing to secure your infrastructure</p>
           <div className="tags">
@@ -27,7 +27,7 @@ const Digital = () => {
         </div>
 
         <div className="digital-card">
-          <img src="/images/ai-icon.png" alt="AI & Automation" />
+          <img src="/images/Secure What we do2.png" alt="AI & Automation" />
           <h3>AI & Automation</h3>
           <p>Intelligent automation solutions to streamline your business processes</p>
           <div className="tags">
@@ -37,7 +37,7 @@ const Digital = () => {
         </div>
 
         <div className="digital-card">
-          <img src="/images/cloud-icon.png" alt="Cloud Services" />
+          <img src="/images/Secure What we do3.png" alt="Cloud Services" />
           <h3>Cloud Services</h3>
           <p>Scalable cloud infrastructure and management solutions</p>
           <div className="tags">
@@ -47,7 +47,7 @@ const Digital = () => {
         </div>
 
         <div className="digital-card">
-          <img src="/images/infrastructure-icon.png" alt="IT Infrastructure" />
+          <img src="/images/Secure What we do4.png" alt="IT Infrastructure" />
           <h3>IT Infrastructure</h3>
           <p>Robust network architecture and system administration</p>
           <div className="tags">
@@ -57,7 +57,7 @@ const Digital = () => {
         </div>
 
         <div className="digital-card">
-          <img src="/images/software-icon.png" alt="Software Development" />
+          <img src="/images/Secure What we do5.png" alt="Software Development" />
           <h3>Software Development</h3>
           <p>Custom software solutions tailored to your business needs</p>
           <div className="tags">
@@ -67,7 +67,7 @@ const Digital = () => {
         </div>
 
         <div className="digital-card">
-          <img src="/images/web-icon.png" alt="Web Dev & Migration" />
+          <img src="/images/Secure What we do6.png" alt="Web Dev & Migration" />
           <h3>Web Dev & Migration</h3>
           <p>Modern websites and seamless platform migrations</p>
           <div className="tags">

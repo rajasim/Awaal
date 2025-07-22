@@ -40,7 +40,7 @@ const Ketra = () => {
 
       <div className="project-cards">
         <div className="card">
-          <img src="/images/project1.png" alt="E-Commerce" className="card-img" />
+          <img src="/images/Our Recent Projects1.png" alt="E-Commerce" className="card-img" />
           <h3>E-Commerce Platform</h3>
           <p>
             A fully responsive online store with product management and payment integration.
@@ -53,7 +53,7 @@ const Ketra = () => {
         </div>
 
         <div className="card">
-          <img src="/images/box9.jpeg" alt="Corporate Website" className="card-img" />
+          <img src="/images/Our Recent Projects2.png" alt="Corporate Website" className="card-img" />
           <h3>Corporate Website</h3>
           <p>
             A professional web presence for businesses with custom CMS.
@@ -66,7 +66,7 @@ const Ketra = () => {
         </div>
 
         <div className="card">
-          <img src="/images/project3.png" alt="Educational Platform" className="card-img" />
+          <img src="/images/Our Recent Projects3.png" alt="Educational Platform" className="card-img" />
           <h3>Educational Platform</h3>
           <p>
             An interactive learning platform with course management and student tracking.

@@ -48,7 +48,7 @@ const TechSecure = () => {
       <div className="ts-values">
         <div className="ts-value-box">
           <img
-            src="/images/security-icon.png"
+            src="/images/About Awwal 1.png"
             alt="Security Icon"
             className="ts-icon"
           />
@@ -61,7 +61,7 @@ const TechSecure = () => {
 
         <div className="ts-value-box">
           <img
-            src="/images/innovation-icon.png"
+            src="/images/About Awwal 2.png"
             alt="Innovation Icon"
             className="ts-icon"
           />
@@ -74,7 +74,7 @@ const TechSecure = () => {
 
         <div className="ts-value-box">
           <img
-            src="/images/client-icon.png"
+            src="/images/About Awwal 3.png"
             alt="Client Icon"
             className="ts-icon"
           />

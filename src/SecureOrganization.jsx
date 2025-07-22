@@ -16,7 +16,7 @@ const SecureOrganization = () => {
           </div>
         </div>
         <div className="secure-organization-image">
-          <img src="/images/box9.jpeg" alt="Security Visual" />
+          <img src="/images/https.jpg" alt="Security Visual" />
         </div>
       </div>
     </div>

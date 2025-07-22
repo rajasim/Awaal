@@ -3,7 +3,7 @@ import "./Videosection.css";
 
 const VideoSection = () => {
   return (
-    <div className="video-section">
+    <div className="videoo-section">
       <video autoPlay loop muted className="bg-video">
         <source
           src="/video/Recording 2025-06-30 124025-vmake.mp4"

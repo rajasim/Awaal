@@ -31,15 +31,15 @@ const DubaiBank = () => {
           {/* Right Side – Horizontal Cards */}
           <div className="glass-cards-row">
             <div className="glass-card">
-              <img src="/images/network-icon.png" alt="Network" />
+              <img src="/images/Dubai First Bank1.png" alt="Network" />
               <p>Network</p>
             </div>
             <div className="glass-card">
-              <img src="/images/security-icon.png" alt="Security" />
+              <img src="/images/Dubai First Bank2.png" alt="Security" />
               <p>Security</p>
             </div>
             <div className="glass-card">
-              <img src="/images/multisite-icon.png" alt="Multi-Site" />
+              <img src="/images/Dubai First Bank3.png" alt="Multi-Site" />
               <p>Multi-Site</p>
             </div>
           </div>

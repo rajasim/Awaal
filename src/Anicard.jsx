@@ -6,7 +6,7 @@ const Anicard = () => {
     <div className="anicard-container">
       <div className="anicard-box">
         <img
-          src="/images/Your paragraph text .gif"
+          src="/images/Managed XDR 1.jpg"
           alt="MXDR top"
           className="anicard-top-img"
         />
@@ -28,7 +28,7 @@ const Anicard = () => {
 
       <div className="anicard-box">
         <img
-          src="/images/box9.jpeg"
+          src="/images/Managed XDR 2.jpg"
           alt="EDR top"
           className="anicard-top-img"
         />
@@ -50,7 +50,7 @@ const Anicard = () => {
 
       <div className="anicard-box">
         <img
-          src="/images/network-top.png"
+          src="/images/Managed XDR 3.jpg"
           alt="Network top"
           className="anicard-top-img"
         />
@@ -72,7 +72,7 @@ const Anicard = () => {
 
       <div className="anicard-box">
         <img
-          src="/images/grc-top.png"
+          src="/images/Managed XDR 4.jpg"
           alt="GRC top"
           className="anicard-top-img"
         />

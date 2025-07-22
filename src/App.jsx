@@ -1,4 +1,5 @@
 import "./App.css";
+
 import Navbar from "./Navbar";
 
 import Videosection from "./Videosection";
@@ -91,6 +92,8 @@ import CloudIndustriel from "./CloudIndustriel";
 import SoftDevlop from "./SoftDevlop";
 import Softwarelap from "./Softwarelap";
 import Cyberlap from "./Cyberlap";
+import Footermain from "./Footermain";
+import Blog from "./Blog";
 import { Routes, Route } from "react-router-dom";
 import Pater from "./Pater";
 
@@ -115,14 +118,12 @@ function App() {
             <Poteker/>
              <NewsSection />
              <Footer />
-            <Ketra />
-            <Videosection />
-            <AboutUs />
-            <ScrollingLogosSection />
-            <Services />
+             
+            
+            
+            
             <DarkWebAlert />
-            <CbSection />
-            <TechnologyPlatforms />
+            
             
             <Videofoot />
            
@@ -130,44 +131,9 @@ function App() {
            
             
             
-            <Eater />
-            <Opatise />
-            
-            
-            <Ktrox />
-            
-            <Migration />
-            <Atifex />
-            <Hefter />
-            <Betrex />
-            <Hatrex />
-            <Hitoera />
-            
+          
            
             
-            
-            
-           
-            
-            <UniqueHero />
-            
-            <Ritex />
-            <Tifeter />
-            <Rofter />
-            <Toll />
-            <Fotrom/>
-            <Lixs/>
-            <Ioteor/>
-            <Wiptex/>
-            <WhyAwwal/>
-            <NewsMain/>
-            <Azul/>
-            <AwwalSecurity/>
-            <Bitriz/>
-            <Hotel/>
-            <DubaiBank/>
-            <SmartPharmacy/>
-            <Tranfrom/>
             <Contact/>
             
             
@@ -179,6 +145,8 @@ function App() {
             <DarkMain/>
              
              <Waptexr/>
+             <Footermain/>
+             <Blog/>
            
             
           </>
@@ -193,7 +161,7 @@ function App() {
              <Hofpt/>
              <TestingApproach />
              <ProtectionSteps />
-            
+                     <SecuritySolutions />  
               <Anicard />
                <Featured />
                <DarkWebAlert />
@@ -226,6 +194,41 @@ function App() {
           </>
           }
       />
+      <Route
+        path="/why-awwal"
+        element={
+          <>
+         <WhyAwwal/>
+         <NewsMain/>
+         <AwwalSecurity/>
+         <Azure/>
+         <Bitriz/>
+         <Hotel/>
+         <DubaiBank/>
+         <SmartPharmacy/>
+         <Tranfrom/>
+
+          </>
+          }
+          />
+ <Route
+        path="/what-we-do"
+        element={
+          <>
+          <Videosection />
+          <Digital/>
+           <Fotrom/>
+            <Lixs/>
+            <Ioteor/>
+            <Wiptex/>
+
+             </>
+             }
+             />
+          
+      
+      
+      
       <Route
         path="/CLOUD"
         element={
@@ -265,10 +268,11 @@ function App() {
         element={
           <>
           <ITInfrastructurePage/>
-          <SoftDevlop/>
+          <CbSection/>
          <Benefits />
           <NextGen />
             <KeyBenefits />
+            <TechnologyPlatforms/>
             <Videofoot/>
             <Optimize />
           </>

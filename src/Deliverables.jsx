@@ -75,7 +75,7 @@ const Deliverables = () => {
           </div>
 
           <div className="right-box">
-            <img src="/images/Screenshot 2025-06-13 165048.png" alt="Radar" />
+            <img src="/images/Comprehensive Deliverables).gif" alt="Radar" />
           </div>
         </div>
       </div>

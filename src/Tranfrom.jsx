@@ -16,37 +16,37 @@ const Tranfrom = () => {
 
         <div className="services-row">
           <div className="service-cardes">
-            <img src="/images/cybersecurity.png" alt="Cybersecurity" />
+           
             <p>Cybersecurity<br /><small>(VAPT)</small></p>
           </div>
           <div className="service-cardes">
-            <img src="/images/ai.png" alt="AI Automation" />
+         
             <p>AI &<br />Automation</p>
           </div>
           <div className="service-cardes">
-            <img src="/images/cloud.png" alt="Cloud" />
+          
             <p>Cloud<br />Services</p>
           </div>
           <div className="service-cardes">
-            <img src="/images/it.png" alt="IT Infra" />
+          
             <p>IT Infra<br />Management</p>
           </div>
           <div className="service-cardes">
-            <img src="/images/software.png" alt="Software" />
+           
             <p>Software<br />Development</p>
           </div>
           <div className="service-cardes">
-            <img src="/images/website.png" alt="Website" />
+          
             <p>Website<br />Development</p>
           </div>
           <div className="service-cardes">
-            <img src="/images/system.png" alt="Migration" />
+          
             <p>System<br />Migration</p>
           </div>
         </div>
 
         <button className="transform-btnnn">
-          <img src="/images/rocket.png" alt="Rocket" /> Transform Now
+           Transform Now
         </button>
 
         <div className="features-row">

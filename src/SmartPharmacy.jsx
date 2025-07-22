@@ -63,15 +63,15 @@ const SmartPharmacy = () => {
           </ul>
           <div className="metrics-row">
             <div className="metric-card">
-              <img src="/images/multisite-icon.png" alt="Multi-Site" />
+              <img src="/images/host1.png" alt="Multi-Site" />
               <p>Multi Site</p>
             </div>
             <div className="metric-card">
-              <img src="/images/security-icon.png" alt="Secure" />
+              <img src="/images/host2.png" alt="Secure" />
               <p>Secure</p>
             </div>
             <div className="metric-card">
-              <img src="/images/realtime-icon.png" alt="Real-time" />
+              <img src="/images/host3.png" alt="Real-time" />
               <p>Real time</p>
             </div>
           </div>

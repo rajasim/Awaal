@@ -11,7 +11,7 @@ const Toll = () => {
 
       <div className="toll-grid">
         <div className="toll-card purple">
-          <div className="toll-icon">💻</div>
+          <div className="toll-icon">  <img src="/images/Tech Stack & Toolses1.png" alt="Check" /></div>
           <h2>Frontend</h2>
           <ul>
             <li>HTML5 & CSS3</li>
@@ -22,7 +22,7 @@ const Toll = () => {
         </div>
 
         <div className="toll-card blue">
-          <div className="toll-icon">🖥️</div>
+          <div className="toll-icon">  <img src="/images/Tech Stack & Toolses2.png" alt="Check" /></div>
           <h2>Backend</h2>
           <ul>
             <li>PHP</li>
@@ -33,7 +33,7 @@ const Toll = () => {
         </div>
 
         <div className="toll-card green">
-          <div className="toll-icon">🛒</div>
+          <div className="toll-icon">  <img src="/images/Tech Stack & Toolses3.png" alt="Check" /></div>
           <h2>eCommerce</h2>
           <ul>
             <li>Shopify</li>
@@ -43,7 +43,7 @@ const Toll = () => {
         </div>
 
         <div className="toll-card orange">
-          <div className="toll-icon">📦</div>
+          <div className="toll-icon">  <img src="/images/Tech Stack & Toolses3.png" alt="Check" /></div>
           <h2>CMS</h2>
           <ul>
             <li>WordPress</li>
@@ -53,7 +53,7 @@ const Toll = () => {
         </div>
 
         <div className="toll-card red">
-          <div className="toll-icon">☁️</div>
+          <div className="toll-icon">  <img src="/images/Tech Stack & Toolses4.png" alt="Check" /></div>
           <h2>DevOps & Hosting</h2>
           <ul>
             <li>AWS</li>
@@ -64,7 +64,7 @@ const Toll = () => {
         </div>
 
         <div className="toll-card violet">
-          <div className="toll-icon">🛠️</div>
+          <div className="toll-icon">  <img src="/images/Tech Stack & Toolses5.png" alt="Check" /></div>
           <h2>Tools</h2>
           <ul>
             <li>Figma</li>
@@ -78,29 +78,7 @@ const Toll = () => {
       <div className="toll-footer">
         <h3>Our Technology Ecosystem</h3>
         <div className="toll-footer-icons">
-          <div className="footer-icon-block">
-            <div className="footer-icon">💻</div>
-            <div className="footer-label">Frontend</div>
-          </div>
-          <div className="footer-icon-block">
-            <div className="footer-icon">🖥️</div>
-            <div className="footer-label">Backend</div>
-          </div>
-          <div className="footer-icon-block">
-            <div className="footer-icon">🛒</div>
-            <div className="footer-label">eCommerce</div>
-          </div>
-          <div className="footer-icon-block">
-            <div className="footer-icon">☁️</div>
-            <div className="footer-label">DevOps</div>
-          </div>
-          <div className="footer-icon-block">
-            <div className="footer-icon">🛠️</div>
-            <div className="footer-label">Tools</div>
-          </div>
-          <div className="footer-icon-block">
-            <div className="footer-icon">🔍</div>
-            <div className="footer-label">SEO</div>
+         
           </div>
         </div>
         <p>
@@ -108,7 +86,7 @@ const Toll = () => {
           visually stunning but also robust, scalable, and optimized for performance.
         </p>
       </div>
-    </div>
+    
   );
 };
 

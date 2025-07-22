@@ -14,7 +14,7 @@ const Ktrox = () => {
         {/* Frontend */}
         <div className="tech-card tech-frontend">
           <div className="card-header">
-            <img src="assets/icons/frontend.png" alt="Frontend" />
+            <img src="/images/Tech Stack & Tools1.png" alt="Frontend" />
             Frontend
           </div>
           <ul>
@@ -27,7 +27,7 @@ const Ktrox = () => {
         {/* Backend */}
         <div className="tech-card tech-backend">
           <div className="card-header">
-            <img src="assets/icons/backend.png" alt="Backend" />
+            <img src="/images/Tech Stack & Tools2.png" alt="Backend" />
             Backend
           </div>
           <ul>
@@ -42,7 +42,7 @@ const Ktrox = () => {
         {/* Mobile */}
         <div className="tech-card tech-mobile">
           <div className="card-header">
-            <img src="assets/icons/mobile.png" alt="Mobile" />
+            <img src="/images/Tech Stack & Tools3.png" alt="Mobile" />
             Mobile
           </div>
           <ul>
@@ -56,7 +56,7 @@ const Ktrox = () => {
         {/* Databases */}
         <div className="tech-card tech-database">
           <div className="card-header">
-            <img src="assets/icons/database.png" alt="Databases" />
+            <img src="/images/Tech Stack & Tools4.png" alt="Databases" />
             Databases
           </div>
           <ul>
@@ -70,7 +70,7 @@ const Ktrox = () => {
         {/* DevOps & Cloud */}
         <div className="tech-card tech-devops">
           <div className="card-header">
-            <img src="assets/icons/devops.png" alt="DevOps" />
+            <img src="/images/Tech Stack & Tools5.png" alt="DevOps" />
             DevOps & Cloud
           </div>
           <ul>
@@ -85,7 +85,7 @@ const Ktrox = () => {
         {/* API Tools */}
         <div className="tech-card tech-api">
           <div className="card-header">
-            <img src="assets/icons/api.png" alt="API Tools" />
+            <img src="/images/Tech Stack & Tools6.png" alt="API Tools" />
             API Tools
           </div>
           <ul>

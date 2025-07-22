@@ -37,10 +37,10 @@ const Repter = () => {
         <div className="repter-tech">
           <span>Powered by cutting-edge technologies</span>
           <div className="tech-icons">
-            <img src="/icons/react.png" alt="React" />
-            <img src="/icons/node.png" alt="Node.js" />
-            <img src="/icons/flutter.png" alt="Flutter" />
-            <img src="/icons/aws.png" alt="AWS" />
+            <img src="/images/We Build Powerful Software & Stunning Apps1.png" alt="React" />
+           <img src="/images/We Build Powerful Software & Stunning Apps2.png" alt="Node.js" />
+            <img src="/images/We Build Powerful Software & Stunning Apps3.png" alt="Flutter" />
+            <img src="/images/We Build Powerful Software & Stunning Apps4.png"alt="AWS" />
           </div>
         </div>
       </div>

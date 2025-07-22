@@ -17,42 +17,42 @@ function Industrial() {
 
         <div className="industries-grid">
           <div className="industry-box">
-            <img src="/images/box9.jpeg" alt="Finance" />
+            <img src="/images/industries 1.png" alt="Finance" />
             <h3>Finance</h3>
             <p>Comprehensive financial solutions and services</p>
           </div>
           <div className="industry-box">
-            <img src="/img/retail.png" alt="Retail" />
+            <img src="/images/industries 2.png" alt="Retail" />
             <h3>Retail</h3>
             <p>Modern retail and customer experience solutions</p>
           </div>
           <div className="industry-box">
-            <img src="/img/healthcare.png" alt="Healthcare" />
+            <img src="/images/industries 3.png" alt="Healthcare" />
             <h3>Healthcare</h3>
             <p>Advanced healthcare technology and services</p>
           </div>
           <div className="industry-box">
-            <img src="/img/banking.png" alt="Banking" />
+            <img src="/images/industries 4.png" alt="Banking" />
             <h3>Banking</h3>
             <p>Secure banking and financial institution services</p>
           </div>
           <div className="industry-box">
-            <img src="/img/education.png" alt="Education" />
+            <img src="/images/industries 5.png" alt="Education" />
             <h3>Education</h3>
             <p>Innovative educational technology solutions</p>
           </div>
           <div className="industry-box">
-            <img src="/img/hotel.png" alt="Hotel" />
+            <img src="/images/industries 6.png" alt="Hotel" />
             <h3>Hotel</h3>
             <p>Hospitality management and guest services</p>
           </div>
           <div className="industry-box">
-            <img src="/img/realestate.png" alt="Real Estate" />
+            <img src="/images/industries 7.png" alt="Real Estate" />
             <h3>Real Estate</h3>
             <p>Property management and real estate solutions</p>
           </div>
           <div className="industry-box">
-            <img src="/img/ecommerce.png" alt="E-commerce" />
+            <img src="/img/industries 7.png" alt="E-commerce" />
             <h3>E-commerce</h3>
             <p>Complete online commerce and digital solutions</p>
           </div>
