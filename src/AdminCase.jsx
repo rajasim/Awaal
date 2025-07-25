@@ -1,5 +1,5 @@
 import React from "react";
-import "./AdminCaseStudy.css";
+import "./AdminCase.css";
 
 const AdminCaseStudy = () => {
   return (
