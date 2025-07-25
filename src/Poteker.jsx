@@ -1,9 +1,9 @@
 import React from "react";
-import "./Ktrox.css";
+import "./Potekar.css";
 
 const Poteker = () => {
   return (
-    <section className="ktrox-section">
+    <section className="ktrox-sectionn">
       <h2 className="ktrox-heading">Technologies We Use</h2>
       <p className="ktrox-subtext">
         Our tech stack is carefully selected to provide the best solutions for your projects.
@@ -15,12 +15,16 @@ const Poteker = () => {
         <div className="tech-card tech-frontend">
           <div className="card-header">
             <img src="assets/icons/frontend.png" alt="Frontend" />
-            Frontend
+            Cyber
           </div>
           <ul>
-            <li className="dot-react">React.js</li>
-            <li className="dot-angular">Angular</li>
-            <li className="dot-vue">Vue.js</li>
+            <li className="dot-nmap">Nmap</li>
+<li className="dot-burp">Burp Suite</li>
+<li className="dot-nessus">Nessus</li>
+<li className="dot-metasploit">Metasploit</li>
+<li className="dot-owasp">OWASP</li>
+<li className="dot-openvas">OpenVAS</li>
+
           </ul>
         </div>
 

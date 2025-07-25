@@ -20,15 +20,16 @@ const Homepageser = () => {
           {/* Box 1 */}
           <div className="homepageser-box">
             <img src="/images/ourservices 1.jpg" alt="Network Infrastructure" className="homepageser-topimg" />
-            <h3 className="homepageser-title">Network Infrastructure</h3>
+            <h3 className="homepageser-title">Cybersecurity</h3>
             <p className="homepageser-desc">
-              Custom-designed network architecture that scales with your business needs, ensuring optimal connectivity and performance.
+            We provide complete cybersecurity solutions to protect your business, detect threats in real time, and ensure compliance keeping you secure and in control.
+
             </p>
             <img src="/images/home1.gif" alt="Live Network Simulation" className="homepageser-boximg" />
             <ul className="homepageser-list">
-              <li>Advanced routing & switching</li>
-              <li>Intelligent traffic management</li>
-              <li>High-performance backbone</li>
+              <li>Vulnerability Assessment & Penetration Testing </li>
+              <li>Managed XDR / MXDR</li>
+              <li>EDR / NGAV Protection</li>
             </ul>
             <button className="homepageser-btn">Explore Solutions →</button>
           </div>
@@ -36,15 +37,15 @@ const Homepageser = () => {
           {/* Box 2 */}
           <div className="homepageser-box">
             <img src="/images/ourservices  2.jpg" alt="Wireless Solutions" className="homepageser-topimg" />
-            <h3 className="homepageser-title">Wireless Solutions</h3>
+            <h3 className="homepageser-title">IT Infrastructure</h3>
             <p className="homepageser-desc">
-              High-performance wireless networks with optimal coverage, capacity planning, and interference management.
+             We build and manage reliable IT setups that power your business. From servers to networks, We ensure everything runs smoothly, securely, and efficiently.
             </p>
             <img src="/images/home2.gif" alt="Coverage Visualization" className="homepageser-boximg" />
             <ul className="homepageser-list">
-              <li>Wi-Fi 6/6E implementation</li>
-              <li>Mesh network deployment</li>
-              <li>RF site surveys & optimization</li>
+              <li>Network Design & Management </li>
+              <li>Data Centre Solutions</li>
+              <li>Data Centre Solutions</li>
             </ul>
             <button className="homepageser-btn">Explore Solutions →</button>
           </div>
@@ -52,15 +53,15 @@ const Homepageser = () => {
           {/* Box 3 */}
           <div className="homepageser-box">
             <img src="/images/ourservices 3.jpg" alt="Network Security" className="homepageser-topimg" />
-            <h3 className="homepageser-title">Network Security</h3>
+            <h3 className="homepageser-title">Software & App Development</h3>
             <p className="homepageser-desc">
-              Protection against cyber threats with advanced firewalls, intrusion detection, and zero-trust architecture.
+              We design and build custom software and mobile apps that match your business needs. From idea to launch, We delivers fast, secure, and user-friendly solutions.
             </p>
             <img src="/images/home3.gif" alt="Threat Protection" className="homepageser-boximg" />
             <ul className="homepageser-list">
-              <li>Next-gen firewall protection</li>
-              <li>Intrusion detection systems</li>
-              <li>Zero-trust architecture</li>
+              <li>Custom Software Solutions</li>
+              <li>Mobile App Developments</li>
+              <li>Web Application Development</li>
             </ul>
             <button className="homepageser-btn">Explore Solutions →</button>
           </div>
@@ -68,15 +69,15 @@ const Homepageser = () => {
           {/* Box 4 */}
           <div className="homepageser-box">
             <img src="/images/ourservices 4.jpg" alt="Cloud Networking" className="homepageser-topimg" />
-            <h3 className="homepageser-title">Cloud Networking</h3>
+            <h3 className="homepageser-title">Cloud Services</h3>
             <p className="homepageser-desc">
-              Hybrid and multi-cloud networking solutions for maximum flexibility and resilience.
+              We help you migrate, manage, and secure your cloud with ease. We ensure your cloud setup is fast, flexible, and fully protected.
             </p>
             <img src="/images/home4.gif" alt="Cloud Architecture" className="homepageser-boximg" />
             <ul className="homepageser-list">
-              <li>Cloud VPNs</li>
-              <li>Hybrid networks</li>
-              <li>Policy-driven controls</li>
+             <li>Cloud Deployment </li>
+              <li>Cloud Migration</li>
+              <li>Security & Compliance</li>
             </ul>
             <button className="homepageser-btn">Explore Solutions →</button>
           </div>
@@ -84,15 +85,15 @@ const Homepageser = () => {
           {/* Box 5 */}
           <div className="homepageser-box">
             <img src="/images/ourservices 5.jpg" alt="Network Automation" className="homepageser-topimg" />
-            <h3 className="homepageser-title">Network Automation</h3>
+            <h3 className="homepageser-title">Website Development</h3>
             <p className="homepageser-desc">
-              Automate operations with intelligent orchestration, AI, and zero-touch provisioning.
+              We create modern, responsive websites that are fast, secure, and built to grow your business. We blend design and tech to give your brand a strong online presence.
             </p>
             <img src="/images/home5.gif" alt="Automation & AI" className="homepageser-boximg" />
             <ul className="homepageser-list">
-              <li>Zero-touch provisioning</li>
-              <li>Automation & AI</li>
-              <li>Operational efficiency</li>
+              <li>Custom Website Development</li>
+              <li>eCommerce Website Development</li>
+              <li>Responsive Web Design</li>
             </ul>
             <button className="homepageser-btn">Explore Solutions →</button>
           </div>
@@ -100,15 +101,15 @@ const Homepageser = () => {
           {/* Box 6 */}
           <div className="homepageser-box">
             <img src="/images/ourservices 6.jpg" alt="Data Protection" className="homepageser-topimg" />
-            <h3 className="homepageser-title">Data Protection</h3>
+            <h3 className="homepageser-title">Migration</h3>
             <p className="homepageser-desc">
-              End-to-end encryption, compliance, and privacy across your network.
+             We help you move your data, apps, or infrastructure to new environments with zero hassle. We ensure smooth, secure, and downtime-free migrations.
             </p>
             <img src="/images/home6.gif" alt="Data Privacy" className="homepageser-boximg" />
             <ul className="homepageser-list">
-              <li>Data encryption</li>
-              <li>Privacy & compliance</li>
-              <li>Threat detection</li>
+              <li>End-to-End Migration Services</li>
+              <li>Seamless AI & Automation Migration</li>
+              <li>Effortless Cloud Migration</li>
             </ul>
             <button className="homepageser-btn">Explore Solutions →</button>
           </div>

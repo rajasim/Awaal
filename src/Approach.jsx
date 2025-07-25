@@ -64,15 +64,14 @@ const Approach = () => {
 
       <div className="approach-bottom">
         <div className="partners">
-          <h4>Technology Partners</h4>
-          <p>We collaborate with industry-leading technology providers to deliver best in class infrastructure solutions tailored to your specific needs.</p>
-          <div className="partner-logos">
-            <img src="/images/cisco.png" alt="Cisco" />
-            <img src="/images/vmware.png" alt="VMware" />
-            <img src="/images/microsoft.png" alt="Microsoft" />
-            <img src="/images/aws.png" alt="AWS" />
-            <img src="/images/hpe.png" alt="HPE" />
-            <img src="/images/dell.png" alt="Dell" />
+          <h4>Smart Tech, Real Results</h4>
+          <p>By working closely with top tier technology providers, we bring you reliable, high performance infrastructure solutions built around your business needs.</p>
+          <div className="cert-tags">
+            <span>Cisco</span>
+            <span>Palo Alto</span>
+            <span>Fortinet</span>
+            <span>AWS</span>
+            <span>Microsoft</span>
           </div>
         </div>
         <div className="certifications">
@@ -80,7 +79,7 @@ const Approach = () => {
           <p>Our team holds advanced certifications from all major technology vendors, ensuring expert implementation and support.</p>
           <div className="cert-tags">
             <span>CCIE</span>
-            <span>VCDX</span>
+            <span>CISM</span>
             <span>AWS Solutions Architect</span>
             <span>Azure Expert</span>
             <span>CISSP</span>

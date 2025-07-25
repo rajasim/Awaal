@@ -91,7 +91,7 @@ function Pater() {
             </div>
           </div>
           <div className="pater-bottom-right">
-            <img src="/pater-graph.png" alt="AI Graphic" className="pater-bottom-img" />
+            <img src="/images/aigif.gif" alt="AI Graphic" className="pater-bottom-img" />
           </div>
         </div>
       </div>

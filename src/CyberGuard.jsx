@@ -4,10 +4,9 @@ import "./CyberGuard.css";
 const CyberGuard = () => {
   return (
     <section className="cyberguard-container">
-      <h2 className="cyberguard-heading">Why Choose CyberGuard?</h2>
+      <h2 className="cyberguard-heading">Why Choose Awwal?</h2>
       <p className="cyberguard-subheading">
-        With over 15 years of experience in cybersecurity, our team of certified security professionals provides
-        comprehensive VAPT services to businesses of all sizes.
+        With over 12+ years of experience, our team of IT professionals provides comprehensive Cyber Security and IT services to businesses of all sizes.
       </p>
 
       <div className="cyberguard-main">
@@ -20,7 +19,7 @@ const CyberGuard = () => {
             <div>
               <h3>Expert Team</h3>
               <p>
-                Our security professionals hold industry-recognized certifications including OSCP, CEH, and CISSP with
+                Our security professionals hold industry-recognized certifications including CCIE, CISSP, CISM, CEH, with
                 continuous training to stay ahead of emerging threats.
               </p>
             </div>
@@ -61,7 +60,7 @@ const CyberGuard = () => {
                 <img src="/images/Cyberguard 4.png" alt="Certified Experts" />
               </div>
               <h4>Certified Experts</h4>
-              <p>OSCP, CEH, CISSP certified security professionals</p>
+              <p>CCIE, CISSP, CISM, CEH, Azure Solutions Architect</p>
             </div>
 
             <div className="cyberguard-tile">
@@ -95,10 +94,10 @@ const CyberGuard = () => {
           </div>
 
           <div className="cyberguard-certifications">
-            <span>OSCP</span>
-            <span>CEH</span>
+            <span>CCIE,</span>
             <span>CISSP</span>
-            <span>CISA</span>
+            <span>CISM</span>
+            <span>CEH</span>
           </div>
         </div>
       </div>

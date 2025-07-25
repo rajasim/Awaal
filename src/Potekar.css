@@ -1,22 +1,22 @@
 /* ==== Section Layout ==== */
-.ktrox-section {
+.ktrox-sectionn {
   padding: 80px 40px;
-  background-color: #0d1025;
+  background: linear-gradient(to right, #efefefe0,#10b981d8,#0d9489b6);
   color: white;
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
 
 .ktrox-heading {
-  font-size: 36px;
+  font-size: 46px;
   font-weight: 700;
-  color: #c864ff;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
 .ktrox-subtext {
-  font-size: 21px;
-  color: #ccc;
+  font-size: 24px;
+  color: #ffffff;
   max-width: 700px;
   margin: 0 auto 50px auto;
   line-height: 1.6;

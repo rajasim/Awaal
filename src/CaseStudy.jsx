@@ -15,7 +15,7 @@ const CaseStudy = () => {
         {/* Card 1 */}
         <div className="case-card">
           <div className="case-image">
-            <img src="/images/WhatsApp Image 2025-07-12 at 3.54.20 PM.jpeg" alt="Building Icon" />
+           
           </div>
           <div className="case-content">
             <div className="case-tags">
@@ -37,7 +37,7 @@ const CaseStudy = () => {
         {/* Card 2 */}
         <div className="case-card">
           <div className="case-image">
-            <img src="/images/hospital.png" alt="Hospital Icon" />
+           
           </div>
           <div className="case-content">
             <div className="case-tags">
@@ -58,7 +58,7 @@ const CaseStudy = () => {
         {/* Card 3 */}
         <div className="case-card">
           <div className="case-image">
-            <img src="/images/cart.png" alt="E-commerce Icon" />
+           
           </div>
           <div className="case-content">
             <div className="case-tags">

@@ -12,26 +12,26 @@ export default function Contact() {
 
         <div className="tagses">
           <div className="tages">
-            <img src="./ai-icon.png" alt="AI" />
+            
             <span>AI-Powered</span>
           </div>
           <div className="tages">
-            <img src="./secure-icon.png" alt="Secure" />
+           
             <span>Ultra-Secure</span>
           </div>
           <div className="tages">
-            <img src="./fast-icon.png" alt="Fast" />
+           
             <span>Lightning-Fast</span>
           </div>
         </div>
 
         <div className="buttons">
           <button className="launch-btn">
-            <img src="./launch-icon.png" alt="Launch" />
+            
             Launch Your Project
           </button>
           <button className="consult-btn">
-            <img src="./consult-icon.png" alt="Consult" />
+            
             Free Consultation
           </button>
         </div>

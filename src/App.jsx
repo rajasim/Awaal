@@ -96,6 +96,9 @@ import Footermain from "./Footermain";
 import Blog from "./Blog";
 import { Routes, Route } from "react-router-dom";
 import Pater from "./Pater";
+import Dashboard from "./Dashboard";
+import AdminBlog from "./AdminBlog";
+import SecurityCloud from "./SecurityCloud";
 
 
 function App() {
@@ -146,6 +149,9 @@ function App() {
              
              <Waptexr/>
              <Footermain/>
+             <AdminBlog/>
+             <Dashboard/>
+             <Form/>
              <Blog/>
            
             
@@ -236,7 +242,7 @@ function App() {
             <Navbar />
            <Ellish />
            <Cloud />
-            <SecuritySolutions />
+            <SecurityCloud />
             <Innovate />
             <CloudIndustriel/>
              <Azure />

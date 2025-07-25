@@ -73,12 +73,12 @@ const Navbar = () => {
       </p>
       <div className="insights-stats-box">
         <div className="stat-item">
-          <img src="/images/articles-icon.png" alt="Articles" />
-          <span>250+ ARTICLES</span>
+          <img src="/images/navbar1.png" alt="Articles" />
+          <span> ARTICLES</span>
         </div>
         <div className="stat-item">
-          <img src="/images/readers-icon.png" alt="Readers" />
-          <span>50K+ READERS</span>
+          <img src="/images/navbar2.png" alt="Readers" />
+          <span>READERS</span>
         </div>
       </div>
     </div>
@@ -88,7 +88,7 @@ const Navbar = () => {
       <h3 className="categories-title">EXPLORE CATEGORIES</h3>
 
       <div className="category-box">
-        <div className="category-icon"><img src="/images/blog-icon.png" alt="Blog" /></div>
+        <div className="category-icon"><img src="/images/navbar1.png" alt="Blog" /></div>
         <div className="category-info">
           <h4>BLOG </h4>
           <p>LATEST ARTICLES AND INSIGHTS FROM OUR TEAM</p>
@@ -100,7 +100,7 @@ const Navbar = () => {
       </div>
 
       <div className="category-box">
-        <div className="category-icon"><img src="/images/news-icon.png" alt="News" /></div>
+        <div className="category-icon"><img src="/images/navbar2.png" alt="News" /></div>
         <div className="category-info">
           <h4>NEWS </h4>
           <p>INDUSTRY UPDATES AND ANNOUNCEMENTS</p>
@@ -112,7 +112,7 @@ const Navbar = () => {
       </div>
 
       <div className="category-box">
-        <div className="category-icon"><img src="/images/insights-icon.png" alt="Insights" /></div>
+        <div className="category-icon"><img src="/images/navbar3.png" alt="Insights" /></div>
         <div className="category-info">
           <h4>INSIGHTS </h4>
           <p>DATA-DRIVEN ANALYSIS AND RESEARCH</p>
@@ -124,7 +124,7 @@ const Navbar = () => {
       </div>
 
       <div className="category-box">
-        <div className="category-icon"><img src="/images/case-icon.png" alt="Case Studies" /></div>
+        <div className="category-icon"><img src="/images/navbar4.png" alt="Case Studies" /></div>
         <div className="category-info">
           <h4>CASE STUDIES </h4>
           <p>REAL-WORLD SUCCESS STORIES</p>
@@ -143,13 +143,13 @@ const Navbar = () => {
                 <div className="mega-left">
                   <div className="mega-platform-box">
                     <h3 style={{ lineHeight: "1.5rem" }}>
-                      Barracuda Cybersecurity Platform
+                     Awwal  Platform
                     </h3>
                     <p>
-                      Cyberattacks can come from anywhere. Barracuda protects
-                      you everywhere.
+                     Driving Digital Innovation Through
+Smart IT and Automation Solutions
                     </p>
-                    <a href="#">Explore the platform →</a>
+                   
                   </div>
                   <div className="mega-left-menu">
                     <div onMouseEnter={() => setHoveredSubItem("CYBERSECURITY")}>
@@ -206,44 +206,39 @@ const Navbar = () => {
                 <div className="mega-right">
                   {hoveredSubItem === "CYBERSECURITY" && (
                     <>
-                      <h3>Strengthen Your Organization's Cyber Defence</h3>
+                      <h3>Stay Secure, Stay in Control with End-to-End Cybersecurity Solutions</h3>
                       <p>
-                        We provide end-to-end cybersecurity services that reduce
-                        risk, detect threats early, and improve your overall
-                        security posture.
+                       We provide complete cybersecurity solutions to protect your business, detect threats in real time, and ensure compliance keeping you secure and in control.
                       </p>
                       <button className="plans-btnon">Services →</button>
 
                       <div className="links-grid" onClick={() => nav("/vapt")}>
+                        <a href="#">VAPT </a>
+                        <a href="#">Managed XDR / MXDR</a>
+                        <a href="#">EDR / NGAV Protection</a>
                         <a href="#">Network Security</a>
-                        <a href="#">Endpoint Protection</a>
-                        <a href="#">Zero Trust Access</a>
-                        <a href="#">Firewall Management</a>
-                        <a href="#">Threat Intelligence</a>
-                        <a href="#">SIEM Integration</a>
-                        <a href="#">Cloud Security Posture Management</a>
-                        <a href="#">Identity & Access Management</a>
+                        <a href="#">GRC </a>
+                        <a href="#">Email Protection</a>
+                       
+                        
                         <a href="#">Ransomware Defense</a>
                         <a href="#">Data Loss Prevention (DLP)</a>
                       </div>
 
-                      <hr style={{ margin: "1rem 0" }} />
-                      <h4>Free Tools</h4>
-                      <div className="links-grid">
-                        <a href="#">Free Email Threat Scan</a>
-                        <a href="#">Build and Price</a>
-                      </div>
+                     <hr style={{ margin: "1rem 0" }} />
+                      <h4>Try at zero cost</h4>
+                     
+                      <button className="plans-btn">FREE DEMO →</button>
                     </>
                   )}
 
                   {hoveredSubItem === "CLOUD" && (
                     <>
                       <h3>
-                        Designing Resilient, Scalable Networks for the Future
+                      Powerful, Secure, and Scalable Cloud Solutions Made Simple
                       </h3>
                       <p>
-                        We engineer network infrastructure that supports your
-                        business today—and scales for tomorrow.
+                      We help you migrate, manage, and secure your cloud with ease. We ensure your cloud setup is reliable, scalable, fast, flexible, and fully protected.
                       </p>
                       <button className="plans-btnon">Services →</button>
 
@@ -251,93 +246,93 @@ const Navbar = () => {
                         className="links-grid"
                         onClick={() => nav("/CLOUD")}
                       >
-                        <a href="#">LAN/WAN Design & Implementation</a>
-                        <a href="#">Wireless Network Design & Optimization</a>
-                        <a href="#">Data Center & Server Room Setup</a>
-                        <a href="#">Load Balancing & High Availability</a>
-                        <a href="#">AI-driven Performance Monitoring</a>
+                        <a href="#">Cloud Deployment </a>
+                        <a href="#">Cloud Migration</a>
+                        <a href="#">Security & Compliance</a>
+                        <a href="#">Monitoring & Management</a>
+                        <a href="#">Scalable Virtual Environments</a>
                       </div>
 
-                      <hr style={{ margin: "1rem 0" }} />
-                      <h4>Free Tools</h4>
-                      <div className="links-grid">
-                        <a href="#">Free Email Threat Scan</a>
-                        <a href="#">Build and Price</a>
-                      </div>
-                      <button className="plans-btn">Explore Data →</button>
+                      
+                    <hr style={{ margin: "1rem 0" }} />
+                      <h4>Try at zero cost</h4>
+                     
+                      <button className="plans-btn">FREE DEMO →</button>
                     </>
                   )}
 
                   {hoveredSubItem === "AI & Automation Services" && (
                     <>
-                      <h3>Strengthen Your Organization's Cyber Defence</h3>
+                      <h3>Smarter Systems. Faster Results. Scalable Innovation.</h3>
                       <p>
-                        We provide end-to-end cybersecurity services that reduce
-                        risk, detect threats early, and improve your overall
-                        security posture.
+                       Unlock the power of AI & Automation to accelerate workflows, reduce costs, and make data driven decisions.
                       </p>
                       <button className="plans-btnon">Services →</button>
 
                       <div className="links-grid"
                        onClick={() => nav("/AI & Automation Services")}>
-                        <a href="#">Robotic Process Automation (RPA)</a>
-                        <a href="#">Custom Machine Learning Solutions</a>
-                        <a href="#">Real-Time Predictive Analytics</a>
-                        <a href="#">AI Chatbots & Virtual Assistants</a>
-                        <a href="#">Seamless System Integration</a>
+                        <a href="#">AI driven Process Automation</a>
+                        <a href="#">Intelligent Workflow Design</a>
+                        <a href="#">Data driven Decision Support</a>
+                        <a href="#">AI Model Development & Integration</a>
+                        <a href="#">Natural Language Processing (NLP)</a>
                       </div>
 
-                      <hr style={{ margin: "1rem 0" }} />
-                      <h4>Free Tools</h4>
-                      <div className="links-grid"></div>
-                      <button className="plans-btn">View XDR →</button>
+                      
+                     <hr style={{ margin: "1rem 0" }} />
+                      <h4>Try at zero cost</h4>
+                     
+                      <button className="plans-btn">FREE DEMO →</button>
                     </>
                   )}
 
                   {hoveredSubItem === "SOFTWARE DEV" && (
                     <>
-                      <h3>Accelerate Innovation with Tailored Solutions</h3>
+                      <h3>Smart, Scalable Software and App Development for Every Need</h3>
                       <p>
-                        We turn your ideas into high-performance, scalable
-                        applications built with security and agility.
+                       We design and build custom software and mobile apps that match your business needs. From idea to launch, we deliver fast, secure, and user-friendly solutions.
                       </p>
                       <button className="plans-btnon">Explore Network →</button>
                       <div className="links-grid"
                       onClick={() => nav("/SOFTWARE DEV")}>
-                        <a href="#">Fully Customized Application Development</a>
-                        <a href="#">Agile Development & Continuous Delivery</a>
-                        <a href="#">Scalable Architecture & Secure Coding</a>
-                        <a href="#">Integration with Existing Systems</a>
+                        <a href="#">Custom Software Solutions</a>
+                        <a href="#">Mobile App Development</a>
+                        <a href="#">Web Application Development</a>
+                        <a href="#">API Development & Integration</a>
+                         <a href="#">Scalable architecture</a>
                       </div>
-                      <hr style={{ margin: "1rem 0" }} />
-                      <h4>Free Tools</h4>
-                      <div className="links-grid"></div>
-                      <button className="plans-btnon">View XDR →</button>
+                     
+                    <hr style={{ margin: "1rem 0" }} />
+                      <h4>Try at zero cost</h4>
+                     
+                      <button className="plans-btn">FREE DEMO →</button>
                     </>
                   )}
 
                   {hoveredSubItem === "IT INFRA" && (
                     <>
                       <h3>
-                        Build Engaging, Cross-Platform Digital Experiences
+                       Robust and Reliable IT Infrastructure Built for Performance
                       </h3>
                       <p>
-                        [We create responsive apps that deliver value across all
-                        devices.]
+                       We build and manage reliable IT setups that power your business. From servers to networks, we ensure everything runs smoothly, securely, and efficiently.
                       </p>
                       <button className="plans-btnon">View Details →</button>
                       <div className="links-grid"
                        onClick={() => nav("/IT INFRA")}>
-                        <h3>Services</h3>
-                        <a href="#">iOS, Android & Web App Development</a>
-                        <a href="#">User-Centric UI/UX Design</a>
-                        <a href="#">Cloud-Backed, Scalable Architecture</a>
-                        <a href="#">Performance Optimization & Maintenance</a>
+                       
+                        <a href="#">Network Design & Management</a>
+                        <a href="#">Data Centre Solutions</a>
+                        <a href="#">Server & Storage Solutions</a>
+                        <a href="#">Infrastructure Monitoring & Management</a>
+                         <a href="#">IT Infrastructure Audits</a>
+                         <a href="#">Disaster Recovery</a>
                       </div>
                       <hr style={{ margin: "1rem 0" }} />
-                      <h4>Free Tools</h4>
-                      <div className="links-grid"></div>
-                      <button className="plans-btnon">View XDR →</button>
+                    
+                      <h4>Try at zero cost</h4>
+                     
+                      <button className="plans-btn">FREE DEMO →</button>
                     </>
                   )}
 
@@ -350,49 +345,48 @@ const Navbar = () => {
                   )}
                    {hoveredSubItem === "WEBSITE DEV" && (
                     <>
-                      <h3>Accelerate Innovation with Tailored Solutions</h3>
+                      <h3>Custom Built Websites That Elevate Your Brand and Drive Results</h3>
 <p>
-  We turn your ideas into high-performance, scalable applications built with security and agility.
+  We create modern, responsive websites that are fast, secure, and built to grow your business. We blend design and tech to give your brand a strong online presence.
 </p>
 <button className="plans-btnon">Services →</button>
 
 <div className="links-grid"
  onClick={() => nav("/WEBSITE DEV")}>
-  <a href="#">Fully Customized Application Development</a>
-  <a href="#">Agile Development & Continuous Delivery</a>
-  <a href="#">Scalable Architecture & Secure Coding</a>
-  <a href="#">Integration with Existing Systems</a>
+  <a href="#">Custom Website Development</a>
+  <a href="#">eCommerce Website Development</a>
+  <a href="#">Responsive Web Design</a>
+  <a href="#">Content Management System (CMS) Development</a>
+  <a href="#">Landing Page & Microsite Design</a>
 </div>
+                     
                       <hr style={{ margin: "1rem 0" }} />
-                      <h4>Free Tools</h4>
-                      <div className="links-grid">
-                        <a href="#">Free Email Threat Scan</a>
-                        <a href="#">Build and Price</a>
-                      </div>
+                      <h4>Try at zero cost</h4>
+                     
+                      <button className="plans-btn">FREE DEMO →</button>
                     </>
                   )}
                    {hoveredSubItem === "MIGRATION" && (
                     <>
-                      <h3>Protect & Control Your Network Infrastructure</h3>
+                      <h3>Seamless Data and System Migration Without Downtime</h3>
 <p>
-  We implement intelligent network protection using AI and modern segmentation strategies.
+ We help you move your data, apps, or infrastructure to new environments with zero hassle. We ensure smooth, secure, and downtime-free migrations.
 </p>
 <button className="plans-btnon">Services →</button>
 
 <div className="links-grid"  
 onClick={() => nav("/MIGRATION")}>
-  <a href="#">Firewall Configuration & Management</a>
-  <a href="#">IDS/IPS with AI Enhancement</a>
-  <a href="#">Data Loss Prevention (DLP)</a>
-  <a href="#">AI-based Network Behavior Analytics (NBA)</a>
-  <a href="#">Network Segmentation & Microsegmentation</a>
+  <a href="#">End-to-End Migration Services</a>
+  <a href="#">Seamless AI & Automation Migration</a>
+  <a href="#">Effortless Cloud Migration</a>
+  <a href="#">Scalable Software Development Migration</a>
+  <a href="#">Accelerate Innovation</a>
 </div>
-                      <hr style={{ margin: "1rem 0" }} />
-                      <h4>Free Tools</h4>
-                      <div className="links-grid">
-                        <a href="#">Free Email Threat Scan</a>
-                        <a href="#">Build and Price</a>
-                      </div>
+                     
+                     <hr style={{ margin: "1rem 0" }} />
+                      <h4>Try at zero cost</h4>
+                     
+                      <button className="plans-btn">FREE DEMO →</button>
                     </>
                   )}
                   {hoveredSubItem === "Managed XDR/MXDR" && (

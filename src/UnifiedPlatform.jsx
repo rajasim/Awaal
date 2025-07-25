@@ -18,62 +18,65 @@ const UnifiedPlatform = () => {
           <ul className="unified-platform-list">
             <li onClick={() => toggleItem(1)} className={openItem === 1 ? 'active' : ''}>
               <div className="item-header">
-                DATA FROM EVERYWHERE. DATA YOU CAN TRUST.
+               Identify Security Gaps
                 <span>{openItem === 1 ? '-' : '+'}</span>
               </div>
               {openItem === 1 && (
                 <div className="platform-content">
                   <p>
-                    INTEGRATE YOUR FIRST AND OUR THIRD-PARTY PARTY DATA TO KNOW WHO IS IN-MARKET AND WHAT THEY ARE SIGNALING.
+                   
+VAPT helps uncover hidden vulnerabilities in your systems, applications, and network 
                   </p>
                   <p>
-                    WE ALWAYS ENSURE THAT YOU HAVE THE BEST QUANTITY AND TRUSTED QUALITY OF DATA FUELING YOUR BUSINESS DECISIONS.
+                   infrastructure before attackers do. It provides a clear view of where your security posture stands and what needs fixing.
                   </p>
-                  <ul>
-                    <li><strong>1ST PARTY:</strong> CRM, MAP, WEB ACTIVITY, CHAT, EMAIL & CALENDAR, AND MORE.</li>
-                    <li><strong>3RD PARTY:</strong> ACCOUNT ID, CONTACT & BUYING GROUP ID, FIRMOGRAPHIC, TECHNOGRAPHIC, ACTION AND INTENT SIGNALS.</li>
-                  </ul>
+                  
                 </div>
               )}
             </li>
 
             <li onClick={() => toggleItem(2)}>
               <div className="item-header">
-                AI-POWERED INSIGHTS THAT YOU CAN SEE
+               Prevent Data Breaches
                 <span>{openItem === 2 ? '-' : '+'}</span>
               </div>
               {openItem === 2 && (
                 <div className="platform-content">
                   <p>
-                    GET CLEAR VISIBILITY INTO BUYING INTENT WITH REAL-TIME AI SIGNALS THAT HELP PRIORITIZE ACCOUNTS AND PERSONALIZE OUTREACH.
+                   
+By simulating real world attack scenarios, VAPT identifies weaknesses that
+ could lead to data breaches, ensuring sensitive customer and business information stays protected.
                   </p>
+                 
                 </div>
               )}
             </li>
 
             <li onClick={() => toggleItem(3)}>
               <div className="item-header">
-                ACT WITH CONFIDENCE
+                Maintain Compliance
                 <span>{openItem === 3 ? '-' : '+'}</span>
               </div>
               {openItem === 3 && (
                 <div className="platform-content">
                   <p>
-                    LEVERAGE DATA TO MAKE SMARTER DECISIONS AND LAUNCH TARGETED CAMPAIGNS FASTER THAN EVER.
+                   
+VAPT is often a regulatory requirement under standards such as GDPR, ISO 27001, PCI-DSS, and HIPAA. Regular testing helps you meet these obligations and avoid penalties
                   </p>
+                 
                 </div>
               )}
             </li>
 
             <li onClick={() => toggleItem(4)}>
               <div className="item-header">
-                UNIFY YOUR TECH STACK WITH INTEGRATIONS & APIS
+                Save Costs in the Long Run
                 <span>{openItem === 4 ? '-' : '+'}</span>
               </div>
               {openItem === 4 && (
                 <div className="platform-content">
                   <p>
-                    CONNECT TO ALL YOUR TOOLS EASILY WITH OUR NATIVE INTEGRATIONS AND FLEXIBLE APIS.
+                    Fixing a vulnerability after a breach is far more costly than preventing it. VAPT helps reduce potential financial, legal, and reputational damage by addressing risks early. 
                   </p>
                 </div>
               )}
@@ -81,13 +84,13 @@ const UnifiedPlatform = () => {
 
             <li onClick={() => toggleItem(5)}>
               <div className="item-header">
-                PURPOSE-BUILT FOR ACCOUNT-BASED GTM
+                Stay Ahead of Hackers
                 <span>{openItem === 5 ? '-' : '+'}</span>
               </div>
               {openItem === 5 && (
                 <div className="platform-content">
                   <p>
-                    BUILT SPECIFICALLY FOR MODERN B2B GTM TEAMS TO TARGET, ENGAGE, AND CONVERT THE RIGHT ACCOUNTS.
+                   Cybercriminals continuously search for new ways to exploit weaknesses. VAPT ensures your security measures are up to date, resilient, and capable of withstanding the latest threats.
                   </p>
                 </div>
               )}

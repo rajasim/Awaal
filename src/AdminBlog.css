@@ -1,0 +1,120 @@
+.admin-blog-container {
+  font-family: 'Arial', sans-serif;
+  color: #121212;
+}
+
+/* Header */
+.header-section {
+  background: #f1f3f5;
+  padding: 60px 40px;
+}
+.header-section h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+.header-section hr {
+  border: none;
+  border-top: 2px solid #ccc;
+}
+
+/* Main Content */
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 40px;
+  gap: 60px;
+}
+
+.main-text {
+  flex: 3;
+  font-size: 22px;
+  line-height: 2;
+}
+
+.quote-box {
+  flex: 1.5;
+  background-color: #38a4cf;
+  color: #000;
+  padding: 30px;
+  font-size: 22px;
+  border-radius: 6px;
+}
+.quote-box p {
+  margin-bottom: 20px;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  background-color: #c4d0d7;
+  padding: 0;
+  min-height: 500px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* LEFT IMAGE SIDE */
+.newsletter-left-img {
+  width: 50%;
+  max-height: 500px;
+  overflow: hidden;
+}
+.newsletter-left-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* RIGHT CONTENT SIDE */
+.newsletter-content {
+  width: 50%;
+  padding: 60px;
+  box-sizing: border-box;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.newsletter-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.newsletter-content p {
+  font-size: 20px;
+  margin-bottom: 36px;
+  color: #222;
+}
+.newsletter-content label {
+  display: block;
+  margin-bottom: 24px;
+  font-size: 17px;
+}
+.newsletter-content input {
+  width: 100%;
+  padding: 16px;
+  font-size: 17px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px #888;
+  margin-top: 10px;
+}
+.newsletter-content button {
+  padding: 16px 30px;
+  background-color: #fdb83c;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.newsletter-content button:hover {
+  background-color: #e0a437;
+}
+.required {
+  color: red;
+  margin-left: 4px;
+}

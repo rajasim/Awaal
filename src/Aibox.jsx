@@ -32,16 +32,16 @@ Unlock the power of AI & Automation to accelerate workflows, reduce costs, and m
           {/* Right Side – Horizontal Cards */}
           <div className="glass-cards-row">
             <div className="glass-card">
-              <img src="/images/network-icon.png" alt="Network" />
-              <p>Network</p>
+              <img src="/images/Ai4.png" alt="Network" />
+              <p>Intelligent</p>
             </div>
             <div className="glass-card">
-              <img src="/images/security-icon.png" alt="Security" />
-              <p>Security</p>
+              <img src="/images/Ai5.png" alt="Security" />
+              <p>Data-driven</p>
             </div>
             <div className="glass-card">
-              <img src="/images/multisite-icon.png" alt="Multi-Site" />
-              <p>Multi-Site</p>
+              <img src="/images/Ai6.png" alt="Multi-Site" />
+              <p>NLP</p>
             </div>
           </div>
         </div>

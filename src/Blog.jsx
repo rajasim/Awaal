@@ -25,7 +25,7 @@ const Blog = () => {
         <div className="blog-cards">
           <div className="blog-card">
             <div className="blog-card-image">
-              <img src="/images/Blogs Images.jpg" alt="AI Enterprise" className="blog-top-img" />
+              <img src="/images/Blog1.png" alt="AI Enterprise" className="blog-top-img" />
               <span className="blog-tag purple">Insights</span>
             </div>
             <div className="blog-card-content">
@@ -43,7 +43,7 @@ const Blog = () => {
 
           <div className="blog-card">
             <div className="blog-card-image">
-              <img src="/images/box9.jpeg" alt="TechCorp Efficiency" className="blog-top-img" />
+              <img src="/images/Blog2.png" alt="TechCorp Efficiency" className="blog-top-img" />
               <span className="blog-tag green">Case Study</span>
             </div>
             <div className="blog-card-content">
@@ -67,7 +67,7 @@ const Blog = () => {
         <div className="blog-cards">
           <div className="blog-card">
             <div className="blog-card-image">
-              <img src="/images/js-frameworks.jpg" alt="JavaScript Frameworks" className="blog-top-img" />
+              <img src="/images/Blog3.png" alt="JavaScript Frameworks" className="blog-top-img" />
               <span className="blog-tag orange">Blog</span>
             </div>
             <div className="blog-card-content">
@@ -85,7 +85,7 @@ const Blog = () => {
 
           <div className="blog-card">
             <div className="blog-card-image">
-              <img src="/images/web-performance.jpg" alt="Web Performance" className="blog-top-img" />
+              <img src="/images/Blog4.png" alt="Web Performance" className="blog-top-img" />
               <span className="blog-tag orange">Blog</span>
             </div>
             <div className="blog-card-content">
@@ -107,7 +107,7 @@ const Blog = () => {
         <div className="blog-cards">
           <div className="blog-card">
             <div className="blog-card-image">
-              <img src="/images/js-frameworks.jpg" alt="JavaScript Frameworks" className="blog-top-img" />
+              <img src="/images/Blog5.png" alt="JavaScript Frameworks" className="blog-top-img" />
               <span className="blog-tag orange">Blog</span>
             </div>
             <div className="blog-card-content">
@@ -125,7 +125,7 @@ const Blog = () => {
 
           <div className="blog-card">
             <div className="blog-card-image">
-              <img src="/images/web-performance.jpg" alt="Web Performance" className="blog-top-img" />
+              <img src="/images/Blog6.png" alt="Web Performance" className="blog-top-img" />
               <span className="blog-tag orange">Blog</span>
             </div>
             <div className="blog-card-content">
@@ -148,7 +148,7 @@ const Blog = () => {
         <div className="blog-cards">
           <div className="blog-card">
             <div className="blog-card-image">
-              <img src="/images/quantum-computing.jpg" alt="Quantum Computing" className="blog-top-img" />
+              <img src="/images/Blog7.png" alt="Quantum Computing" className="blog-top-img" />
               <span className="blog-tag pink">Insight</span>
             </div>
             <div className="blog-card-content">
@@ -171,7 +171,7 @@ const Blog = () => {
         <div className="blog-cards">
           <div className="blog-card">
             <div className="blog-card-image">
-              <img src="/images/startup-success.jpg" alt="Startup Success" className="blog-top-img" />
+              <img src="/images/Blog8.png" alt="Startup Success" className="blog-top-img" />
               <span className="blog-tag blue">Success</span>
             </div>
             <div className="blog-card-content">

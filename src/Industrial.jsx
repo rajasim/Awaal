@@ -47,12 +47,12 @@ function Industrial() {
             <p>Hospitality management and guest services</p>
           </div>
           <div className="industry-box">
-            <img src="/images/industries 7.png" alt="Real Estate" />
+            <img src="/images/industries 8.png" alt="Real Estate" />
             <h3>Real Estate</h3>
             <p>Property management and real estate solutions</p>
           </div>
           <div className="industry-box">
-            <img src="/img/industries 7.png" alt="E-commerce" />
+            <img src="/images/industries 7.png" alt="E-commerce" />
             <h3>E-commerce</h3>
             <p>Complete online commerce and digital solutions</p>
           </div>
