@@ -98,6 +98,7 @@ import { Routes, Route } from "react-router-dom";
 import Pater from "./Pater";
 import Dashboard from "./Dashboard";
 import AdminBlog from "./AdminBlog";
+import AdminCase from "./AdminCase";
 import SecurityCloud from "./SecurityCloud";
 
 
@@ -149,6 +150,7 @@ function App() {
              
              <Waptexr/>
              <Footermain/>
+             <AdminCase/>
              <AdminBlog/>
              <Dashboard/>
              <Form/>
