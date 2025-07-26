@@ -4,8 +4,18 @@ import "./EfficiencySection.css";
 function EfficiencySection() {
   return (
     <div className="efficiency-section">
-      <div className="efficiency-container">
-        {/* Left: Text */}
+      {/* Background Video */}
+      <video
+        className="efficiency-bg-video"
+        autoPlay
+        muted
+        loop
+        playsInline
+        src="/video/about us AI-vmake.mp4"
+      />
+
+      {/* Overlay Content */}
+      <div className="efficiency-overlay">
         <div className="efficiency-text">
           <h2>
             Reimagine Efficiency with <br /> Intelligent Technology
@@ -26,32 +36,23 @@ function EfficiencySection() {
           </div>
         </div>
 
-        {/* Right: Video */}
-        <div className="efficiency-video">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="efficiency-bg-video"
-            src="/video/about us AI-vmake.mp4"
-          />
-        </div>
-      </div>
-
-      {/* Bottom Cards */}
-      <div className="efficiency-cards">
-        <div className="card">
-          <h4>AI Model Development</h4>
-          <p>Custom AI solutions tailored to your business needs and data.</p>
-        </div>
-        <div className="card">
-          <h4>Automation Workflows</h4>
-          <p>Automate manual processes and scale efficiency seamlessly.</p>
-        </div>
-        <div className="card">
-          <h4>Analytics & Insights</h4>
-          <p>Turn your data into actionable intelligence and smarter decisions.</p>
+        {/* Bottom Cards */}
+        <div className="efficiency-cards">
+          <div className="card card-model">
+            <div className="card-icon">🧠</div>
+            <h4>AI Model Development</h4>
+            <p>Custom AI solutions tailored to your business needs and data.</p>
+          </div>
+          <div className="card card-automation">
+            <div className="card-icon">⚙️</div>
+            <h4>Automation Workflows</h4>
+            <p>Automate manual processes and scale efficiency seamlessly.</p>
+          </div>
+          <div className="card card-analytics">
+            <div className="card-icon">📊</div>
+            <h4>Analytics & Insights</h4>
+            <p>Turn your data into actionable intelligence and smarter decisions.</p>
+          </div>
         </div>
       </div>
     </div>
