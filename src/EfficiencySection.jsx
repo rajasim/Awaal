@@ -6,17 +6,17 @@ function EfficiencySection() {
     <div className="efficiency-section">
       {/* Background Video */}
       <video
-        className="efficiency-bg-video"
         autoPlay
         muted
         loop
         playsInline
+        className="efficiency-bg-video"
         src="/video/about us AI-vmake.mp4"
       />
 
       {/* Overlay Content */}
       <div className="efficiency-overlay">
-        <div className="efficiency-text">
+        <div className="efficiency-text-content">
           <h2>
             Reimagine Efficiency with <br /> Intelligent Technology
           </h2>
@@ -33,25 +33,6 @@ function EfficiencySection() {
           <div className="efficiency-buttons">
             <button className="btn-primary">Get Started</button>
             <button className="btn-outline">Learn More</button>
-          </div>
-        </div>
-
-        {/* Bottom Cards */}
-        <div className="efficiency-cards">
-          <div className="card card-model">
-            <div className="card-icon">🧠</div>
-            <h4>AI Model Development</h4>
-            <p>Custom AI solutions tailored to your business needs and data.</p>
-          </div>
-          <div className="card card-automation">
-            <div className="card-icon">⚙️</div>
-            <h4>Automation Workflows</h4>
-            <p>Automate manual processes and scale efficiency seamlessly.</p>
-          </div>
-          <div className="card card-analytics">
-            <div className="card-icon">📊</div>
-            <h4>Analytics & Insights</h4>
-            <p>Turn your data into actionable intelligence and smarter decisions.</p>
           </div>
         </div>
       </div>
