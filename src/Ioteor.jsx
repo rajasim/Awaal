@@ -17,28 +17,28 @@ const Ioteor = () => {
       </p>
 
       <div className="ioteor-cards">
-        <div className="card">
+        <div className="carddd">
           <div className="icon blue">🧠</div>
           <h3>We Listen First</h3>
           <p>So we don’t just solve problems  we solve the <em>right problems</em>.</p>
           <span className="link-text blue">Discovery driven approach</span>
         </div>
 
-        <div className="card">
+        <div className="carddd">
           <div className="icon green">🤝</div>
           <h3>We Work Collaboratively</h3>
           <p>Updating you at <em>every step</em> of the journey.</p>
           <span className="link-text green">Transparent communication</span>
         </div>
 
-        <div className="card">
+        <div className="carddd">
           <div className="icon purple">🛠️</div>
           <h3>We Build Transparently</h3>
           <p>So you always know <em>what’s deployed, where, and why</em>.</p>
           <span className="link-text purple">Complete visibility</span>
         </div>
 
-        <div className="card">
+        <div className="carddd">
           <div className="icon orange">🎯</div>
           <h3>We Deliver Outcomes</h3>
           <p>Not just software  we deliver <em>measurable business results</em>.</p>
