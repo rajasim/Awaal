@@ -44,9 +44,9 @@
   background: #12303b;
   padding: 40px;
   border-radius: 20px;
-  width: 340px;
+  flex: 1 1 calc(25% - 40px); /* 4 cards per row */
+  max-width: calc(25% - 40px);
   position: relative;
-  
   box-shadow: 0 8px 30px rgba(0, 255, 191, 0.1);
 }
 
@@ -155,7 +155,29 @@
   border-radius: 8px;
   font-size: 15px;
 }
-@media (max-width: 480px) {
+
+/* Responsive Fixes */
+@media (max-width: 1200px) {
+  .approach-card {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+  }
+}
+
+@media (max-width: 900px) {
+  .approach-card {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .approach-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 26px;
+  }
+
   .approach-section {
     padding: 60px 20px;
   }
@@ -174,11 +196,6 @@
   .approach-steps {
     flex-direction: column;
     gap: 20px;
-  }
-
-  .approach-card {
-    width: 100%;
-    padding: 26px;
   }
 
   .step-number {
@@ -236,6 +253,95 @@
 
   .partner-logos img {
     height: 40px;
+    padding: 6px 10px;
+  }
+
+  .cert-tags span {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+@media (max-width: 480px) {
+  .approach-section {
+    padding: 50px 16px;
+  }
+
+  .approach-title {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+
+  .approach-subtext {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .approach-steps {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .approach-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 24px;
+  }
+
+  .step-number {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+    line-height: 26px;
+    top: -10px;
+    left: -10px;
+  }
+
+  .step-image {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 12px;
+  }
+
+  .approach-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .approach-card p {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .approach-card li {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .approach-bottom {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+  }
+
+  .partners, .certifications {
+    min-width: 100%;
+  }
+
+  .partners h4, .certifications h4 {
+    font-size: 20px;
+  }
+
+  .partners p, .certifications p {
+    font-size: 14px;
+  }
+
+  .partner-logos {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .partner-logos img {
+    height: 36px;
     padding: 6px 10px;
   }
 
