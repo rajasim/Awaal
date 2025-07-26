@@ -1,136 +1,170 @@
-/* Section Container */
 .efficiency-section {
-  position: relative;
+  background-color: #0a0a23;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 60px 0;
   width: 100%;
-  height: 100vh;
   overflow: hidden;
+}
+
+/* Container */
+.efficiency-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  padding: 0 20px;
 }
 
-/* Background Video */
-.efficiency-bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-/* Overlay Content */
-.efficiency-overlay {
-  position: relative;
-  z-index: 1;
-  padding: 40px 20px;
-  width: 100%;
-  max-width: 1300px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-/* Text Content Area */
+/* Text Section */
 .efficiency-text-content {
-  max-width: 700px;
-  text-align: left;
-  color: #ffffff;
+  flex: 1 1 500px;
+  max-width: 600px;
+  padding-right: 20px;
 }
 
-/* Headings */
 .efficiency-text-content h2 {
   font-size: 48px;
-  font-weight: 800;
   margin-bottom: 24px;
-  color: #fff;
+  color: #ffffff;
+  text-align: left;
 }
 
-/* Paragraphs */
 .efficiency-text-content p {
   font-size: 18px;
-  color: #ddd;
-  margin-bottom: 16px;
-  line-height: 1.6;
+  color: #d0d0d0;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-/* Button Group */
+/* Buttons */
 .efficiency-buttons {
   display: flex;
   gap: 16px;
-  margin-top: 24px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-/* Primary Button */
-.btn-primary {
-  background: linear-gradient(to right, #7b2ff7, #f107a3);
-  border: none;
-  padding: 12px 24px;
-  color: #fff;
+.btn-primary,
+.btn-outline {
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 16px;
   font-weight: 600;
-  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 
-/* Outline Button */
+.btn-primary {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #4f46e5;
+}
+
 .btn-outline {
   background: transparent;
-  border: 2px solid #fff;
-  padding: 12px 24px;
-  color: #fff;
-  font-weight: 600;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: border 0.3s ease;
+  border: 2px solid #6366f1;
+  color: #6366f1;
 }
 
-/* Hover States */
-.btn-primary:hover {
-  background: linear-gradient(to right, #6610f2, #e60073);
-}
 .btn-outline:hover {
-  border-color: #ccc;
-  color: #ccc;
+  background-color: #6366f1;
+  color: white;
 }
 
-/* Responsive Design */
+/* Video */
+.efficiency-video-wrapper {
+  flex: 1 1 400px;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.efficiency-bg-video {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Cards */
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  padding: 0 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  flex: 1 1 30%;
+  max-width: 360px;
+  min-width: 280px;
+  border-top: 5px solid;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card-blue {
+  border-top-color: #3b82f6;
+}
+
+.card-purple {
+  border-top-color: #a855f7;
+}
+
+.card-green {
+  border-top-color: #10b981;
+}
+
+.card .icon {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-  .efficiency-text-content h2 {
-    font-size: 36px;
-  }
-
-  .efficiency-text-content p {
-    font-size: 16px;
-  }
-
-  .efficiency-buttons {
+  .efficiency-container {
     flex-direction: column;
-    align-items: flex-start;
+    padding: 0 20px;
   }
 
-  .btn-primary,
-  .btn-outline {
-    width: 100%;
+  .efficiency-text-content {
+    padding-right: 0;
     text-align: center;
   }
-}
 
-@media (max-width: 480px) {
-  .efficiency-text-content h2 {
-    font-size: 28px;
-  }
-
-  .efficiency-section {
-    height: auto;
-    padding: 40px 0;
+  .efficiency-text-content h2,
+  .efficiency-text-content p {
+    text-align: center;
   }
 
   .efficiency-buttons {
-    gap: 12px;
+    justify-content: center;
   }
 
-  .efficiency-overlay {
-    padding: 20px;
+  .efficiency-video-wrapper {
+    margin-top: 30px;
+  }
+
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
   }
 }
