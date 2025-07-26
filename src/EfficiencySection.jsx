@@ -4,18 +4,8 @@ import "./EfficiencySection.css";
 function EfficiencySection() {
   return (
     <div className="efficiency-section">
-      {/* Background video */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="efficiency-bg-video"
-        src="/video/about us AI-vmake.mp4" // Replace with your actual video path
-      />
-
-      {/* Content */}
-      <div className="efficiency-inner">
+      <div className="efficiency-container">
+        {/* Left: Text */}
         <div className="efficiency-text">
           <h2>
             Reimagine Efficiency with <br /> Intelligent Technology
@@ -36,23 +26,32 @@ function EfficiencySection() {
           </div>
         </div>
 
-        {/* Service Cards */}
-        <div className="service-cards">
-          <div className="card card-blue">
-            <div className="icon">🧠</div>
-            <h4>AI Model Development</h4>
-            <p>Custom AI solutions designed to address your specific business challenges and opportunities.</p>
-          </div>
-          <div className="card card-purple">
-            <div className="icon">🔁</div>
-            <h4>Process Automation</h4>
-            <p>Streamline operations and reduce manual tasks with intelligent automation workflows.</p>
-          </div>
-          <div className="card card-green">
-            <div className="icon">📈</div>
-            <h4>Data Analytics</h4>
-            <p>Transform raw data into actionable insights with advanced analytics and visualization.</p>
-          </div>
+        {/* Right: Video */}
+        <div className="efficiency-video">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="efficiency-bg-video"
+            src="/video/about us AI-vmake.mp4"
+          />
+        </div>
+      </div>
+
+      {/* Bottom Cards */}
+      <div className="efficiency-cards">
+        <div className="card">
+          <h4>AI Model Development</h4>
+          <p>Custom AI solutions tailored to your business needs and data.</p>
+        </div>
+        <div className="card">
+          <h4>Automation Workflows</h4>
+          <p>Automate manual processes and scale efficiency seamlessly.</p>
+        </div>
+        <div className="card">
+          <h4>Analytics & Insights</h4>
+          <p>Turn your data into actionable intelligence and smarter decisions.</p>
         </div>
       </div>
     </div>
