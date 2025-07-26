@@ -8,7 +8,7 @@ function SecuritySolutions() {
     <div className="security-wrapper">
       <div className="security-heading">
         <div className="heading-line"></div>
-        <h2>Protecting Your Digital Frontiers</h2>
+        <h2>Our Services</h2>
         <div className="heading-line"></div>
         <p>Explore our solutions designed to secure your digital operations.</p>
       </div>

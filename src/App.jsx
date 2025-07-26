@@ -123,38 +123,19 @@ function App() {
             <Poteker/>
              <NewsSection />
              <Footer />
+             <Form/>
              
             
             
             
-            <DarkWebAlert />
             
-            
-            <Videofoot />
-           
-            
-           
-            
-            
-          
-           
-            
-            <Contact/>
-            
-            
-           
-            
-            
-            
-           
-            <DarkMain/>
              
              <Waptexr/>
              <Footermain/>
              <AdminCase/>
              <AdminBlog/>
              <Dashboard/>
-             <Form/>
+             
              <Blog/>
            
             

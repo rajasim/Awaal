@@ -7,14 +7,14 @@ const Poteker = () => {
       <h2 className="ktrox-heading">Technologies We Use</h2>
       <p className="ktrox-subtext">
         Our tech stack is carefully selected to provide the best solutions for your projects.
-        We leverage cutting-edge technologies to build robust, scalable, and efficient applications.
+       
       </p>
 
       <div className="ktrox-grid">
         {/* Frontend */}
         <div className="tech-card tech-frontend">
           <div className="card-header">
-            <img src="assets/icons/frontend.png" alt="Frontend" />
+            <img src="/images/cyberbox1.png" alt="Frontend" />
             Cyber
           </div>
           <ul>
@@ -102,7 +102,7 @@ const Poteker = () => {
       </div>
 
       <div className="ktrox-button-wrapper">
-        <button className="ktrox-button">Explore Our Solutions →</button>
+       
       </div>
     </section>
   );

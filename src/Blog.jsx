@@ -159,6 +159,8 @@ const Blog = () => {
               <div className="blog-card-footer">
                 <span className="blog-date">Dec 5, 2024</span>
                 <a href="#" className="blog-link pink">Read →</a>
+                
+                
               </div>
             </div>
           </div>
@@ -166,27 +168,7 @@ const Blog = () => {
       </section>
 
       {/* Success Stories */}
-      <section className="blog-section">
-        <h2 className="blog-section-title">Success Stories</h2>
-        <div className="blog-cards">
-          <div className="blog-card">
-            <div className="blog-card-image">
-              <img src="/images/Blog8.png" alt="Startup Success" className="blog-top-img" />
-              <span className="blog-tag blue">Success</span>
-            </div>
-            <div className="blog-card-content">
-              <h3 className="blog-card-title">How a Startup Achieved Market Domination</h3>
-              <p className="blog-card-text">
-                A case study showcasing how a startup leveraged cutting-edge tech to scale rapidly.
-              </p>
-              <div className="blog-card-footer">
-                <span className="blog-date">Nov 20, 2024</span>
-                <a href="#" className="blog-link blue">View →</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
       {/* Load More Button */}
       <div className="load-more-container">
         <button className="load-more-btn">Load More Content</button>

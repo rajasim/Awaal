@@ -17,9 +17,10 @@
 }
 
 .security-heading h2 {
-  font-size: 52px;
+  font-size: 60px;
   color: #222;
   margin: 20px 0;
+  font-weight: 700;
 }
 
 .security-heading p {

@@ -23,15 +23,16 @@
 
 .ts-heading {
   text-align: center;
-  font-size: 46px;
+  font-size: 60px;
   margin-bottom: 15px;
   position: relative;
   z-index: 2;
+  font-family: sans-serif;
 }
 
 .ts-subheading {
   text-align: center;
-  font-size: 21px;
+  font-size: 28px;
   color: #ccc;
   max-width: 800px;
   margin: 0 auto 40px;

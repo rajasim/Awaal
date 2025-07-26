@@ -6,9 +6,10 @@
 }
 
 .case-study-title {
-  font-size: 42px;
+  font-size: 60px;
   color: #0d1b2a;
   margin-bottom: 16px;
+  font-weight: 700;
 }
 
 .case-study-subtext {

@@ -4,7 +4,7 @@ import "./NewsSection.css";
 export default function NewsSection() {
   return (
     <div className="news-section">
-      <h2 className="news-title">Latest News & Insights</h2>
+      <h2 className="news-title">Latest Blogs</h2>
       <p className="news-subtitle">
         Stay updated with the latest cybersecurity trends, threats, and best practices.
       </p>
@@ -17,12 +17,12 @@ export default function NewsSection() {
             <img src="/images/Untitled design .gif" alt="Cybersecurity News" />
           </div>
           <div className="news-content">
-            <p className="news-date">June 15, 2023</p>
+            <p className="news-date">July 24, 2025</p>
             <h3 className="news-heading">
-              The Rise of Ransomware-as-a-Service and How to Protect Your Business
+              The Rise of AI-Powered Threats: Is Your Cybersecurity Ready?
             </h3>
             <p className="news-text">
-              Learn about the growing threat of Ransomware-as-a-Service (RaaS) and effective strategies to safeguard your organization.
+              Cyber attackers aren’t just using tools anymore they’re using artificial intelligence. From hyper-realistic deepfakes to AI generated phishing attacks, the threat landscape is getting smarter, faster, and more convincing.
             </p>
             <a className="read-more" href="#">Read more →</a>
           </div>
@@ -35,12 +35,13 @@ export default function NewsSection() {
             <img src="/images/Awwal News Image .gif" alt="AI in Security" />
           </div>
           <div className="news-content">
-            <p className="news-date">June 8, 2023</p>
+            <p className="news-date">July 24, 2025</p>
             <h3 className="news-heading">
-              Leveraging AI and Machine Learning for Enhanced Threat Detection
+              Hyperautomation + GenAI = The Future of Business Tech
             </h3>
             <p className="news-text">
-              Discover how artificial intelligence and machine learning are revolutionizing cybersecurity threat detection and response.
+             Automation isn’t just about saving time anymore it’s about transforming how entire businesses operate.
+In 2025, the blend of Hyperautomation and Generative AI is powering smarter workflows, faster decision making, and next level customer experiences
             </p>
             <a className="read-more" href="#">Read more →</a>
           </div>
@@ -53,12 +54,12 @@ export default function NewsSection() {
             <img src="/images/Awwal News Image size .gif" alt="Cloud Security" />
           </div>
           <div className="news-content">
-            <p className="news-date">May 30, 2023</p>
+            <p className="news-date">July 24, 2025</p>
             <h3 className="news-heading">
-              Best Practices for Securing Your Cloud Infrastructure in 2023
+              Cloud Security in 2025: New Risks, Smarter Shields
             </h3>
             <p className="news-text">
-              Explore the latest best practices and strategies for maintaining robust security in cloud environments.
+              Cloud isn’t just where your data lives it’s where your business breathes. But with cloud adoption rising, so do the threats. From misconfigured APIs to unmonitored access points, cloud security is a top concern for growing companies.
             </p>
             <a className="read-more" href="#">Read more →</a>
           </div>

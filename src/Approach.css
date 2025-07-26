@@ -2,7 +2,7 @@
   padding: 100px 60px;
   background: #092027;
   color: #ffffff;
-  font-family: 'Segoe UI', sans-serif;
+  font-family:  sans-serif;
 }
 
 .approach-top {
@@ -21,13 +21,14 @@
 }
 
 .approach-title {
-  font-size: 48px;
+  font-size: 60px;
   margin: 14px 0;
   color: #ffffff;
+  font-weight: 700;
 }
 
 .approach-subtext {
-  font-size: 20px;
+  font-size: 24px;
   color: #a4c7c7;
   max-width: 720px;
   margin: 0 auto;
@@ -73,7 +74,7 @@
 
 .approach-card h3 {
   color: #39ff88;
-  font-size: 26px;
+  font-size: 30px;
   margin-bottom: 16px;
 }
 

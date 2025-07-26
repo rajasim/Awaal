@@ -9,8 +9,8 @@
   justify-content: center;
 }
 
-.protection-heading h2 {
-  font-size: 48px;
+.protection-headingg h2 {
+  font-size: 60px;
   font-weight: 700;
   margin-top: 10px;
 }
@@ -61,15 +61,16 @@
 }
 
 .step-box h4 {
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
 .step-box p {
-  font-size: 16px;
+  font-size: 19px;
   color: #444;
   line-height: 1.8;
+  font-weight: 400;
 }
 .protection-heading {
   max-width: 900px;

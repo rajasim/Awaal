@@ -12,7 +12,7 @@ const TechSecure = () => {
       />
 
       <h2 className="ts-heading">
-        About <span className="ts-highlight">Awwal Security</span>
+        About <span className="ts-highlight">Awwal </span>
       </h2>
       <p className="ts-subheading">
         we blend technical expertise with a focus on digital resilience to deliver smart, secure, and future-ready solutions.
@@ -22,10 +22,10 @@ const TechSecure = () => {
         <div className="ts-story-box">
           <h3 className="ts-story-heading">Our Story</h3>
           <p className="ts-story-text">
-            We began with a clear purpose to deliver secure, reliable, and intelligent tech solutions in a digital first world. From day one, our focus has been on combining deep technical expertise with a commitment to quality, security, and innovation.
+            We began with a clear purpose to deliver secure, reliable, and intelligent tech solutions in a digital first world. From day one, our focus has been on combining deep technical expertise with a commitment to quality,  and innovation.
           </p>
           <p className="ts-story-text">
-          Awwal Security stands as a full-scale tech solutions partner, offering everything from AI powered automation and Cloud services to Software development, IT infrastructure, Cybersecurity and Website solutions.
+          We stands as a full-scale tech solutions partner, offering everything from AI powered automation and Cloud services to Software development, IT infrastructure, Cybersecurity and Website solutions.
           </p>
           <p className="ts-story-text">
             Our growth is rooted in curiosity, innovation, and a relentless drive to stay ahead of the curve. We work with businesses of all sizes, helping them simplify technology, strengthen security, and scale smarter.

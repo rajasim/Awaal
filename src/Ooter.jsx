@@ -29,13 +29,7 @@ const Ooter = () => {
 
       <div className="ooter-tags">
         {[
-          "Cybersecurity (VAPT)",
-          "AI & Automation",
-          "Cloud Services",
-          "IT Infrastructure",
-          "Software Development",
-          "Website Development",
-          "Crypto",
+         
         ].map((tag, idx) => (
           <span className="ooter-tag" key={idx}>{tag}</span>
         ))}

@@ -4,13 +4,11 @@ import "./ProtectionSteps.css";
 function ProtectionSteps() {
   return (
     <div className="protection-wrapper">
-    <div className="protection-heading">
+    <div className="protection-headingg">
   <div className="heading-line"></div>
   <h2>How We Protect Your Business</h2>
   <div className="heading-line"></div>
-  <p>
-    Our systematic approach ensures comprehensive protection for your digital assets
-  </p>
+ 
 </div>
 
       <div className="protection-steps">

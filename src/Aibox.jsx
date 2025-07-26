@@ -15,7 +15,7 @@ const Aibox = () => {
         <div className="bottom-section">
           {/* Left Side */}
           <div className="bank-info">
-            <h2>AI & Automation – Transforming the Future of Business</h2>
+            <h2>AI & Automation  Transforming the Future of Business</h2>
             <p>
              Smarter Systems. Faster Results. Scalable Innovation.
 Unlock the power of AI & Automation to accelerate workflows, reduce costs, and make data-driven decisions.

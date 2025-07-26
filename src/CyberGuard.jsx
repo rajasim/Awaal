@@ -94,7 +94,7 @@ const CyberGuard = () => {
           </div>
 
           <div className="cyberguard-certifications">
-            <span>CCIE,</span>
+            <span>CCIE</span>
             <span>CISSP</span>
             <span>CISM</span>
             <span>CEH</span>

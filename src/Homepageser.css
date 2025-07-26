@@ -26,10 +26,11 @@
 }
 
 .homepageser-heading {
-  font-size: 56px;
+  font-size: 60px;
   font-weight: 600;
   color: #00ffc2;
   margin-bottom: 10px;
+  font-family: sans-serif;
 }
 
 .homepageser-subheading {
