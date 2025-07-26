@@ -99,6 +99,7 @@ import Pater from "./Pater";
 import Dashboard from "./Dashboard";
 import AdminBlog from "./AdminBlog";
 import AdminCase from "./AdminCase";
+import EfficiencyBoxes from "./EfficiencyBoxes";
 import SecurityCloud from "./SecurityCloud";
 
 
@@ -194,6 +195,7 @@ function App() {
           <>
        <AiHeroSection />
        <EfficiencySection />
+       <EfficiencyBoxes/>
        <Pater/>
        <Piter />
         <Pik />
