@@ -37,15 +37,19 @@ const AdminCaseStudy = () => {
       </div>
 
       {/* Right: Newsletter Signup */}
-      <div className="case-newsletter">
-        <img src="./images/box9.jpeg" alt="Newsletter Visual" className="newsletter-image" />
-        <h2 className="newsletter-heading">Todyl updates</h2>
-        <p className="newsletter-text">Sign-up to get the latest from Todyl sent straight to your inbox.</p>
-        <label className="newsletter-label">
-          <span>Business Email<span className="required">*</span></span>
-          <input type="email" placeholder="you@yourcompany.com" />
-        </label>
-        <button className="newsletter-button">Sign-up now</button>
+      <div className="newsletter-section">
+        <div className="newsletter-left-img">
+          <img src="./images/box9.jpeg" alt="Newsletter Visual" />
+        </div>
+        <div className="newsletter-content">
+          <h2>Todyl updates</h2>
+          <p>Sign-up to get the latest from Todyl sent straight to your inbox.</p>
+          <label>
+            <span>Business Email<span className="required">*</span></span>
+            <input type="email" placeholder="you@yourcompany.com" />
+          </label>
+          <button>Sign-up now</button>
+        </div>
       </div>
     </div>
   );
