@@ -90,7 +90,7 @@
   background: linear-gradient(to right, #6610f2, #e60073);
 }
 .btn-outline:hover {
-  border-color: #ccc;
+  border-color: #000000;
   color: #ccc;
 }
 
