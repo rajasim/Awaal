@@ -1,12 +1,30 @@
+/* === Global Reset === */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* === Hero Section === */
 .ai-hero-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100dvh; /* handles mobile browser UI bars */
   overflow: hidden;
   color: white;
-  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: black;
 }
 
+/* === Background Video === */
 .ai-background-video {
   position: absolute;
   top: 0;
@@ -17,6 +35,7 @@
   z-index: 0;
 }
 
+/* === Main Content === */
 .ai-content {
   position: relative;
   z-index: 1;
@@ -34,12 +53,12 @@
   color: #8ab4ff;
 }
 
+/* === Headings === */
 .ai-content h1 {
   font-size: 72px;
   font-weight: 700;
   margin: 0;
   line-height: 1.3;
-  position: relative;
 }
 
 .ai-highlighted {
@@ -80,37 +99,41 @@
   line-height: 1.8;
 }
 
+/* === Buttons === */
 .ai-button-row {
   display: flex;
   gap: 20px;
   margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.ai-btn-primary,
+.ai-btn-secondary {
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .ai-btn-primary {
   background-color: #3b82f6;
-  border: none;
-  padding: 14px 28px;
-  font-size: 16px;
   color: white;
-  border-radius: 30px;
-  cursor: pointer;
+  border: none;
 }
 
 .ai-btn-secondary {
-  background-color: transparent;
+  background: transparent;
   border: 1px solid #3b82f6;
   color: #3b82f6;
-  padding: 14px 28px;
-  font-size: 16px;
-  border-radius: 30px;
-  cursor: pointer;
 }
 
+/* === Avatars === */
 .ai-avatars-row {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .ai-avatar {
@@ -127,20 +150,25 @@
 }
 
 .ai-trust {
-  margin-left: 10px;
   font-size: 14px;
   color: #aaa;
 }
 
+/* === Stats Bar === */
 .ai-stats-bar {
-  position: absolute;
-  bottom: 0;
+  position: relative;
   width: 100%;
   background-color: rgba(0, 0, 30, 0.8);
   display: flex;
   justify-content: space-around;
   padding: 30px 0;
   z-index: 1;
+  flex-wrap: wrap;
+}
+
+.ai-stat-box {
+  min-width: 120px;
+  margin: 10px 0;
 }
 
 .ai-stat-box h3 {
@@ -155,4 +183,94 @@
   color: #ccc;
   margin: 5px 0 0;
   text-align: center;
+}
+
+/* === Tablet === */
+@media (max-width: 1024px) {
+  .ai-content {
+    padding: 80px 40px 50px;
+  }
+
+  .ai-content h1 {
+    font-size: 56px;
+  }
+
+  .ai-content h2 {
+    font-size: 36px;
+  }
+
+  .ai-content p {
+    font-size: 18px;
+  }
+
+  .ai-button-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ai-stat-box h3 {
+    font-size: 24px;
+  }
+}
+
+/* === Mobile: 480px & below === */
+@media (max-width: 480px) {
+  .ai-content {
+    padding: 60px 20px 40px;
+  }
+
+  .ai-content h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .ai-content h2 {
+    font-size: 24px;
+  }
+
+  .ai-content p {
+    font-size: 16px;
+  }
+
+  .ai-button-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ai-btn-primary,
+  .ai-btn-secondary {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+
+  .ai-avatars-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .ai-trust {
+    font-size: 13px;
+  }
+
+  .ai-stats-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .ai-stat-box {
+    width: 100%;
+  }
+
+  .ai-stat-box h3 {
+    font-size: 22px;
+  }
+
+  .ai-stat-box p {
+    font-size: 13px;
+  }
 }
