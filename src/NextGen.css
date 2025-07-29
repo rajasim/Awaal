@@ -31,14 +31,14 @@
 
 
 .nextgen-heading {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 60px;
+  font-weight: 700;
   color: #1b2e37;
   margin-bottom: 10px;
 }
 
 .nextgen-subheading {
-  font-size: 16px;
+  font-size: 24px;
   color: #6b7780;
   max-width: 700px;
   margin: 0 auto 40px;
@@ -79,14 +79,14 @@
 }
 
 .nextgen-title {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   color: #1b2e37;
   margin-bottom: 6px;
 }
 
 .nextgen-desc {
-  font-size: 14px;
+  font-size: 21px;
   color: #6b7780;
   margin-bottom: 12px;
 }
@@ -102,7 +102,7 @@
   padding-left: 22px;
   margin-bottom: 8px;
   color: #1b2e37;
-  font-size: 13.5px;
+  font-size: 18px;
   line-height: 1.5;
 }
 

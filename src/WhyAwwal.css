@@ -1,26 +1,63 @@
+/* === Global Reset === */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* === Container === */
 .whyawwal-container {
   position: relative;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
+  padding: 120px 100px;
   display: flex;
   align-items: center;
-  padding: 120px 100px;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+ 
 }
 
-.whyawwal-content {
-  position: relative;
+/* === Background Image === */
+.whyawwal-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: 1;
-  max-width: 1000px;
+ 
+  pointer-events: none;
+}
+
+/* === Wrapper to handle left/right split === */
+.whyawwal-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  gap: 40px;
+}
+
+/* === Left Content === */
+.whyawwal-left {
+  flex: 1;
+  min-width: 300px;
   color: #ffffff;
-  text-align: left;
 }
 
 .whyawwal-heading {
-  font-size: 64px;
-  font-weight: 800;
+  font-size: 60px;
+  font-weight: 700;
   margin-bottom: 28px;
   line-height: 1.2;
 }
@@ -67,3 +104,94 @@
 .whyawwal-button:hover {
   background: #e6e6e6;
 }
+
+/* === Right Side Image === */
+.whyawwal-right {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.whyawwal-right-img {
+  width: 700px;
+  
+  height: 500px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* === Tablet Responsive (below 1024px) === */
+@media (max-width: 1024px) {
+  .whyawwal-container {
+    padding: 80px 40px;
+  }
+
+  .whyawwal-heading {
+    font-size: 48px;
+  }
+
+  .whyawwal-text {
+    font-size: 18px;
+  }
+
+  .whyawwal-button {
+    font-size: 16px;
+    padding: 14px 28px;
+  }
+
+  .whyawwal-right-img {
+    width: 360px;
+  }
+}
+
+/* === Mobile Responsive (below 768px) === */
+@media (max-width: 768px) {
+  .whyawwal-container {
+    padding: 60px 24px;
+  }
+
+  .whyawwal-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .whyawwal-right {
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .whyawwal-right-img {
+    width: 280px;
+  }
+
+  .whyawwal-heading {
+    font-size: 40px;
+  }
+
+  .whyawwal-text {
+    font-size: 16px;
+  }
+}
+
+/* === Small Mobile (below 480px) === */
+@media (max-width: 480px) {
+  /* ...existing styles... */
+
+  .whyawwal-tags {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 12px;
+  }
+
+  .whyawwal-tag {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 16px;
+    line-height: 1.4;
+  }
+}
+

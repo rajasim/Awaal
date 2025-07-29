@@ -25,8 +25,8 @@ const Migration = () => {
 
       <center><div className="migration-overlay">
         <div className="migration-tag">✅ Trusted Migration Experts</div>
-        <h1 className="migration-title">Migration Services</h1>
-        <h2 className="migration-subtitle">by Awwal Security</h2>
+        <h1 className="migration-titlee">Migration Services</h1>
+        <h2 className="migration-subtitler">by Awwal Security</h2>
 
         <div className="migration-highlights">
           <span>Seamless</span>

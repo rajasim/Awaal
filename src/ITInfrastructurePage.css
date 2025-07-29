@@ -91,7 +91,7 @@ h1 {
 }
 
 .infra-left p {
-  font-size: 17px;
+  font-size: 21px;
   line-height: 1.6;
   color: #cccccc;
   margin-bottom: 30px;
@@ -106,7 +106,7 @@ h1 {
 }
 
 .infra-point {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -194,7 +194,7 @@ h1 {
 }
 
 @media (max-width: 1024px) {
-  .infra-content {
+  .infra-contentent {
     flex-direction: column;
     padding: 60px 40px;
   }
@@ -211,8 +211,8 @@ h1 {
     justify-content: center;
   }
 
-  h1 {
-    font-size: 38px;
+  .infra h1 {
+    font-size: 48px;
   }
 
   .infra-point {
@@ -248,9 +248,7 @@ h1 {
     text-align: center;
   }
 
-  h1 {
-    font-size: 32px;
-  }
+  
 
   .infra-points {
     grid-template-columns: 1fr;

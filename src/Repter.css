@@ -5,14 +5,10 @@
   overflow: hidden;
   color: white;
   font-family: 'Segoe UI', sans-serif;
-  padding: 4rem 6%; /* reduced padding for upward shift */
-  display: flex;
-  align-items: flex-start; /* moves content upward */
-  justify-content: flex-start;
+  padding: 4rem 6%;
 }
 
-/* Background video */
-.repter-bg-video {
+.repter-bg-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -20,33 +16,39 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  transform: translateZ(0);
-  will-change: transform;
 }
 
+.repter-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+}
+
+/* Content Section */
 .repter-content {
   max-width: 750px;
-  height: 90vh; /* slightly less than 100vh to shift upward */
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* align to top */
+  justify-content: center;
   z-index: 1;
 }
 
-/* Badge */
 .repter-badge {
   background: rgba(255, 255, 255, 0.08);
   padding: 0.4rem 1.2rem;
   border-radius: 20px;
   font-size: 0.9rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 18px;
   display: inline-block;
 }
 
-/* Big Bold Heading */
 .repter-content h1 {
-  font-size: 3.8rem;
-  font-weight: 800;
+  font-size: 60px;
+  font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1.2rem;
   letter-spacing: -0.5px;
@@ -60,16 +62,14 @@
   color: #b384ff;
 }
 
-/* Paragraph */
 .repter-content p {
-  font-size: 1.2rem;
+  font-size: 19px;
   color: #ccc;
   margin-bottom: 2.2rem;
   max-width: 600px;
-  line-height: 1.6;
+  line-height: 1.9;
 }
 
-/* Buttons */
 .repter-buttons {
   display: flex;
   gap: 1.2rem;
@@ -81,7 +81,7 @@
   border: none;
   padding: 1rem 2rem;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 600;
   color: white;
   cursor: pointer;
@@ -98,9 +98,8 @@
   cursor: pointer;
 }
 
-/* Tech Stack */
 .repter-tech span {
-  font-size: 0.95rem;
+  font-size: 19px;
   color: #999;
   display: block;
   margin-bottom: 0.8rem;
@@ -114,4 +113,79 @@
 .tech-icons img {
   height: 36px;
   width: auto;
+}
+
+/* Right-side image */
+.repter-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.repter-image img {
+  width: 480px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .repter-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .repter-image {
+    margin-top: 40px;
+    align-self: center;
+  }
+
+  .repter-image img {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .repter-content {
+    height: auto;
+  }
+
+  .repter-content h1 {
+    font-size: 40px;
+  }
+
+  .repter-content p {
+    font-size: 17px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 0.8rem 1.5rem;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .repter-wrapper {
+    padding: 3rem 5%;
+  }
+
+  .repter-content h1 {
+    font-size: 34px;
+  }
+
+  .repter-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .tech-icons {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .repter-image img {
+    max-width: 320px;
+  }
 }

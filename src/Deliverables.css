@@ -29,13 +29,13 @@ html, body, #root {
 
 /* Headings */
 .deliverables-title {
-  font-size: 38px;
-  font-weight: 800;
+  font-size: 60px;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
 .deliverables-subtitle {
-  font-size: 16px;
+  font-size: 24px;
   color: #b8b8b8;
   margin-bottom: 50px;
 }
@@ -60,14 +60,14 @@ html, body, #root {
 }
 
 .card-title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   color: white;
   margin-bottom: 12px;
 }
 
 .card-description {
-  font-size: 16px;
+  font-size: 21px;
   color: #ccc;
   margin-bottom: 24px;
 }
@@ -84,7 +84,7 @@ html, body, #root {
 .status-labels {
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 19px;
   color: white;
   margin-bottom: 6px;
 }
@@ -115,14 +115,14 @@ html, body, #root {
 
 .key-title {
   color: #00ff80;
-  font-size: 16px;
+  font-size: 21px;
   margin-bottom: 12px;
 }
 
 .key-deliverables ul {
   list-style: none;
   padding-left: 0;
-  font-size: 15px;
+  font-size: 19px;
   color: #aafac8;
 }
 

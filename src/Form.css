@@ -6,6 +6,7 @@
   justify-content: center;
   background: linear-gradient(to bottom right, #f6fafd, #fef2f4);
   font-family: 'Segoe UI', sans-serif;
+  flex-wrap: wrap;
 }
 
 .form-left img {
@@ -79,4 +80,16 @@ button {
 
 button:hover {
   background: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
 }

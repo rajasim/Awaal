@@ -3,7 +3,7 @@
   background-color: #0f172a;
   color: white;
   padding: 2rem 0; /* Only vertical padding */
-  font-family: 'Segoe UI', sans-serif;
+  font-family:  sans-serif;
   text-align: center;
   min-height: 100vh;
   width: 100%;
@@ -11,14 +11,15 @@
 
 /* Title styles */
 .toll-title {
-  font-size: 2.8rem;
+  font-size: 60px;
+  font-size: 700;
   color: #b095fc;
   margin-bottom: 0.5rem;
 }
 
 /* Subtitle under title */
 .toll-subtitle {
-  font-size: 1.1rem;
+  font-size: 21px;
   color: #cbd5e1;
   margin-bottom: 2.5rem;
   max-width: 720px;
@@ -66,7 +67,7 @@
 /* Title inside card */
 .toll-card h2 {
   margin: 0.5rem 0 0.5rem;
-  font-size: 1.4rem;
+  font-size: 19px;
   color: #ffffff;
 }
 
@@ -79,7 +80,7 @@
 
 .toll-card li {
   color: #cbd5e1;
-  font-size: 1.05rem;
+  font-size: 18px;
   line-height: 2;
   margin-bottom: 0.4rem;
   word-break: break-word;
@@ -104,13 +105,13 @@
 
 .toll-footer h3 {
   color: #f3f4f6;
-  font-size: 1.4rem;
+  font-size: 48px;
   margin-bottom: 0.5rem;
 }
 
 .toll-footer p {
   color: #94a3b8;
-  font-size: 1rem;
+  font-size: 21px;
   line-height: 1.6;
 }
 
@@ -139,4 +140,58 @@
   font-size: 1rem;
   font-weight: 500;
   color: #ffffff;
+}
+@media (max-width: 480px) {
+  .toll-title {
+    font-size: 36px;
+  }
+
+  .toll-subtitle {
+    font-size: 16px;
+    padding: 0 16px;
+  }
+
+  .toll-grid {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    padding: 0 16px;
+  }
+
+  .toll-card {
+    width: 100%;
+    padding: 1.5rem;
+    min-height: auto;
+  }
+
+  .toll-card h2 {
+    font-size: 17px;
+  }
+
+  .toll-card li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .toll-footer h3 {
+    font-size: 28px;
+    padding: 0 16px;
+  }
+
+  .toll-footer p {
+    font-size: 16px;
+    padding: 0 16px;
+  }
+
+  .toll-footer-icons {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-icon {
+    font-size: 2rem;
+  }
+
+  .footer-label {
+    font-size: 0.9rem;
+  }
 }

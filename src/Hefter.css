@@ -11,10 +11,29 @@
   color: white;
 }
 
-/* Content Container */
+/* ✅ Background image */
+.hefter-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ✅ Content container: left + right */
 .hefter-content {
-  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
   z-index: 1;
+  padding-right: 80px;
+}
+
+/* ✅ Left Section */
+.hefter-left {
+  max-width: 700px;
 }
 
 /* Badge */
@@ -31,7 +50,7 @@
 
 /* Title */
 .hefter-title {
-  font-size: 4.2rem;
+  font-size: 60px;
   font-weight: 800;
   margin-bottom: 25px;
   color: #fff;
@@ -45,7 +64,7 @@
 
 /* Description */
 .hefter-description {
-  font-size: 1.4rem;
+  font-size: 21px;
   line-height: 1.8;
   color: #d1d5db;
   margin-bottom: 40px;
@@ -63,7 +82,7 @@
   background: rgba(255, 255, 255, 0.1);
   padding: 10px 16px;
   border-radius: 999px;
-  font-size: 1.05rem;
+  font-size: 18px;
   color: #f3f4f6;
   font-weight: 600;
 }
@@ -81,7 +100,7 @@
   border-radius: 10px;
   color: white;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 19px;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -106,4 +125,88 @@
 .btn-outline:hover {
   background: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ✅ Right image styling */
+.hefter-right {
+  margin-left: auto;
+  z-index: 1;
+}
+
+.hefter-right-img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ✅ Responsive (Mobile) */
+@media (max-width: 480px) {
+  .hefter-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .hefter-content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .hefter-left {
+    max-width: 100%;
+  }
+
+  .badge {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    margin-bottom: 20px;
+  }
+
+  .hefter-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  .hefter-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .hefter-tags {
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .tag {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+
+  .hefter-buttons {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    font-size: 1rem;
+    padding: 14px;
+    text-align: center;
+  }
+
+  .hefter-right {
+    margin: 40px auto 0;
+    text-align: center;
+  }
+
+  .hefter-right-img {
+    width: 280px;
+    max-width: 90%;
+  }
 }

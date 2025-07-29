@@ -6,7 +6,8 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-.background-video {
+/* 🔄 Replaced video with image */
+.background-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -28,9 +29,10 @@
   background: rgba(0, 0, 0, 0.4); /* Optional overlay */
 }
 
-.section-titlee{
+.section-titlee {
   text-align: center;
-  font-size: 56px;
+  font-size: 60px;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -52,7 +54,7 @@
 
 .icon-box p {
   margin-top: 16px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
 }
 
@@ -65,16 +67,16 @@
 }
 
 .ecosystem-box h3 {
-  font-size: 28px;
+  font-size: 34px;
   margin-bottom: 30px;
 }
 
-.ecosystem-video-element {
+/* 🔄 Replaced video with image */
+.ecosystem-image {
   width: 100%;
   max-width: 1300px;
   height: 600px;
   object-fit: cover;
-  border: none;
   border-radius: 20px;
 }
 
@@ -97,13 +99,71 @@
 }
 
 .feature-card h4 {
-  font-size: 22px;
+  font-size: 25px;
   color: #00ffc8;
   margin-bottom: 16px;
 }
 
 .feature-card p {
-  font-size: 16px;
+  font-size: 19px;
   color: #ffffff;
   line-height: 1.7;
+}
+@media (max-width: 480px) {
+  .tech-content {
+    padding: 60px 20px;
+    gap: 50px;
+  }
+
+  .section-titlee {
+    font-size: 36px;
+  }
+
+  .icon-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    justify-items: center;
+  }
+
+  .icon-box {
+    padding: 20px;
+    min-width: auto;
+    width: 100%;
+    max-width: 160px;
+  }
+
+  .icon-box p {
+    font-size: 16px;
+  }
+
+  .icones {
+    font-size: 26px;
+  }
+
+  .ecosystem-box h3 {
+    font-size: 24px;
+  }
+
+  .ecosystem-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .feature-boxes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature-card {
+    padding: 24px;
+  }
+
+  .feature-card h4 {
+    font-size: 20px;
+  }
+
+  .feature-card p {
+    font-size: 16px;
+  }
 }

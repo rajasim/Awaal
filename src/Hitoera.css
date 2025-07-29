@@ -76,7 +76,7 @@
 }
 
 .hitoera-heading {
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 800;
   color: #1e1e1e;
   margin-bottom: 20px;
@@ -84,7 +84,7 @@
 
 .hitoera-description {
   color: #444;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.75;
   margin-bottom: 36px;
   font-weight: 500;
@@ -116,4 +116,68 @@
   font-size: 18px;
   color: #333;
   font-weight: 500;
+}
+@media (max-width: 480px) {
+  .hitoera-section {
+    padding: 60px 20px;
+  }
+
+  .hitoera-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hitoera-left,
+  .hitoera-right {
+    min-width: 100%;
+  }
+
+  .hitoera-step-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    top: -15px;
+    left: -15px;
+  }
+
+  .hitoera-image-box {
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hitoera-image {
+    height: auto;
+  }
+
+  .hitoera-tag {
+    font-size: 14px;
+    padding: 10px 18px;
+    margin-bottom: 20px;
+  }
+
+  .hitoera-heading {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .hitoera-description {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  .hitoera-card {
+    padding: 24px 20px;
+  }
+
+  .hitoera-card-heading {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .hitoera-feature-list {
+    grid-template-columns: 1fr;
+    font-size: 16px;
+    gap: 12px;
+  }
 }

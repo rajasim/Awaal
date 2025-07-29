@@ -6,15 +6,15 @@
 }
 
 .ko-heading {
-  font-size: 3rem;
-  color: #6b2cd8;
  
+  color: #6b2cd8;
+ font-size: 700;
   margin-bottom: 1rem;
-  font-size: 38px;
+  font-size: 60px;
 }
 
 .ko-subtext {
-  font-size: 1.2rem;
+  font-size: 22px;
   color: #555;
   margin-bottom: 3rem;
 }
@@ -66,13 +66,13 @@
 }
 
 .ko-title {
-  font-size: 1.25rem;
-  font-weight: 800;
+  font-size: 24px;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 
 .ko-desc {
-  font-size: 1.2rem;
+  font-size: 19px;
   line-height: 1.6;
 }
 

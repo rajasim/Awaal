@@ -26,7 +26,7 @@
 }
 
 .opatise-header h1 {
-  font-size: 2.5rem;
+  font-size: 60px;
   margin-bottom: 0.5rem;
   background: linear-gradient(90deg, #ff007a, #7f00ff);
   -webkit-background-clip: text;
@@ -34,7 +34,7 @@
 }
 
 .opatise-header p {
-  font-size: 1.1rem;
+  font-size: 24px;
   color: #ccc;
 }
 
@@ -122,4 +122,44 @@
 .launch-button:hover {
   transform: scale(1.05);
   opacity: 0.9;
+}
+@media (max-width: 480px) {
+  .opatise-header h1 {
+    font-size: 34px;
+  }
+
+  .opatise-header p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .opatise-main {
+    height: auto;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
+
+  .feature-block {
+    position: static;
+    margin-bottom: 30px;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .feature-block h3 {
+    font-size: 1rem;
+  }
+
+  .feature-block p {
+    font-size: 0.85rem;
+    max-width: 100%;
+  }
+
+  .launch-button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.6rem;
+  }
 }

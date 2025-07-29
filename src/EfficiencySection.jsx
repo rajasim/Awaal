@@ -4,18 +4,8 @@ import "./EfficiencySection.css";
 function EfficiencySection() {
   return (
     <div className="efficiency-section">
-      {/* Background Video */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="efficiency-bg-video"
-        src="/video/about us AI-vmake.mp4"
-      />
-
-      {/* Overlay Content */}
-      <div className="efficiency-overlay">
+      {/* Left Side Content */}
+      <div className="efficiency-left">
         <div className="efficiency-text-content">
           <h2>
             Reimagine Efficiency with <br /> Intelligent Technology
@@ -35,6 +25,11 @@ function EfficiencySection() {
             <button className="btn-outline">Learn More</button>
           </div>
         </div>
+      </div>
+
+      {/* Right Side Image */}
+      <div className="efficiency-right">
+        <img src="/images/ayz2.gif" alt="AI Efficiency" />
       </div>
     </div>
   );

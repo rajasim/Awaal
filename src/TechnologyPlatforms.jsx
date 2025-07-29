@@ -4,14 +4,11 @@ import "./TechnologyPlatforms.css";
 function TechnologyPlatforms() {
   return (
     <div className="tech-section">
-      {/* Full Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="background-video"
-        src="/video/WhatsApp Video 2025-06-16 at 10.54.29 PM.mp4" // Replace with your actual path
+      {/* Full Background Image (was video) */}
+      <img
+        src="/images/bg-tech.jpg" // Replace with actual background image path
+        alt="Background"
+        className="background-image"
       />
 
       {/* Foreground Content */}
@@ -27,16 +24,13 @@ function TechnologyPlatforms() {
           <div className="icon-box"><div className="icones">🛡️</div><p>Compliance</p></div>
         </div>
 
-        {/* CENTER Video Box (not removed!) */}
+        {/* Center Image Box (was video) */}
         <div className="ecosystem-box">
           <h3>Our Technology Ecosystem</h3>
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="ecosystem-video-element"
-            src="/video/Recording 2025-06-20 004214-vmake.mp4" // Replace path
+          <img
+            src="/images/ayz.gif" 
+            alt="Technology Ecosystem"
+            className="ecosystem-image"
           />
         </div>
 

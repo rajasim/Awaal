@@ -15,7 +15,7 @@
 }
 
 .transform-content h1 {
-  font-size: 48px;
+  font-size: 60px;
   margin-bottom: 16px;
   font-weight: 700;
 }
@@ -26,7 +26,7 @@
 }
 
 .subtitle {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 30px;
   color: #ccc;
 }
@@ -65,7 +65,7 @@
 }
 
 .service-cardes small {
-  font-size: 12px;
+  font-size: 15px;
   color: #bbb;
 }
 
@@ -111,4 +111,116 @@
   color: #fff;
   font-size: 18px;
   cursor: pointer;
+}
+@media (max-width: 480px) {
+  .transform-wrapper {
+    padding: 40px 16px;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .transform-content {
+    max-width: 100%;
+  }
+
+  .transform-content h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .services-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+    margin: 0 -10px 20px -10px; /* removes side gap to avoid overflow */
+  }
+
+  .service-cardes {
+    flex: 0 0 auto;
+    width: 100px;
+    min-height: 110px;
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+
+  .service-cardes p {
+    font-size: 14px;
+  }
+
+  .service-cardes small {
+    font-size: 12px;
+  }
+
+  .transform-btnnn {
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+
+  .transform-btnnn img {
+    height: 16px;
+  }
+
+  .features-row {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    font-size: 15px;
+  }
+
+  .footer-text {
+    font-size: 15px;
+  }
+
+  .guide-btn {
+    font-size: 15px;
+    padding: 8px 18px;
+  }
+
+  /* Video responsiveness */
+  .video-sectionn {
+    height: auto;
+    width: 100%;
+  }
+
+  .bgo-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .hefter-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .hefter-title {
+    font-size: 28px;
+  }
+
+  .hefter-description {
+    font-size: 14px;
+  }
+
+  .hefter-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
 }

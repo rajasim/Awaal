@@ -11,41 +11,52 @@ html, body {
   box-sizing: inherit;
 }
 
-/* === Hero Section === */
+/* === Hero Section Container === */
 .ai-hero-section {
-  position: relative;
-  width: 100%;
-  height: 100dvh; /* handles mobile browser UI bars */
-  overflow: hidden;
-  color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: black;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #fcfcfc;
 }
 
-/* === Background Video === */
-.ai-background-video {
+/* === Background Image === */
+.ai-bg-image {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: 0;
+  opacity: 0.1;
+}
+
+/* === Left Section === */
+.ai-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px;
+  position: relative;
+  z-index: 1;
+  color: rgb(0, 0, 0);
 }
 
 /* === Main Content === */
 .ai-content {
-  position: relative;
-  z-index: 1;
-  padding: 100px 80px 60px;
-  max-width: 800px;
+  max-width: 700px;
+}
+.ai-content h1{
+  color: #f1a84ef0;
 }
 
 .ai-badge {
   display: inline-block;
-  background-color: rgba(0, 0, 100, 0.3);
+  background-color: rgba(0, 0, 0, 0.827);
   padding: 6px 16px;
   border-radius: 20px;
   font-size: 14px;
@@ -53,18 +64,18 @@ html, body {
   color: #8ab4ff;
 }
 
-/* === Headings === */
 .ai-content h1 {
-  font-size: 72px;
+  font-size: 60px;
   font-weight: 700;
   margin: 0;
   line-height: 1.3;
 }
 
 .ai-highlighted {
-  padding-right: 12px;
+  color: #254fb9;
   position: relative;
   display: inline-block;
+  padding-right: 10px;
 }
 
 .ai-highlighted::after {
@@ -85,16 +96,16 @@ html, body {
 }
 
 .ai-content h2 {
-  font-size: 52px;
+  font-size: 40px;
   font-weight: 600;
-  color: #38bdf8;
+  color: #254fb9;
   margin-top: 20px;
   line-height: 1.3;
 }
 
 .ai-content p {
-  font-size: 20px;
-  color: #ccc;
+  font-size:21px;
+  color: #000000;
   margin-top: 20px;
   line-height: 1.8;
 }
@@ -107,105 +118,77 @@ html, body {
   flex-wrap: wrap;
 }
 
-.ai-btn-primary,
-.ai-btn-secondary {
+.ai-btn-primary {
+  background-color: #3b82f6;
+  color: rgb(0, 0, 0);
+  border: none;
   padding: 14px 28px;
-  font-size: 16px;
+  font-size: 19px;
   border-radius: 30px;
   cursor: pointer;
 }
 
-.ai-btn-primary {
-  background-color: #3b82f6;
-  color: white;
-  border: none;
-}
-
-.ai-btn-secondary {
-  background: transparent;
-  border: 1px solid #3b82f6;
-  color: #3b82f6;
-}
-
-/* === Avatars === */
-.ai-avatars-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-
-.ai-avatar {
-  background-color: #1e3a8a;
-  color: white;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.ai-trust {
-  font-size: 14px;
-  color: #aaa;
+.ai-btn-primary:hover {
+  background-color: #2563eb;
 }
 
 /* === Stats Bar === */
 .ai-stats-bar {
-  position: relative;
-  width: 100%;
-  background-color: rgba(0, 0, 30, 0.8);
   display: flex;
-  justify-content: space-around;
-  padding: 30px 0;
-  z-index: 1;
   flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 60px;
 }
 
 .ai-stat-box {
   min-width: 120px;
-  margin: 10px 0;
 }
 
 .ai-stat-box h3 {
-  font-size: 28px;
+  font-size: 34px;
+  font-weight: 700;
   color: #38bdf8;
   margin: 0;
-  text-align: center;
 }
 
 .ai-stat-box p {
-  font-size: 14px;
-  color: #ccc;
-  margin: 5px 0 0;
-  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  margin-top: 5px;
+}
+
+/* === Right Section with Image === */
+.ai-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfcfc;
+  z-index: 1;
+}
+
+.ai-right img {
+  width: 800px;
+  height: 600px;
+  object-fit: contain;
 }
 
 /* === Tablet === */
 @media (max-width: 1024px) {
-  .ai-content {
-    padding: 80px 40px 50px;
+  .ai-left {
+    padding: 60px 40px;
   }
 
   .ai-content h1 {
-    font-size: 56px;
+    font-size: 48px;
   }
 
   .ai-content h2 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .ai-content p {
-    font-size: 18px;
-  }
-
-  .ai-button-row {
-    flex-direction: column;
-    align-items: flex-start;
+    font-size: 16px;
   }
 
   .ai-stat-box h3 {
@@ -213,10 +196,35 @@ html, body {
   }
 }
 
-/* === Mobile: 480px & below === */
+/* === Mobile: 768px and Below === */
+@media (max-width: 768px) {
+  .ai-hero-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .ai-left {
+    padding: 40px 24px;
+  }
+
+  .ai-right {
+    padding: 20px;
+  }
+
+  .ai-right img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .ai-stats-bar {
+    justify-content: flex-start;
+  }
+}
+
+/* === Small Mobile: 480px and Below === */
 @media (max-width: 480px) {
-  .ai-content {
-    padding: 60px 20px 40px;
+  .ai-left {
+    padding: 30px 16px;
   }
 
   .ai-content h1 {
@@ -225,11 +233,11 @@ html, body {
   }
 
   .ai-content h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .ai-content p {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .ai-button-row {
@@ -237,40 +245,30 @@ html, body {
     width: 100%;
   }
 
-  .ai-btn-primary,
-  .ai-btn-secondary {
+  .ai-btn-primary {
     width: 100%;
     text-align: center;
     font-size: 15px;
     padding: 12px 24px;
   }
 
-  .ai-avatars-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
-  .ai-trust {
-    font-size: 13px;
-  }
-
   .ai-stats-bar {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
-    padding: 20px;
-  }
-
-  .ai-stat-box {
-    width: 100%;
+    margin-top: 40px;
   }
 
   .ai-stat-box h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .ai-stat-box p {
     font-size: 13px;
+  }
+
+  .ai-right img {
+    width: 240px;
+    height: 240px;
   }
 }

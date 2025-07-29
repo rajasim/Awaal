@@ -6,7 +6,7 @@
 
 .betrex-title {
   text-align: center;
-  font-size: 52px;
+  font-size: 60px;
   font-weight: 700;
   color: #111;
   margin-bottom: 12px;
@@ -18,7 +18,7 @@
 
 .betrex-subtitle {
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   color: #6c6f7d;
   margin-bottom: 80px;
 }
@@ -73,7 +73,7 @@
   display: inline-block;
   padding: 10px 20px;
   border-radius: 16px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 24px;
 }
@@ -115,13 +115,88 @@
 }
 
 .betrex-card-texts h4 {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 700;
   margin: 0 0 6px 0;
 }
 
 .betrex-card-texts p {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   color: #666;
+}
+@media (max-width: 480px) {
+  .betrex-section {
+    padding: 60px 20px;
+  }
+
+  .betrex-title {
+    font-size: 36px;
+  }
+
+  .betrex-subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .betrex-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .betrex-left,
+  .betrex-right {
+    min-width: 100%;
+  }
+
+  .betrex-step-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    top: -20px;
+    left: -20px;
+  }
+
+  .betrex-illustration {
+    padding: 24px;
+  }
+
+  .betrex-tag {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+  }
+
+  .betrex-heading {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .betrex-description {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  .betrex-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .betrex-card {
+    flex-direction: row;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .betrex-card-icon {
+    font-size: 28px;
+  }
+
+  .betrex-card-texts h4 {
+    font-size: 18px;
+  }
+
+  .betrex-card-texts p {
+    font-size: 15px;
+  }
 }

@@ -34,8 +34,8 @@
 }
 
 .platforms-title {
-  font-size: 44px;
-  font-weight: bold;
+  font-size: 60px;
+  font-weight: 700;
   color: #0a0a0a;
   margin-bottom: 14px;
 }
@@ -49,7 +49,7 @@
 }
 
 .platforms-subtext {
-  font-size: 20px;
+  font-size: 24px;
   color: #444;
   max-width: 1000px;
   margin: 0 auto 80px;
@@ -94,14 +94,14 @@
 
 /* Card Text */
 .platform-card h3 {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 600;
   color: #0f1c2e;
   margin-bottom: 18px;
 }
 
 .platform-card p {
-  font-size: 17px;
+  font-size: 19px;
   color: #333;
   line-height: 1.6;
 }

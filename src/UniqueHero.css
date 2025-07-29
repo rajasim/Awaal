@@ -15,3 +15,13 @@
   z-index: -1;  /* keeps it behind any text if needed */
   pointer-events: none;
 }
+@media (max-width: 480px) {
+  .video-sectionn {
+    height: 80vh; /* Reduce height slightly for smaller screens */
+  }
+
+  .bgo-video {
+    height: 80vh; /* Match container height */
+    object-fit: cover;
+  }
+}

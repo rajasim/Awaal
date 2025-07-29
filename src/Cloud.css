@@ -1,13 +1,12 @@
-.section-wrapper {
+.cloud-section {
   position: relative;
   width: 100%;
   padding: 6rem 5rem;
   overflow: hidden;
- 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.background-video {
+.bg-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -15,67 +14,75 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  
 }
 
-.content-wrapper {
-  max-width: 900px;
-  text-align: left;
+.cloud-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
   position: relative;
   z-index: 1;
 }
 
-.heading {
-  font-size: 3.5rem;
-  font-weight: bold;
+.cloud-left {
+  max-width: 900px;
+  flex: 1;
+  z-index: 2;
+}
+
+.cloud-heading {
+  font-size: 60px;
+  font-weight: 700;
   color: #2a3eb1;
   margin-bottom: 2rem;
 }
 
-.subtext {
-  font-size: 1.4rem;
+.cloud-subtext {
+  font-size: 24px;
   color: #444;
   margin-bottom: 3rem;
   line-height: 1.8;
 }
 
-.features {
+.cloud-features {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   margin-bottom: 3rem;
 }
 
-.feature {
+.cloud-feature {
   display: flex;
   align-items: flex-start;
   gap: 1.5rem;
   background: white;
   padding: 2rem;
   border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.356);
 }
 
-.icon {
-  font-size: 2.4rem;
-  color: #2a3eb1;
+.cloud-icon img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
 }
 
-.feature-title {
+.cloud-feature h3 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 700;
   color: #222;
 }
 
-.feature-desc {
+.cloud-feature p {
   margin-top: 0.5rem;
   color: #555;
-  font-size: 1.15rem;
+  font-size: 19px;
   line-height: 1.6;
 }
 
-.cta-button {
+.cloud-button {
   background-color: #2a3eb1;
   color: #ffffff;
   padding: 1rem 2rem;
@@ -87,6 +94,48 @@
   transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.cloud-button:hover {
   background-color: #1e2f80;
+}
+
+.cloud-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cloud-right img {
+  width: 480px;
+  height: 510px;
+  object-fit: contain;
+}
+
+/* ✅ Responsive for mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .cloud-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .cloud-heading {
+    font-size: 36px;
+  }
+
+  .cloud-subtext {
+    font-size: 18px;
+  }
+
+  .cloud-feature {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .cloud-icon img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .cloud-right {
+    display: none;
+  }
 }

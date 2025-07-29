@@ -13,7 +13,7 @@ const UnifiedPlatform = () => {
       <div className="unified-platform-container">
         <div className="unified-platform-left">
           <h2 className="unified-platform-heading">
-            ONE UNIFIED PLATFORM FOR DATA, INSIGHTS, AND REAL-TIME ACTION
+            ONE UNIFIED PLATFORM FOR DATA, INSIGHTS, AND REAL TIME ACTION
           </h2>
           <ul className="unified-platform-list">
             <li onClick={() => toggleItem(1)} className={openItem === 1 ? 'active' : ''}>

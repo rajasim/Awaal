@@ -22,7 +22,7 @@ const Ooter = () => {
           loop
           muted
           playsInline
-          src="/video/map-vmake.mp4"
+          src="/video/maapp-vmake.mp4"
         />
         <div className="ooter-video-overlay"></div>
       </div>

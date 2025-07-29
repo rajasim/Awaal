@@ -52,7 +52,7 @@ const Benefits = () => {
           <p>
             Agile, scalable infrastructure enables faster innovation, better customer experiences,
             and more efficient operations. Companies with optimized infrastructure can pivot faster
-            and capitalize on new opportunities.
+            and capitalize on new <br></br> opportunities.
           </p>
           <div className="benefit-bottom">⚡ Accelerate time to market</div>
         </div>

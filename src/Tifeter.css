@@ -1,14 +1,27 @@
 .tifeter-wrapper {
-  position: relative;
+  display: flex;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  position: relative;
+}
+
+/* Left Side Section */
+.tifeter-left {
+  position: relative;
+  flex: 1;
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* ✅ left aligned */
-  padding-left: 60px; /* ✅ pushes content from left edge */
+  justify-content: flex-start;
+  padding-left: 60px;
   box-sizing: border-box;
+  overflow: hidden;
+
+  background-color: #ffffff; /* ✅ Your chosen background color */
 }
+
+
+
 
 .tifeter-content {
   position: relative;
@@ -19,7 +32,7 @@
 }
 
 .tifeter-content h2 {
-  font-size: 2.8rem;
+  font-size: 48px;
   font-weight: 800;
   line-height: 1.2;
   color: #1a1a1a;
@@ -32,7 +45,7 @@
 }
 
 .tifeter-content p {
-  font-size: 1.05rem;
+  font-size: 21px;
   color: #555;
   max-width: 520px;
   line-height: 1.6;
@@ -56,7 +69,7 @@
   align-items: center;
   gap: 12px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 19px;
   color: #1a1a1a;
   border-left: 5px solid #00994c;
   text-align: left;
@@ -70,17 +83,117 @@
 .tifeter-btn {
   background: #00994c;
   color: #fff;
-  font-size: 1rem;
+  font-size: 19px;
   padding: 14px 30px;
   border: none;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: 0.2s ease;
   text-align: left;
 }
 
 .tifeter-btn:hover {
   background: #007c3c;
+}
+
+/* Right Side Image */
+.tifeter-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.tifeter-right img {
+  width: 800px;
+  height: 600px;
+  object-fit: contain; 
+  padding: 20px;
+}
+
+/* ------------- ✅ Responsive for tablets & phones ------------- */
+@media (max-width: 768px) {
+  .tifeter-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .tifeter-left {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .tifeter-content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .tifeter-right {
+    width: 100%;
+    padding: 0 20px 20px;
+  }
+
+  .tifeter-right img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tifeter-points {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* ------------- ✅ Extra Mobile Friendly for 480px ↓ ------------- */
+@media (max-width: 480px) {
+  .tifeter-wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .tifeter-left {
+    padding: 20px 16px;
+  }
+
+  .tifeter-bg-img {
+    opacity: 0.1; /* Optional: Fade background image for readability */
+  }
+
+  .tifeter-content h2 {
+    font-size: 28px;
+  }
+
+  .tifeter-content p {
+    font-size: 14px;
+  }
+
+  .point-box {
+    font-size: 14px;
+    padding: 14px 14px;
+  }
+
+  .point-box img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tifeter-btn {
+    font-size: 15px;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .tifeter-right {
+    padding: 0 16px 20px;
+  }
+
+  .tifeter-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }

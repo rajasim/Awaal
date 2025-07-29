@@ -35,8 +35,8 @@
 }
 
 .softdevelop-title {
-  font-size: 44px;
-  font-weight: bold;
+  font-size: 60px;
+  font-weight: 700;
 }
 
 .softdevelop-title span {
@@ -45,7 +45,7 @@
 
 .softdevelop-subtitle {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 22px;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -81,7 +81,7 @@
 .softdevelop-box-title {
   color: #32d3c6;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 21px;
   margin-bottom: 25px;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .softdevelop-right-text {
-  font-size: 16px;
+  font-size: 19px;
   text-align: left;
   margin-bottom: 25px;
   color: #b7d0db;

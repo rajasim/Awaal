@@ -6,7 +6,7 @@
   padding: 40px;
   background-color: #061e2c;
   color: #ffffff;
-  font-family: 'Segoe UI', sans-serif;
+  font-family:  sans-serif;
    
 }
 
@@ -25,13 +25,13 @@
 
 /* === Headings === */
 .card-box-heading {
-  font-size: 20px;
+  font-size: 28px;
   margin-bottom: 8px;
   color: #ffffff;
 }
 
 .card-box-subtext {
-  font-size: 14px;
+  font-size: 21px;
   color: #b1c7d1;
   margin-bottom: 20px;
 }
@@ -48,7 +48,7 @@
 .status-info-line span {
   display: inline-block;
   width: 49%;
-  font-size: 14px;
+  font-size: 19px;
   color: #ffffff;
 }
 
@@ -88,7 +88,7 @@
 /* === Key Highlights === */
 .key-highlights-list {
   margin-top: 15px;
-  font-size: 14px;
+  font-size: 18px;
   color: #ffffff;
 }
 
@@ -116,7 +116,7 @@
   margin-top: 20px;
   padding: 10px 20px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   border: none;
   border-radius: 6px;
   cursor: pointer;

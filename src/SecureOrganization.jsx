@@ -12,7 +12,7 @@ const SecureOrganization = () => {
           </p>
           <div className="secure-organization-buttons">
             <button className="secure-btn-primary">Get Started Today</button>
-            <button className="secure-btn-secondary">Explore Services</button>
+            
           </div>
         </div>
         <div className="secure-organization-image">

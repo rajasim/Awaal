@@ -11,6 +11,29 @@
   background-color: #0a0a23;
 }
 
+/* ✅ Background image */
+.waxter-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Wrapper for content + image */
+.waxter-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 80px;
+  z-index: 1;
+}
+
+/* Left content */
 .waxter-overlay {
   position: relative;
   z-index: 1;
@@ -18,9 +41,10 @@
 }
 
 .waxter-heading {
-  font-size: 3.5rem;
+  font-size: 60px;
   line-height: 1.2;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .bold-text {
@@ -36,7 +60,7 @@
 }
 
 .waxter-text {
-  font-size: 1.4rem;
+  font-size: 24px;
   color: #d1d5db;
   margin-bottom: 30px;
   line-height: 1.8;
@@ -50,10 +74,86 @@
   color: #fff;
   font-weight: 600;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 24px;
   transition: background 0.3s ease;
 }
 
 .waxter-button:hover {
   background-color: #4f46e5;
 }
+
+/* ✅ Right-side image */
+.waxter-image {
+  z-index: 1;
+  margin-right: -10px; /* ✅ Moves image slightly to the left */
+}
+
+.waxter-image img {
+  width: 460px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* ✅ Responsive tweaks */
+@media (max-width: 768px) {
+  .waxter-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 40px;
+  }
+
+  .waxter-heading {
+    font-size: 42px;
+  }
+
+  .waxter-text {
+    font-size: 20px;
+  }
+
+  .waxter-button {
+    font-size: 20px;
+    padding: 12px 28px;
+  }
+
+  .waxter-image img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .waxter-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.5rem;
+    height: auto; /* Ensures the container grows with content */
+  }
+
+  .waxter-overlay {
+    max-width: 100%;
+    z-index: 2;
+    position: relative;
+  }
+
+  .waxter-right-img {
+    width: 100%;
+    max-width: 280px;
+    margin-top: 2rem;
+    margin-bottom: 2rem; /* ✅ Add this to prevent cut-off */
+    object-fit: contain;
+    display: block;
+  }
+
+  .waxter-bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+}
+
+

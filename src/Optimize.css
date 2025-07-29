@@ -26,15 +26,15 @@
   flex: 2;
 }
 
-.highlight {
+.highlightre {
   color: #00735d;
   font-weight: 800;
-  font-size: 32px;
+  font-size: 38px;
 }
 
-.description {
+.descriptione {
   margin: 20px 0 30px;
-  font-size: 18px;
+  font-size: 22px;
   color: #121111;
   line-height: 1.8;
 }
@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 16px;
-  font-size: 18px;
+  font-size: 21px;
   color: #333;
 }
 
@@ -76,13 +76,13 @@
 }
 
 .cta-box h3 {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 16px;
 }
 
 .cta-box p {
-  font-size: 16px;
-  margin-bottom: 24px;
+  font-size: 19px;
+  margin-bottom: 12px;
 }
 
 .cta-button {
@@ -92,7 +92,7 @@
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }

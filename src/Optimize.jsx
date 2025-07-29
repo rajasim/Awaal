@@ -7,9 +7,9 @@ function Optimize() {
       <div className="optimize-content">
         <div className="optimize-left">
           <h2>
-            <span className="highlight">Transform Your IT Infrastructure</span>
+            <span className="highlightre">Transform Your IT Infrastructure</span>
           </h2>
-          <p className="description">
+          <p className="descriptione">
             Our comprehensive solutions are designed to give your business a competitive
             edge through reliable, secure, and scalable IT infrastructure.
           </p>

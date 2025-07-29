@@ -6,8 +6,8 @@
 }
 
 .rof-heading {
-  font-size: 2.4rem;
-  font-weight: 800;
+  font-size: 60px;
+  font-weight: 700;
   margin-bottom: 10px;
   color: #222;
 }
@@ -16,7 +16,7 @@
   color: #666;
   max-width: 700px;
   margin: 0 auto 50px;
-  font-size: 1.05rem;
+  font-size: 21px;
   font-weight: 600; /* a bit bolder */
 }
 
@@ -59,7 +59,7 @@
 .rof-box h3 {
   margin-top: 28px;
   margin-bottom: 18px;
-  font-size: 1.3rem;
+  font-size: 24px;
   font-weight: 700; /* bolder */
   color: #222;
 }
@@ -73,7 +73,7 @@
 }
 
 .rof-box p {
-  font-size: 1rem;
+  font-size: 19px;
   color: #444;
   font-weight: 600; /* bolder */
   line-height: 1.4;
@@ -136,13 +136,100 @@
 
 .rof-bottom-box h4 {
   color: #5e3dea;
-  font-size: 1rem;
+  font-size: 24px;
   margin-bottom: 8px;
   font-weight: 700;
 }
 
 .rof-bottom-box p {
   color: #444;
-  font-size: 0.95rem;
+  font-size: 19px;
   font-weight: 600;
+}
+@media (max-width: 480px) {
+  .rof-wrapper {
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .rof-heading {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .rof-subtext {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .rof-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .rof-box {
+    width: 100%;
+    height: auto;
+    padding: 24px 16px;
+  }
+
+  .rof-step {
+    font-size: 0.9rem;
+    padding: 4px 10px;
+  }
+
+  .rof-box h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+
+  .rof-box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .rof-box p {
+    font-size: 15px;
+  }
+
+  .rof-cta {
+    padding: 24px 16px;
+    min-height: auto;
+  }
+
+  .rof-cta h3 {
+    font-size: 20px;
+  }
+
+  .rof-cta p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .rof-cta button {
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+
+  .rof-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .rof-bottom-box {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .rof-bottom-box h4 {
+    font-size: 18px;
+  }
+
+  .rof-bottom-box p {
+    font-size: 15px;
+  }
 }

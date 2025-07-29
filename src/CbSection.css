@@ -26,8 +26,8 @@
 }
 
 .cb-title {
-  font-size: 44px;
-  font-weight: bold;
+  font-size: 60px;
+  font-weight: 700;
 }
 
 .cb-title span {
@@ -36,7 +36,7 @@
 
 .cb-subtitle {
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 24px;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -81,7 +81,7 @@
 .cb-box-title {
   color: #32d3c6;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 25px;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .cb-right-text {
-  font-size: 16px;
+  font-size: 19px;
   text-align: left;
   margin-bottom: 25px;
   color: #b7d0db;
@@ -112,6 +112,7 @@
   list-style: none;
   padding-left: 0;
   color: #d2f4ff;
+  font-size: 14px;
 }
 
 .cb-points li {

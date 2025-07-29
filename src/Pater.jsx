@@ -87,7 +87,7 @@ function Pater() {
             </p>
             <div className="pater-buttons">
               <button className="pater-btn-primary">Get Started</button>
-              <button className="pater-btn-outline">Learn More</button>
+              
             </div>
           </div>
           <div className="pater-bottom-right">

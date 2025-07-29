@@ -30,14 +30,14 @@
 
 /* Heading Section */
 .piter-heading {
-  font-size: 42px;
+  font-size: 46px;
   color: #5ff3e2;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .piter-subheading {
-  font-size: 21px;
+  font-size: 24px;
   color: #cbd5e1;
   margin-bottom: 60px;
 }
@@ -85,14 +85,14 @@
 
 /* Tech Stack Heading */
 .piter-stack-heading {
-  font-size: 34px;
+  font-size: 41px;
   color: #5ff3e2;
   margin-bottom: 6px;
   font-weight: bold;
 }
 
 .piter-stack-subheading {
-  font-size: 19px;
+  font-size: 24px;
   color: #cbd5e1;
   margin-bottom: 40px;
 }
@@ -119,13 +119,13 @@
 }
 
 .piter-icon-box img {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   margin-bottom: 10px;
 }
 
 .piter-icon-box span {
-  font-size: 14px;
+  font-size: 18px;
   color: white;
 }
 
@@ -136,14 +136,14 @@
 }
 
 .piter-bottom-cta h2 {
-  font-size: 28px;
+  font-size: 34px;
   color: white;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .piter-bottom-cta p {
-  font-size: 16px;
+  font-size: 21px;
   color: #cbd5e1;
   margin-bottom: 30px;
 }
@@ -164,6 +164,7 @@
   border-radius: 30px;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 22px;
 }
 
 .piter-btn-outline {

@@ -56,7 +56,7 @@ const Ketra = () => {
           <img src="/images/Our Recent Projects2.png" alt="Corporate Website" className="card-img" />
           <h3>Corporate Website</h3>
           <p>
-            A professional web presence for businesses with custom CMS.
+            A professional web presence for businesses with custom <br></br>CMS.
           </p>
           <div className="tags">
             <span>WordPress</span>

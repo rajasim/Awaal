@@ -5,7 +5,7 @@ const Laptor = () => {
   return (
     <div className="laptor-container">
       <h2 className="laptor-title">
-        Ongoing Support <span className="highlight">& Maintenance</span>
+        Ongoing Support <span className="highlighter">& Maintenance</span>
       </h2>
       <p className="laptor-subtitle">
         We don't just build and leave — we stay to support. Our comprehensive post-launch services

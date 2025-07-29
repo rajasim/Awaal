@@ -82,7 +82,7 @@ const Piter = () => {
           </p>
           <div className="piter-buttons">
             <button className="piter-btn-primary">Schedule a Demo</button>
-            <button className="piter-btn-outline">Contact Us</button>
+           
           </div>
         </div>
       </div>
