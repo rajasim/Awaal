@@ -98,3 +98,50 @@
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
 }
+@media (max-width: 480px) {
+  .kb-container {
+    padding: 60px 16px;
+  }
+
+  .kb-heading {
+    font-size: 36px;
+    line-height: 1.3;
+  }
+
+  .kb-subheading {
+    font-size: 16px;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .kb-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .kb-card {
+    padding: 28px 20px;
+    min-height: auto;
+    max-width: 100%;
+  }
+
+  .kb-icon {
+    font-size: 26px;
+    margin-bottom: 14px;
+  }
+
+  .kb-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .kb-desc {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .kb-underline {
+    height: 4px;
+  }
+}

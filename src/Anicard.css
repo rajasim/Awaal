@@ -101,9 +101,45 @@
   color: white;
 }
 
-/* Optional: make it stack on smaller screens */
-@media (max-width: 1100px) {
+@media (max-width: 480px) {
+  .anicard-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 16px;
+    gap: 30px;
+  }
+
   .anicard-box {
     width: 100%;
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  .anicard-content {
+    padding: 24px 20px;
+  }
+
+  .anicard-content h3 {
+    font-size: 22px;
+  }
+
+  .anicard-content p {
+    font-size: 16px;
+  }
+
+  .anicard-content li {
+    font-size: 15px;
+  }
+
+  .anicard-button {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .anicard-top-img {
+    height: 100px;
+    object-fit: cover;
   }
 }
+
+

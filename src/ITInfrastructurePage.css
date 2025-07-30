@@ -221,12 +221,41 @@ h1 {
 }
 
 @media (max-width: 480px) {
+  .infra-wrapper {
+    height: auto; /* Allow wrapper to grow with content */
+    min-height: 100vh;
+  }
+
   .infra-content {
+    flex-direction: column;
     padding: 40px 20px;
+    align-items: flex-start;
+  }
+
+  .infra-left,
+  .infra-right {
+    max-width: 100%;
+    flex: 1 1 100%;
+    padding: 0;
+  }
+
+  .infra-left {
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 1.3;
   }
 
   .infra-left p {
     font-size: 15px;
+    max-width: 100%;
+  }
+
+  .infra-points {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .infra-point {
@@ -234,23 +263,52 @@ h1 {
   }
 
   .infra-dashboard-img {
-    max-height: 300px;
+    max-height: 260px;
+    width: 100%;
+    object-fit: contain;
   }
 
-  .infra-stats {
+  .infra-butns {
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
+    width: 100%;
   }
 
   .get-started,
   .view-solutions {
     width: 100%;
     text-align: center;
+    font-size: 16px;
+    padding: 12px 18px;
   }
 
-  
+  .infra-stats {
+    flex-direction: column;
+    gap: 16px;
+    font-size: 15px;
+  }
 
-  .infra-points {
-    grid-template-columns: 1fr;
+  .infra-stats strong {
+    font-size: 17px;
+  }
+
+  .infra-trusted {
+    position: static; /* Allow flow after image */
+    transform: none;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .trusted-heading {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .infra-logos {
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+    flex-wrap: wrap;
   }
 }

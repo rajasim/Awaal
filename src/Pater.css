@@ -189,3 +189,87 @@ html, body {
   height: auto;
   border-radius: 12px;
 }
+@media (max-width: 480px) {
+  .pater-section {
+    padding: 60px 16px;
+  }
+
+  .pater-title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .pater-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
+  .pater-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pater-card {
+    padding: 20px 14px;
+    min-height: auto;
+  }
+
+  .pater-card h4 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+
+  .pater-card p {
+    font-size: 16px;
+  }
+
+  .pater-card-line {
+    margin-top: 12px;
+  }
+
+  .pater-bottom {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .pater-bottom-left {
+    flex: 1 1 100%;
+  }
+
+  .pater-bottom-left h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .pater-bottom-left p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .pater-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .pater-btn-primary,
+  .pater-btn-outline {
+    width: 100%;
+    max-width: 280px;
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+
+  .pater-bottom-right {
+    flex: 1 1 100%;
+    margin-top: 24px;
+  }
+
+  .pater-bottom-img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+}

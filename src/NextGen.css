@@ -113,3 +113,51 @@
   color: #00c3a5;
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  .nextgen-container {
+    padding: 40px 20px;
+  }
+
+  .nextgen-heading {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .nextgen-subheading {
+    font-size: 18px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  .nextgen-row {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .nextgen-box {
+    width: 100%;
+    min-height: auto;
+    padding: 24px 18px;
+  }
+
+  .nextgen-title {
+    font-size: 20px;
+  }
+
+  .nextgen-desc {
+    font-size: 17px;
+  }
+
+  .nextgen-list li {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  .nextgen-icon {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 12px;
+  }
+}

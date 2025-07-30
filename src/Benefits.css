@@ -105,3 +105,53 @@
 .benefit-button:hover {
   background-color: #00e67a;
 }
+@media (max-width: 480px) {
+  .benefits-wrapper {
+    padding: 50px 20px;
+  }
+
+  .benefits-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .benefit-box {
+    max-width: 100%;
+    padding: 30px 20px;
+  }
+
+  .benefit-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .benefit-box h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .benefit-box p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .benefit-bottom {
+    font-size: 13px;
+    padding-top: 12px;
+    margin-top: 10px;
+  }
+
+  .benefit-button-wrapper {
+    margin-top: 40px;
+  }
+
+  .benefit-button {
+    width: 100%;
+    font-size: 15px;
+    padding: 14px 0;
+  }
+}

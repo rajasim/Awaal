@@ -195,6 +195,76 @@ html, body, #root {
     width: 100%;
   }
 }
+@media (max-width: 480px) {
+  .deliverables-section {
+    height: auto;
+    padding: 40px 20px;
+    align-items: flex-start;
+  }
+
+  .deliverables-title {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .deliverables-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .deliverables-card {
+    flex-direction: column;
+    padding: 24px;
+    gap: 30px;
+    min-height: auto;
+  }
+
+  .left-box {
+    text-align: left;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .card-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .status-labels {
+    font-size: 15px;
+  }
+
+  .key-title {
+    font-size: 18px;
+  }
+
+  .key-deliverables ul {
+    font-size: 16px;
+  }
+
+  .key-deliverables li {
+    margin-bottom: 6px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .right-box {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-box img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 
 
 
