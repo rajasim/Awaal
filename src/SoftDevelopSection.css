@@ -128,3 +128,50 @@
   color: #32d3c6;
   font-weight: bold;
 }
+@media (max-width: 480px) {
+  .softdevelop-content-wrapper {
+    padding: 60px 20px;
+    text-align: left;
+  }
+
+  .softdevelop-title {
+    font-size: 34px;
+  }
+
+  .softdevelop-subtitle {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  .softdevelop-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .softdevelop-left-box,
+  .softdevelop-right-box {
+    padding: 24px;
+    min-width: auto;
+    width: 100%;
+  }
+
+  .softdevelop-box-title,
+  .softdevelop-box-title-right {
+    font-size: 18px;
+  }
+
+  .softdevelop-right-text {
+    font-size: 16px;
+  }
+
+  .softdevelop-data-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .softdevelop-points li {
+    font-size: 15px;
+    margin-bottom: 18px;
+    padding-left: 26px;
+  }
+}

@@ -5,11 +5,7 @@ const Waxter = () => {
   return (
     <div className="waxter-container">
       {/* Background Image */}
-      <img
-        src="/images/bg-waxter.jpg"
-        alt="Background"
-        className="waxter-bg-img"
-      />
+     
 
       <div className="waxter-wrapper">
         {/* Left Content */}
@@ -27,7 +23,7 @@ const Waxter = () => {
 
         {/* Right Image */}
         <div className="waxter-image">
-          <img src="/images/ayz.gif" alt="Right Illustration" />
+          <img src="/images/softdbotm.gif" alt="Right Illustration" />
         </div>
       </div>
     </div>

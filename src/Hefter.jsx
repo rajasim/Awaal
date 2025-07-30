@@ -6,7 +6,7 @@ function Hefter() {
     <div className="hefter-wrapper">
       {/*  Background image */}
       <img
-        src="/images/bg-hefter.jpg" 
+        src="/images/migrationright.jpg" 
         alt="Background"
         className="hefter-bg-img"
       />
@@ -40,7 +40,7 @@ function Hefter() {
         {/*  Right Side Image */}
         <div className="hefter-right">
           <img
-            src="/images/ayz.gif"
+            src="/images/migrationside.gif"
             alt="Visual Migration"
             className="hefter-right-img"
           />

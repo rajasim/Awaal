@@ -73,10 +73,10 @@
 
 /* 🔄 Replaced video with image */
 .ecosystem-image {
-  width: 100%;
-  max-width: 1300px;
-  height: 600px;
-  object-fit: cover;
+ width: 800px;
+ 
+  height: 550px;
+  object-fit: contain;
   border-radius: 20px;
 }
 

@@ -125,8 +125,8 @@
 
 .image-section img {
   
-  width: 100%;
-  height: 100%;
+  width: 550px;
+  height: 738px;
  /* Use 'cover' if you want it to fill and crop */
   border-radius: 12px;
   display: block;
@@ -142,4 +142,91 @@
   display: block;
   padding: 60px 20px;
   text-align: center;
+}
+@media (max-width: 480px) {
+  .security-wrapper {
+    padding: 60px 20px;
+    height: auto;
+    min-height: unset;
+  }
+
+  .security-heading h2 {
+    font-size: 34px;
+  }
+
+  .security-heading p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .heading-line {
+    width: 60px;
+    height: 4px;
+  }
+
+  .security-layout {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .left-buttons {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .left-buttons button {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
+  .content-box {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .blue-section {
+    padding: 20px;
+  }
+
+  .blue-section h3 {
+    font-size: 24px;
+  }
+
+  .blue-section p {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  .blue-section ul {
+    font-size: 14px;
+    padding-left: 18px;
+  }
+
+  .image-section {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .image-section img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .right-content:empty::before {
+    font-size: 20px;
+    padding: 40px 10px;
+  }
 }

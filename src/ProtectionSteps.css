@@ -99,4 +99,64 @@ box-shadow: 0 4px 6px #2ac47c; /* real drop shadow */}
   margin-top: 30px;
 }
 
+@media (max-width: 480px) {
+  .protection-wrapper {
+    padding: 60px 20px;
+    height: auto;
+  }
+
+  .protection-heading h2 {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+
+  .protection-heading p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .heading-line {
+    width: 120px;
+    height: 4px;
+    margin-bottom: 20px;
+  }
+
+  .protection-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .step-box {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .circle-number {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .circle-number .line {
+    display: none; /* Hide connecting line on mobile */
+  }
+
+  .step-box h4 {
+    font-size: 22px;
+  }
+
+  .step-box p {
+    font-size: 15px;
+    line-height: 1.6;
+    ;
+
+  }
+  .protection-headingg h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+}
 

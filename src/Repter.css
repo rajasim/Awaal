@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: 'Segoe UI', sans-serif;
   padding: 4rem 6%;
 }
@@ -38,7 +38,7 @@
 }
 
 .repter-badge {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(47, 94, 222, 0.803);
   padding: 0.4rem 1.2rem;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -52,6 +52,7 @@
   line-height: 1.2;
   margin-bottom: 1.2rem;
   letter-spacing: -0.5px;
+  color: #0f1416;
 }
 
 .highlight-blue {
@@ -64,7 +65,7 @@
 
 .repter-content p {
   font-size: 19px;
-  color: #ccc;
+  color: #181414;
   margin-bottom: 2.2rem;
   max-width: 600px;
   line-height: 1.9;
@@ -83,24 +84,24 @@
   border-radius: 10px;
   font-size: 18px;
   font-weight: 600;
-  color: white;
+  color: rgb(1, 1, 1);
   cursor: pointer;
 }
 
 .btn-outline {
   background: transparent;
-  border: 1px solid #ccc;
+  border: 1px solid #0b0a0a;
   padding: 1rem 2rem;
   border-radius: 10px;
   font-size: 1rem;
   font-weight: 600;
-  color: white;
+  color: rgb(42, 35, 35);
   cursor: pointer;
 }
 
 .repter-tech span {
   font-size: 19px;
-  color: #999;
+  color: #030202;
   display: block;
   margin-bottom: 0.8rem;
 }
@@ -125,8 +126,8 @@
 }
 
 .repter-image img {
-  width: 480px;
-  height: auto;
+  width:800px;
+  height: 578px;
   object-fit: contain;
 }
 

@@ -5,12 +5,12 @@ const Repter = () => {
   return (
     <div className="repter-wrapper">
       {/* Background Image */}
-      <img src="/images/bg-repter.jpg" alt="Background" className="repter-bg-image" />
+      
 
       <div className="repter-inner">
         {/* Left Content */}
         <div className="repter-content">
-          <div className="repter-badge">🚀 Innovative Software Solutions</div>
+          <div className="repter-badge"> Innovative Software Solutions</div>
 
           <h1>
             We Build <span className="highlight-blue">Powerful</span> Software &{' '}
@@ -23,8 +23,8 @@ const Repter = () => {
           </p>
 
           <div className="repter-buttons">
-            <button className="btn-primary">Explore Solutions</button>
-            <button className="btn-outline">🎬 Watch Demo</button>
+            <button className="btn-primary"> Explore Solutions</button>
+            
           </div>
 
           <div className="repter-tech">
@@ -40,7 +40,7 @@ const Repter = () => {
 
         {/* ✅ Right-side image */}
         <div className="repter-image">
-          <img src="/images/ayz.gif" alt="Right Side Illustration" />
+          <img src="/images/softwright.gif" alt="Right Side Illustration" />
         </div>
       </div>
     </div>

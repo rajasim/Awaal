@@ -106,8 +106,8 @@
 }
 
 .cloud-right img {
-  width: 480px;
-  height: 510px;
+  width: 800px;
+  height: 600px;
   object-fit: contain;
 }
 
@@ -117,16 +117,31 @@
     padding: 3rem 1.5rem;
   }
 
+  .cloud-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   .cloud-heading {
-    font-size: 36px;
+    font-size: 32px;
+    text-align: center;
   }
 
   .cloud-subtext {
-    font-size: 18px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .cloud-features {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .cloud-feature {
     flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
     text-align: left;
   }
 
@@ -135,7 +150,22 @@
     height: 48px;
   }
 
+  .cloud-feature h3 {
+    font-size: 20px;
+  }
+
+  .cloud-feature p {
+    font-size: 16px;
+  }
+
+  .cloud-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+
   .cloud-right {
-    display: none;
+    display: none; /* Hide image on small screens */
   }
 }

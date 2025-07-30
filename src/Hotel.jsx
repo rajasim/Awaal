@@ -8,7 +8,7 @@ const Hotel = () => {
 
         {/* Left Side: Smart Healthcare AI */}
         <div className="hotel-left">
-          <img src="/images/box9.jpeg" alt="Smart Healthcare AI" className="hotel-image" />
+          <img src="/images/Health.gif" alt="Smart Healthcare AI" className="hotel-image" />
 
           <h2 className="hotel-section-title red">Smart Healthcare AI System</h2>
           <p className="hotel-section-sub red">
@@ -42,7 +42,7 @@ const Hotel = () => {
 
         {/* Right Side: Hotel Booking Platform */}
         <div className="hotel-right">
-          <img src="/images/box9.jpeg" alt="Hotel Booking Platform" className="hotel-image" />
+          <img src="/images/Hotel.gif" alt="Hotel Booking Platform" className="hotel-image" />
 
           <h2 className="hotel-section-title yellow">Hotel Booking Platform</h2>
           <p className="hotel-section-sub yellow">

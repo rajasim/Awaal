@@ -4,9 +4,8 @@ import './Watrex.css';
 const Watrex = () => {
   return (
     <div className="watrex-container">
-      {/* Background image */}
-      <img src="/images/cloud-bg.jpg" alt="Background" className="watrex-bg-img" />
-
+     
+     
       <div className="watrex-wrapper">
         {/* Left Content */}
         <div className="watrex-content">
@@ -40,7 +39,7 @@ const Watrex = () => {
 
         {/* Right-side image */}
         <div className="watrex-image">
-          <img src="/images/ayz.gif" alt="Cloud Illustration" />
+          <img src="/images/cloudbotoom.gif" alt="Cloud Illustration" />
         </div>
       </div>
     </div>

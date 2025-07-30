@@ -6,7 +6,7 @@ function TechnologyPlatforms() {
     <div className="tech-section">
       {/* Full Background Image (was video) */}
       <img
-        src="/images/bg-tech.jpg" // Replace with actual background image path
+        src="/images/itinfrabg.png" // Replace with actual background image path
         alt="Background"
         className="background-image"
       />
@@ -28,7 +28,7 @@ function TechnologyPlatforms() {
         <div className="ecosystem-box">
           <h3>Our Technology Ecosystem</h3>
           <img
-            src="/images/ayz.gif" 
+            src="/images/itgif.gif" 
             alt="Technology Ecosystem"
             className="ecosystem-image"
           />

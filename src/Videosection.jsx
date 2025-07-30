@@ -39,7 +39,7 @@ const VideoSection = () => {
 
         {/* ✅ Right Side Image */}
         <div className="right-placeholder">
-          <img src="/images/ayz.gif" alt="Robot Illustration" />
+          <img src="/images/whatrobot.gif" alt="Robot Illustration" />
         </div>
       </div>
     </section>

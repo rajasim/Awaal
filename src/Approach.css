@@ -2,7 +2,7 @@
   padding: 100px 60px;
   background: #092027;
   color: #ffffff;
-  font-family:  sans-serif;
+  font-family: sans-serif;
 }
 
 .approach-top {
@@ -39,13 +39,14 @@
   gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: row; /* ✅ Ensure row layout on desktop */
 }
 
 .approach-card {
   background: #12303b;
   padding: 40px;
   border-radius: 20px;
-  flex: 1 1 calc(25% - 40px); /* 4 cards per row */
+  flex: 1 1 calc(25% - 40px);
   max-width: calc(25% - 40px);
   position: relative;
   box-shadow: 0 8px 30px rgba(0, 255, 191, 0.1);
@@ -113,18 +114,21 @@
   gap: 60px;
 }
 
-.partners, .certifications {
+.partners,
+.certifications {
   flex: 1;
   min-width: 360px;
 }
 
-.partners h4, .certifications h4 {
+.partners h4,
+.certifications h4 {
   font-size: 26px;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
-.partners p, .certifications p {
+.partners p,
+.certifications p {
   font-size: 17px;
   color: #b2d8d8;
   margin-bottom: 24px;
@@ -157,14 +161,7 @@
   font-size: 15px;
 }
 
-/* Responsive Fixes */
-@media (max-width: 1200px) {
-  .approach-card {
-    flex: 1 1 calc(33.333% - 40px);
-    max-width: calc(33.333% - 40px);
-  }
-}
-
+/* ✅ Responsive – Tablet */
 @media (max-width: 900px) {
   .approach-card {
     flex: 1 1 calc(50% - 40px);
@@ -172,96 +169,8 @@
   }
 }
 
-@media (max-width: 600px) {
-  .approach-card {
-    flex: 1 1 100%;
-    max-width: 100%;
-    padding: 26px;
-  }
+/* ✅ Responsive – Mobile 480px */
 
-  .approach-section {
-    padding: 60px 20px;
-  }
-
-  .approach-title {
-    font-size: 32px;
-    margin: 10px 0;
-  }
-
-  .approach-subtext {
-    font-size: 16px;
-    max-width: 100%;
-    padding: 0 10px;
-  }
-
-  .approach-steps {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .step-number {
-    width: 28px;
-    height: 28px;
-    font-size: 16px;
-    line-height: 28px;
-    top: -12px;
-    left: -12px;
-  }
-
-  .step-image {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 14px;
-  }
-
-  .approach-card h3 {
-    font-size: 22px;
-    margin-bottom: 12px;
-  }
-
-  .approach-card p {
-    font-size: 16px;
-    margin-bottom: 14px;
-  }
-
-  .approach-card li {
-    font-size: 15px;
-    margin-bottom: 8px;
-  }
-
-  .approach-bottom {
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 60px;
-  }
-
-  .partners, .certifications {
-    min-width: 100%;
-  }
-
-  .partners h4, .certifications h4 {
-    font-size: 22px;
-  }
-
-  .partners p, .certifications p {
-    font-size: 15px;
-  }
-
-  .partner-logos {
-    justify-content: center;
-    gap: 12px;
-  }
-
-  .partner-logos img {
-    height: 40px;
-    padding: 6px 10px;
-  }
-
-  .cert-tags span {
-    font-size: 13px;
-    padding: 6px 12px;
-  }
-}
 @media (max-width: 480px) {
   .approach-section {
     padding: 50px 16px;
@@ -270,22 +179,28 @@
   .approach-title {
     font-size: 28px;
     margin: 10px 0;
+    text-align: center;
   }
 
   .approach-subtext {
     font-size: 15px;
     padding: 0 10px;
+    text-align: center;
   }
 
   .approach-steps {
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
+    align-items: center;
   }
 
   .approach-card {
-    flex: 1 1 100%;
+    width: 100%;
     max-width: 100%;
     padding: 24px;
+    box-sizing: border-box;
+    display: block;
+    text-align: left;
   }
 
   .step-number {
@@ -322,23 +237,29 @@
     flex-direction: column;
     gap: 30px;
     margin-top: 60px;
+    align-items: center;
+    text-align: center;
   }
 
-  .partners, .certifications {
-    min-width: 100%;
+  .partners,
+  .certifications {
+    width: 100%;
   }
 
-  .partners h4, .certifications h4 {
+  .partners h4,
+  .certifications h4 {
     font-size: 20px;
   }
 
-  .partners p, .certifications p {
+  .partners p,
+  .certifications p {
     font-size: 14px;
   }
 
   .partner-logos {
     justify-content: center;
     gap: 12px;
+    flex-wrap: wrap;
   }
 
   .partner-logos img {
@@ -346,8 +267,36 @@
     padding: 6px 10px;
   }
 
+  .cert-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
   .cert-tags span {
     font-size: 13px;
     padding: 6px 12px;
   }
+
+  /* ✅ Force vertical stacking for .ta-flow only */
+  .ta-flow {
+    display: block !important;
+    padding-left: 0 !important;
+  }
+
+  .ta-flow > * {
+    
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .ta-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    color: #000;
+    text-align: center;
+  }
 }
+

@@ -55,7 +55,7 @@ const Cloud = () => {
 
         {/* Right Image */}
         <div className="cloud-right">
-          <img src="/images/ayz.gif" alt="Cloud Server Illustration" />
+          <img src="/images/cloudside.gif" alt="Cloud Server Illustration" />
         </div>
       </div>
     </section>

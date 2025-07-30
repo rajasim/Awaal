@@ -171,9 +171,9 @@
 }
 @media (max-width: 480px) {
   .azure-section {
-    min-height: 100vh;
+    min-height: auto;
     height: auto;
-    padding: 80px 16px 80px 16px;
+    padding: 60px 16px;
     box-sizing: border-box;
     position: relative;
     z-index: 1;
@@ -181,6 +181,19 @@
 
   .azure-content {
     padding: 0;
+    text-align: left;
+  }
+
+  .section-titleee {
+    font-size: 32px;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  .section-subtitlew {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
     text-align: left;
   }
 
@@ -193,5 +206,32 @@
   .azure-box {
     width: 100%;
     max-width: 100%;
+    padding: 1.5rem 1.2rem;
+  }
+
+  .box-img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+
+  .boxx-title {
+    font-size: 20px;
+  }
+
+  .boxx-desc {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .button-wrapper {
+    text-align: left;
+    margin-top: 2rem;
+  }
+
+  .assessment-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
   }
 }

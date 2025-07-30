@@ -4,11 +4,11 @@
   height: 100vh;
   overflow: hidden;
   font-family: 'Segoe UI', sans-serif;
-  color: white;
+  color: rgb(27, 25, 89);
   display: flex;
   align-items: center;
   padding-left: 80px;
-  background-color: #0a0a23;
+  background-color: #030303;
 }
 
 /* ✅ Background image */
@@ -40,8 +40,8 @@
 
 .tag-btn {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border: 1px solid #aaa;
+  color: #ffffff;
+  border: 1px solid #fffdfd;
   padding: 8px 18px;
   border-radius: 24px;
   font-size: 14px;
@@ -54,6 +54,7 @@
   line-height: 1.2;
   margin-bottom: 20px;
   font-weight: 700;
+  color: #ffffff;
 }
 
 .highlighted {
@@ -67,7 +68,7 @@
 .sub-title {
   font-size: 32px;
   font-weight: 600;
-  color: #91b3ff;
+  color: #293f6f;
   margin: 30px 0 20px;
 }
 
@@ -75,14 +76,14 @@
 .description.dimmed {
   font-size: 24px;
   line-height: 1.6;
-  color: #ccc;
+  color: #f5f5f5;
   margin-bottom: 18px;
 }
 
 /* ✅ Right image */
 .right-placeholder img {
-  width: 540px; /* increased from 460px */
-  height: auto;
+  width: 800px; 
+  height: 566px;
   object-fit: contain;
   z-index: 2;
 }
