@@ -6,7 +6,7 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* 🔄 Replaced video with image */
+/* 🔄 Background Image */
 .background-image {
   position: absolute;
   top: 0;
@@ -17,6 +17,7 @@
   z-index: 0;
 }
 
+/* 🔽 Main Content */
 .tech-content {
   position: relative;
   z-index: 1;
@@ -36,25 +37,28 @@
   color: #ffffff;
 }
 
+/* ✅ Responsive Grid for Icons */
 .icon-grid {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  justify-items: center;
+  align-items: stretch;
 }
 
 .icon-box {
   background-color: rgba(255, 255, 255, 0.08);
-  padding: 40px 50px;
+  padding: 40px 20px;
   border-radius: 16px;
   text-align: center;
-  min-width: 180px;
+  width: 100%;
+  max-width: 180px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .icon-box p {
   margin-top: 16px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -62,6 +66,7 @@
   font-size: 36px;
 }
 
+/* 🔽 Ecosystem Section */
 .ecosystem-box {
   text-align: center;
 }
@@ -71,15 +76,14 @@
   margin-bottom: 30px;
 }
 
-/* 🔄 Replaced video with image */
 .ecosystem-image {
- width: 800px;
- 
+  width: 800px;
   height: 550px;
   object-fit: contain;
   border-radius: 20px;
 }
 
+/* 🔽 Features Section */
 .feature-boxes {
   display: flex;
   justify-content: center;
@@ -109,6 +113,42 @@
   color: #ffffff;
   line-height: 1.7;
 }
+
+/* ✅ Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+  .tech-content {
+    padding: 80px 30px;
+    gap: 60px;
+  }
+
+  .section-titlee {
+    font-size: 48px;
+  }
+
+  .icon-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .icon-box {
+    max-width: 160px;
+    padding: 30px 15px;
+  }
+
+  .icon-box p {
+    font-size: 18px;
+  }
+
+  .icones {
+    font-size: 30px;
+  }
+
+  .ecosystem-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ✅ Mobile View (max-width: 480px) */
 @media (max-width: 480px) {
   .tech-content {
     padding: 60px 20px;
@@ -120,17 +160,13 @@
   }
 
   .icon-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-    justify-items: center;
   }
 
   .icon-box {
     padding: 20px;
-    min-width: auto;
-    width: 100%;
-    max-width: 160px;
+    max-width: 100%;
   }
 
   .icon-box p {

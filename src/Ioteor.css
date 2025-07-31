@@ -43,7 +43,7 @@
 
 .ioteor-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   margin-bottom: 80px;
 }
@@ -53,8 +53,11 @@
   border-radius: 20px;
   padding: 40px 36px;
   text-align: left;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: none;
   min-height: 360px;
+  border: 1px solid #2f3645;
+  border-left: 4px solid #3a8dff; 
+  border: 1px solid #d8dce4;/* You can change this per theme */
 }
 
 .icon {
@@ -92,7 +95,7 @@
   display: inline-block;
 }
 
-.link-text.blue { color: s#3a8dff; }
+.link-text.blue { color: #3a8dff; }
 .link-text.green { color: #28c76f; }
 .link-text.purple { color: #a56cf5; }
 .link-text.orange { color: #ffa755; }
@@ -146,3 +149,50 @@
 .circle.green { background: #28c76f; }
 .circle.purple { background: #a56cf5; }
 .circle.orange { background: #ffa755; }
+
+/* ✅ Media Query ONLY for 480px */
+@media (max-width: 480px) {
+  .ioteor-container {
+    padding: 40px 16px;
+  }
+
+  .ioteor-heading {
+    font-size: 32px;
+  }
+
+  .ioteor-subtext {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .ioteor-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 24px 20px;
+    min-height: auto;
+  }
+
+  .carddd h3 {
+    font-size: 20px;
+  }
+
+  .carddd p {
+    font-size: 15px;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .process-flow {
+    padding: 30px 20px;
+  }
+
+  .process-flow h2 {
+    font-size: 22px;
+  }
+}

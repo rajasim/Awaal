@@ -201,12 +201,12 @@
   }
 
   .hefter-right {
-    margin: 40px auto 0;
+   
     text-align: center;
   }
 
   .hefter-right-img {
     width: 280px;
-    max-width: 90%;
+    height: 190px;
   }
 }

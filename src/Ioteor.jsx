@@ -7,7 +7,7 @@ const Ioteor = () => {
       <button className="approach-button">⚡ Our Approach</button>
 
       <h1 className="ioteor-heading">
-        It's Not Just What We Do —
+        It's Not Just What We Do 
         <br />
         <span className="gradient-heading">It's How We Do It</span>
       </h1>

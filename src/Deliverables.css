@@ -29,9 +29,9 @@ html, body, #root {
 
 /* Headings */
 .deliverables-title {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .deliverables-subtitle {

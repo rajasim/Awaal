@@ -15,11 +15,10 @@ function Softwarelap() {
 
       <div className="security-layout">
         <div className="left-buttons">
-          <button className={active === "network" ? "active" : ""} onClick={() => setActive("network")}>Custom Software </button>
+          <button className={active === "network" ? "active" : ""} onClick={() => setActive("network")}>Custom Software</button>
           <button className={active === "web" ? "active" : ""} onClick={() => setActive("web")}>Web Application Dev</button>
           <button className={active === "performance" ? "active" : ""} onClick={() => setActive("performance")}>Mobile App</button>
           <button className={active === "email" ? "active" : ""} onClick={() => setActive("email")}>API Dev & Integration</button>
-          <button className={active === "endpoint" ? "active" : ""} onClick={() => setActive("endpoint")}>Endpoint Protection</button>
         </div>
 
         <div className="right-content">
@@ -28,13 +27,13 @@ function Softwarelap() {
               <div className="blue-section">
                 <h3>Build exactly what your business needs</h3>
                 <p>
-We design and develop bespoke software systems tailored to your unique workflows, customers, and market. Whether it’s ERP, CRM, or custom automation tools, our team delivers user-focused and scalable solutions.
-Key Highlights:</p>
+                  We design and develop bespoke software systems tailored to your unique workflows, customers, and market. Whether it’s ERP, CRM, or custom automation tools, our team delivers user-focused and scalable solutions.
+                </p>
                 <ul>
                   <li>Requirement analysis & UI/UX planning</li>
                   <li>Modular & maintainable architecture</li>
-                   <li>Desktop & cloud based deployment</li>
-                    <li>Post deployment support & enhancements</li>
+                  <li>Desktop & cloud based deployment</li>
+                  <li>Post deployment support & enhancements</li>
                 </ul>
               </div>
               <div className="image-section">
@@ -46,10 +45,8 @@ Key Highlights:</p>
           {active === "web" && (
             <div className="content-box">
               <div className="blue-section">
-                <h3>Robust, scalable web apps built to perform.
-</h3>
-                <p>Our web applications combine functional design with powerful backend systems to deliver seamless user experiences across all devices and browsers.
-Features Include:</p>
+                <h3>Robust, scalable web apps built to perform.</h3>
+                <p>Our web applications combine functional design with powerful backend systems to deliver seamless user experiences across all devices and browsers.</p>
                 <ul>
                   <li>Progressive Web Apps (PWA)</li>
                   <li>Single Page Applications (SPA)</li>
@@ -68,11 +65,12 @@ Features Include:</p>
             <div className="content-box">
               <div className="blue-section">
                 <h3>Connect with users on the go.</h3>
-                <p>We craft intuitive and feature rich mobile apps for both iOS and Android, optimized for performance, security, and user engagement. Whether you're building a consumer facing app or an internal enterprise tool, we’ve got you covered.
-Our Capabilities:</p>
+                <p>
+                  We craft intuitive and feature-rich mobile apps for both iOS and Android, optimized for performance, security, and user engagement. Whether you're building a consumer-facing app or an internal enterprise tool, we’ve got you covered.
+                </p>
                 <ul>
                   <li>Native & Cross platform (Flutter, React Native)</li>
-                  <li>UX/UI design for mobile first interaction</li>
+                  <li>UX/UI design for mobile-first interaction</li>
                   <li>Integration with payment gateways, GPS, biometrics</li>
                   <li>App Store & Play Store deployment</li>
                 </ul>
@@ -87,33 +85,15 @@ Our Capabilities:</p>
             <div className="content-box">
               <div className="blue-section">
                 <h3>Connect your systems with smart integrations.</h3>
-                <p>We build secure and well documented APIs that power your app ecosystem. Whether integrating with third party platforms or enabling microservices, we ensure seamless and secure data exchange.</p>
+                <p>We build secure and well-documented APIs that power your app ecosystem. Whether integrating with third-party platforms or enabling microservices, we ensure seamless and secure data exchange.</p>
                 <ul>
                   <li>RESTful & GraphQL API development</li>
-                  <li>Third party API integration (payment, SMS, maps, etc.)</li>
+                  <li>Third-party API integration (payment, SMS, maps, etc.)</li>
                   <li>API versioning, testing, and security</li>
-                  <li><li>API versioning, testing, and security</li></li>
                 </ul>
               </div>
               <div className="image-section">
                 <img src="/images/soft4.jpg" alt="Email Security" />
-              </div>
-            </div>
-          )}
-
-          {active === "endpoint" && (
-            <div className="content-box">
-              <div className="blue-section">
-                <h3>Endpoint Protection</h3>
-                <p>Secure devices and prevent malware threats with advanced endpoint monitoring.</p>
-                <ul>
-                  <li>Antivirus & Malware Protection</li>
-                  <li>Device Access Control</li>
-                  <li>Endpoint Detection & Response (EDR)</li>
-                </ul>
-              </div>
-              <div className="image-section">
-                <img src="/images/box9.jpeg" alt="Endpoint Protection" />
               </div>
             </div>
           )}

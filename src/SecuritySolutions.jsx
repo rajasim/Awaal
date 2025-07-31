@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./SecuritySolutions.css";
+import "./Softwarelap.css";
 
 function SecuritySolutions() {
   const [active, setActive] = useState(null);
@@ -17,7 +17,7 @@ function SecuritySolutions() {
         <div className="left-buttons">
           <button className={active === "network" ? "active" : ""} onClick={() => setActive("network")}>Network Vulnerability Assessment</button>
           <button className={active === "web" ? "active" : ""} onClick={() => setActive("web")}>Web Application Penetration </button>
-          <button className={active === "performance" ? "active" : ""} onClick={() => setActive("performance")}>Mobile Application Security </button>
+          <button className={active === "performance" ? "active" : ""} onClick={() => setActive("performance")}>Mobile Application  </button>
           <button className={active === "email" ? "active" : ""} onClick={() => setActive("email")}>Internal & External Infrastructure </button>
           <button className={active === "endpoint" ? "active" : ""} onClick={() => setActive("endpoint")}>Wireless Network Security </button>
         </div>
@@ -25,7 +25,7 @@ function SecuritySolutions() {
         <div className="right-content">
           {active === "network" && (
             <div className="content-box">
-              <div className="blue-section">
+              <div className="bluee-section">
                 <h3>Network Vulnerability Assessment</h3>
                 <p>Scan and assess your internal and external networks to identify potential security flaws, outdated software, misconfigurations, and exposed ports that attackers can exploit. This helps ensure your infrastructure is always hardened against known vulnerabilities</p>
                 <ul>
@@ -35,7 +35,7 @@ function SecuritySolutions() {
                      <li>Generate detailed reports with risk ratings and remediation steps</li>
                 </ul>
               </div>
-              <div className="image-section">
+              <div className="imagee-section">
                 <img src="/images/cs 1.gif" alt="Network Security" />
               </div>
             </div>
@@ -43,7 +43,7 @@ function SecuritySolutions() {
 
           {active === "web" && (
             <div className="content-box">
-              <div className="blue-section">
+              <div className="bluee-section">
                 <h3>Web Application Penetration Testing</h3>
                 <p>Manually and automatically test your web applications for OWASP Top 10 threats such as SQL injection, XSS, authentication bypass, and session hijacking. This ensures that your applications are protected from both common and advanced attacks.</p>
                 <ul>
@@ -53,7 +53,7 @@ function SecuritySolutions() {
                    <li>Provide a detailed report with exploit steps and fixes</li>
                 </ul>
               </div>
-              <div className="image-section">
+              <div className="imagee-section">
                 <img src="/images/cs 2.gif" alt="Web Application Security" />
               </div>
             </div>
@@ -61,7 +61,7 @@ function SecuritySolutions() {
 
           {active === "performance" && (
             <div className="content-box">
-              <div className="blue-section">
+              <div className="bluee-section">
                 <h3>Mobile Application Security Testing</h3>
                 <p>Assess your Android and iOS apps to uncover security issues such as data leakage, insecure APIs, weak encryption, and improper permissions. Ensures your mobile apps meet high security standards and user safety.</p>
                 <ul>
@@ -71,7 +71,7 @@ function SecuritySolutions() {
                    <li>Offer platform-specific recommendations for remediation</li>
                 </ul>
               </div>
-              <div className="image-section">
+              <div className="imagee-section">
                 <img src="/images/cs 3.gif" alt="Application Performance" />
               </div>
             </div>
@@ -79,7 +79,7 @@ function SecuritySolutions() {
 
           {active === "email" && (
             <div className="content-box">
-              <div className="blue-section">
+              <div className="bluee-section">
                 <h3>Internal & External Infrastructure Testing</h3>
                 <p>Simulate cyberattacks on your internal systems and public-facing infrastructure to identify how far a potential attacker could go. Helps you understand security gaps from both inside and outside your organization.</p>
                 <ul>
@@ -89,7 +89,7 @@ function SecuritySolutions() {
                    <li>Deliver a comprehensive risk posture report</li>
                 </ul>
               </div>
-              <div className="image-section">
+              <div className="imagee-section">
                 <img src="/images/Recording2025-07-22151835-vmake-ezgif.com-resize.gif" alt="Email Security" />
               </div>
             </div>
@@ -97,7 +97,7 @@ function SecuritySolutions() {
 
           {active === "endpoint" && (
             <div className="content-box">
-              <div className="blue-section">
+              <div className="bluee-section">
                 <h3>Wireless Network Security Assessment</h3>
                 <p>Evaluate the security of your wireless environment to prevent unauthorized access, eavesdropping, and man-in-the-middle attacks. Essential for maintaining secure wireless communication.</p>
                 <ul>
@@ -107,7 +107,7 @@ function SecuritySolutions() {
                   <li>Suggest improvements for enterprise-grade wireless security</li>
                 </ul>
               </div>
-              <div className="image-section">
+              <div className="imagee-section">
                 <img src="/images/cs 5.gif" alt="Endpoint Protection" />
               </div>
             </div>

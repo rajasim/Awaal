@@ -7,7 +7,7 @@
 }
 
 .hm-headline h1 {
-  font-size: 3.5rem;
+  font-size: 60px;
   font-weight: 700;
   margin-bottom: 2rem;
   line-height: 1.4;
@@ -59,7 +59,7 @@
 }
 
 .hm-radar-video {
-  width: 1200px; /* Fixed width */
+  width: 950px; /* Fixed width */
   height: 675px; /* Fixed height to maintain 16:9 aspect ratio */
   border-radius: 20px;
   box-shadow: 0 0 25px rgba(0, 255, 132, 0.7);
@@ -96,7 +96,7 @@
   color: #00ff84;
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
-  font-size: 1.1rem;
+  font-size: 16px;
   font-weight: 600;
 }
 @media (max-width: 480px) {

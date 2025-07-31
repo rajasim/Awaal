@@ -2,107 +2,89 @@
   position: relative;
   width: 100%;
   padding: 6rem 5rem;
-  overflow: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.bg-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  background: #f8fafc;
+  box-sizing: border-box;
 }
 
 .cloud-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   flex-wrap: wrap;
-  position: relative;
-  z-index: 1;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
 .cloud-left {
-  max-width: 900px;
   flex: 1;
-  z-index: 2;
+  min-width: 320px;
+  max-width: 700px;
 }
 
 .cloud-heading {
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 700;
   color: #2a3eb1;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .cloud-subtext {
-  font-size: 24px;
-  color: #444;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.7;
   margin-bottom: 3rem;
-  line-height: 1.8;
 }
 
+/* Features Grid */
 .cloud-features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 
 .cloud-feature {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 1.8rem 1.5rem;
   display: flex;
   align-items: flex-start;
-  gap: 1.5rem;
-  background: white;
-  padding: 2rem;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.356);
+  gap: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.cloud-feature:hover {
+  transform: translateY(-4px);
 }
 
 .cloud-icon img {
-  width: 64px;
-  height: 64px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .cloud-feature h3 {
   margin: 0;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
-  color: #222;
+  color: #111;
 }
 
 .cloud-feature p {
-  margin-top: 0.5rem;
+  margin: 4px 0 0;
+  font-size: 15px;
   color: #555;
-  font-size: 19px;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
-.cloud-button {
-  background-color: #2a3eb1;
-  color: #ffffff;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 10px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.cloud-button:hover {
-  background-color: #1e2f80;
-}
-
+/* Image Section */
 .cloud-right {
   flex: 1;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  width: 400px;
 }
 
 .cloud-right img {
@@ -111,15 +93,12 @@
   object-fit: contain;
 }
 
-/* ✅ Responsive for mobile (max-width: 480px) */
-@media (max-width: 480px) {
-  .cloud-section {
-    padding: 3rem 1.5rem;
-  }
 
+/* Responsive: Mobile (<= 768px) */
+@media (max-width: 768px) {
   .cloud-container {
     flex-direction: column;
-    gap: 2rem;
+    align-items: center;
   }
 
   .cloud-heading {
@@ -130,42 +109,82 @@
   .cloud-subtext {
     font-size: 16px;
     text-align: center;
-    line-height: 1.6;
   }
 
   .cloud-features {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .cloud-feature {
-    flex-direction: column;
-    padding: 1.5rem;
-    gap: 1rem;
-    text-align: left;
-  }
-
-  .cloud-icon img {
-    width: 48px;
-    height: 48px;
+    padding: 1.2rem;
   }
 
   .cloud-feature h3 {
-    font-size: 20px;
-  }
-
-  .cloud-feature p {
     font-size: 16px;
   }
 
-  .cloud-button {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-    margin-top: 1.5rem;
+  .cloud-feature p {
+    font-size: 14px;
   }
 
   .cloud-right {
-    display: none; /* Hide image on small screens */
+    margin-top: 2rem;
   }
 }
+@media (max-width: 480px) {
+  .cloud-section {
+    padding: 3rem 1.2rem;
+  }
+
+  .cloud-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cloud-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .cloud-subtext {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .cloud-features {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cloud-feature {
+    padding: 1rem;
+  }
+
+  .cloud-feature h3 {
+    font-size: 15px;
+  }
+
+  .cloud-feature p {
+    font-size: 13px;
+  }
+
+  .cloud-icon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .cloud-right {
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .cloud-right img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
+

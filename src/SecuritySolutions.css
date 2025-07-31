@@ -89,33 +89,34 @@
 }
 
 /* Blue Section (Text) */
-.blue-section {
+.bluee-section {
   background-color: #006954;
   color: white;
   padding: 40px;
   border-radius: 14px;
   flex: 1;
+  height: 80vh;
 }
 
 .blue-section h3 {
-  font-size: 30px;
+  font-size: 34px;
   margin-bottom: 20px;
 }
 
-.blue-section p {
-  font-size: 20px;
+.bluee-section p {
+  font-size: 16px;
   margin-bottom: 24px;
   line-height: 1.8;
 }
 
-.blue-section ul {
+.bluee-section ul {
   padding-left: 24px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
 /* Image Section */
-.image-section {
+.imagee-section {
   flex: 1.6;
   display: flex;
   align-items: center;
@@ -123,10 +124,10 @@
   height: 80vh;
 }
 
-.image-section img {
+.imagee-section img {
   
-  width: 550px;
-  height: 738px;
+  width: 480px;
+  height: 100%;
  /* Use 'cover' if you want it to fill and crop */
   border-radius: 12px;
   display: block;
@@ -142,91 +143,4 @@
   display: block;
   padding: 60px 20px;
   text-align: center;
-}
-@media (max-width: 480px) {
-  .security-wrapper {
-    padding: 60px 20px;
-    height: auto;
-    min-height: unset;
-  }
-
-  .security-heading h2 {
-    font-size: 34px;
-  }
-
-  .security-heading p {
-    font-size: 16px;
-    margin-top: 10px;
-  }
-
-  .heading-line {
-    width: 60px;
-    height: 4px;
-  }
-
-  .security-layout {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .left-buttons {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-  }
-
-  .left-buttons button {
-    width: 100%;
-    padding: 16px 20px;
-    font-size: 16px;
-    border-radius: 10px;
-  }
-
-  .right-content {
-    width: 100%;
-  }
-
-  .content-box {
-    flex-direction: column;
-    gap: 30px;
-    padding: 30px 20px;
-  }
-
-  .blue-section {
-    padding: 20px;
-  }
-
-  .blue-section h3 {
-    font-size: 24px;
-  }
-
-  .blue-section p {
-    font-size: 15px;
-    margin-bottom: 16px;
-  }
-
-  .blue-section ul {
-    font-size: 14px;
-    padding-left: 18px;
-  }
-
-  .image-section {
-    width: 100%;
-    height: auto;
-    justify-content: center;
-  }
-
-  .image-section img {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    border-radius: 10px;
-  }
-
-  .right-content:empty::before {
-    font-size: 20px;
-    padding: 40px 10px;
-  }
 }
