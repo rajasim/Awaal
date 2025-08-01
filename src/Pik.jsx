@@ -114,7 +114,7 @@ function Pik() {
 
       <div className="rik-cta">
         <h2>Ready to transform your business?</h2>
-        <p>Join thousands of companies already using our automation platform.</p>
+        <p>Join the growing network of companies streamlining operations with us</p>
         <div className="rik-cta-buttons">
           <button className="rik-btn-primary">Get Started Today →</button>
           <div className="rik-tags">

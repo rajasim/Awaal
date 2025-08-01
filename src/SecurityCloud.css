@@ -75,7 +75,6 @@
 .right-content {
   flex: 1;
   min-width: 0;
-  height: 110vh;
 }
 
 /* Content Box */
@@ -87,52 +86,61 @@
   padding: 50px;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.373);
-  height: 90vh;
 }
 
 /* Blue Section (Text) */
 .blue-section {
   background-color: #004f69;
   color: white;
-  padding: 40px;
+  padding: 30px;
   border-radius: 14px;
-  flex: 1;
-  height: 80vh;
+  flex: 1.2;
+  height: 70vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .blue-section h3 {
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .blue-section p {
-  font-size: 17px;
-  margin-bottom: 24px;
-  line-height: 1.8;
+  font-size: 18px;
+  margin-bottom: 18px;
+  line-height: 1.6;
 }
 
 .blue-section ul {
-  padding-left: 24px;
-  font-size: 18px;
-  line-height: 1.7;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* Image Section */
 .image-section {
-  flex: 1.6;
+  width: 48%;
+  border-radius: 20px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
 }
 
 .image-section img {
-  width: 480px;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 34px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
   display: block;
 }
+
+
+
+
+
 
 /* Placeholder Message */
 .right-content:empty::before {
@@ -144,11 +152,10 @@
   text-align: center;
 }
 
-/* ✅ Mobile Responsive: 480px */
+/* ✅ Mobile Responsive */
 @media (max-width: 480px) {
   .security-wrapper {
     padding: 60px 20px;
-    min-height: auto;
   }
 
   .security-heading h2 {
@@ -184,14 +191,12 @@
 
   .right-content {
     width: 100%;
-    height: auto;
   }
 
   .content-box {
     flex-direction: column;
     padding: 30px 20px;
     gap: 30px;
-    height: auto;
   }
 
   .blue-section {
@@ -201,20 +206,18 @@
   }
 
   .blue-section h3 {
-    font-size: 22px;
-    margin-bottom: 16px;
+    font-size: 20px;
+    margin-bottom: 14px;
   }
 
   .blue-section p,
   .blue-section ul {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   .image-section {
     height: auto;
-    justify-content: center;
-    align-items: center;
   }
 
   .image-section img {
