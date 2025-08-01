@@ -2,7 +2,7 @@
 .security-wrapper {
   min-height: 100vh;
   width: 100%;
-  padding: 100px 80px;
+  padding: 100px 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -41,8 +41,10 @@
   display: flex;
   gap: 50px;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* Left Buttons */
@@ -50,8 +52,8 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 25%;
-  min-width: 260px;
+  width: 260px;
+  flex-shrink: 0;
 }
 
 .left-buttons button {
@@ -73,19 +75,21 @@
 
 /* Right Content */
 .right-content {
-  flex: 1;
+  flex: 1 1 0%;
   min-width: 0;
+  max-width: 1000px;
 }
 
 /* Content Box */
 .content-box {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 50px;
   background-color: #fff;
   padding: 50px;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.373);
+  flex-wrap: wrap;
 }
 
 /* Blue Section (Text) */
@@ -94,8 +98,9 @@
   color: white;
   padding: 30px;
   border-radius: 14px;
-  flex: 1.2;
-  height: 70vh;
+  flex: 1 1 400px;
+  min-width: 300px;
+  max-width: 100%;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -121,7 +126,8 @@
 
 /* Image Section */
 .image-section {
-  width: 48%;
+  flex: 1 1 300px;
+  max-width: 600px;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
@@ -137,11 +143,6 @@
   display: block;
 }
 
-
-
-
-
-
 /* Placeholder Message */
 .right-content:empty::before {
   content: "← Select a solution to see more";
@@ -153,9 +154,54 @@
 }
 
 /* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .security-layout {
+    flex-direction: column;
+    gap: 40px;
+    align-items: stretch;
+  }
+
+  .content-box {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .left-buttons {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .left-buttons button {
+    width: calc(50% - 8px);
+    font-size: 18px;
+    padding: 16px 20px;
+  }
+
+  .blue-section {
+    padding: 24px;
+    border-radius: 12px;
+    height: auto;
+  }
+
+  .image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .right-content:empty::before {
+    font-size: 20px;
+    padding: 40px 10px;
+  }
+}
+
 @media (max-width: 480px) {
   .security-wrapper {
-    padding: 60px 20px;
+    padding: 60px 16px;
   }
 
   .security-heading h2 {
@@ -171,64 +217,5 @@
   .heading-line {
     width: 80px;
     height: 4px;
-  }
-
-  .security-layout {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .left-buttons {
-    width: 100%;
-    gap: 16px;
-  }
-
-  .left-buttons button {
-    width: 100%;
-    font-size: 18px;
-    padding: 16px 20px;
-  }
-
-  .right-content {
-    width: 100%;
-  }
-
-  .content-box {
-    flex-direction: column;
-    padding: 30px 20px;
-    gap: 30px;
-  }
-
-  .blue-section {
-    padding: 24px;
-    border-radius: 12px;
-    height: auto;
-  }
-
-  .blue-section h3 {
-    font-size: 20px;
-    margin-bottom: 14px;
-  }
-
-  .blue-section p,
-  .blue-section ul {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .image-section {
-    height: auto;
-  }
-
-  .image-section img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-
-  .right-content:empty::before {
-    font-size: 20px;
-    padding: 40px 10px;
   }
 }
