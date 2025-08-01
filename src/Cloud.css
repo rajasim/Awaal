@@ -9,27 +9,29 @@
   padding: 6rem 5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f8fafc;
-  display: flex;
-  justify-content: center;
 }
 
+/* CENTER CONTAINER ON ALL DEVICES */
 .cloud-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 3rem;
-  max-width: 1200px; /* Fix layout width */
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
 }
 
-/* LEFT */
+/* LEFT SECTION */
 .cloud-left {
   flex: 1;
   min-width: 320px;
   max-width: 600px;
+  width: 100%;
 }
 
+/* HEADINGS */
 .cloud-heading {
   font-size: 48px;
   font-weight: 700;
@@ -44,13 +46,18 @@
   margin-bottom: 3rem;
 }
 
-/* GRID */
+/* FEATURES GRID (BLUE SECTION) */
 .cloud-features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 1;
 }
 
+/* FEATURE BOX */
 .cloud-feature {
   background-color: #fff;
   border-radius: 16px;
@@ -87,13 +94,15 @@
   line-height: 1.5;
 }
 
-/* RIGHT IMAGE */
+/* RIGHT IMAGE SECTION */
 .cloud-right {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .cloud-right img {
@@ -104,15 +113,19 @@
   border-radius: 30px;
 }
 
-/* Responsive: Tablet */
-@media (max-width: 992px) {
+/* ===================== */
+/* === MEDIA QUERIES === */
+/* ===================== */
+
+/* TABLET */
+@media (max-width: 768px) {
   .cloud-container {
     flex-direction: column;
     align-items: center;
   }
 
   .cloud-heading {
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
   }
 
@@ -123,19 +136,27 @@
 
   .cloud-features {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .cloud-feature {
+    padding: 1.2rem;
+  }
+
+  .cloud-feature h3 {
+    font-size: 16px;
+  }
+
+  .cloud-feature p {
+    font-size: 14px;
   }
 
   .cloud-right {
     margin-top: 2rem;
-    width: 100%;
-  }
-
-  .cloud-right img {
-    width: 100%;
   }
 }
 
-/* Responsive: Small Mobile */
+/* MOBILE */
 @media (max-width: 480px) {
   .cloud-section {
     padding: 3rem 1.2rem;
@@ -165,5 +186,16 @@
   .cloud-icon img {
     width: 32px;
     height: 32px;
+  }
+
+  .cloud-right {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .cloud-right img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
   }
 }
