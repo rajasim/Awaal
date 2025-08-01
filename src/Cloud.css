@@ -1,6 +1,8 @@
-/* GLOBAL FIX */
+/* GLOBAL RESET */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .cloud-section {
@@ -9,22 +11,28 @@
   padding: 6rem 5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f8fafc;
-  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 .cloud-container {
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
   flex-wrap: wrap;
-  align-items: flex-start;
+  max-width: 1400px; /* ADDED: max container width for monitor */
+  width: 100%;
   gap: 3rem;
 }
 
-/* LEFT */
+/* LEFT CONTENT */
 .cloud-left {
   flex: 1;
   min-width: 320px;
   max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cloud-heading {
@@ -41,7 +49,7 @@
   margin-bottom: 3rem;
 }
 
-/* GRID */
+/* FEATURES GRID */
 .cloud-features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -87,30 +95,35 @@
 /* RIGHT IMAGE */
 .cloud-right {
   flex: 1;
+  max-width: 600px;
+  min-width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
 }
 
 .cloud-right img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   aspect-ratio: 4 / 3;
-  max-width: 100%;
-  object-fit: contain;
-  border-radius: 30px; /* optional rounded corners */
+  object-fit: cover;
+  border-radius: 30px;
 }
 
-/* Responsive: Tablet */
-@media (max-width: 768px) {
+/* RESPONSIVE: TABLET */
+@media (max-width: 1024px) {
   .cloud-container {
     flex-direction: column;
     align-items: center;
   }
 
+  .cloud-left, .cloud-right {
+    max-width: 100%;
+  }
+
   .cloud-heading {
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
   }
 
@@ -124,30 +137,12 @@
     gap: 1rem;
   }
 
-  .cloud-feature {
-    padding: 1.2rem;
-  }
-
-  .cloud-feature h3 {
-    font-size: 16px;
-  }
-
-  .cloud-feature p {
-    font-size: 14px;
-  }
-
   .cloud-right {
     margin-top: 2rem;
-    width: 100%;
-  }
-
-  .cloud-right img {
-    width: 100%;
-    height: auto;
   }
 }
 
-/* Responsive: Small Mobile */
+/* RESPONSIVE: MOBILE */
 @media (max-width: 480px) {
   .cloud-section {
     padding: 3rem 1.2rem;
