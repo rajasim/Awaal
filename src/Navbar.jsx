@@ -19,7 +19,7 @@ const Navbar = () => {
   const nav = useNavigate();
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" id="navbar">
       <div className="navbar-left">
         <img
           src="https://www.barracuda.com/assets/img/logos/barracuda-logo-white.svg"

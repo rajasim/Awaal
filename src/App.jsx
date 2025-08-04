@@ -101,6 +101,7 @@ import AdminBlog from "./AdminBlog";
 import AdminCase from "./AdminCase";
 import EfficiencyBoxes from "./EfficiencyBoxes";
 import SecurityCloud from "./SecurityCloud";
+import Partner from "./Partner";
 
 
 function App() {
@@ -124,6 +125,7 @@ function App() {
              <NewsSection />
              <Footer />
              <Form/>
+             <Partner/>
              
             
             
@@ -166,6 +168,7 @@ function App() {
             <SupportedPlatforms />
             <UnifiedPlatform />
             <SecureOrganization />
+            <Footermain/>
             
           </>
         }
@@ -174,12 +177,14 @@ function App() {
         path="/AI & Automation Services"
         element={
           <>
+          <Navbar/>
        <AiHeroSection />
        <EfficiencySection />
        <EfficiencyBoxes/>
        <Pater/>
        <Piter />
         <Pik />
+        <Footermain/>
        
        
           </>
@@ -189,6 +194,7 @@ function App() {
         path="/why-awwal"
         element={
           <>
+          <Navbar/>
          <WhyAwwal/>
          <NewsMain/>
          <AwwalSecurity/>
@@ -198,6 +204,7 @@ function App() {
          <DubaiBank/>
          <SmartPharmacy/>
          <Tranfrom/>
+         <Footermain/>
 
           </>
           }
@@ -206,12 +213,14 @@ function App() {
         path="/what-we-do"
         element={
           <>
+          <Navbar/>
           <Videosection />
           <Digital/>
            <Fotrom/>
             <Lixs/>
             <Ioteor/>
             <Wiptex/>
+            <Footermain/>
 
              </>
              }
@@ -232,6 +241,7 @@ function App() {
             <CloudIndustriel/>
              <Azure />
              <Watrex />
+             <Footermain/>
             
             
 
@@ -245,12 +255,14 @@ function App() {
         path="/SOFTWARE DEV"
         element={
           <>
+          <Navbar/>
           <Repter />
            <SoftDevlop/>
           <Softwarelap/>
            <Ktrox />
            <Laptor />
            <Waxter />
+           <Footermain/>
           </>
           }
       />
@@ -258,6 +270,7 @@ function App() {
         path="/IT INFRA"
         element={
           <>
+          <Navbar/>
           <ITInfrastructurePage/>
           <CbSection/>
          <Benefits />
@@ -266,6 +279,7 @@ function App() {
             <TechnologyPlatforms/>
             <Videofoot/>
             <Optimize />
+            <Footermain/>
           </>
           }
       />
@@ -273,13 +287,15 @@ function App() {
         path="/WEBSITE DEV"
         element={
           <>
+          <Navbar/>
           <UniqueHero/>
           <Ketra/>
            <Tifeter/>
           <Ritex/>
           <Rofter/>
-          <Opatise/>
+         
           <Toll/>
+          <Footermain/>
           
          
           </>
@@ -289,6 +305,7 @@ function App() {
         path="/MIGRATION"
         element={
           <>
+          <Navbar/>
          <Migration />
          <Atifex />
          <Hefter/>
@@ -296,6 +313,7 @@ function App() {
          <Hatrex/>
          <Hitoera/>
          <Tranfrom/>
+         <Footermain/>
           </>
           }
       />

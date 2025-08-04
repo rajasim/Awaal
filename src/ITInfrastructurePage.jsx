@@ -51,13 +51,13 @@ const ITInfrastructurePage = () => {
 
           <div className="infra-butns">
             <button className="get-started">Get Started</button>
-            <button className="view-solutions">View Solutions</button>
+           
           </div>
 
           <div className="infra-stats">
             <div><strong>99.99%</strong> Uptime</div>
             <div><strong>24/7</strong> Support</div>
-            <div><strong>500+</strong> Clients</div>
+            
           </div>
         </div>
 
@@ -73,16 +73,7 @@ const ITInfrastructurePage = () => {
 
       {/* Trusted Logos */}
       <div className="infra-trusted">
-        <div className="trusted-heading">
-          Trusted by leading organizations worldwide
-        </div>
-        <div className="infra-logos">
-          <span>ACME Corp</span>
-          <span>TechVision</span>
-          <span>InnovateCo</span>
-          <span>FutureTech</span>
-          <span>GlobalSys</span>
-        </div>
+        
       </div>
     </section>
   );

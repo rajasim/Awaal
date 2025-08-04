@@ -35,31 +35,31 @@ const Footermain = () => {
       {/* Services Row */}
       <div className="footermain-services-row">
         <button className="footermain-svc-btn">
-          <img src="/img/icons/cyber.svg" alt="" className="footermain-svc-ico" />
+          <img src="/images/foter1.png" alt="" className="footermain-svc-ico" />
           <span>Cybersecurity</span>
         </button>
         <button className="footermain-svc-btn">
-          <img src="/img/icons/ai.svg" alt="" className="footermain-svc-ico" />
+         <img src="/images/foter2.png" alt="" className="footermain-svc-ico" />
           <span>AI/Automation</span>
         </button>
         <button className="footermain-svc-btn">
-          <img src="/img/icons/cloud.svg" alt="" className="footermain-svc-ico" />
+          <img src="/images/foter3.png" alt="" className="footermain-svc-ico" />
           <span>Cloud</span>
         </button>
         <button className="footermain-svc-btn">
-          <img src="/img/icons/code.svg" alt="" className="footermain-svc-ico" />
+          <img src="/images/foter4.png" alt="" className="footermain-svc-ico" />
           <span>Software Dev</span>
         </button>
         <button className="footermain-svc-btn">
-          <img src="/img/icons/it.svg" alt="" className="footermain-svc-ico" />
+          <img src="/images/foter5.png" alt="" className="footermain-svc-ico" />
           <span>IT Infra</span>
         </button>
         <button className="footermain-svc-btn">
-          <img src="/img/icons/web.svg" alt="" className="footermain-svc-ico" />
+          <img src="/images/foter6.png" alt="" className="footermain-svc-ico" />
           <span>Website Dev</span>
         </button>
         <button className="footermain-svc-btn">
-          <img src="/img/icons/migration.svg" alt="" className="footermain-svc-ico" />
+          <img src="/images/foter7.png" alt="" className="footermain-svc-ico" />
           <span>Migration</span>
         </button>
       </div>
@@ -73,7 +73,7 @@ const Footermain = () => {
         <div className="footermain-col footermain-col-brand">
           <div className="footermain-brand-row">
             <img
-              src="/img/logo/awwal-logo.svg"
+              src="/images/footerlogo.png"
               alt="Awwal logo"
               className="footermain-brand-logo"
             />
@@ -107,6 +107,8 @@ const Footermain = () => {
             <li><a href="/news">› News</a></li>
           </ul>
         </div>
+       
+
 
         {/* Get In Touch */}
         <div className="footermain-col footermain-col-contact">
@@ -135,6 +137,9 @@ const Footermain = () => {
           </div>
         </div>
       </div>
+       <a href="#navbar" className="scroll-to-top" aria-label="Scroll to top">
+  ↑
+</a>
 
       {/* Watermark / Brand Banner */}
       <div className="footermain-watermark-wrap">

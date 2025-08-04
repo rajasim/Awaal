@@ -10,9 +10,9 @@ function UniqueHero() {
     <div className="hm-wrapperer">
       <div className="hm-headline">
         <h1>
-          <span className="hm-green">Securing, Automating and,</span><br />
+          <span className="hm-green">Designing, Securing, and Developing </span><br />
          
-          <span className="hm-yellow">Building the Future of Your Business</span>
+          <span className="hm-yellow">Websites that Power the Future of Your Business</span>
         </h1>
         <div className="hm-subscribe">
           <input type="email" placeholder="Enter work email" className="hm-input" />
@@ -36,13 +36,7 @@ function UniqueHero() {
 
       <div className="hm-tags">
         {[
-          "Cybersecurity (VAPT)",
-          "AI & Automation",
-          "Cloud Services",
-          "IT Infrastructure",
-          "Software Development",
-          "Website Development",
-          "Crypto",
+          
         ].map((tag, idx) => (
           <span className="hm-tag" key={idx}>{tag}</span>
         ))}

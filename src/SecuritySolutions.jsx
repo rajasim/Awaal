@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Softwarelap.css";
 
 function SecuritySolutions() {
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState("network");
 
   return (
     <div className="security-wrapper">

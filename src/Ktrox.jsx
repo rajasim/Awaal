@@ -98,7 +98,7 @@ const Ktrox = () => {
       </div>
 
       <div className="ktrox-button-wrapper">
-        <button className="ktrox-button">Explore Our Solutions →</button>
+        
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ function Hefter() {
 
           <div className="hefter-buttons">
             <button className="btn-primary">Start Transformation</button>
-            <button className="btn-outline">Explore Methodology</button>
+           
           </div>
         </div>
 

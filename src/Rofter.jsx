@@ -53,14 +53,7 @@ const Rofter = () => {
       </div>
 
       <div className="rof-bottom">
-        <div className="rof-bottom-box">
-          <h4>Start to Finish</h4>
-          <p>Our comprehensive process ensures your project is delivered on time and exceeds expectations.</p>
-        </div>
-        <div className="rof-bottom-box">
-          <h4>Transparent Communication</h4>
-          <p>We keep you informed at every stage with clear updates and milestone achievements.</p>
-        </div>
+       
       </div>
     </div>
   );

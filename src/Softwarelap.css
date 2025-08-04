@@ -1,9 +1,8 @@
 /* ========== BASE STYLES ========== */
-
 .soft-wrapper {
   min-height: 100vh;
   width: 100%;
-  padding: 100px 80px;
+  padding: 100px 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -13,7 +12,6 @@
 }
 
 /* ========== HEADING ========== */
-
 .soft-heading {
   text-align: center;
   margin-bottom: 60px;
@@ -40,23 +38,23 @@
 }
 
 /* ========== LAYOUT ========== */
-
 .soft-layout {
   display: flex;
   gap: 50px;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* ========== LEFT BUTTONS ========== */
-
 .soft-left-buttons {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 25%;
-  min-width: 260px;
+  width: 260px;
+  flex-shrink: 0;
 }
 
 .soft-left-buttons button {
@@ -64,7 +62,7 @@
   font-size: 22px;
   border: none;
   border-radius: 12px;
-  background-color: #006954;
+  background-color: #0f2847;
   cursor: pointer;
   text-align: left;
   transition: background-color 0.3s;
@@ -72,81 +70,84 @@
 }
 
 .soft-left-buttons button.active {
-  background-color: #1abc9c;
+  background-color: #135de0;
   color: #fff;
   font-weight: bold;
 }
 
 /* ========== RIGHT CONTENT ========== */
-
 .soft-right-content {
-  flex: 1;
+  flex: 1 1 0%;
   min-width: 0;
-  height: 110vh;
+  max-width: 1000px;
 }
 
 /* ========== CONTENT BOX ========== */
-
 .soft-content-box {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 50px;
   background-color: #fff;
   padding: 50px;
   border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  height: 90vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.373);
+  flex-wrap: wrap;
 }
 
 /* ========== TEXT SECTION ========== */
-
 .soft-text-section {
-  background-color: #004f69;
+  background-color: #0f2847;
   color: white;
-  padding: 40px;
+  padding: 30px;
   border-radius: 14px;
-  flex: 1;
-  height: 80vh;
+  flex: 1 1 400px;
+  min-width: 300px;
+  max-width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .soft-text-section h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 16px;
 }
 
 .soft-text-section p {
-  font-size: 16px;
-  margin-bottom: 24px;
-  line-height: 1.8;
+  font-size: 18px;
+  margin-bottom: 18px;
+  line-height: 1.6;
 }
 
 .soft-text-section ul {
-  padding-left: 24px;
-  font-size: 18px;
-  line-height: 1.7;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* ========== IMAGE SECTION ========== */
-
 .soft-image-section {
-  flex: 1.6;
+  flex: 1 1 300px;
+  max-width: 600px;
+  border-radius: 20px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
 }
 
 .soft-image-section img {
-  width: 480px;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 34px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
   border: 2px solid #ccc;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
 /* ========== EMPTY MESSAGE ========== */
-
 .soft-right-content:empty::before {
   content: "← Select a solution to see more";
   font-size: 26px;
@@ -156,12 +157,56 @@
   text-align: center;
 }
 
-/* ========== MOBILE (MAX 480px) ========== */
+/* ========== MOBILE (MAX 768px) ========== */
+@media (max-width: 768px) {
+  .soft-layout {
+    flex-direction: column;
+    gap: 40px;
+    align-items: stretch;
+  }
 
+  .soft-content-box {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .soft-left-buttons {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .soft-left-buttons button {
+    width: calc(50% - 8px);
+    font-size: 18px;
+    padding: 16px 20px;
+  }
+
+  .soft-text-section {
+    padding: 24px;
+    border-radius: 12px;
+    height: auto;
+  }
+
+  .soft-image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .soft-right-content:empty::before {
+    font-size: 20px;
+    padding: 40px 10px;
+  }
+}
+
+/* ========== MOBILE (MAX 480px) ========== */
 @media (max-width: 480px) {
   .soft-wrapper {
-    padding: 60px 20px;
-    min-height: auto;
+    padding: 60px 16px;
   }
 
   .soft-heading h2 {
@@ -177,68 +222,5 @@
   .soft-heading-line {
     width: 80px;
     height: 4px;
-  }
-
-  .soft-layout {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .soft-left-buttons {
-    width: 100%;
-    gap: 16px;
-  }
-
-  .soft-left-buttons button {
-    width: 100%;
-    font-size: 18px;
-    padding: 16px 20px;
-  }
-
-  .soft-right-content {
-    width: 100%;
-    height: auto;
-  }
-
-  .soft-content-box {
-    flex-direction: column;
-    padding: 30px 20px;
-    gap: 30px;
-    height: auto;
-  }
-
-  .soft-text-section {
-    padding: 24px;
-    border-radius: 12px;
-    height: auto;
-  }
-
-  .soft-text-section h3 {
-    font-size: 22px;
-    margin-bottom: 16px;
-  }
-
-  .soft-text-section p,
-  .soft-text-section ul {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-
-  .soft-image-section {
-    height: auto;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .soft-image-section img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px;
-  }
-
-  .soft-right-content:empty::before {
-    font-size: 20px;
-    padding: 40px 10px;
   }
 }

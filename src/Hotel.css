@@ -24,13 +24,11 @@
 }
 
 .hotel-image {
-  width: 100%;                /* Fill container width */
-  height: 300px;              /* Fixed consistent height */
-  object-fit: contain;        /* Entire image visible without cropping */
-  
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
   margin-bottom: 25px;
 }
-
 
 .hotel-section-title {
   font-size: 28px;
@@ -147,6 +145,7 @@
   margin-top: 6px;
 }
 
+/* ✅ Tablet to Medium Screens */
 @media (max-width: 1100px) {
   .hotel-container {
     flex-direction: column;
@@ -156,5 +155,83 @@
   .hotel-left,
   .hotel-right {
     max-width: 95%;
+    min-width: unset;
+  }
+}
+
+/* ✅ Mobile-Friendly (480px and below) */
+@media (max-width: 480px) {
+  .hotel-wrapper {
+    padding: 60px 20px;
+  }
+
+  .hotel-left,
+  .hotel-right {
+    padding: 20px;
+  }
+
+  .hotel-image {
+    height: auto;
+  }
+
+  .hotel-section-title {
+    font-size: 22px;
+  }
+
+  .hotel-section-heading {
+    font-size: 18px;
+  }
+
+  .hotel-section-sub,
+  .hotel-section-description,
+  .hotel-features li,
+  .metric-label {
+    font-size: 14px;
+  }
+
+  .metric-number {
+    font-size: 20px;
+  }
+
+  .hotel-techstack-wrapper {
+    padding: 10px 14px;
+  }
+
+  .tech {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+/* ✅ TV-Friendly (1920px and above) */
+@media (min-width: 1920px) {
+  .hotel-wrapper {
+    padding: 100px 80px;
+  }
+
+  .hotel-section-title {
+    font-size: 36px;
+  }
+
+  .hotel-section-sub,
+  .hotel-section-description {
+    font-size: 20px;
+  }
+
+  .metric-number {
+    font-size: 32px;
+  }
+
+  .metric-label {
+    font-size: 18px;
+  }
+
+  .hotel-left,
+  .hotel-right {
+    padding: 60px;
+  }
+
+  .hotel-image {
+    height: 400px;
   }
 }

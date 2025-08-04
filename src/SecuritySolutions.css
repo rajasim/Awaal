@@ -2,7 +2,7 @@
 .security-wrapper {
   min-height: 100vh;
   width: 100%;
-  padding: 100px 80px;
+  padding: 100px 20px; /* updated from 80px to 20px */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -41,8 +41,10 @@
   display: flex;
   gap: 50px;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center; /* changed from space-between to center */
   flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /* Left Buttons */
@@ -50,8 +52,8 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 25%;
-  min-width: 260px;
+  width: 260px; /* changed from 25% min-width to fixed width */
+  flex-shrink: 0;
 }
 
 .left-buttons button {
@@ -59,83 +61,89 @@
   font-size: 22px;
   border: none;
   border-radius: 12px;
-  background-color: #006954;
+  background-color: #0f2847; /* changed */
   cursor: pointer;
   text-align: left;
   transition: background-color 0.3s;
 }
 
 .left-buttons button.active {
-  background-color:#1abc9c;
+  background-color: #135de0; /* changed */
   color: #fff;
   font-weight: bold;
 }
 
 /* Right Content */
 .right-content {
-  flex: 1;
+  flex: 1 1 0%;
   min-width: 0;
+  max-width: 1000px; /* added */
 }
 
 /* Content Box */
 .content-box {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch; /* changed from flex-start */
   gap: 50px;
   background-color: #fff;
   padding: 50px;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.373);
+  flex-wrap: wrap; /* added for better responsiveness */
 }
 
 /* Blue Section (Text) */
 .bluee-section {
-  background-color: #006954;
+  background-color: #0f2847; /* changed from #006954 */
   color: white;
-  padding: 40px;
+  padding: 30px; /* was 40px */
   border-radius: 14px;
-  flex: 1;
-  height: 80vh;
+  flex: 1 1 400px;
+  min-width: 300px;
+  max-width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .blue-section h3 {
-  font-size: 34px;
-  margin-bottom: 20px;
+  font-size: 28px; /* was 34px */
+  margin-bottom: 16px;
 }
 
 .bluee-section p {
-  font-size: 16px;
-  margin-bottom: 24px;
-  line-height: 1.8;
+  font-size: 18px; /* was 16px */
+  margin-bottom: 18px;
+  line-height: 1.6;
 }
 
 .bluee-section ul {
-  padding-left: 24px;
+  padding-left: 20px;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 /* Image Section */
 .imagee-section {
-  flex: 1.6;
+  flex: 1 1 300px;
+  max-width: 600px;
+  border-radius: 20px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
 }
 
 .imagee-section img {
-  
-  width: 480px;
-  height: 100%;
- /* Use 'cover' if you want it to fill and crop */
-  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
   display: block;
 }
 
-
-
-/* Default Placeholder */
+/* Placeholder Message */
 .right-content:empty::before {
   content: "← Select a solution to see more";
   font-size: 26px;
@@ -143,4 +151,71 @@
   display: block;
   padding: 60px 20px;
   text-align: center;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .security-layout {
+    flex-direction: column;
+    gap: 40px;
+    align-items: stretch;
+  }
+
+  .content-box {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .left-buttons {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .left-buttons button {
+    width: calc(50% - 8px);
+    font-size: 18px;
+    padding: 16px 20px;
+  }
+
+  .bluee-section {
+    padding: 24px;
+    border-radius: 12px;
+    height: auto;
+  }
+
+  .imagee-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .right-content:empty::before {
+    font-size: 20px;
+    padding: 40px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .security-wrapper {
+    padding: 60px 16px;
+  }
+
+  .security-heading h2 {
+    font-size: 28px;
+    margin: 16px 0;
+  }
+
+  .security-heading p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .heading-line {
+    width: 80px;
+    height: 4px;
+  }
 }

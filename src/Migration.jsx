@@ -1,58 +1,46 @@
 import React from "react";
-import "./Migration.css";
+import "./Ellish.css";
 
-const Migration = () => {
+function Migration() {
   return (
-    <div className="migration-container">
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-          zIndex: 0,
-        }}
-      >
-        <source src="/video/Recording 2025-06-30 110124-vmake.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <div className="ellish-section">
+      {/* Background Image */}
+      <img
+        src="/images/GLOBAL TECHNOLOGY PRESENCE.png"
+        alt="Background"
+        className="ellish-bg"
+      />
 
-      <center><div className="migration-overlay">
-        <div className="migration-tag">✅ Trusted Migration Experts</div>
-        <h1 className="migration-titlee">Migration Services</h1>
-        <h2 className="migration-subtitler">by Awwal Security</h2>
-
-        <div className="migration-highlights">
-          <span>Seamless</span>
-          <span>Secure</span>
-          <span>Scalable</span>
-        </div>
-
-        <p className="migration-description">
+      {/* Left Content */}
+      <div className="ellish-content">
+        <h1>
+          Trusted Migration Experts <br />
+          <span>Migration Services</span>
+        </h1>
+        <p>
           Transform your business with our enterprise-grade migration solutions. <br />
-          We ensure zero downtime, maximum security, and seamless transitions for your critical systems.
+          We ensure zero downtime, maximum security, and seamless transitions for your critical
         </p>
 
-        <div className="migration-buttons">
-          <button className="btn-primary">Start Your Migration</button>
-          <button className="btn-secondary">Learn More</button>
+        <div className="ellish-tags">
+          <span className="tag">✔ 99.9% Uptime</span>
+          <span className="tag">🛡 Enterprise Security</span>
+          <span className="tag">⚡ 24/7 Support</span>
         </div>
 
-        <div className="migration-footer">
-          <span>✔ 99.9% Uptime</span>
-          <span>🛡 Enterprise Security</span>
-          <span>⚡ 24/7 Support</span>
+        <div className="ellish-buttons">
+          <button className="btn-primary">Get Started</button>
         </div>
       </div>
-      </center>
+
+      {/* Right Image */}
+      <img
+        src="/images/iMAEGETitle.gif"
+        alt="Cloud"
+        className="ellish-right-image"
+      />
     </div>
   );
-};
+}
 
 export default Migration;

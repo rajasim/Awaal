@@ -21,8 +21,7 @@ const Ketra = () => {
             Responsive, modern, and user-friendly websites that convert visitors into customers.
           </p>
           <div className="ketra-buttons">
-            <button className="btn-purple">View Our Work</button>
-            <button className="btn-green">Contact via WhatsApp</button>
+            
           </div>
         </div>
         <div className="ketra-right">

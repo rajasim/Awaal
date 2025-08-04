@@ -176,3 +176,98 @@
   font-size: 1rem;
   
 }
+/* Mobile Friendly (up to 480px) */
+@media (max-width: 480px) {
+  .fotrom-header h1 {
+    font-size: 2rem;
+  }
+
+  .fotrom-header p {
+    font-size: 1rem;
+  }
+
+  .fotrom-services {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 20px;
+  }
+
+  .fotrom-card {
+    padding: 30px 20px;
+    min-height: auto;
+  }
+
+  .fotrom-card img {
+    width: 90px;
+    height: 60px;
+  }
+
+  .fotrom-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .fotrom-card p {
+    font-size: 0.95rem;
+  }
+
+  .fotrom-connected h2 {
+    font-size: 1.5rem;
+  }
+
+  .fotrom-connected p {
+    font-size: 0.95rem;
+  }
+
+  .fotrom-icons {
+    gap: 30px;
+  }
+
+  .fotrom-icon-box img {
+    width: 35px;
+  }
+}
+
+/* TV Friendly (e.g., 1920px+) */
+@media (min-width: 1600px) {
+  .fotrom-header h1 {
+    font-size: 4rem;
+  }
+
+  .fotrom-header p {
+    font-size: 1.5rem;
+  }
+
+  .fotrom-services {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+  }
+
+  .fotrom-card {
+    padding: 60px 40px;
+    min-height: 420px;
+  }
+
+  .fotrom-card h3 {
+    font-size: 2rem;
+  }
+
+  .fotrom-card p,
+  .fotrom-card ul li {
+    font-size: 1.1rem;
+  }
+
+  .fotrom-connected h2 {
+    font-size: 2.6rem;
+  }
+
+  .fotrom-connected p {
+    font-size: 1.3rem;
+  }
+
+  .fotrom-icon-box img {
+    width: 60px;
+  }
+
+  .fotrom-icon-box span {
+    font-size: 1.1rem;
+  }
+}

@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import "./Softwarelap.css";
 
 function Softwarelap() {
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState("network");
 
   return (
     <div className="soft-wrapper">
       <div className="soft-heading">
         <div className="soft-heading-line"></div>
-        <h2>Protecting Your Digital Frontiers</h2>
+        <h2>What We Offer</h2>
         <div className="soft-heading-line"></div>
-        <p>Explore our solutions designed to secure your digital operations.</p>
+        <p>Unlock tailored software solutions that accelerate your business forward</p>
       </div>
 
       <div className="soft-layout">

@@ -1,0 +1,85 @@
+.partner-section {
+  background-color: #eaf3ff;
+  padding: 40px;
+  text-align: left;
+}
+
+.partner-section h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.partner-section h2 {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.logo-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  width: 200%; /* repeated logos for infinite scroll */
+  animation: scrollLeft 20s linear infinite;
+}
+
+.logo-box {
+  flex: 0 0 25%; /* Always 4 logos at a time */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px; /* original padding */
+}
+
+.logo-box img {
+  max-width: 100%;
+  max-height: 100px; /* original size */
+  object-fit: contain;
+  background-color: white;
+  padding: 10px; /* original padding */
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Infinite scroll */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Hide scrollbar */
+.logo-slider::-webkit-scrollbar {
+  display: none;
+}
+.logo-slider {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Device-friendliness: only minor text tweaks */
+@media (max-width: 768px) {
+  .partner-section h2 {
+    font-size: 22px;
+  }
+  .partner-section h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .partner-section h2 {
+    font-size: 20px;
+  }
+  .partner-section h3 {
+    font-size: 16px;
+  }
+}

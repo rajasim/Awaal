@@ -13,7 +13,7 @@ function Azure() {
       <div className="azure-content">
         <h2 className="section-titleee">Certifications & Compliance Readiness</h2>
         <p className="section-subtitlew">
-          We're backed by certified cloud professionals with industry-leading expertise
+         
         </p>
 
         <div className="boxes-row">
@@ -51,7 +51,7 @@ function Azure() {
         </div>
 
         <div className="button-wrapper">
-          <button className="assessment-button">Schedule a Compliance Assessment</button>
+         
         </div>
       </div>
     </div>

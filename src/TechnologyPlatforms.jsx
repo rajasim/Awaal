@@ -17,11 +17,11 @@ function TechnologyPlatforms() {
 
         {/* Icon Boxes */}
         <div className="icon-grid">
-          <div className="icon-box"><div className="icones">🖧</div><p>Hardware & Network</p></div>
-          <div className="icon-box"><div className="icones">🖥️</div><p>Virtualization & OS</p></div>
-          <div className="icon-box"><div className="icones">☁️</div><p>Cloud & Storage</p></div>
-          <div className="icon-box"><div className="icones">📊</div><p>Monitoring Tools</p></div>
-          <div className="icon-box"><div className="icones">🛡️</div><p>Compliance</p></div>
+          <div className="icon-box"><div className="icones"></div><p>Hardware & Network</p></div>
+          <div className="icon-box"><div className="icones"></div><p>Virtualization & OS</p></div>
+          <div className="icon-box"><div className="icones"></div><p>Cloud & Storage</p></div>
+          <div className="icon-box"><div className="icones"></div><p>Monitoring Tools</p></div>
+          <div className="icon-box"><div className="icones"></div><p>Compliance</p></div>
         </div>
 
         {/* Center Image Box (was video) */}
@@ -37,15 +37,15 @@ function TechnologyPlatforms() {
         {/* Bottom Features */}
         <div className="feature-boxes">
           <div className="feature-card">
-            <h4>🔧 Seamless Integration</h4>
+            <h4> Seamless Integration</h4>
             <p>We ensure platforms work together for optimal performance.</p>
           </div>
           <div className="feature-card">
-            <h4>✅ Compliance Ready</h4>
+            <h4> Compliance Ready</h4>
             <p>Our solutions meet strict industry regulations.</p>
           </div>
           <div className="feature-card">
-            <h4>🚀 Future-Proof</h4>
+            <h4> Future-Proof</h4>
             <p>We keep your business ahead with modern technologies.</p>
           </div>
         </div>

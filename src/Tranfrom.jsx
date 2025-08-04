@@ -57,7 +57,7 @@ const Tranfrom = () => {
 
         <p className="footer-text">Not ready yet? Start with our insights:</p>
 
-        <button className="guide-btn">Download Free Security Guide</button>
+       
 
       </div>
     </div>

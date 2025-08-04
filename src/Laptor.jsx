@@ -55,7 +55,7 @@ const Laptor = () => {
       </div>
 
       <button className="laptor-button">Get Support Now</button>
-      <p className="laptor-footer">Our team is ready to provide the support you need</p>
+     
     </div>
   );
 };

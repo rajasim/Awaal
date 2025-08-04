@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Dashboard.css";
 
 const Dashboard = () => {
   const [activeSection, setActiveSection] = useState("dashboard");
 
-  // Separate content counters
   const [counts, setCounts] = useState({
     blogs: 2,
     news: 3,
@@ -12,11 +11,22 @@ const Dashboard = () => {
     insights: 4,
   });
 
+  // Store email submissions from localStorage (or backend in real use)
+  const [emails, setEmails] = useState([]);
+
+  useEffect(() => {
+    // Load email submissions from localStorage
+    const storedEmails = JSON.parse(localStorage.getItem("formSubmissions")) || [];
+    setEmails(storedEmails);
+  }, []);
+
   const handleAddContent = () => {
-    setCounts((prev) => ({
-      ...prev,
-      [activeSection]: prev[activeSection] + 1,
-    }));
+    if (activeSection !== "emails") {
+      setCounts((prev) => ({
+        ...prev,
+        [activeSection]: prev[activeSection] + 1,
+      }));
+    }
   };
 
   const renderContent = () => {
@@ -51,6 +61,49 @@ const Dashboard = () => {
               <h2>{counts.insights}</h2>
               <button className="add-btn" onClick={() => setActiveSection("insights")}>View</button>
             </div>
+            <div className="info-card">
+              <p>Emails</p>
+              <h2>{emails.length}</h2>
+              <button className="add-btn" onClick={() => setActiveSection("emails")}>View</button>
+            </div>
+          </div>
+        </>
+      );
+    }
+
+    if (activeSection === "emails") {
+      return (
+        <>
+          <div className="top-bar">
+            <h1 className="dashboard-title">Emails</h1>
+          </div>
+          <div className="email-list">
+            {emails.length === 0 ? (
+              <p>No email submissions yet.</p>
+            ) : (
+              <table className="email-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Company</th>
+                    <th>Country</th>
+                    <th>Message</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {emails.map((email, idx) => (
+                    <tr key={idx}>
+                      <td>{email.firstName} {email.lastName}</td>
+                      <td>{email.email}</td>
+                      <td>{email.company}</td>
+                      <td>{email.country}</td>
+                      <td>{email.message}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
           </div>
         </>
       );
@@ -86,39 +139,14 @@ const Dashboard = () => {
       <div className="sidebar">
         <h2 className="sidebar-title">Admin Panel</h2>
         <ul className="nav-list">
-          <li
-            className={`nav-item ${activeSection === "dashboard" ? "active" : ""}`}
-            onClick={() => setActiveSection("dashboard")}
-          >
-            Dashboard
-          </li>
-          <li
-            className={`nav-item ${activeSection === "blogs" ? "active" : ""}`}
-            onClick={() => setActiveSection("blogs")}
-          >
-            Blogs
-          </li>
-          <li
-            className={`nav-item ${activeSection === "news" ? "active" : ""}`}
-            onClick={() => setActiveSection("news")}
-          >
-            News
-          </li>
-          <li
-            className={`nav-item ${activeSection === "caseStudies" ? "active" : ""}`}
-            onClick={() => setActiveSection("caseStudies")}
-          >
-            Case Studies
-          </li>
-          <li
-            className={`nav-item ${activeSection === "insights" ? "active" : ""}`}
-            onClick={() => setActiveSection("insights")}
-          >
-            Insights
-          </li>
+          <li className={`nav-item ${activeSection === "dashboard" ? "active" : ""}`} onClick={() => setActiveSection("dashboard")}>Dashboard</li>
+          <li className={`nav-item ${activeSection === "blogs" ? "active" : ""}`} onClick={() => setActiveSection("blogs")}>Blogs</li>
+          <li className={`nav-item ${activeSection === "news" ? "active" : ""}`} onClick={() => setActiveSection("news")}>News</li>
+          <li className={`nav-item ${activeSection === "caseStudies" ? "active" : ""}`} onClick={() => setActiveSection("caseStudies")}>Case Studies</li>
+          <li className={`nav-item ${activeSection === "insights" ? "active" : ""}`} onClick={() => setActiveSection("insights")}>Insights</li>
+          <li className={`nav-item ${activeSection === "emails" ? "active" : ""}`} onClick={() => setActiveSection("emails")}>Emails</li>
         </ul>
       </div>
-
       <div className="main-panel">{renderContent()}</div>
     </div>
   );

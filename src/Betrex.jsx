@@ -8,7 +8,7 @@ const Betrex = () => {
         Our <span className="highlighted-word">Revolutionary</span> Process
       </h2>
       <p className="betrex-subtitle">
-        Four interconnected phases that transform complexity into simplicity
+       
       </p>
 
       <div className="betrex-content">
