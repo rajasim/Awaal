@@ -59,11 +59,13 @@
 }
 
 .hm-radar-video {
-  width: 950px; /* Fixed width */
-  height: 675px; /* Fixed height to maintain 16:9 aspect ratio */
-  border-radius: 20px;
-  box-shadow: 0 0 25px rgba(0, 255, 132, 0.7);
-  object-fit: cover; /* Ensures image fits inside the container without cropping */
+  
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 132, 0.7);
+    object-fit: cover;
 }
 
 .hm-video-overlay {

@@ -22,7 +22,7 @@ const Lixs = () => {
         <div className="comparison-table">
           <div className="table-row header-row">
             <div className="column traditional">Traditional IT Firms</div>
-            <div className="column awwad">Awwad Security</div>
+            <div className="column awwad">Awwal</div>
           </div>
 
           <div className="table-row">

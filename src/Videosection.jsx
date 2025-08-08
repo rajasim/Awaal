@@ -22,18 +22,16 @@ const VideoSection = () => {
           </h1>
 
           <h2 className="sub-title">
-            We solve real-world business problems.
+           We solve real world business challenges
           </h2>
 
           <p className="at-description">
-            At Awwal Security, we create secure, intelligent, and scalable
-            digital solutions that empower industries to move faster, operate
-            smarter, and grow safely.
+           We build secure, intelligent, and scalable digital solutions that help industries move faster, work smarter, and grow confidently.
+From hospitals and banks to hotels, pharmacies, ecommerce platforms, educational institutions, and startups we’re the tech force driving transformation across sectors.
           </p>
 
           <p className="description dimmed">
-            From hospitals and banks to hotels, pharmacies, and startups  we
-            are the tech force behind transformation.
+            
           </p>
         </div>
 

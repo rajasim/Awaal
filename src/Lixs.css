@@ -7,7 +7,9 @@
 
 .header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
+  font-size: 45px;
+  height: 300px;
  
 }
 
@@ -21,9 +23,10 @@
 
 .header p {
   color: #121212;
-  font-size: 19px;
+  font-size: 29px;
   max-width: 700px;
   margin: 0 auto;
+
 }
 
 .comparison-section {
@@ -31,13 +34,13 @@
 }
 
 .comparison-section h2 {
-  font-size: 28px;
+  font-size: 34px;
   margin-bottom: 10px;
 }
 
 .subtitler {
   color: #0a0909;
-  font-size: 21px;
+  font-size: 26px;
   margin-bottom: 30px;
 }
 

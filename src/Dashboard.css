@@ -188,3 +188,106 @@
 .email-table tr:hover {
   background-color: #f1f5f9;
 }
+.blog-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Form Styles */
+.blog-form {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.blog-form input,
+.blog-form textarea {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  padding: 8px;
+}
+.blog-form button {
+  margin-top: 10px;
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Blog Cards Grid */
+.blogs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Blog Card */
+.blog-card {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image Styling */
+.blog-image {
+  width: 100%;
+  height: 180px;
+  object-fit: contain; /* image fits inside box without cropping */
+  background: #eee;
+}
+
+/* Card Content */
+.blog-content {
+  padding: 15px;
+  position: relative;
+  flex: 1;
+}
+
+/* Title */
+.blog-content h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Paragraph */
+.blog-content p {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Delete Button (Top Right Inside Content) */
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.blog-card-content {
+  position: relative;
+}
+
+
+/* Read More Link */
+.blog-content .read-link {
+  color: orange;
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}

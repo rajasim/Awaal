@@ -11,6 +11,7 @@ const Navbar = () => {
   const [hoveredSubItem, setHoveredSubItem] = useState("");
   const centernav = useRef();
   const rightnav = useRef();
+  
 
   const handleDropdown = (menu) => {
     setOpenDropdown(openDropdown === menu ? null : menu);

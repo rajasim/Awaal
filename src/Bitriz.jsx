@@ -4,7 +4,7 @@ import './Bitriz.css';
 const Bitriz = () => {
   return (
     <section className="bitriz">
-      <h2 className="bitriz-title">Featured Projects</h2>
+      <h2 className="bitriz-title">Collaborative Projects Across Leading Industries</h2>
       <p className="bitriz-subtitle">
         A showcase of transformative solutions delivered across diverse industries
       </p>
@@ -25,8 +25,7 @@ const Bitriz = () => {
               Abu Dhabi International Airport
             </h3>
             <p className="description">
-              Designed and implemented the complete IT infrastructure for the world’s largest airport terminal,
-              covering 700,000 square meters with mission-critical reliability and zero-failure tolerance.
+              Contributed to the commissioning of IT infrastructure for the world’s largest airport terminal, spanning 700,000 square meters. Our role supported mission critical reliability and zero-failure operational standards.
             </p>
             <ul className="features">
               <li><span className="dot cyan"></span>50,000+ structured data ports</li>

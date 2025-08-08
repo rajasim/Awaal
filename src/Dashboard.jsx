@@ -11,23 +11,91 @@ const Dashboard = () => {
     insights: 4,
   });
 
-  // Store email submissions from localStorage (or backend in real use)
   const [emails, setEmails] = useState([]);
 
   useEffect(() => {
-    // Load email submissions from localStorage
+    // Get submissions from contact form
     const storedEmails = JSON.parse(localStorage.getItem("formSubmissions")) || [];
     setEmails(storedEmails);
   }, []);
 
+  const [blogsData, setBlogsData] = useState([]);
+  const [newsData, setNewsData] = useState([]);
+  const [caseStudiesData, setCaseStudiesData] = useState([]);
+  const [insightsData, setInsightsData] = useState([]);
+
+  const [showForm, setShowForm] = useState({
+    blogs: false,
+    news: false,
+    caseStudies: false,
+    insights: false,
+  });
+
+  const [newContent, setNewContent] = useState({
+    image: "",
+    title: "",
+    description: "",
+    date: "",
+  });
+
   const handleAddContent = () => {
-    if (activeSection !== "emails") {
-      setCounts((prev) => ({
-        ...prev,
-        [activeSection]: prev[activeSection] + 1,
-      }));
+    if (activeSection !== "emails" && activeSection !== "dashboard") {
+      setShowForm({ ...showForm, [activeSection]: true });
     }
   };
+
+  const handleSubmit = () => {
+    const contentToAdd = { ...newContent };
+    switch (activeSection) {
+      case "blogs":
+        setBlogsData([...blogsData, contentToAdd]);
+        break;
+      case "news":
+        setNewsData([...newsData, contentToAdd]);
+        break;
+      case "caseStudies":
+        setCaseStudiesData([...caseStudiesData, contentToAdd]);
+        break;
+      case "insights":
+        setInsightsData([...insightsData, contentToAdd]);
+        break;
+      default:
+        return;
+    }
+    setNewContent({ image: "", title: "", description: "", date: "" });
+    setShowForm({ ...showForm, [activeSection]: false });
+    setCounts((prev) => ({ ...prev, [activeSection]: prev[activeSection] + 1 }));
+  };
+
+  const renderCards = (data, setData, section) => (
+    <div className="blog-cards">
+      {data.map((item, idx) => (
+        <div className="blog-card" key={idx}>
+          <div className="blog-card-image">
+            <img src={item.image} alt={item.title} className="blog-top-img" />
+          </div>
+          <div className="blog-card-content">
+            <h3 className="blog-card-title">{item.title}</h3>
+            <p className="blog-card-text">{item.description}</p>
+            <button
+              className="delete-button"
+              onClick={() => {
+                const updated = data.filter((_, i) => i !== idx);
+                setData(updated);
+                setCounts((prev) => ({ ...prev, [section]: prev[section] - 1 }));
+              }}
+            >
+              Delete
+            </button>
+            <div className="blog-card-footer">
+              <span className="blog-date">{item.date}</span>
+              <span className="blog-link purple">Read →</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 
   const renderContent = () => {
     if (activeSection === "dashboard") {
@@ -41,26 +109,13 @@ const Dashboard = () => {
           </div>
 
           <div className="cards-section">
-            <div className="info-card">
-              <p>Blogs</p>
-              <h2>{counts.blogs}</h2>
-              <button className="add-btn" onClick={() => setActiveSection("blogs")}>View</button>
-            </div>
-            <div className="info-card">
-              <p>News</p>
-              <h2>{counts.news}</h2>
-              <button className="add-btn" onClick={() => setActiveSection("news")}>View</button>
-            </div>
-            <div className="info-card">
-              <p>Case Studies</p>
-              <h2>{counts.caseStudies}</h2>
-              <button className="add-btn" onClick={() => setActiveSection("caseStudies")}>View</button>
-            </div>
-            <div className="info-card">
-              <p>Insights</p>
-              <h2>{counts.insights}</h2>
-              <button className="add-btn" onClick={() => setActiveSection("insights")}>View</button>
-            </div>
+            {Object.entries(counts).map(([key, value]) => (
+              <div className="info-card" key={key}>
+                <p>{key.charAt(0).toUpperCase() + key.slice(1)}</p>
+                <h2>{value}</h2>
+                <button className="add-btn" onClick={() => setActiveSection(key)}>View</button>
+              </div>
+            ))}
             <div className="info-card">
               <p>Emails</p>
               <h2>{emails.length}</h2>
@@ -89,6 +144,7 @@ const Dashboard = () => {
                     <th>Company</th>
                     <th>Country</th>
                     <th>Message</th>
+                    <th>Contact No</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -99,6 +155,8 @@ const Dashboard = () => {
                       <td>{email.company}</td>
                       <td>{email.country}</td>
                       <td>{email.message}</td>
+                      {/* FIX: fallback for different field names */}
+                      <td>{email.contact || email.phone || email.phoneNumber || ""}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -109,29 +167,61 @@ const Dashboard = () => {
       );
     }
 
-    // Generic content section
-    return (
-      <>
-        <div className="top-bar">
-          <h1 className="dashboard-title">{activeSection.charAt(0).toUpperCase() + activeSection.slice(1)}</h1>
-          <button className="new-content-btn" onClick={handleAddContent}>
-            + New Content
-          </button>
-        </div>
-        <div className="activity-section">
-          <h3>All {activeSection}</h3>
-          <ul className="activity-list">
-            {[...Array(counts[activeSection])].map((_, idx) => (
-              <li key={idx}>
-                <span className={`dot ${activeSection === "news" ? "blue" : "green"}`}></span>
-                Sample {activeSection} content #{idx + 1}
-                <span className="time">Today</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </>
-    );
+    const sectionMap = {
+      blogs: [blogsData, setBlogsData],
+      news: [newsData, setNewsData],
+      caseStudies: [caseStudiesData, setCaseStudiesData],
+      insights: [insightsData, setInsightsData],
+    };
+
+    if (sectionMap[activeSection]) {
+      const [data, setData] = sectionMap[activeSection];
+      return (
+        <>
+          <div className="top-bar">
+            <h1 className="dashboard-title">{activeSection.charAt(0).toUpperCase() + activeSection.slice(1)}</h1>
+            <button className="new-content-btn" onClick={handleAddContent}>
+              + New Content
+            </button>
+          </div>
+          {showForm[activeSection] && (
+            <div className="blog-form">
+              <h3>Add New {activeSection}</h3>
+              <input
+                type="file"
+                accept="image/*"
+                onChange={(e) =>
+                  setNewContent({
+                    ...newContent,
+                    image: URL.createObjectURL(e.target.files[0]),
+                  })
+                }
+              />
+              <input
+                type="text"
+                placeholder="Title"
+                value={newContent.title}
+                onChange={(e) => setNewContent({ ...newContent, title: e.target.value })}
+              />
+              <textarea
+                placeholder="Description"
+                value={newContent.description}
+                onChange={(e) => setNewContent({ ...newContent, description: e.target.value })}
+              ></textarea>
+              <input
+                type="date"
+                value={newContent.date}
+                onChange={(e) => setNewContent({ ...newContent, date: e.target.value })}
+              />
+              <button onClick={handleSubmit}>Submit</button>
+            </div>
+          )}
+          {renderCards(data, setData, activeSection)}
+        </>
+      );
+    }
+
+    return null;
   };
 
   return (

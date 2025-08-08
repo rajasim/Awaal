@@ -19,10 +19,20 @@ function Form() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+
+    // Only allow digits in phone field
+    if (name === "phone") {
+      const numericValue = value.replace(/\D/g, "");
+      setFormData((prev) => ({
+        ...prev,
+        [name]: numericValue,
+      }));
+    } else {
+      setFormData((prev) => ({
+        ...prev,
+        [name]: value,
+      }));
+    }
   };
 
   const handleSubmit = (e) => {
@@ -49,7 +59,7 @@ function Form() {
   };
 
   return (
-    <div className="form-section">
+    <div className="form-section" id="form">
       <div className="form-left">
         <img src="/images/contact-ui.png" alt="Contact Illustration" />
       </div>
@@ -58,21 +68,57 @@ function Form() {
         <h2>
           Let’s Build <span>Together</span>
         </h2>
-        <p>Ready to transform your vision into reality? Share your ideas and let's create something extraordinary.</p>
+        <p>
+          Ready to transform your vision into reality? Share your ideas and
+          let's create something extraordinary.
+        </p>
 
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-row">
-            <input name="firstName" value={formData.firstName} onChange={handleChange} type="text" placeholder="First Name *" required />
-            <input name="lastName" value={formData.lastName} onChange={handleChange} type="text" placeholder="Last Name *" required />
+            <input
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleChange}
+              type="text"
+              placeholder="First Name *"
+              required
+            />
+            <input
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
+              type="text"
+              placeholder="Last Name *"
+              required
+            />
           </div>
 
           <div className="form-row">
-            <input name="email" value={formData.email} onChange={handleChange} type="email" placeholder="Company Email *" required />
+            <input
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              type="email"
+              placeholder="Company Email *"
+              required
+            />
           </div>
 
           <div className="form-row">
-            <input name="company" value={formData.company} onChange={handleChange} type="text" placeholder="Company *" required />
-            <select name="country" value={formData.country} onChange={handleChange} required>
+            <input
+              name="company"
+              value={formData.company}
+              onChange={handleChange}
+              type="text"
+              placeholder="Company *"
+              required
+            />
+            <select
+              name="country"
+              value={formData.country}
+              onChange={handleChange}
+              required
+            >
               <option value="">Country *</option>
               <option>United States</option>
               <option>India</option>
@@ -84,7 +130,12 @@ function Form() {
           </div>
 
           <div className="form-row">
-            <select name="jobTitle" value={formData.jobTitle} onChange={handleChange} required>
+            <select
+              name="jobTitle"
+              value={formData.jobTitle}
+              onChange={handleChange}
+              required
+            >
               <option value="">Job Title *</option>
               <option>C-Level</option>
               <option>Director</option>
@@ -95,7 +146,12 @@ function Form() {
               <option>Other</option>
             </select>
 
-            <select name="teamSize" value={formData.teamSize} onChange={handleChange} required>
+            <select
+              name="teamSize"
+              value={formData.teamSize}
+              onChange={handleChange}
+              required
+            >
               <option value="">Team Size *</option>
               <option>0–5</option>
               <option>6–10</option>
@@ -109,7 +165,12 @@ function Form() {
           </div>
 
           <div className="form-row">
-            <select name="service" value={formData.service} onChange={handleChange} required>
+            <select
+              name="service"
+              value={formData.service}
+              onChange={handleChange}
+              required
+            >
               <option value="">Select a Service *</option>
               <option>Cybersecurity</option>
               <option>AI & Automation</option>
@@ -123,16 +184,31 @@ function Form() {
               <option>Other</option>
             </select>
 
-            <input name="phone" value={formData.phone} onChange={handleChange} type="tel" placeholder="Phone Number" />
+            <input
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              type="tel"
+              placeholder="Phone Number"
+              maxLength="15"
+              required
+            />
           </div>
 
           <div className="form-row">
-            <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Additional Message" />
+            <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Additional Message"
+            />
           </div>
 
           <button type="submit">Send Message</button>
 
-          {submitted && <p className="success-msg">Message submitted successfully!</p>}
+          {submitted && (
+            <p className="success-msg">Message submitted successfully!</p>
+          )}
         </form>
       </div>
     </div>

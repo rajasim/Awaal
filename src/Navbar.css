@@ -7,9 +7,13 @@
   justify-content: space-between;
   font-family: "Segoe UI", sans-serif;
   border-bottom: 1px solid #1a1a1a;
-  position: relative;
+  position: fixed;       /* Changed from relative to fixed */
+  top: 0;                /* Stick to top */
+  width: 99%;           /* Ensure full width */
+  z-index: 1000;         /* Stay on top */
   padding-top: 1rem;
 }
+
 
 .navbar-left img {
   height: 50px;
@@ -338,13 +342,27 @@
   border-radius: 4px;
   padding: 8px 16px;
   font-size: 14px;
+  color: white;
   cursor: pointer;
   margin-bottom: 30px;
 }
 
 .plans-btn {
-  background-color: #17f3ac;
-  color: #000;
+ background-color: #17f3ac;
+color: #000;
+border-radius: 8px;
+padding: 10px 16px;
+font-weight: 600;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+.plans-btn :hover{
+  
+  background-color: #14d99a;
+  transform: translateY(-2px);
+
+
 }
 
 .links-grid {

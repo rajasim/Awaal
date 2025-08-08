@@ -20,7 +20,7 @@ const Ioteor = () => {
         <div className="carddd">
           <div className="icon blue">🧠</div>
           <h3>We Listen First</h3>
-          <p>So we don’t just solve problems  we solve the <em>right problems</em>.</p>
+          <p>We don’t just tackle challenges we solve the right ones, with purpose <em>built IT solutions</em>.</p>
           <span className="link-text blue">Discovery driven approach</span>
         </div>
 

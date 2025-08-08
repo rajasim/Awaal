@@ -38,7 +38,7 @@ const HomeMain = () => {
           "IT Infrastructure",
           "Software Development",
           "Website Development",
-          "Crypto",
+          
         ].map((tag, idx) => (
           <span className="hm-tag" key={idx}>{tag}</span>
         ))}

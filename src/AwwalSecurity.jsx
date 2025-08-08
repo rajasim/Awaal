@@ -7,11 +7,11 @@ const AwwalSecurity = () => {
       <div className="awwal-badge">Superior Value</div>
 
       <h1 className="awwal-title">
-        Why Choose <span className="awwal-highlight">Awwal Security?</span>
+        Why Choose <span className="awwal-highlight">Awwal ?</span>
       </h1>
 
       <p className="awwal-subtitle">
-        We deliver enterprise-grade security at 30–40% lower cost than big-name firms—with faster response and personal care.
+        We deliver enterprise grade security at 30 to 40% lower cost than big name firms with faster response and personal care.
       </p>
 
       <div className="awwal-main">
@@ -29,10 +29,10 @@ const AwwalSecurity = () => {
           <div className="awwal-card security">
             <h3>Awwal Security</h3>
             <div className="points-grid">
-              <span>✔ Expert-Led Services</span>
+              <span>✔ Expert Led Services</span>
               <span>✔ Rapid Implementation</span>
               <span>✔ Personal Care</span>
-              <span>✔ 30–40% Savings</span>
+              <span>✔ 30 to 40% Savings</span>
             </div>
           </div>
         </div>
@@ -59,8 +59,8 @@ const AwwalSecurity = () => {
           </div>
 
           <div className="awwal-savings">
-            $500K+
-            <div className="awwal-savings-subtext">Average Annual Savings</div>
+           Helping businesses 
+            <div className="awwal-savings-subtext">cut major operational costs</div>
           </div>
         </div>
       </div>

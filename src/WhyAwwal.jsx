@@ -19,7 +19,7 @@ const WhyAwwal = () => {
             Why <span className="whyawwal-highlight">Awwal </span>
           </h2>
           <p className="whyawwal-text">
-            At Awwal Security we solve the core challenges of security scalability and digital transformation.
+             We solve the core challenges of security scalability and digital transformation.
             Whether a company is trying to protect data, migrate to the cloud, modernize its IT systems,
             automate workflows or build custom software  we offer integrated, secure and future-ready solutions.
           </p>

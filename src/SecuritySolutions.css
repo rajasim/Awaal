@@ -64,6 +64,7 @@
   background-color: #0f2847; /* changed */
   cursor: pointer;
   text-align: left;
+  color: white;
   transition: background-color 0.3s;
 }
 

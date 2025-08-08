@@ -9,8 +9,7 @@ const Fotrom = () => {
       <div className="fotrom-header">
         <h1>Our Integrated Service Framework</h1>
         <p>
-          We don’t work in silos. At Awwal Security, every solution is built by connecting
-          expertise across all domains.
+         We don’t work in silos. @ Awwal, every solution is built by connecting expertise across all domains.
         </p>
         <div className="fotrom-icon">
           <img src="/images/Our Integrated Service Framework1.png" alt="Gear Icon" />

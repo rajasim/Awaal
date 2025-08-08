@@ -31,7 +31,13 @@ const Homepageser = () => {
               <li>Managed XDR / MXDR</li>
               <li>EDR / NGAV Protection</li>
             </ul>
-            <button className="homepageser-btn">Explore Solutions →</button>
+           <button
+  className="homepageser-btn"
+  onClick={() => window.location.href = "/vapt"}
+>
+  Explore Solutions →
+</button>
+
           </div>
 
           {/* Box 2 */}
@@ -47,7 +53,12 @@ const Homepageser = () => {
               <li>Data Centre Solutions</li>
               <li>Data Centre Solutions</li>
             </ul>
-            <button className="homepageser-btn">Explore Solutions →</button>
+           <button
+  className="homepageser-btn"
+  onClick={() => window.location.href = "/IT%20INFRA"}
+>
+  Explore Solutions →
+</button>
           </div>
 
           {/* Box 3 */}
@@ -63,7 +74,12 @@ const Homepageser = () => {
               <li>Mobile App Developments</li>
               <li>Web Application Development</li>
             </ul>
-            <button className="homepageser-btn">Explore Solutions →</button>
+            <button
+  className="homepageser-btn"
+  onClick={() => window.location.href = "/SOFTWARE%20DEV"}
+>
+  Explore Solutions →
+</button>
           </div>
 
           {/* Box 4 */}
@@ -79,7 +95,12 @@ const Homepageser = () => {
               <li>Cloud Migration</li>
               <li>Security & Compliance</li>
             </ul>
-            <button className="homepageser-btn">Explore Solutions →</button>
+             <button
+  className="homepageser-btn"
+  onClick={() => window.location.href = "/CLOUD"}
+>
+  Explore Solutions →
+</button>
           </div>
 
           {/* Box 5 */}
@@ -95,7 +116,12 @@ const Homepageser = () => {
               <li>eCommerce Website Development</li>
               <li>Responsive Web Design</li>
             </ul>
-            <button className="homepageser-btn">Explore Solutions →</button>
+             <button
+  className="homepageser-btn"
+  onClick={() => window.location.href = "/WEBSITE%20DEV"}
+>
+  Explore Solutions →
+</button>
           </div>
 
           {/* Box 6 */}
@@ -111,7 +137,12 @@ const Homepageser = () => {
               <li>Seamless AI & Automation Migration</li>
               <li>Effortless Cloud Migration</li>
             </ul>
-            <button className="homepageser-btn">Explore Solutions →</button>
+            <button
+  className="homepageser-btn"
+  onClick={() => window.location.href = "/MIGRATION"}
+>
+  Explore Solutions →
+</button>
           </div>
 
         </div>

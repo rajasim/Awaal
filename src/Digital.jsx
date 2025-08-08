@@ -10,8 +10,7 @@ const Digital = () => {
       <div className="digital-header">
         <h1>Secure Your Digital Future</h1>
         <p>
-          Comprehensive IT solutions from cybersecurity to cloud migration,
-          powered by cutting-edge technology and expert innovation.
+          End-to-end digital transformation solutions covering cybersecurity, AI automation, software, and cloud driven by innovation and technical excellence
         </p>
       </div>
 

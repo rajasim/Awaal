@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Softwarelap.css";
+import "./SecuritySolutions.css";
 
 function SecuritySolutions() {
   const [active, setActive] = useState("network");
