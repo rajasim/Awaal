@@ -116,3 +116,48 @@
     height: auto;
   }
 }
+@media (min-width: 1600px) {
+  .documentation-wrapper {
+    padding: 160px 120px;
+  }
+
+  .documentation-box {
+    padding: 100px 80px;
+    max-width: 1600px;
+  }
+
+  .doc-left-section {
+    padding-right: 120px;
+  }
+
+  .doc-heading {
+    font-size: 80px;
+    margin-bottom: 36px;
+  }
+
+  .doc-subtext {
+    font-size: 32px;
+    margin-bottom: 48px;
+    line-height: 2;
+  }
+
+  .doc-list li {
+    font-size: 24px;
+    margin-bottom: 28px;
+    padding-left: 40px;
+  }
+
+  .doc-list li::before {
+    font-size: 28px;
+    left: 4px;
+  }
+
+  .doc-right-section {
+    justify-content: center;
+  }
+
+  .doc-icon {
+    width: 300px;
+    height: 360px;
+  }
+}

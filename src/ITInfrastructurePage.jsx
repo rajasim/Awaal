@@ -2,6 +2,10 @@ import React from "react";
 import "./ITInfrastructurePage.css";
 
 const ITInfrastructurePage = () => {
+  const handleRedirect = () => {
+    window.location.href = "/form"; // Change to your actual form URL or route
+  };
+
   return (
     <section className="infra-wrapper">
       {/* Background Image */}
@@ -27,7 +31,7 @@ const ITInfrastructurePage = () => {
 
           <p>
             Transform your business with our comprehensive IT infrastructure
-            solutions designed for maximum performance security and scalability.
+            solutions designed for maximum performance, security, and scalability.
           </p>
 
           <div className="infra-points">
@@ -50,14 +54,14 @@ const ITInfrastructurePage = () => {
           </div>
 
           <div className="infra-butns">
-            <button className="get-started">Get Started</button>
-           
+            <button className="get-started" onClick={handleRedirect}>
+              Get Started
+            </button>
           </div>
 
           <div className="infra-stats">
             <div><strong>99.99%</strong> Uptime</div>
             <div><strong>24/7</strong> Support</div>
-            
           </div>
         </div>
 
@@ -72,9 +76,7 @@ const ITInfrastructurePage = () => {
       </div>
 
       {/* Trusted Logos */}
-      <div className="infra-trusted">
-        
-      </div>
+      <div className="infra-trusted"></div>
     </section>
   );
 };

@@ -1,11 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Watrex.css';
 
 const Watrex = () => {
   return (
     <div className="watrex-container">
-     
-     
       <div className="watrex-wrapper">
         {/* Left Content */}
         <div className="watrex-content">
@@ -19,7 +18,10 @@ const Watrex = () => {
             we're here to guide you every step of the way.
           </p>
 
-          <button className="watrex-consult-button">Book a Free Consultation</button>
+          {/* Redirect to form */}
+          <Link to="/Form">
+            <button className="watrex-consult-button">Book a Free Consultation</button>
+          </Link>
 
           <div className="watrex-box-row">
             <div className="watrex-box">

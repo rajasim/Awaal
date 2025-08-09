@@ -166,3 +166,56 @@
     grid-template-columns: 1fr;
   }
 }
+@media (min-width: 1600px) {
+  .deliverables-grid-wrapper {
+    padding: 80px 120px;
+    gap: 50px;
+  }
+
+  .deliverable-card-box {
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+  }
+
+  .deliverable-card-box:hover {
+    transform: scale(1.08);
+  }
+
+  .card-box-heading {
+    font-size: 36px;
+  }
+
+  .card-box-subtext {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+
+  .status-info-line span {
+    font-size: 24px;
+  }
+
+  .status-bar-line {
+    height: 10px;
+  }
+
+  .key-highlights-list {
+    font-size: 22px;
+  }
+
+  .key-highlights-list li {
+    margin-bottom: 12px;
+    padding-left: 28px;
+  }
+
+  .key-highlights-list li::before {
+    font-size: 20px;
+    left: 4px;
+  }
+
+  .action-request-btn {
+    font-size: 22px;
+    padding: 16px 32px;
+  }
+}

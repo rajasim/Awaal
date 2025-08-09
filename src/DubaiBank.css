@@ -209,3 +209,60 @@
     font-size: 16px;
   }
 }
+/* 📺 TV / Ultra-Wide Screens */
+@media (min-width: 1600px) {
+  .bank-wrapper {
+    padding: 120px 80px;
+  }
+
+  .bank-card {
+    padding: 80px;
+    max-width: 1900px;
+  }
+
+  .network-image img {
+    height: 500px;
+  }
+
+  .network-labels {
+    gap: 100px;
+    font-size: 22px;
+  }
+
+  .bottom-section {
+    gap: 80px;
+  }
+
+  .bank-info h2 {
+    font-size: 64px;
+  }
+
+  .bank-info p {
+    font-size: 28px;
+    line-height: 2;
+  }
+
+  .bullet-points li {
+    font-size: 22px;
+  }
+
+  .dot {
+    width: 18px;
+    height: 18px;
+  }
+
+  .glass-card {
+    width: 280px;
+    height: 280px;
+    padding: 50px;
+  }
+
+  .glass-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .glass-card p {
+    font-size: 22px;
+  }
+}

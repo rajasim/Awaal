@@ -51,7 +51,7 @@ function Azure() {
         </div>
 
         <div className="button-wrapper">
-         
+      
         </div>
       </div>
     </div>

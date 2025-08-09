@@ -241,3 +241,82 @@
     font-size: 12px;
   }
 }
+/* === TV / Large Screen Mode === */
+@media (min-width: 1600px) {
+  .awwal-section {
+    padding: 150px 100px;
+  }
+
+  .awwal-badge {
+    font-size: 28px;
+    padding: 20px 40px;
+    border-radius: 40px;
+    margin-bottom: 50px;
+  }
+
+  .awwal-title {
+    font-size: 100px;
+    margin-bottom: 40px;
+  }
+
+  .awwal-subtitle {
+    font-size: 40px;
+    max-width: 1200px;
+    margin-bottom: 100px;
+  }
+
+  .awwal-main {
+    gap: 100px;
+  }
+
+  .awwal-card {
+    width: 700px;
+    padding: 50px 40px;
+    border-radius: 30px;
+  }
+
+  .awwal-card h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .points-grid {
+    font-size: 28px;
+    gap: 30px 40px;
+  }
+
+  .awwal-right {
+    width: 800px;
+    padding: 50px 40px;
+    border-radius: 30px;
+  }
+
+  .metrics-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+
+  .metric-label {
+    font-size: 26px;
+  }
+
+  .metric-bar {
+    height: 20px;
+    border-radius: 10px;
+  }
+
+  .metric-value {
+    font-size: 26px;
+  }
+
+  .awwal-savings {
+    font-size: 48px;
+    padding: 40px;
+    border-radius: 25px;
+    margin-top: 40px;
+  }
+
+  .awwal-savings-subtext {
+    font-size: 22px;
+  }
+}

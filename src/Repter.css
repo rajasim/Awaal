@@ -221,3 +221,33 @@
     height: auto;
   }
 }
+/* TV screens (≥1600px) */
+@media screen and (min-width: 1600px) {
+  .azure-section {
+    max-width: 1600px; /* keep content centered and readable */
+    margin: 0 auto;
+    padding: 40px 80px;
+  }
+
+  .azure-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .azure-box {
+    flex: 1 1 25%;
+    max-width: 360px;
+    height: 380px;
+    font-size: 1.2rem;
+  }
+
+  .azure-box h3 {
+    font-size: 1.6rem;
+  }
+
+  .azure-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}

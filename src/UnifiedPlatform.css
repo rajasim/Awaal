@@ -141,3 +141,55 @@
     height: auto;
   }
 }
+@media (min-width: 1600px) {
+  .unified-platform-section {
+    padding: 140px 100px;
+  }
+
+  .unified-platform-container {
+    max-width: 1800px;
+    gap: 80px;
+  }
+
+  .unified-platform-left {
+    min-width: 600px;
+  }
+
+  .unified-platform-heading {
+    font-size: 56px;
+    margin-bottom: 60px;
+  }
+
+  .unified-platform-list li {
+    margin-bottom: 36px;
+    padding-bottom: 16px;
+  }
+
+  .unified-platform-list li .item-header {
+    font-size: 28px;
+    gap: 12px;
+  }
+
+  .unified-platform-list li span {
+    font-size: 28px;
+  }
+
+  .platform-content {
+    font-size: 20px;
+    line-height: 1.9;
+    margin-top: 24px;
+  }
+
+  .platform-content ul li {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .unified-platform-right {
+    min-width: 520px;
+  }
+
+  .unified-platform-right img {
+    max-width: 600px;
+  }
+}

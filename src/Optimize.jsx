@@ -2,6 +2,10 @@ import React from "react";
 import "./Optimize.css";
 
 function Optimize() {
+  const handleRedirect = () => {
+    window.location.href = "/form"; // Change this to your actual form route or URL
+  };
+
   return (
     <div className="optimize-section">
       <div className="optimize-content">
@@ -32,7 +36,9 @@ function Optimize() {
               Schedule a free consultation with our expert team to discuss your specific
               needs.
             </p>
-            <button className="cta-button">Get Started</button>
+            <button className="cta-button" onClick={handleRedirect}>
+              Get Started
+            </button>
           </div>
         </div>
       </div>

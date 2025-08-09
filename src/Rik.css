@@ -282,3 +282,79 @@
     gap: 8px;
   }
 }
+/* === Large TV / Ultra-Wide Screens === */
+@media (min-width: 1600px) {
+  .rik-section {
+    padding: 120px 100px;
+  }
+
+  .rik-heading .rik-icon {
+    font-size: 56px;
+    margin-bottom: 20px;
+  }
+
+  .rik-heading h1 {
+    font-size: 80px;
+  }
+
+  .rik-heading p {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+
+  .rik-cards {
+    gap: 50px;
+    margin-bottom: 80px;
+  }
+
+  .rik-card {
+    padding: 40px;
+    min-height: 220px;
+    border-radius: 20px;
+  }
+
+  .rik-top-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .rik-top-icon img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .rik-card h4 {
+    font-size: 28px;
+  }
+
+  .rik-card p {
+    font-size: 22px;
+  }
+
+  .rik-stat label {
+    font-size: 16px;
+  }
+
+  .rik-cta {
+    padding: 60px;
+  }
+
+  .rik-cta h2 {
+    font-size: 60px;
+  }
+
+  .rik-cta p {
+    font-size: 28px;
+  }
+
+  .rik-btn-primary {
+    font-size: 24px;
+    padding: 18px 40px;
+    border-radius: 40px;
+  }
+
+  .rik-tags {
+    font-size: 18px;
+    gap: 30px;
+  }
+}

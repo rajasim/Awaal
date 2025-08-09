@@ -229,12 +229,12 @@ const Dashboard = () => {
       <div className="sidebar">
         <h2 className="sidebar-title">Admin Panel</h2>
         <ul className="nav-list">
-          <li className={`nav-item ${activeSection === "dashboard" ? "active" : ""}`} onClick={() => setActiveSection("dashboard")}>Dashboard</li>
-          <li className={`nav-item ${activeSection === "blogs" ? "active" : ""}`} onClick={() => setActiveSection("blogs")}>Blogs</li>
-          <li className={`nav-item ${activeSection === "news" ? "active" : ""}`} onClick={() => setActiveSection("news")}>News</li>
+          <li className={`navv-item ${activeSection === "dashboard" ? "active" : ""}`} onClick={() => setActiveSection("dashboard")}>Dashboard</li>
+          <li className={`navv-item ${activeSection === "blogs" ? "active" : ""}`} onClick={() => setActiveSection("blogs")}>Blogs</li>
+          <li className={`navv-item ${activeSection === "news" ? "active" : ""}`} onClick={() => setActiveSection("news")}>News</li>
           <li className={`nav-item ${activeSection === "caseStudies" ? "active" : ""}`} onClick={() => setActiveSection("caseStudies")}>Case Studies</li>
-          <li className={`nav-item ${activeSection === "insights" ? "active" : ""}`} onClick={() => setActiveSection("insights")}>Insights</li>
-          <li className={`nav-item ${activeSection === "emails" ? "active" : ""}`} onClick={() => setActiveSection("emails")}>Emails</li>
+          <li className={`navv-item ${activeSection === "insights" ? "active" : ""}`} onClick={() => setActiveSection("insights")}>Insights</li>
+          <li className={`navv-item ${activeSection === "emails" ? "active" : ""}`} onClick={() => setActiveSection("emails")}>Emails</li>
         </ul>
       </div>
       <div className="main-panel">{renderContent()}</div>

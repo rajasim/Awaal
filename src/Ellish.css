@@ -127,3 +127,31 @@
     width: 100%;
   }
 }
+/* TV friendly layout */
+@media (min-width: 1600px) {
+  html, body {
+    font-size: 20px; /* Larger text for readability */
+  }
+
+  button, a {
+    font-size: 1.2rem;
+    padding: 1rem 2rem; /* Bigger tap/click areas */
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container,
+  .section,
+  .wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Optional: space things out more */
+  .section {
+    padding: 4rem 2rem;
+  }
+}

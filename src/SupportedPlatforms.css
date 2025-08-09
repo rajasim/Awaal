@@ -105,3 +105,62 @@
   color: #333;
   line-height: 1.6;
 }
+@media (min-width: 1600px) {
+  .platforms-section {
+    padding: 160px 100px;
+  }
+
+  .platforms-content {
+    max-width: 1800px;
+    padding: 0 40px;
+  }
+
+  .platforms-badge {
+    font-size: 24px;
+    padding: 12px 36px;
+    margin-bottom: 40px;
+  }
+
+  .platforms-title {
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+
+  .platforms-underline {
+    height: 7px;
+    width: 160px;
+    margin-bottom: 40px;
+  }
+
+  .platforms-subtext {
+    font-size: 32px;
+    max-width: 1200px;
+    margin-bottom: 100px;
+  }
+
+  .platforms-grid {
+    gap: 60px;
+    padding: 0 60px;
+  }
+
+  .platform-card {
+    max-width: 460px;
+    height: 520px;
+    padding: 70px 50px;
+    border-radius: 28px;
+  }
+
+  .platform-icon {
+    height: 150px;
+    margin-bottom: 40px;
+  }
+
+  .platform-card h3 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .platform-card p {
+    font-size: 24px;
+  }
+}

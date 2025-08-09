@@ -272,3 +272,47 @@ html, body {
     height: 240px;
   }
 }
+/* === TV-Friendly Adjustments === */
+@media (min-width: 1600px) {
+  .ai-left {
+    padding: 120px;
+  }
+
+  .ai-content h1 {
+    font-size: 90px; /* Bigger main heading */
+    line-height: 1.2;
+  }
+
+  .ai-content h2 {
+    font-size: 56px; /* Bigger secondary heading */
+  }
+
+  .ai-content p {
+    font-size: 32px; /* Large body text for distance */
+    line-height: 1.9;
+  }
+
+  .ai-btn-primary {
+    padding: 22px 48px; /* Bigger click/tap area */
+    font-size: 28px;
+    border-radius: 40px;
+  }
+
+  .ai-stats-bar {
+    gap: 80px;
+    margin-top: 100px;
+  }
+
+  .ai-stat-box h3 {
+    font-size: 64px;
+  }
+
+  .ai-stat-box p {
+    font-size: 28px;
+  }
+
+  .ai-right img {
+    width: 1000px;
+    height: 800px;
+  }
+}

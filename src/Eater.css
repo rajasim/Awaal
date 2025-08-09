@@ -182,3 +182,71 @@
   height: auto;
   border-radius: 12px;
 }
+/* 📺 TV / Ultra-Wide Screens */
+@media (min-width: 1600px) {
+  .pater-section {
+    padding: 120px 40px;
+  }
+
+  .pater-inner {
+    max-width: 1800px;
+  }
+
+  .pater-title {
+    font-size: 72px;
+    margin-bottom: 30px;
+  }
+
+  .pater-subtitle {
+    font-size: 26px;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+  }
+
+  .pater-cards {
+    grid-template-columns: repeat(4, 1fr); /* Show 4 per row on big screens */
+    gap: 40px;
+  }
+
+  .pater-card {
+    padding: 40px 30px;
+    min-height: 420px;
+  }
+
+  .pater-card-img {
+    height: 80px;
+  }
+
+  .pater-card h4 {
+    font-size: 22px;
+  }
+
+  .pater-card p {
+    font-size: 20px;
+    line-height: 1.7;
+  }
+
+  .pater-bottom {
+    padding: 60px;
+    gap: 50px;
+  }
+
+  .pater-bottom-left h3 {
+    font-size: 42px;
+  }
+
+  .pater-bottom-left p {
+    font-size: 22px;
+    max-width: 900px;
+  }
+
+  .pater-buttons .pater-btn-primary,
+  .pater-buttons .pater-btn-outline {
+    font-size: 18px;
+    padding: 16px 44px;
+  }
+
+  .pater-bottom-right img {
+    max-width: 500px;
+  }
+}

@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Rofter.css';
 
 const Rofter = () => {
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate('/form'); // Redirect to your form route
+  };
+
   return (
     <div className="rof-wrapper">
       <h2 className="rof-heading">Our Web Development Process</h2>
@@ -48,12 +55,12 @@ const Rofter = () => {
         <div className="rof-box rof-cta">
           <h3>Ready to Start Your Project?</h3>
           <p>Let’s discuss how our web development process can help bring your vision to life.</p>
-          <button>Get Started</button>
+          <button onClick={handleGetStartedClick}>Get Started</button>
         </div>
       </div>
 
       <div className="rof-bottom">
-       
+        {/* Possibly add content or remove if empty */}
       </div>
     </div>
   );

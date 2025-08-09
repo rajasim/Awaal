@@ -316,3 +316,73 @@
     font-size: 12px;
   }
 }
+@media (min-width: 1600px) {
+  .blog-title {
+    font-size: 72px;
+  }
+
+  .blog-subtitle {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .blog-tab {
+    font-size: 22px;
+    padding: 12px 28px;
+  }
+
+  .blog-section-title {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+
+  .blog-card {
+    flex: 1 1 calc(33.33% - 30px);
+    max-width: 32%;
+  }
+
+  .blog-card-image,
+  .blog-top-img {
+    height: 380px;
+  }
+
+  .blog-card-title {
+    font-size: 32px;
+  }
+
+  .blog-card-text {
+    font-size: 20px;
+  }
+
+  .blog-date {
+    font-size: 16px;
+  }
+
+  .blog-link {
+    font-size: 18px;
+  }
+
+  .load-more-btn {
+    font-size: 24px;
+    padding: 18px 40px;
+  }
+
+  .subscribe-title {
+    font-size: 42px;
+  }
+
+  .subscribe-text {
+    font-size: 22px;
+  }
+
+  .subscribe-input {
+    font-size: 18px;
+    width: 380px;
+    padding: 16px 20px;
+  }
+
+  .subscribe-btn {
+    font-size: 20px;
+    padding: 16px 28px;
+  }
+}

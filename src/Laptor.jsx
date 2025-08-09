@@ -2,6 +2,10 @@ import React from 'react';
 import './Yaptor.css';
 
 const Laptor = () => {
+  const handleRedirect = () => {
+    window.location.href = '/form'; // Change '/form' to your actual form route or URL
+  };
+
   return (
     <div className="laptor-container">
       <h2 className="laptor-title">
@@ -54,8 +58,9 @@ const Laptor = () => {
         </div>
       </div>
 
-      <button className="laptor-button">Get Support Now</button>
-     
+      <button className="laptor-button" onClick={handleRedirect}>
+        Get Support Now
+      </button>
     </div>
   );
 };

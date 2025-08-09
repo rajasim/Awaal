@@ -144,3 +144,37 @@
     gap: 12px;
   }
 }
+@media (min-width: 1600px) {
+  .efficiency-section {
+    padding: 80px 120px;
+    height: 100vh;
+  }
+
+  .efficiency-left {
+    padding-right: 80px;
+  }
+
+  .efficiency-text-content h2 {
+    font-size: 72px;
+  }
+
+  .efficiency-text-content p {
+    font-size: 28px;
+  }
+
+  .efficiency-buttons {
+    gap: 32px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 18px 40px;
+    font-size: 22px;
+  }
+
+  .efficiency-right img {
+    width: 800px;
+    height: 640px;
+    padding: 40px;
+  }
+}

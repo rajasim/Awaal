@@ -142,3 +142,62 @@
   }
 }
 
+/* TV Friendly Styles (min-width: 1600px) */
+@media (min-width: 1600px) {
+  .darkweb-alert {
+    padding: 100px 140px;
+  }
+
+  .left {
+    padding: 60px 80px;
+    text-align: left;
+  }
+
+  .left h2 {
+    font-size: 90px;
+    line-height: 1.2;
+  }
+
+  .left p {
+    font-size: 42px;
+    margin: 40px 0;
+  }
+
+  .scan-now {
+    font-size: 32px;
+    padding: 24px 48px;
+    border-radius: 16px;
+    box-shadow: 6px 6px 0 #014421;
+  }
+
+  .scan-now:hover {
+    transform: translateY(-4px);
+  }
+
+  .right {
+    padding: 0;
+  }
+
+  .lock-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .top-buttons {
+    top: 40px;
+    right: 60px;
+    gap: 20px;
+  }
+
+  .top-buttons button {
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 10px;
+  }
+
+  .top-buttons button:hover {
+    background-color: #00804f;
+    color: white;
+  }
+}

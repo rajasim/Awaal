@@ -2,6 +2,8 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import LazyLoader from "./LazyLoader";
+import ScrollToTop from "./ScrollToTop";
+import { BrowserRouter } from "react-router-dom";
 
 
 const Navbar = lazy(() => import("./Navbar"));
@@ -103,7 +105,9 @@ const Blooogs = lazy(()=>import("./Blooogs"));
 function App() {
   return (
     <Suspense fallback={<div className="page-loading"></div>}>
+     <ScrollToTop />
       <Routes>
+      
        <Route
   path="/"
   element={

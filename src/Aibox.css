@@ -93,3 +93,42 @@
   line-height: 1.7;
   color: #c9d1d9;
 }
+/* TV-friendly adjustments for Aibox */
+@media (min-width: 1600px) {
+  .aibox-wrapper {
+    padding: 100px 80px;
+  }
+
+  .aibox-card {
+    padding: 80px;
+    font-size: 1.25rem; /* Slightly bigger text */
+  }
+
+  .aibox-image img {
+    height: 550px; /* Bigger images for TV readability */
+  }
+
+  .aibox-bullet-points li {
+    font-size: 1.2rem; /* Larger bullet text */
+    margin-bottom: 24px;
+  }
+
+  .aibox-dot {
+    width: 18px;
+    height: 18px;
+    margin-right: 16px;
+  }
+
+  .aibox-text-info h2 {
+    font-size: 42px;
+  }
+
+  .aibox-text-info p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+  }
+
+  .aibox-bottom-section {
+    gap: 80px;
+  }
+}

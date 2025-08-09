@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Innovate.css';
 
 const Innovate = () => {
@@ -43,7 +44,10 @@ const Innovate = () => {
         </div>
       </div>
 
-      <button className="ko-button">Get Started →</button>
+      {/* Redirect to form route */}
+      <Link to="/Form">
+        <button className="ko-button">Get Started →</button>
+      </Link>
     </section>
   );
 };

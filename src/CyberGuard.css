@@ -224,3 +224,77 @@
     padding: 8px 14px;
   }
 }
+/* TV screens: min 1600px */
+@media (min-width: 1600px) {
+  .cyberguard-container {
+    padding: 100px 80px;
+  }
+
+  .cyberguard-heading {
+    font-size: 90px;
+    margin-bottom: 40px;
+  }
+
+  .cyberguard-subheading {
+    font-size: 32px;
+    line-height: 1.8;
+    margin-bottom: 80px;
+  }
+
+  .cyberguard-box {
+    padding: 50px;
+    gap: 40px;
+    border-left-width: 10px;
+  }
+
+  .cyberguard-box h3 {
+    font-size: 34px;
+  }
+
+  .cyberguard-box p {
+    font-size: 26px;
+  }
+
+  .icon-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+
+  .icon-wrapper img {
+    width: 140px;
+    height: auto;
+  }
+
+  .cyberguard-grid {
+    gap: 40px;
+  }
+
+  .cyberguard-tile {
+    padding: 50px 30px;
+  }
+
+  .cyberguard-tile h4 {
+    font-size: 28px;
+  }
+
+  .cyberguard-tile p {
+    font-size: 22px;
+  }
+
+  .cyberguard-industry {
+    padding: 40px 30px;
+  }
+
+  .cyberguard-industry h4 {
+    font-size: 26px;
+  }
+
+  .cyberguard-industry p {
+    font-size: 24px;
+  }
+
+  .cyberguard-certifications span {
+    font-size: 20px;
+    padding: 14px 28px;
+  }
+}

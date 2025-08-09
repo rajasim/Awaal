@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Ellish.css";
 
 function Migration() {
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate("/form"); // Redirects to your form route
+  };
+
   return (
     <div className="ellish-section">
       {/* Background Image */}
@@ -29,7 +36,9 @@ function Migration() {
         </div>
 
         <div className="ellish-buttons">
-          <button className="btn-primary">Get Started</button>
+          <button className="btn-primary" onClick={handleGetStartedClick}>
+            Get Started
+          </button>
         </div>
       </div>
 

@@ -177,3 +177,35 @@
     height: 60px;
   }
 }
+/* TV screens: min 1600px */
+@media (min-width: 1600px) {
+  .cloud-section {
+    padding: 8rem 12rem;
+  }
+
+  .cloud-heading {
+    font-size: 72px;
+  }
+
+  .cloud-subtext {
+    font-size: 24px;
+    line-height: 1.9;
+  }
+
+  .cloud-feature {
+    padding: 2.5rem 2rem;
+  }
+
+  .cloud-feature h3 {
+    font-size: 26px;
+  }
+
+  .cloud-feature p {
+    font-size: 18px;
+  }
+
+  .cloud-icon img {
+    width: 60px;
+    height: 60px;
+  }
+}

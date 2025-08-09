@@ -1,11 +1,17 @@
 import React from 'react';
 import './Repter.css';
+import { useNavigate } from 'react-router-dom';
 
 const Repter = () => {
+  const navigate = useNavigate();
+
+  const handleRedirect = () => {
+    navigate('/Form'); // ✅ Redirect to your form page
+  };
+
   return (
     <div className="repter-wrapper">
       {/* Background Image */}
-      
 
       <div className="repter-inner">
         {/* Left Content */}
@@ -23,8 +29,9 @@ const Repter = () => {
           </p>
 
           <div className="repter-buttons">
-            <button className="btn-primary"> Explore Solutions</button>
-            
+            <button className="btn-primary" onClick={handleRedirect}>
+              Explore Solutions
+            </button>
           </div>
 
           <div className="repter-tech">

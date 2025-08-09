@@ -153,3 +153,49 @@
   }
 }
 
+/* === TV / Large Screen Mode === */
+@media (min-width: 1600px) {
+  .migration-container {
+    padding: 100px 60px;
+  }
+
+  .migration-title {
+    font-size: 90px; /* Big headline */
+    margin-bottom: 20px;
+  }
+
+  .migration-subtitle {
+    font-size: 36px; /* Large subtitle */
+    margin-bottom: 60px;
+  }
+
+  .migration-grid {
+    gap: 50px; /* More spacing between cards */
+    max-width: 1600px;
+  }
+
+  .migration-card {
+    padding: 60px 50px; /* Bigger padding for visual balance */
+    min-height: 500px;
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    font-size: 5rem; /* Bigger icons */
+    margin-bottom: 30px;
+  }
+
+  .migration-card h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .migration-card p {
+    font-size: 28px;
+    line-height: 1.7;
+  }
+
+  .highlighttt {
+    font-size: 24px;
+  }
+}

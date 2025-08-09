@@ -1,12 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Tifeter.css';
 
 const Tifeter = () => {
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate('/form'); // Redirects to your form page
+  };
+
   return (
     <div className="tifeter-wrapper">
-      {/* Background image on left side using an img tag */}
       <div className="tifeter-left">
-       
         <div className="tifeter-content">
           <h2>
             Why Invest in <br />
@@ -37,11 +42,12 @@ const Tifeter = () => {
             </div>
           </div>
 
-          <button className="tifeter-btn">Get Started Today</button>
+          <button className="tifeter-btn" onClick={handleGetStartedClick}>
+            Get Started Today
+          </button>
         </div>
       </div>
 
-      {/* Right side image using an img tag */}
       <div className="tifeter-right">
         <img src="/images/ayzz.gif" alt="Right Visual" />
       </div>

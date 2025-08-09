@@ -200,3 +200,71 @@
     font-size: 15px;
   }
 }
+@media (min-width: 1600px) {
+  .betrex-section {
+    padding: 140px 120px;
+  }
+
+  .betrex-title {
+    font-size: 80px;
+  }
+
+  .betrex-subtitle {
+    font-size: 32px;
+    margin-bottom: 100px;
+  }
+
+  .betrex-content {
+    gap: 80px;
+  }
+
+  .betrex-step-circle {
+    width: 90px;
+    height: 90px;
+    font-size: 28px;
+    top: -40px;
+    left: -40px;
+  }
+
+  .betrex-illustration {
+    max-width: 700px;
+    padding: 60px;
+  }
+
+  .betrex-tag {
+    font-size: 22px;
+    padding: 14px 28px;
+    margin-bottom: 32px;
+  }
+
+  .betrex-heading {
+    font-size: 42px;
+    margin-bottom: 24px;
+  }
+
+  .betrex-description {
+    font-size: 22px;
+    margin-bottom: 48px;
+  }
+
+  .betrex-cards {
+    gap: 40px;
+  }
+
+  .betrex-card {
+    padding: 36px 40px;
+    gap: 28px;
+  }
+
+  .betrex-card-icon {
+    font-size: 48px;
+  }
+
+  .betrex-card-texts h4 {
+    font-size: 26px;
+  }
+
+  .betrex-card-texts p {
+    font-size: 20px;
+  }
+}

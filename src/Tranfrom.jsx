@@ -1,11 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Tranfrom.css';
 
 const Tranfrom = () => {
+  const navigate = useNavigate();
+
+  const handleTransformClick = () => {
+    navigate('/form'); // Redirects to form route
+  };
+
   return (
     <div className="transform-wrapper">
       <div className="transform-content">
-
         <h1>
           Transform Your Tech. <span className="highlightt">One Click Away</span>
         </h1>
@@ -16,37 +22,30 @@ const Tranfrom = () => {
 
         <div className="services-row">
           <div className="service-cardes">
-           
             <p>Cybersecurity<br /><small>(VAPT)</small></p>
           </div>
           <div className="service-cardes">
-         
             <p>AI &<br />Automation</p>
           </div>
           <div className="service-cardes">
-          
             <p>Cloud<br />Services</p>
           </div>
           <div className="service-cardes">
-          
             <p>IT Infra<br />Management</p>
           </div>
           <div className="service-cardes">
-           
             <p>Software<br />Development</p>
           </div>
           <div className="service-cardes">
-          
             <p>Website<br />Development</p>
           </div>
           <div className="service-cardes">
-          
             <p>System<br />Migration</p>
           </div>
         </div>
 
-        <button className="transform-btnnn">
-           Transform Now
+        <button className="transform-btnnn" onClick={handleTransformClick}>
+          Transform Now
         </button>
 
         <div className="features-row">
@@ -56,9 +55,6 @@ const Tranfrom = () => {
         </div>
 
         <p className="footer-text">Not ready yet? Start with our insights:</p>
-
-       
-
       </div>
     </div>
   );

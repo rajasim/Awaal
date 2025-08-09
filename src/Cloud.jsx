@@ -50,7 +50,7 @@ const Cloud = () => {
             </div>
           </div>
 
-          <button className="cloud-button">Get Started Today</button>
+         
         </div>
 
         {/* Right Image */}

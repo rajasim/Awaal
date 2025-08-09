@@ -46,7 +46,6 @@ const Featured = () => {
             </li>
           </ul>
 
-          <button className="request-button">Request Demo</button>
         </div>
 
         <div className="featured-right">

@@ -257,3 +257,53 @@
     display: none;
   }
 }
+/* ===== TV / Large Screen Mode ===== */
+@media (min-width: 1600px) {
+  .azure-section {
+    padding: 0 4rem;
+  }
+
+  .section-title {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
+  }
+
+  .azure-box {
+    min-width: 420px;
+    max-width: 500px;
+    padding: 3rem 2.5rem;
+    border-radius: 30px;
+  }
+
+  .box-img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 2rem;
+  }
+
+  .box-title {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .box-desc,
+  .box-liste {
+    font-size: 1.4rem;
+    line-height: 1.8;
+  }
+
+  .box-liste li {
+    margin-bottom: 20px;
+  }
+
+  .assessment-button {
+    font-size: 1.8rem;
+    padding: 1.2rem 3rem;
+    border-radius: 14px;
+  }
+}

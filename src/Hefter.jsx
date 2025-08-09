@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Hefter.css';
 
 function Hefter() {
+  const navigate = useNavigate();
+
+  const handleStartTransformationClick = () => {
+    navigate('/form'); // Redirects to your form page
+  };
+
   return (
     <div className="hefter-wrapper">
       {/*  Background image */}
@@ -32,8 +39,9 @@ function Hefter() {
           </div>
 
           <div className="hefter-buttons">
-            <button className="btn-primary">Start Transformation</button>
-           
+            <button className="btn-primary" onClick={handleStartTransformationClick}>
+              Start Transformation
+            </button>
           </div>
         </div>
 

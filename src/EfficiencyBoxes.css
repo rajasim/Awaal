@@ -60,3 +60,33 @@
     max-width: 90%;
   }
 }
+@media (min-width: 1600px) {
+  .service-cards {
+    gap: 48px;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    padding: 0 80px;
+  }
+
+  .card {
+    max-width: 440px;
+    min-width: 360px;
+    padding: 48px;
+    font-size: 28px;
+    border-top-width: 7px;
+  }
+
+  .card p {
+    font-size: 22px;
+    margin-top: 24px;
+  }
+
+  .card .icon {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+  }
+}
