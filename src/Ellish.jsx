@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Ellish.css";
 
 function Ellish() {
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate("/Form"); // redirect to form page
+  };
+
   return (
     <div className="ellish-section">
       {/* Background Image */}
@@ -30,7 +37,9 @@ function Ellish() {
         </div>
 
         <div className="ellish-buttons">
-          <button className="btn-primary">Get Started</button>
+          <button className="btn-primary" onClick={handleGetStartedClick}>
+            Get Started
+          </button>
         </div>
       </div>
 

@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Pater.css";
 
 function Pater() {
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate("/Form"); // Redirect to Form page
+  };
+
   return (
     <div className="pater-section">
       {/* Background image */}
@@ -86,8 +93,12 @@ function Pater() {
               optimize to meet your strategic needs through advanced machine learning.
             </p>
             <div className="pater-buttons">
-              <button className="pater-btn-primary">Get Started</button>
-              
+              <button
+                className="pater-btn-primary"
+                onClick={handleGetStartedClick}
+              >
+                Get Started
+              </button>
             </div>
           </div>
           <div className="pater-bottom-right">

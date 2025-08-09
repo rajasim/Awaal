@@ -39,14 +39,11 @@ const Navbar = () => {
         ].map((item, i) => (
           <div
             key={i}
-            style={{
-              backgroundColor: navbaroption === item && "white",
-              color: navbaroption === item && "black",
-            }}
+            
             className="nav-item"
             onMouseEnter={() => {
               handleDropdown(item.toLowerCase());
-              setnavbaroption(item);
+              
             }}
             onClick={() => {
               if (item === "WHY AWWAL") nav("/why-awwal");
@@ -157,6 +154,7 @@ const Navbar = () => {
                   setnavbaroption("");
                   setHoveredSubItem("");
                 }}
+                onClick={()=>setOpenDropdown(null)}
               >
                 <div className="mega-left">
                   <div className="mega-platform-box">

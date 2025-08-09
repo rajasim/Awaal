@@ -1,35 +1,37 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Deliverables.css";
 
 const Deliverables = () => {
-
   const observeref = useRef([]);
-  useEffect(() => {
-    const observer = (entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const bar= entry.target;
-          bar.style.width = "100%";
-            bar.style.transition = "width 3s ease"
-         
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    const observer = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          bar.style.width = "100%";
+          bar.style.transition = "width 3s ease";
         }
-      })
-    })
+      });
+    };
+
     const options = {
       root: null,
       rootMargin: "10%",
-      threshold: 0.5
-    }
+      threshold: 0.5,
+    };
 
     if (observeref.current) {
       const intersectionObserver = new IntersectionObserver(observer, options);
-      observeref.current.forEach(x => intersectionObserver.observe(x))
+      observeref.current.forEach((x) => intersectionObserver.observe(x));
     }
-
-
-
   }, []);
+
+  const handleRequestAssessmentClick = () => {
+    navigate("/Form"); // Redirect to Form page
+  };
 
   return (
     <div className="deliverables-section">
@@ -41,20 +43,29 @@ const Deliverables = () => {
 
         <div className="deliverables-card">
           <div className="left-box">
-            <h3 className="card-title">Vulnerability Assessment & Penetration Testing</h3>
+            <h3 className="card-title">
+              Vulnerability Assessment & Penetration Testing
+            </h3>
             <p className="card-description">
               Comprehensive security testing to identify and exploit vulnerabilities in your systems.
             </p>
 
             <div className="status-group">
-              {["Vulnerability Scanning", "Manual Testing", "Detailed Reporting"].map((item, index) => (
+              {[
+                "Vulnerability Scanning",
+                "Manual Testing",
+                "Detailed Reporting",
+              ].map((item, index) => (
                 <div className="status-bar" key={index}>
                   <div className="status-labels">
                     <span>{item}</span>
                     <span className="complete">Complete</span>
                   </div>
                   <div className="status-line">
-                    <div className="status-fill" ref={el=>observeref.current[index]=el}></div>
+                    <div
+                      className="status-fill"
+                      ref={(el) => (observeref.current[index] = el)}
+                    ></div>
                   </div>
                 </div>
               ))}
@@ -63,19 +74,35 @@ const Deliverables = () => {
             <div className="key-deliverables">
               <div className="key-title">Key Deliverables:</div>
               <ul>
-                <li>✔ Comprehensive vulnerability assessment report with severity ratings</li>
-                <li>✔ Detailed exploitation proof-of-concept documentation</li>
-                <li>✔ Prioritized remediation recommendations with actionable steps</li>
+                <li>
+                  ✔ Comprehensive vulnerability assessment report with severity
+                  ratings
+                </li>
+                <li>
+                  ✔ Detailed exploitation proof-of-concept documentation
+                </li>
+                <li>
+                  ✔ Prioritized remediation recommendations with actionable
+                  steps
+                </li>
               </ul>
             </div>
 
             <div className="button-wrapper">
-              <button className="cta-button">Request Assessment</button>
+              <button
+                className="cta-button"
+                onClick={handleRequestAssessmentClick}
+              >
+                Request Assessment
+              </button>
             </div>
           </div>
 
           <div className="right-box">
-            <img src="/images/rea-vmake-ezgif.com-resize.gif" alt="Radar" />
+            <img
+              src="/images/rea-vmake-ezgif.com-resize.gif"
+              alt="Radar"
+            />
           </div>
         </div>
       </div>

@@ -84,51 +84,96 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
 }
 
 .cloud-right img {
-  width: 800px;
-  height: 600px;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
-
-/* Responsive: Mobile (<= 768px) */
+/* Tablet: max 768px */
 @media (max-width: 768px) {
   .cloud-container {
     flex-direction: column;
     align-items: center;
   }
 
+  .cloud-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .cloud-heading {
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
   }
 
   .cloud-subtext {
-    font-size: 16px;
     text-align: center;
+  }
+}
+
+/* Mobile: max 480px */
+@media (max-width: 480px) {
+  .cloud-section {
+    padding: 2rem 1rem;
   }
 
   .cloud-features {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: ( 0fr);
+    gap: 12px;
   }
 
   .cloud-feature {
-    padding: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .cloud-icon img {
+    width: 32px;
+    height: 32px;
   }
 
   .cloud-feature h3 {
-    font-size: 16px;
-  }
-
-  .cloud-feature p {
     font-size: 14px;
   }
 
-  .cloud-right {
-    margin-top: 2rem;
+  .cloud-feature p {
+    font-size: 12px;
+  }
+}
+
+/* TV screens: min 1600px */
+@media (min-width: 1600px) {
+  .cloud-section {
+    padding: 8rem 12rem;
+  }
+
+  .cloud-heading {
+    font-size: 72px;
+  }
+
+  .cloud-subtext {
+    font-size: 24px;
+    line-height: 1.9;
+  }
+
+  .cloud-feature {
+    padding: 2.5rem 2rem;
+  }
+
+  .cloud-feature h3 {
+    font-size: 26px;
+  }
+
+  .cloud-feature p {
+    font-size: 18px;
+  }
+
+  .cloud-icon img {
+    width: 60px;
+    height: 60px;
   }
 }

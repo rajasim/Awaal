@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Piter.css";
 
 const Piter = () => {
+  const navigate = useNavigate();
+
+  const handleScheduleDemoClick = () => {
+    navigate("/Form"); // Redirect to Form page
+  };
+
   return (
     <div className="piter-section">
       <img
@@ -59,20 +66,20 @@ const Piter = () => {
         </p>
 
         <div className="piter-tech-icons">
-  {[
-    { label: "Machine Learning", imgPath: "/images/Our Technology Stack1.png" },
-    { label: "Computer Vision", imgPath: "/images/Our Technology Stack2.png" },
-    { label: "NLP", imgPath: "/images/Our Technology Stack3.png" },
-    { label: "Big Data", imgPath: "/images/Our Technology Stack4.png" },
-    { label: "Neural Networks", imgPath: "/images/Our Technology Stack5.png" },
-    { label: "Quantum Computing", imgPath: "/images/Our Technology Stack6.png" },
-  ].map((item, index) => (
-    <div className="piter-icon-box" key={index}>
-      <img src={item.imgPath} alt={item.label} />
-      <span>{item.label}</span>
-    </div>
-  ))}
-</div>
+          {[
+            { label: "Machine Learning", imgPath: "/images/Our Technology Stack1.png" },
+            { label: "Computer Vision", imgPath: "/images/Our Technology Stack2.png" },
+            { label: "NLP", imgPath: "/images/Our Technology Stack3.png" },
+            { label: "Big Data", imgPath: "/images/Our Technology Stack4.png" },
+            { label: "Neural Networks", imgPath: "/images/Our Technology Stack5.png" },
+            { label: "Quantum Computing", imgPath: "/images/Our Technology Stack6.png" },
+          ].map((item, index) => (
+            <div className="piter-icon-box" key={index}>
+              <img src={item.imgPath} alt={item.label} />
+              <span>{item.label}</span>
+            </div>
+          ))}
+        </div>
 
         <div className="piter-bottom-cta">
           <h2>Ready to Transform Your Business?</h2>
@@ -81,8 +88,12 @@ const Piter = () => {
             cutting-edge automation solutions.
           </p>
           <div className="piter-buttons">
-            <button className="piter-btn-primary">Schedule a Demo</button>
-           
+            <button
+              className="piter-btn-primary"
+              onClick={handleScheduleDemoClick}
+            >
+              Schedule a Demo
+            </button>
           </div>
         </div>
       </div>

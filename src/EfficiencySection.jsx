@@ -21,8 +21,7 @@ function EfficiencySection() {
             of engineers and data scientists deliver results that drive measurable impact.
           </p>
           <div className="efficiency-buttons">
-            <button className="btn-primary">Get Started</button>
-            <button className="btn-outline">Learn More</button>
+           
           </div>
         </div>
       </div>

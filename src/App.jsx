@@ -102,7 +102,7 @@ const Blooogs = lazy(()=>import("./Blooogs"));
 
 function App() {
   return (
-    <Suspense fallback={<div className="page-loading">Loading...</div>}>
+    <Suspense fallback={<div className="page-loading"></div>}>
       <Routes>
        <Route
   path="/"
@@ -122,6 +122,7 @@ function App() {
       <LazyLoader Component={NewsSection} />
       <LazyLoader Component={Footer} />
       <LazyLoader Component={Partner} />
+      <LazyLoader Component={Form}/>
       <LazyLoader Component={Waptexr} />
       <LazyLoader Component={Footermain} />
       <LazyLoader Component={AdminCase} />

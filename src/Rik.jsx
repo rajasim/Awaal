@@ -1,7 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./rik.css";
 
 function Rik() {
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate("/Form"); // Redirect to Form page
+  };
+
   return (
     <div className="rik-section">
       <div className="rik-heading">
@@ -114,7 +121,12 @@ function Rik() {
         <h2>Ready to transform your business?</h2>
         <p>Join thousands of companies already using our automation platform.</p>
         <div className="rik-cta-buttons">
-          <button className="rik-btn-primary">Get Started Today →</button>
+          <button
+            className="rik-btn-primary"
+            onClick={handleGetStartedClick}
+          >
+            Get Started Today →
+          </button>
           <div className="rik-tags">
             <span className="rik-primary-dot">Free Demo</span>
             <span className="pink-dot">24/7 Support</span>

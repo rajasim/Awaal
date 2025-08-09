@@ -7,7 +7,7 @@ export default function LazyLoader({ Component }) {
   return (
     <section ref={ref} style={{ width: "100%" }}>
       {inView ? (
-        <Suspense fallback={<p>Loading...</p>}>
+        <Suspense>
           <Component />
         </Suspense>
       ) : null}

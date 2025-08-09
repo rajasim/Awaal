@@ -1,11 +1,17 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./AiHeroSection.css";
 
 function AiHeroSection() {
+  const navigate = useNavigate();
+
+  const handleGetDemoClick = () => {
+    navigate("/Form"); // Redirect to Form page
+  };
+
   return (
     <div className="ai-hero-section">
-      {/* Background Image */}
-     
+      {/* Left Side Content */}
       <div className="ai-left">
         <div className="ai-content">
           <span className="ai-badge">● Next-Gen AI Solutions</span>
@@ -20,7 +26,12 @@ function AiHeroSection() {
           </p>
 
           <div className="ai-button-row">
-            <button className="ai-btn-primary">Get Demo →</button>
+            <button
+              className="ai-btn-primary"
+              onClick={handleGetDemoClick}
+            >
+              Get Demo →
+            </button>
           </div>
         </div>
 
