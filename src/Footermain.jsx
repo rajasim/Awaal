@@ -137,9 +137,7 @@ const Footermain = () => {
           </div>
         </div>
       </div>
-       <a href="#navbar" className="scroll-to-top" aria-label="Scroll to top">
-  ↑
-</a>
+       
 
       {/* Watermark / Brand Banner */}
       <div className="footermain-watermark-wrap">
