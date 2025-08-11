@@ -15,12 +15,12 @@
 
 /* ===================== CTA SECTION ===================== */
 .footermain-cta-block {
-  max-width: 900px;
+  
   margin: 0 auto 50px;
 }
 
 .footermain-cta-head {
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: 600;
   color: #fff;
   margin-bottom: 20px;
@@ -31,7 +31,7 @@
 }
 
 .footermain-cta-form {
-  max-width: 520px;
+  width: fit-content;
   margin: 0 auto 10px;
   display: flex;
   border: 2px solid var(--accent-green);
@@ -43,7 +43,7 @@
 .footermain-cta-input {
   flex: 1;
   padding: 14px 18px;
-  font-size: 1rem;
+  font-size: 1vw;
   border: none;
   outline: none;
   background: transparent;
@@ -56,7 +56,7 @@
 
 .footermain-cta-btn {
   padding: 10px 34px;
-  font-size: 1.2rem;
+  font-size: 1vw;
   font-weight: 700;
   border: none;
   border-radius: 40px;
@@ -72,7 +72,7 @@
 }
 
 .footermain-cta-tagline {
-  font-size: 0.95rem;
+  font-size: 0.9vw;
   color: var(--accent-green);
   text-decoration: underline;
   cursor: pointer;
@@ -94,7 +94,7 @@
   align-items: center;
   gap: 8px;
   padding: 14px 24px;
-  font-size: 1rem;
+  font-size: 1vw;
   color: #fff;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.4);
@@ -110,8 +110,7 @@
 }
 
 .footermain-svc-ico {
-  width: 40px;
-  height: 40px;
+  width: 2vw;
 }
 
 /* ===================== DIVIDER ===================== */
@@ -122,20 +121,27 @@
   margin: 30px auto;
 }
 
+.footermain-col{
+  width: 100%;
+
+
+}
+
 /* ===================== GRID SECTION ===================== */
 .footermain-grid {
-  max-width: 1200px;
+  width: 80vw;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5vw;
+  row-gap: 1rem;
   text-align: left;
   padding: 30px 20px;
 }
 
 .footermain-col-head {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   margin-bottom: 14px;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -149,6 +155,7 @@
 
 .footermain-link-list li {
   margin-bottom: 10px;
+  font-size: 1vw;
 }
 
 .footermain-link-list a {
@@ -170,17 +177,21 @@
 }
 
 .footermain-brand-logo {
+<<<<<<< Updated upstream
   width: 150px;
   height: 150px;
+=======
+  width: 4vw;
+>>>>>>> Stashed changes
 }
 
 .footermain-brand-name {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 700;
 }
 
 .footermain-brand-desc {
-  font-size: 0.95rem;
+  font-size: 0.9vw;
   color: #c7c7c7;
 }
 
@@ -212,7 +223,7 @@
   align-items: center;
   gap: 8px;
   margin-bottom: 10px;
-  font-size: 0.95rem;
+  font-size: 0.9vw;
 }
 
 .footermain-contact-list a {
@@ -280,7 +291,7 @@
 
 /* ===================== COPYRIGHT ===================== */
 .footermain-legal {
-  font-size: 0.9rem;
+  font-size: 0.9vw;
   color: #999;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.1);

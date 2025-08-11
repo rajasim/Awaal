@@ -42,7 +42,6 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 1400px;
   width: 100%;
   padding: 2rem;
 }
@@ -50,7 +49,7 @@
 /* Heading */
 .section-titleee {
   color: #1b425f;
-  font-size: 60px;
+  font-size: 2vw;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -64,18 +63,17 @@
 
 /* Box Container */
 .boxes-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5vw;
+  row-gap: 1rem;
+  width: 80vw;
+  margin: 0 auto;
 }
 
 /* Box Style */
 .azure-box {
-  flex: 1 1 calc(23% - 2rem);
-  min-width: 280px;
-  max-width: 340px;
+  width: 100%;
   background-color: rgba(19, 47, 88, 0.992);
   border-radius: 20px;
   padding: 2rem 1.5rem;
@@ -95,8 +93,7 @@
 
 /* Box Images */
 .box-img {
-  width: 140px;
-  height: 140px;
+  width: 4vw;
   object-fit: contain;
   margin-bottom: 1.5rem;
 }
@@ -104,7 +101,7 @@
 /* Box Titles */
 .boxx-title {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 1.2vw;
   font-weight: 600;
   margin-bottom: 0.6rem;
   line-height: 1.4;
@@ -115,7 +112,7 @@
 /* Box Descriptions */
 .boxx-desc {
   color: #c0c4cc;
-  font-size: 19px;
+  font-size: 1vw;
   line-height: 1.8;
   word-wrap: break-word;
 }
@@ -209,35 +206,3 @@
   }
 }
 
-/* Large TV screens ≥1600px */
-@media (min-width: 1600px) {
-  .section-titleee {
-    font-size: 90px;
-  }
-
-  .section-subtitlew {
-    font-size: 36px;
-  }
-
-  .azure-box {
-    padding: 3rem 2.5rem;
-  }
-
-  .box-img {
-    width: 180px;
-    height: 180px;
-  }
-
-  .boxx-title {
-    font-size: 30px;
-  }
-
-  .boxx-desc {
-    font-size: 22px;
-  }
-
-  .assessment-button {
-    font-size: 1.4rem;
-    padding: 1.2rem 2.5rem;
-  }
-}

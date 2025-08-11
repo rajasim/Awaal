@@ -10,11 +10,11 @@
   color: #6b2cd8;
   font-weight: 700;
   margin-bottom: 1rem;
-  font-size: 60px;
+  font-size: 2vw;
 }
 
 .ko-subtext {
-  font-size: 22px;
+  font-size: 1vw;
   color: #555;
   margin-bottom: 3rem;
 }
@@ -22,11 +22,13 @@
 /* Card Grid */
 .ko-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5vw;
+  row-gap: 1rem;
   justify-content: center;
-  margin-bottom: 3rem;
+  margin: 3rem auto;
   padding: 0 2rem;
+  width: 100%;
 }
 
 .ko-card {
@@ -39,7 +41,7 @@
   align-items: center;
   text-align: center;
   min-height: 340px;
-  width: 300px;
+  width: 100%;
 }
 
 /* Card Colors */
@@ -57,27 +59,26 @@
 }
 
 .ko-img {
-  width: 60px;
-  height: 60px;
+  width: 4vw;
   object-fit: contain;
   margin-bottom: 1.5rem;
 }
 
 .ko-title {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 1.2vw;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .ko-desc {
-  font-size: 19px;
+  font-size: 1vw;
   line-height: 1.6;
 }
 
 .ko-button {
   background: #000000;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1vw;
   padding: 0.9rem 2rem;
   border: none;
   border-radius: 10px;
@@ -92,7 +93,6 @@
   background: #1e2f80;
 }
 
-/* 📱 Mobile (<= 480px) */
 @media (max-width: 480px) {
   .ko-section {
     padding: 3rem 1.5rem;
@@ -134,43 +134,3 @@
   }
 }
 
-/* 📺 TV / Large screens (>= 1600px) */
-@media (min-width: 1600px) {
-  .ko-section {
-    padding: 8rem 12rem;
-  }
-
-  .ko-heading {
-    font-size: 80px;
-  }
-
-  .ko-subtext {
-    font-size: 28px;
-    margin-bottom: 4rem;
-  }
-
-  .ko-card {
-    padding: 4rem 3rem;
-    min-height: 420px;
-    width: 350px;
-  }
-
-  .ko-title {
-    font-size: 30px;
-  }
-
-  .ko-desc {
-    font-size: 22px;
-    line-height: 1.8;
-  }
-
-  .ko-img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .ko-button {
-    font-size: 1.3rem;
-    padding: 1rem 2.5rem;
-  }
-}

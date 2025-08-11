@@ -1,6 +1,6 @@
 /* Wrapper */
 .security-wrapper {
-  min-height: 100vh;
+  height: fit-content;
   width: 100%;
   padding: 100px 20px;
   box-sizing: border-box;
@@ -17,14 +17,14 @@
 }
 
 .security-heading h2 {
-  font-size: 60px;
+  font-size: 2vw;
   color: #222;
   margin: 20px 0;
   font-weight: 700;
 }
 
 .security-heading p {
-  font-size: 24px;
+  font-size: 1vw;
   color: #555;
   margin-top: 12px;
 }
@@ -38,12 +38,11 @@
 
 /* Layout */
 .security-layout {
-  display: flex;
-  gap: 50px;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5vw;
+  row-gap: 1rem;
+  width: 80vw;
   margin: 0 auto;
 }
 
@@ -52,13 +51,15 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  width: 260px;
+  width: 100%;
+  justify-content: center;
   flex-shrink: 0;
 }
 
 .left-buttons button {
-  padding: 24px 32px;
-  font-size: 22px;
+  padding: 1vw 2vw;
+  font-size: 1vw;
+  color: white;
   border: none;
   border-radius: 12px;
   background-color: #0f2847;
@@ -75,9 +76,8 @@
 
 /* Right Content */
 .right-content {
-  flex: 1 1 0%;
-  min-width: 0;
-  max-width: 1000px;
+  width: 100%;
+  grid-column: span 2;
 }
 
 /* Content Box */
@@ -108,19 +108,19 @@
 }
 
 .blue-section h3 {
-  font-size: 28px;
+  font-size: 1.2vw;
   margin-bottom: 16px;
 }
 
 .blue-section p {
-  font-size: 18px;
+  font-size: 0.9vw;
   margin-bottom: 18px;
   line-height: 1.6;
 }
 
 .blue-section ul {
   padding-left: 20px;
-  font-size: 16px;
+  font-size: 0.9vw;
   line-height: 1.6;
 }
 

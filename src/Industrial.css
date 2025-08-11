@@ -21,14 +21,14 @@
 
 /* Content Area */
 .industrial-content {
-  max-width: 1600px;
+  width: fit-content;
   width: 100%;
   text-align: center;
   color: #ffffff;
 }
 
 .industrial-content h2 {
-  font-size: 60px;
+  font-size: 2vw;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -38,7 +38,7 @@
 }
 
 .industrial-content p {
-  font-size: 24px;
+  font-size: 1vw;
   font-weight: 500;
   max-width: 1000px;
   margin: 0 auto 60px auto;
@@ -47,9 +47,12 @@
 /* Industry Grid */
 .industries-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5vw;
+  row-gap: 1rem;
   padding: 0 20px;
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .industry-box {
@@ -60,6 +63,7 @@
   box-shadow: 0 10px 30px rgba(0, 255, 191, 0.2);
   color: #211e1e;
   transition: transform 0.3s ease;
+  width: 100%;
 }
 
 .industry-box:hover {
@@ -67,20 +71,19 @@
 }
 
 .industry-box img {
-  width: 80px;
-  height: 80px;
+  width: 4vw;
   object-fit: contain;
   margin-bottom: 20px;
 }
 
 .industry-box h3 {
-  font-size: 28px;
+  font-size: 1.2vw;
   font-weight: 700;
   margin-bottom: 12px;
 }
 
 .industry-box p {
-  font-size: 20px;
+  font-size: 1vw;
   line-height: 1.6;
 }
 @media (max-width: 480px) {

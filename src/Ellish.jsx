@@ -17,7 +17,7 @@ function Ellish() {
         alt="Background"
         className="ellish-bg"
       />
-
+<div>
       {/* Left Content */}
       <div className="ellish-content">
         <h1>
@@ -49,6 +49,7 @@ function Ellish() {
         alt="Cloud"
         className="ellish-right-image"
       />
+      </div>
     </div>
   );
 }

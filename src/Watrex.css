@@ -1,33 +1,40 @@
 .watrex-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background: linear-gradient( #022b76  , #000111);
  
  
 }
 
 
-
+.watrex-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5vw;
+  row-gap: 1rem;
+  width: 80vw;
+  margin: 0 auto;
+}
 
 .watrex-content {
-  position: absolute;
-  top: 50%;
-  left: 100px;
-  transform: translateY(-50%);
+  width: 100%;
   color: white;
-  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
 }
 
 .watrex-main-title {
-  font-size: 60px;
+  font-size: 2vw;
   font-weight: 700;
   margin-bottom: 30px;
 }
 
 .watrex-description {
-  font-size: 21px;
+  font-size: 1vw;
   line-height: 1.8;
   margin-bottom: 40px;
   color: #e0e0e0;
@@ -37,7 +44,7 @@
   display: inline-block;
   background-color: #00bfff13;
   color: rgb(162, 187, 200);
-  font-size: 19px;
+  font-size: 1vw;
   font-weight: 600;
   padding: 6px 16px;
   border-radius: 30px;
@@ -50,7 +57,7 @@
   background-color: #2196f3;
   color: white;
   padding: 16px 36px;
-  font-size: 21px;
+  font-size: 1vw;
   font-weight: bold;
   border: none;
   border-radius: 6px;
@@ -64,45 +71,40 @@
 }
 
 .watrex-box-row {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2vw;
+  row-gap: 1rem;
 }
 
 .watrex-box {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 28px 32px;
   border-radius: 12px;
-  width: 220px;
+  width: 100%;
   border-left: 6px solid #00bfff;
   backdrop-filter: blur(6px);
 }
 
 .watrex-box h3 {
-  font-size: 24px;
+  font-size: 1.2vw;
   color: #00bfff;
   margin-bottom: 12px;
 }
 
 .watrex-box p {
-  font-size: 18px;
+  font-size: 1vw;
   color: #d0d0d0;
   margin: 0;
 }
 
 /* ✅ Right-side image styles */
 .watrex-image {
-  position: absolute;
-  top: 50%;
-  right: 80px;
-  transform: translateY(-50%);
-  z-index: 1;
+  width: 100%;
 }
 
 .watrex-image img {
-  width: 700px;
-  height: 500px;
-  object-fit: contain;
+ width: 100%;
 }
 
 /* ✅ Mobile support for 480px */
@@ -181,64 +183,3 @@
   }
 }
 
-/* ✅ TV screen support (≥1600px) */
-@media (min-width: 1600px) {
-  .watrex-container {
-    height: 100vh;
-    padding: 100px 80px; /* more breathing space */
-    background: linear-gradient(#022b76, #000111);
-  }
-
-  .watrex-content {
-    left: 150px;
-    max-width: 900px;
-  }
-
-  .watrex-main-title {
-    font-size: 80px;
-    margin-bottom: 40px;
-  }
-
-  .watrex-description {
-    font-size: 26px;
-    line-height: 1.9;
-    margin-bottom: 50px;
-  }
-
-  .watrex-label {
-    font-size: 22px;
-    padding: 8px 20px;
-  }
-
-  .watrex-consult-button {
-    font-size: 26px;
-    padding: 20px 44px;
-    margin-bottom: 60px;
-  }
-
-  .watrex-box-row {
-    gap: 40px;
-  }
-
-  .watrex-box {
-    width: 260px;
-    padding: 32px 36px;
-  }
-
-  .watrex-box h3 {
-    font-size: 28px;
-  }
-
-  .watrex-box p {
-    font-size: 20px;
-  }
-
-  .watrex-image {
-    right: 120px;
-  }
-
-  .watrex-image img {
-    width: 900px;
-    height: 650px;
-  }
-}
