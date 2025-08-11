@@ -87,61 +87,78 @@ const Navbar = () => {
                 <div className="insights-right-panel">
                   <h3 className="categories-title">EXPLORE CATEGORIES</h3>
 
-                  <div className="category-box">
-                    <div className="category-icon">
-                      <img src="/images/navbar1.png" alt="Blog" />
-                    </div>
-                    <div className="category-info">
-                      <h4>BLOG </h4>
-                      <p>LATEST ARTICLES AND INSIGHTS FROM OUR TEAM</p>
-                      <div className="category-tags">
-                        <span>DAILY UPDATES</span>
-                        <span>MOST POPULAR</span>
-                      </div>
-                    </div>
-                  </div>
+                <div
+  className="category-box"
+  onClick={() => window.location.href = "/blog"}
+  style={{ cursor: "pointer" }}
+>
+  <div className="category-icon">
+    <img src="/images/navbar1.png" alt="Blog" />
+  </div>
+  <div className="category-info">
+    <h4>BLOG</h4>
+    <p>LATEST ARTICLES AND INSIGHTS FROM OUR TEAM</p>
+    <div className="category-tags">
+      <span>DAILY UPDATES</span>
+      <span>MOST POPULAR</span>
+    </div>
+  </div>
+</div>
 
-                  <div className="category-box">
-                    <div className="category-icon">
-                      <img src="/images/navbar2.png" alt="News" />
-                    </div>
-                    <div className="category-info">
-                      <h4>NEWS </h4>
-                      <p>INDUSTRY UPDATES AND ANNOUNCEMENTS</p>
-                      <div className="category-tags">
-                        <span>BREAKING NEWS</span>
-                        <span>LIVE UPDATES</span>
-                      </div>
-                    </div>
-                  </div>
+<div
+  className="category-box"
+  onClick={() => window.location.href = "/news"}
+  style={{ cursor: "pointer" }}
+>
+  <div className="category-icon">
+    <img src="/images/navbar2.png" alt="News" />
+  </div>
+  <div className="category-info">
+    <h4>NEWS</h4>
+    <p>INDUSTRY UPDATES AND ANNOUNCEMENTS</p>
+    <div className="category-tags">
+      <span>BREAKING NEWS</span>
+      <span>LIVE UPDATES</span>
+    </div>
+  </div>
+</div>
 
-                  <div className="category-box">
-                    <div className="category-icon">
-                      <img src="/images/navbar3.png" alt="Insights" />
-                    </div>
-                    <div className="category-info">
-                      <h4>INSIGHTS </h4>
-                      <p>DATA-DRIVEN ANALYSIS AND RESEARCH</p>
-                      <div className="category-tags">
-                        <span>ANALYTICS</span>
-                        <span>TRENDING</span>
-                      </div>
-                    </div>
-                  </div>
+<div
+  className="category-box"
+  onClick={() => window.location.href = "/insights"}
+  style={{ cursor: "pointer" }}
+>
+  <div className="category-icon">
+    <img src="/images/navbar3.png" alt="Insights" />
+  </div>
+  <div className="category-info">
+    <h4>INSIGHTS</h4>
+    <p>DATA-DRIVEN ANALYSIS AND RESEARCH</p>
+    <div className="category-tags">
+      <span>ANALYTICS</span>
+      <span>TRENDING</span>
+    </div>
+  </div>
+</div>
 
-                  <div className="category-box">
-                    <div className="category-icon">
-                      <img src="/images/navbar4.png" alt="Case Studies" />
-                    </div>
-                    <div className="category-info">
-                      <h4>CASE STUDIES </h4>
-                      <p>REAL-WORLD SUCCESS STORIES</p>
-                      <div className="category-tags">
-                        <span>BUSINESS</span>
-                        <span>PREMIUM</span>
-                      </div>
-                    </div>
-                  </div>
+<div
+  className="category-box"
+  onClick={() => window.location.href = "/case-studies"}
+  style={{ cursor: "pointer" }}
+>
+  <div className="category-icon">
+    <img src="/images/navbar4.png" alt="Case Studies" />
+  </div>
+  <div className="category-info">
+    <h4>CASE STUDIES</h4>
+    <p>REAL-WORLD SUCCESS STORIES</p>
+    <div className="category-tags">
+      <span>BUSINESS</span>
+      <span>PREMIUM</span>
+    </div>
+  </div>
+</div>
+
                 </div>
               </div>
             )}

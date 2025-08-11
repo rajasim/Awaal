@@ -170,6 +170,12 @@ color:#000;
   color: #ffff66;
   font-weight: bold;
 }
+.category-link {
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+}
+
 
 /* === MEGA DROPDOWN === */
 .mega-dropdown {

@@ -61,7 +61,7 @@ function Form() {
   return (
     <div className="form-section" id="form">
       <div className="form-left">
-        <img src="/images/contact-ui.png" alt="Contact Illustration" />
+        <img src="/images/migrationside.gif" alt="Contact Illustration" />
       </div>
 
       <div className="form-right">

@@ -74,7 +74,7 @@ const Hotel = lazy(() => import("./Hotel"));
 const DubaiBank = lazy(() => import("./DubaiBank"));
 const SmartPharmacy = lazy(() => import("./SmartPharmacy"));
 const Tranfrom = lazy(() => import("./Tranfrom"));
-const Contact = lazy(() => import("./Contact"));
+const Contact = lazy(() => import("./Contactect"));
 const Homepageser = lazy(() => import("./Homepageser"));
 const CyberGuard = lazy(() => import("./CyberGuard"));
 const HomeMain = lazy(() => import("./HomeMain"));
@@ -101,6 +101,7 @@ const EfficiencyBoxes = lazy(() => import("./EfficiencyBoxes"));
 const SecurityCloud = lazy(() => import("./SecurityCloud"));
 const Partner = lazy(() => import("./Partner"));
 const Blooogs = lazy(()=>import("./Blooogs"));
+const Contactect = lazy(() => import("./Contactect"));
 
 function App() {
   return (
@@ -132,7 +133,8 @@ function App() {
       <LazyLoader Component={AdminCase} />
       <LazyLoader Component={AdminBlog} />
       <LazyLoader Component={Dashboard} />
-      <LazyLoader Component={Blog} />
+      
+      <LazyLoader Component={Blooogs}/>
     </>
   }
 />
@@ -144,7 +146,19 @@ function App() {
     <>
       <Navbar />
       <Form />
-      <Footer />
+      
+    </>
+  }
+/>
+<Route
+  path="/Contact"
+  element={
+    <>
+      <Navbar />
+      <Contactect/>
+      <Form />
+      <Footermain/>
+      
     </>
   }
 />
@@ -215,7 +229,7 @@ function App() {
           element={
             <>
               <Navbar />
-              <LazyLoader Component={Blog} />
+             
                 <LazyLoader Component={Blooogs} />
                 <LazyLoader Component={Footermain} />
             </>

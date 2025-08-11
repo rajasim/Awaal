@@ -73,14 +73,14 @@ const Footermain = () => {
         <div className="footermain-col footermain-col-brand">
           <div className="footermain-brand-row">
             <img
-              src="/images/footerlogo.png"
+              src="/images/Awwal (8).png"
               alt="Awwal logo"
               className="footermain-brand-logo"
             />
-            <h3 className="footermain-brand-name">
-              Awwal <span className="footermain-brand-accent">Security</span>
-            </h3>
+           
           </div>
+          <div className="footermain-brand-line"></div>
+
           <p className="footermain-brand-desc">
             Driving Digital Innovation<br />
             Through Smart IT and<br />
@@ -140,14 +140,16 @@ const Footermain = () => {
        
 
       {/* Watermark / Brand Banner */}
-      <div className="footermain-watermark-wrap">
-        <span className="footermain-watermark-text">AWWAL</span>
-        <img
-          src="/img/logo/awwal-mark-outline.svg"
-          alt=""
-          className="footermain-watermark-mark"
-        />
-      </div>
+     <div className="footermain-watermark-wrap">
+  <span className="footermain-watermark-text">AWW</span>
+  <img
+    src="/images/A.png"
+    alt="A"
+    className="footermain-watermark-mark"
+  />
+  <span className="footermain-watermark-text">L</span>
+</div>
+
 
       {/* Bottom Line */}
       <div className="footermain-legal">
