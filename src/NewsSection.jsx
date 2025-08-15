@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./NewsSection.css";
 
 export default function NewsSection() {
@@ -22,9 +23,9 @@ export default function NewsSection() {
               The Rise of AI-Powered Threats: Is Your Cybersecurity Ready?
             </h3>
             <p className="news-text">
-              Cyber attackers aren’t just using tools anymore they’re using artificial intelligence. From hyper-realistic deepfakes to AI generated phishing attacks, the threat landscape is getting smarter, faster, and more convincing.
+              Cyber attackers aren’t just using tools anymore—they’re using artificial intelligence...
             </p>
-            <a className="read-more" href="#">Read more →</a>
+            <Link className="read-more" to="/Adcaseone">Read more →</Link>
           </div>
         </div>
 
@@ -40,10 +41,9 @@ export default function NewsSection() {
               Hyperautomation + GenAI = The Future of Business Tech
             </h3>
             <p className="news-text">
-             Automation isn’t just about saving time anymore it’s about transforming how entire businesses operate.
-In 2025, the blend of Hyperautomation and Generative AI is powering smarter workflows, faster decision making, and next level customer experiences
+              Automation isn’t just about saving time anymore—it’s transforming how entire businesses operate...
             </p>
-            <a className="read-more" href="#">Read more →</a>
+            <Link className="read-more" to="/Adcasetwo">Read more →</Link>
           </div>
         </div>
 
@@ -59,9 +59,9 @@ In 2025, the blend of Hyperautomation and Generative AI is powering smarter work
               Cloud Security in 2025: New Risks, Smarter Shields
             </h3>
             <p className="news-text">
-              Cloud isn’t just where your data lives it’s where your business breathes. But with cloud adoption rising, so do the threats. From misconfigured APIs to unmonitored access points, cloud security is a top concern for growing companies.
+              Cloud isn’t just where your data lives—it’s where your business breathes...
             </p>
-            <a className="read-more" href="#">Read more →</a>
+            <Link className="read-more" to="/Adcasethree">Read more →</Link>
           </div>
         </div>
       </div>

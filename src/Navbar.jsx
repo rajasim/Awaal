@@ -22,6 +22,7 @@ const Navbar = () => {
   return (
     <nav className="navbar" id="navbar">
       <div className="navbar-left">
+      
         <img
           src="https://www.barracuda.com/assets/img/logos/barracuda-logo-white.svg"
           alt="Barracuda Logo"
@@ -82,6 +83,7 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
+                
 
                 {/* RIGHT SIDE */}
                 <div className="insights-right-panel">

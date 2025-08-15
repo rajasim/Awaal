@@ -137,6 +137,16 @@
 .view-all-btn button:hover {
   background-color: #16a34a;
 }
+.case-card {
+  text-decoration: none;
+  color: inherit; /* Keeps text color same as before */
+  display: block; /* Makes the whole card clickable */
+}
+
+.case-card:hover {
+  text-decoration: none;
+}
+
 @media (max-width: 480px) {
   .case-study-section {
     padding: 60px 20px;

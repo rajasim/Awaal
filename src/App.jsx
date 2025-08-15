@@ -4,6 +4,7 @@ import { lazy, Suspense } from "react";
 import LazyLoader from "./LazyLoader";
 import ScrollToTop from "./ScrollToTop";
 import { BrowserRouter } from "react-router-dom";
+import axios from "axios";
 
 
 const Navbar = lazy(() => import("./Navbar"));
@@ -102,6 +103,15 @@ const SecurityCloud = lazy(() => import("./SecurityCloud"));
 const Partner = lazy(() => import("./Partner"));
 const Blooogs = lazy(()=>import("./Blooogs"));
 const Contactect = lazy(() => import("./Contactect"));
+const Adcaseone = lazy(() => import("./Adcaseone"))
+const Adcasetwo = lazy(() => import("./Adcasetwo"))
+const Adcasethree = lazy(() => import("./Adcasethree"))
+const AdBlogone = lazy(() => import("./AdminBlogone"))
+const AdBlogtwo = lazy(() => import("./AdminBlogtwo"))
+const AdBlogthree = lazy(() => import("./AdminBlogthree"))
+
+
+
 
 function App() {
   return (
@@ -135,6 +145,7 @@ function App() {
       <LazyLoader Component={Dashboard} />
       
       <LazyLoader Component={Blooogs}/>
+      <Blog/>
     </>
   }
 />
@@ -150,6 +161,54 @@ function App() {
     </>
   }
 />
+<Route
+    path="/Adcaseone"
+    element={
+      <>
+        <Adcaseone/>
+      </>
+    }
+    />
+    <Route
+    path="/Adcasetwo"
+    element={
+      <>
+        <Adcasetwo/>
+      </>
+    }
+    />
+    <Route
+    path="/Adcasethree"
+    element={
+      <>
+        <Adcasethree/>
+      </>
+    }
+    />
+    <Route
+    path="/AdBlogone"
+    element={
+      <>
+        <AdBlogone/>
+      </>
+    }
+    />
+    <Route
+    path="/AdBlogtwo"
+    element={
+      <>
+        <AdBlogtwo/>
+      </>
+    }
+    />
+    <Route
+    path="/AdBlogthree"
+    element={
+      <>
+        <AdBlogthree/>
+      </>
+    }
+    />
 <Route
   path="/Contact"
   element={

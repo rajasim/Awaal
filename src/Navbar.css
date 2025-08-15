@@ -406,6 +406,10 @@ transition: background-color 0.3s ease, transform 0.3s ease;
   #NavbarStaggeredBarsIcon {
     display: block;
   }
+  .navbar{
+    position: relative;
+  }
+  
 
   .navbar-center {
     display: none;

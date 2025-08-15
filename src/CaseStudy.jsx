@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./CaseStudy.css";
 
 const CaseStudy = () => {
@@ -13,69 +14,63 @@ const CaseStudy = () => {
 
       <div className="case-cards">
         {/* Card 1 */}
-        <div className="case-card">
-          <div className="case-image">
-           
-          </div>
+        <Link to="/AdBlogone" className="case-card">
+          <div className="case-image"></div>
           <div className="case-content">
             <div className="case-tags">
               <span className="tag yellow">Financial Services</span>
               <span className="location">Regional Bank</span>
             </div>
-            <h3>High-Performance Network Overhaul</h3>
+            <h3>Data Producers and Kafka Cluster</h3>
             <p>
-              Redesigned the entire network infrastructure for a regional bank with 50+ branches,
-              improving performance by 300% and reducing downtime by 99.9%.
+             Banking Applications : Real time Streaming**: Banking applications act as primary data producers, streaming
+transaction data continuously in real-time.
             </p>
             <div className="case-footer">
               <span className="green">99.999% uptime</span>
               <span className="duration">6-month implementation</span>
             </div>
           </div>
-        </div>
+        </Link>
 
         {/* Card 2 */}
-        <div className="case-card">
-          <div className="case-image">
-           
-          </div>
+        <Link to="/AdBlogtwo" className="case-card">
+          <div className="case-image"></div>
           <div className="case-content">
             <div className="case-tags">
               <span className="tag gold">Healthcare</span>
               <span className="location">Hospital Network</span>
             </div>
-            <h3>Data Center Consolidation</h3>
+            <h3>Transforming Healthcare Efficiency</h3>
             <p>
-              Consolidated 5 legacy data centers into a modern infrastructure, reducing costs by 40%.
+              The AI was integrated into the hospital’s diagnostic labs, patient database,
+and administrative systems..
             </p>
             <div className="case-footer">
-              <span className="green">40% cost reduction</span>
+              <span className="green">Report errors reduced by 85%</span>
               <span className="duration">12-month project</span>
             </div>
           </div>
-        </div>
+        </Link>
 
         {/* Card 3 */}
-        <div className="case-card">
-          <div className="case-image">
-           
-          </div>
+        <Link to="/AdBlogthree" className="case-card">
+          <div className="case-image"></div>
           <div className="case-content">
             <div className="case-tags">
               <span className="tag orange">E-Commerce</span>
               <span className="location">Online Retailer</span>
             </div>
-            <h3>AI-Powered Infrastructure</h3>
+            <h3>Hotel Booking Software</h3>
             <p>
-              Implemented AI-driven monitoring and auto-scaling for an e-commerce platform,
-              handling 10x traffic during peak.
+              The system provides seamless hotel discovery, room availability checks, reservation, cancellation, and payment management with an interactive user interface.
             </p>
             <div className="case-footer">
-              <span className="green">Zero downtime during peaks</span>
+              <span className="green"> 100% Payment Success</span>
               <span className="duration">3-month implementation</span>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
 
       <div className="view-all-btn">
