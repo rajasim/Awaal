@@ -23,8 +23,9 @@
 /* UPDATED: Changed to grid for consistent layout */
 .news-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5vw;
+  row-gap: 1rem;
 }
 
 .news-card {
