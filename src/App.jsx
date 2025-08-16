@@ -1,6 +1,6 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import { lazy, Suspense, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { lazy, Suspense, useEffect, useState } from "react";
 import LazyLoader from "./LazyLoader";
 import ScrollToTop from "./ScrollToTop";
 import { BrowserRouter } from "react-router-dom";
@@ -114,7 +114,15 @@ const AdBlogthree = lazy(() => import("./AdminBlogthree"))
 
 
 function App() {
-  
+
+  const urlpath = useLocation().pathname;
+  useEffect(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
+  }, [urlpath])
+
   return (
     <Suspense fallback={<div className="page-loading"></div>}>
      <ScrollToTop />

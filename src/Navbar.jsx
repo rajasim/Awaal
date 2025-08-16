@@ -12,24 +12,19 @@ const Navbar = () => {
   const [hoveredSubItem, setHoveredSubItem] = useState("");
   const centernav = useRef();
   const rightnav = useRef();
-  
+
 
   const handleDropdown = (menu) => {
     setOpenDropdown(openDropdown === menu ? null : menu);
   };
 
   const nav = useNavigate();
-  useEffect(()=>{
-    window.scrollTo({
-      top:0,
-      behavior:"smooth"
-    })
-  },[])
+  
 
   return (
     <nav className="navbar" id="navbar">
       <div className="navbar-left">
-      
+
         <img
           src="https://www.barracuda.com/assets/img/logos/barracuda-logo-white.svg"
           alt="Barracuda Logo"
@@ -47,11 +42,11 @@ const Navbar = () => {
         ].map((item, i) => (
           <div
             key={i}
-            
+
             className="nav-item"
             onMouseEnter={() => {
               handleDropdown(item.toLowerCase());
-              
+
             }}
             onClick={() => {
               if (item === "WHY AWWAL") nav("/why-awwal");
@@ -61,8 +56,8 @@ const Navbar = () => {
           >
             {item}
             &nbsp;
-            {item == "SERVICES" && window.innerWidth <=480 && <FaAngleDown></FaAngleDown>}
-            {item === "Insights Hub" && openDropdown === "insights hub" && (
+            {item == "SERVICES" && window.innerWidth <= 480 && <FaAngleDown></FaAngleDown>}
+            {item === "Insights Hub" && openDropdown === "insights hub" && window.innerWidth > 480 && (
               <div
                 className="insights-hub-menu"
                 onMouseLeave={() => {
@@ -92,116 +87,89 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-                
-                <div class="services-dropdown">
-  <div class="service-item">
-    <span class="service-icon">🌐</span>
-    <span>Web Development</span>
-  </div>
-
-  <div class="service-item">
-    <span class="service-icon">📱</span>
-    <span>Mobile Apps</span>
-  </div>
-
-  <div class="service-item">
-    <span class="service-icon">🛡️</span>
-    <span>CyberSecurity</span>
-  </div>
-
-  <div class="service-item">
-    <span class="service-icon">⚡</span>
-    <span>Marketing Automation</span>
-  </div>
-
-  <div class="service-item">
-    <span class="service-icon">⚙️</span>
-    <span>AI Development</span>
-  </div>
-</div>
 
 
                 {/* RIGHT SIDE */}
                 <div className="insights-right-panel">
                   <h3 className="categories-title">EXPLORE CATEGORIES</h3>
 
-                <div
-  className="category-box"
-  onClick={() => window.location.href = "/blog"}
-  style={{ cursor: "pointer" }}
->
-  <div className="category-icon">
-    <img src="/images/navbar1.png" alt="Blog" />
-  </div>
-  <div className="category-info">
-    <h4>BLOG</h4>
-    <p>LATEST ARTICLES AND INSIGHTS FROM OUR TEAM</p>
-    <div className="category-tags">
-      <span>DAILY UPDATES</span>
-      <span>MOST POPULAR</span>
-    </div>
-  </div>
-</div>
+                  <div
+                    className="category-box"
+                    onClick={() => window.location.href = "/blog"}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <div className="category-icon">
+                      <img src="/images/navbar1.png" alt="Blog" />
+                    </div>
+                    <div className="category-info">
+                      <h4>BLOG</h4>
+                      <p>LATEST ARTICLES AND INSIGHTS FROM OUR TEAM</p>
+                      <div className="category-tags">
+                        <span>DAILY UPDATES</span>
+                        <span>MOST POPULAR</span>
+                      </div>
+                    </div>
+                  </div>
 
-<div
-  className="category-box"
-  onClick={() => window.location.href = "/blog"}
-  style={{ cursor: "pointer" }}
->
-  <div className="category-icon">
-    <img src="/images/navbar2.png" alt="News" />
-  </div>
-  <div className="category-info">
-    <h4>NEWS</h4>
-    <p>INDUSTRY UPDATES AND ANNOUNCEMENTS</p>
-    <div className="category-tags">
-      <span>BREAKING NEWS</span>
-      <span>LIVE UPDATES</span>
-    </div>
-  </div>
-</div>
+                  <div
+                    className="category-box"
+                    onClick={() => window.location.href = "/blog"}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <div className="category-icon">
+                      <img src="/images/navbar2.png" alt="News" />
+                    </div>
+                    <div className="category-info">
+                      <h4>NEWS</h4>
+                      <p>INDUSTRY UPDATES AND ANNOUNCEMENTS</p>
+                      <div className="category-tags">
+                        <span>BREAKING NEWS</span>
+                        <span>LIVE UPDATES</span>
+                      </div>
+                    </div>
+                  </div>
 
-<div
-  className="category-box"
-  onClick={() => window.location.href = "/blog"}
-  style={{ cursor: "pointer" }}
->
-  <div className="category-icon">
-    <img src="/images/navbar3.png" alt="Insights" />
-  </div>
-  <div className="category-info">
-    <h4>INSIGHTS</h4>
-    <p>DATA-DRIVEN ANALYSIS AND RESEARCH</p>
-    <div className="category-tags">
-      <span>ANALYTICS</span>
-      <span>TRENDING</span>
-    </div>
-  </div>
-</div>
+                  <div
+                    className="category-box"
+                    onClick={() => window.location.href = "/blog"}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <div className="category-icon">
+                      <img src="/images/navbar3.png" alt="Insights" />
+                    </div>
+                    <div className="category-info">
+                      <h4>INSIGHTS</h4>
+                      <p>DATA-DRIVEN ANALYSIS AND RESEARCH</p>
+                      <div className="category-tags">
+                        <span>ANALYTICS</span>
+                        <span>TRENDING</span>
+                      </div>
+                    </div>
+                  </div>
 
-<div
-  className="category-box"
-  onClick={() => window.location.href = "/blog"}
-  style={{ cursor: "pointer" }}
->
-  <div className="category-icon">
-    <img src="/images/navbar4.png" alt="Case Studies" />
-  </div>
-  <div className="category-info">
-    <h4>CASE STUDIES</h4>
-    <p>REAL-WORLD SUCCESS STORIES</p>
-    <div className="category-tags">
-      <span>BUSINESS</span>
-      <span>PREMIUM</span>
-    </div>
-  </div>
-</div>
+                  <div
+                    className="category-box"
+                    onClick={() => window.location.href = "/blog"}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <div className="category-icon">
+                      <img src="/images/navbar4.png" alt="Case Studies" />
+                    </div>
+                    <div className="category-info">
+                      <h4>CASE STUDIES</h4>
+                      <p>REAL-WORLD SUCCESS STORIES</p>
+                      <div className="category-tags">
+                        <span>BUSINESS</span>
+                        <span>PREMIUM</span>
+                      </div>
+                    </div>
+                  </div>
 
                 </div>
               </div>
             )}
 
-            {item === "SERVICES" && openDropdown === "services" && window.innerWidth >480 && (
+            {item === "SERVICES" && openDropdown === "services" && window.innerWidth > 480 && (
               <div
                 className="mega-dropdown"
                 onMouseLeave={() => {
@@ -209,7 +177,7 @@ const Navbar = () => {
                   setnavbaroption("");
                   setHoveredSubItem("");
                 }}
-                onClick={()=>setOpenDropdown(null)}
+                onClick={() => setOpenDropdown(null)}
               >
                 <div className="mega-left">
                   <div className="mega-platform-box">
@@ -250,7 +218,7 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-                
+
 
                 <div className="mega-right">
                   {hoveredSubItem === "CYBERSECURITY" && (
@@ -587,36 +555,63 @@ const Navbar = () => {
 
                   {!hoveredSubItem && (
                     <>
-                     <h3>
-      Stay Secure, Stay in Control with End-to-End Cybersecurity Solutions
-    </h3>
-    <p>
-      We provide complete cybersecurity solutions to protect your business,
-      detect threats in real time, and ensure compliance keeping you secure
-      and in control.
-    </p>
-    <button className="plans-btnon">Services →</button>
+                      <h3>
+                        Stay Secure, Stay in Control with End-to-End Cybersecurity Solutions
+                      </h3>
+                      <p>
+                        We provide complete cybersecurity solutions to protect your business,
+                        detect threats in real time, and ensure compliance keeping you secure
+                        and in control.
+                      </p>
+                      <button className="plans-btnon">Services →</button>
 
-    <div className="links-grid" onClick={() => nav("/vapt")}>
-      <a href="#">VAPT</a>
-      <a href="#">Managed XDR / MXDR</a>
-      <a href="#">EDR / NGAV Protection</a>
-      <a href="#">Network Security</a>
-      <a href="#">GRC</a>
-      <a href="#">Email Protection</a>
-      <a href="#">Ransomware Defense</a>
-      <a href="#">Data Loss Prevention (DLP)</a>
-    </div>
+                      <div className="links-grid" onClick={() => nav("/vapt")}>
+                        <a href="#">VAPT</a>
+                        <a href="#">Managed XDR / MXDR</a>
+                        <a href="#">EDR / NGAV Protection</a>
+                        <a href="#">Network Security</a>
+                        <a href="#">GRC</a>
+                        <a href="#">Email Protection</a>
+                        <a href="#">Ransomware Defense</a>
+                        <a href="#">Data Loss Prevention (DLP)</a>
+                      </div>
 
-    <hr style={{ margin: "1rem 0" }} />
-    <h4>Try at zero cost</h4>
-    <button className="plans-btn">FREE DEMO →</button>
-                      
+                      <hr style={{ margin: "1rem 0" }} />
+                      <h4>Try at zero cost</h4>
+                      <button className="plans-btn">FREE DEMO →</button>
+
                     </>
                   )}
                 </div>
               </div>
             )}
+            {item === "SERVICES" && openDropdown === "services" && window.innerWidth <= 480 &&
+              <div class="services-dropdown">
+                <div class="service-item">
+                  <span class="service-icon">🌐</span>
+                  <span>Web Development</span>
+                </div>
+
+                <div class="service-item">
+                  <span class="service-icon">📱</span>
+                  <span>Mobile Apps</span>
+                </div>
+
+                <div class="service-item">
+                  <span class="service-icon">🛡️</span>
+                  <span>CyberSecurity</span>
+                </div>
+
+                <div class="service-item">
+                  <span class="service-icon">⚡</span>
+                  <span>Marketing Automation</span>
+                </div>
+
+                <div class="service-item">
+                  <span class="service-icon">⚙️</span>
+                  <span>AI Development</span>
+                </div>
+              </div>}
           </div>
         ))}
       </div>
