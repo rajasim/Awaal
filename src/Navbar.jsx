@@ -145,7 +145,7 @@ const Navbar = () => {
 
 <div
   className="category-box"
-  onClick={() => window.location.href = "/news"}
+  onClick={() => window.location.href = "/blog"}
   style={{ cursor: "pointer" }}
 >
   <div className="category-icon">
@@ -163,7 +163,7 @@ const Navbar = () => {
 
 <div
   className="category-box"
-  onClick={() => window.location.href = "/insights"}
+  onClick={() => window.location.href = "/blog"}
   style={{ cursor: "pointer" }}
 >
   <div className="category-icon">
@@ -181,7 +181,7 @@ const Navbar = () => {
 
 <div
   className="category-box"
-  onClick={() => window.location.href = "/case-studies"}
+  onClick={() => window.location.href = "/blog"}
   style={{ cursor: "pointer" }}
 >
   <div className="category-icon">
