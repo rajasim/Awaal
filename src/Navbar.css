@@ -695,14 +695,3 @@ transition: background-color 0.3s ease, transform 0.3s ease;
   font-size: 18px;
 }
 
-.services-dropdown{
-  position: absolute;
-  top: 5rem;
-  right: 1rem;
-  z-index: 3;
-
-}
-
-.services-dropdown .service-item{
-  text-wrap: nowrap;
-}

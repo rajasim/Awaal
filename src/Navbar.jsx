@@ -12,7 +12,7 @@ const Navbar = () => {
   const [hoveredSubItem, setHoveredSubItem] = useState("");
   const centernav = useRef();
   const rightnav = useRef();
-
+  const [extradropdown, setExtraDropdown]= useState("");
 
   const handleDropdown = (menu) => {
     setOpenDropdown(openDropdown === menu ? null : menu);
@@ -45,10 +45,11 @@ const Navbar = () => {
 
             className="nav-item"
             onMouseEnter={() => {
-              handleDropdown(item.toLowerCase());
-
+                handleDropdown(item.toLowerCase());
             }}
+            
             onClick={() => {
+              setExtraDropdown(extradropdown === "" ? item.toLowerCase() : "");
               if (item === "WHY AWWAL") nav("/why-awwal");
               else if (item === "CONTACT US") nav("/contact");
               else if (item === "WHAT WE DO") nav("/what-we-do");
@@ -585,7 +586,7 @@ const Navbar = () => {
                 </div>
               </div>
             )}
-            {item === "SERVICES" && openDropdown === "services" && window.innerWidth <= 480 &&
+            {item === "SERVICES" && extradropdown === "services" && window.innerWidth <= 480 &&
               <div class="services-dropdown">
                 <div class="service-item">
                   <span class="service-icon">🌐</span>
