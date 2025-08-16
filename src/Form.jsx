@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Form.css";
+import countryData from "./countryCodes.json"; // JSON with 250+ countries
 
 function Form() {
   const [formData, setFormData] = useState({
@@ -8,6 +9,7 @@ function Form() {
     email: "",
     company: "",
     country: "",
+    dialCode: "",
     jobTitle: "",
     teamSize: "",
     service: "",
@@ -17,15 +19,44 @@ function Form() {
 
   const [submitted, setSubmitted] = useState(false);
 
+  // Auto-detect country from browser locale
+  useEffect(() => {
+    try {
+      const locale = Intl.DateTimeFormat().resolvedOptions().locale; // e.g. "en-IN"
+      const countryCode = locale.split("-")[1]; // "IN"
+
+      const match = countryData.find((c) => c.code === countryCode);
+      if (match) {
+        setFormData((prev) => ({
+          ...prev,
+          country: match.name,
+          dialCode: match.dial_code,
+          phone: match.dial_code,
+        }));
+      }
+    } catch (error) {
+      console.log("Country detection failed:", error);
+    }
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Only allow digits in phone field
-    if (name === "phone") {
+    if (name === "country") {
+      const [countryName, dialCode] = value.split("|");
+      setFormData((prev) => ({
+        ...prev,
+        country: countryName,
+        dialCode: dialCode,
+        phone: dialCode, // auto-fill dial code
+      }));
+    } else if (name === "phone") {
       const numericValue = value.replace(/\D/g, "");
       setFormData((prev) => ({
         ...prev,
-        [name]: numericValue,
+        phone: prev.dialCode
+          ? prev.dialCode + numericValue.replace(prev.dialCode, "")
+          : numericValue,
       }));
     } else {
       setFormData((prev) => ({
@@ -38,7 +69,8 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const submissions = JSON.parse(localStorage.getItem("formSubmissions")) || [];
+    const submissions =
+      JSON.parse(localStorage.getItem("formSubmissions")) || [];
     submissions.push(formData);
     localStorage.setItem("formSubmissions", JSON.stringify(submissions));
 
@@ -48,6 +80,7 @@ function Form() {
       email: "",
       company: "",
       country: "",
+      dialCode: "",
       jobTitle: "",
       teamSize: "",
       service: "",
@@ -113,20 +146,28 @@ function Form() {
               placeholder="Company *"
               required
             />
-            <select
-              name="country"
-              value={formData.country}
-              onChange={handleChange}
-              required
-            >
-              <option value="">Country *</option>
-              <option>United States</option>
-              <option>India</option>
-              <option>United Kingdom</option>
-              <option>Canada</option>
-              <option>Australia</option>
-              <option>Other</option>
-            </select>
+            <div className="custom-select-wrapper">
+              <select
+                name="country"
+                value={
+                  formData.country && formData.dialCode
+                    ? `${formData.country}|${formData.dialCode}`
+                    : ""
+                }
+                onChange={handleChange}
+                required
+              >
+                <option value="">Country *</option>
+                {countryData.map((country) => (
+                  <option
+                    key={country.code}
+                    value={`${country.name}|${country.dial_code}`}
+                  >
+                    {country.name} ({country.dial_code})
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
 
           <div className="form-row">

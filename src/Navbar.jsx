@@ -57,118 +57,132 @@ const Navbar = () => {
           >
             {item}
             &nbsp;
-            {item == "SERVICES" && window.innerWidth <= 480 && <FaAngleDown></FaAngleDown>}
-            {item === "Insights Hub" && openDropdown === "insights hub" && window.innerWidth > 480 && (
-              <div
-                className="insights-hub-menu"
-                onMouseLeave={() => {
-                  setOpenDropdown(null);
-                  setnavbaroption("");
-                  setHoveredSubItem("");
-                }}
-              >
-                {/* LEFT SIDE */}
-                <div className="insights-left-panel">
-                  <span className="featured-badge">FEATURED THIS WEEK</span>
-                  <h2 className="insights-main-title">
-                    THE FUTURE OF DIGITAL INNOVATION
-                  </h2>
-                  <p className="insights-main-desc">
-                    DISCOVER CUTTING-EDGE INSIGHTS, INDUSTRY TRENDS, AND EXPERT
-                    ANALYSIS THAT'S SHAPING TOMORROW'S DIGITAL LANDSCAPE.
-                  </p>
-                  <div className="insights-stats-box">
-                    <div className="stat-item">
-                      <img src="/images/navbar1.png" alt="Articles" />
-                      <span> ARTICLES</span>
-                    </div>
-                    <div className="stat-item">
-                      <img src="/images/navbar2.png" alt="Readers" />
-                      <span>READERS</span>
-                    </div>
-                  </div>
-                </div>
+           {item === "SERVICES" && window.innerWidth <= 480 && <FaAngleDown />}
 
+{/* INSIGHTS HUB DROPDOWN ICON (mobile) */}
+{item === "Insights Hub" && window.innerWidth <= 480 && <FaAngleDown />}
 
-                {/* RIGHT SIDE */}
-                <div className="insights-right-panel">
-                  <h3 className="categories-title">EXPLORE CATEGORIES</h3>
+{/* SERVICES MENU (mobile) */}
 
-                  <div
-                    className="category-box"
-                    onClick={() => window.location.href = "/blog"}
-                    style={{ cursor: "pointer" }}
-                  >
-                    <div className="category-icon">
-                      <img src="/images/navbar1.png" alt="Blog" />
-                    </div>
-                    <div className="category-info">
-                      <h4>BLOG</h4>
-                      <p>LATEST ARTICLES AND INSIGHTS FROM OUR TEAM</p>
-                      <div className="category-tags">
-                        <span>DAILY UPDATES</span>
-                        <span>MOST POPULAR</span>
-                      </div>
-                    </div>
-                  </div>
+{/* INSIGHTS HUB MENU (desktop) */}
+{item === "Insights Hub" && openDropdown === "insights hub" && window.innerWidth > 480 && (
+  <div
+    className="insights-hub-menu"
+    onMouseLeave={() => {
+      setOpenDropdown(null);
+      setnavbaroption("");
+      setHoveredSubItem("");
+    }}
+  >
+    {/* LEFT SIDE */}
+    <div className="insights-left-panel">
+      <span className="featured-badge">FEATURED THIS WEEK</span>
+      <h2 className="insights-main-title">THE FUTURE OF DIGITAL INNOVATION</h2>
+      <p className="insights-main-desc">
+        DISCOVER CUTTING-EDGE INSIGHTS, INDUSTRY TRENDS, AND EXPERT
+        ANALYSIS THAT'S SHAPING TOMORROW'S DIGITAL LANDSCAPE.
+      </p>
+      <div className="insights-stats-box">
+        <div className="stat-item">
+          <img src="/images/navbar1.png" alt="Articles" />
+          <span> ARTICLES</span>
+        </div>
+        <div className="stat-item">
+          <img src="/images/navbar2.png" alt="Readers" />
+          <span>READERS</span>
+        </div>
+      </div>
+    </div>
 
-                  <div
-                    className="category-box"
-                    onClick={() => window.location.href = "/blog"}
-                    style={{ cursor: "pointer" }}
-                  >
-                    <div className="category-icon">
-                      <img src="/images/navbar2.png" alt="News" />
-                    </div>
-                    <div className="category-info">
-                      <h4>NEWS</h4>
-                      <p>INDUSTRY UPDATES AND ANNOUNCEMENTS</p>
-                      <div className="category-tags">
-                        <span>BREAKING NEWS</span>
-                        <span>LIVE UPDATES</span>
-                      </div>
-                    </div>
-                  </div>
+    {/* RIGHT SIDE */}
+    <div className="insights-right-panel">
+      <h3 className="categories-title">EXPLORE CATEGORIES</h3>
 
-                  <div
-                    className="category-box"
-                    onClick={() => window.location.href = "/blog"}
-                    style={{ cursor: "pointer" }}
-                  >
-                    <div className="category-icon">
-                      <img src="/images/navbar3.png" alt="Insights" />
-                    </div>
-                    <div className="category-info">
-                      <h4>INSIGHTS</h4>
-                      <p>DATA-DRIVEN ANALYSIS AND RESEARCH</p>
-                      <div className="category-tags">
-                        <span>ANALYTICS</span>
-                        <span>TRENDING</span>
-                      </div>
-                    </div>
-                  </div>
+      <div className="category-box" onClick={() => (window.location.href = "/blog")} style={{ cursor: "pointer" }}>
+        <div className="category-icon">
+          <img src="/images/navbar1.png" alt="Blog" />
+        </div>
+        <div className="category-info">
+          <h4>BLOG</h4>
+          <p>LATEST ARTICLES AND INSIGHTS FROM OUR TEAM</p>
+          <div className="category-tags">
+            <span>DAILY UPDATES</span>
+            <span>MOST POPULAR</span>
+          </div>
+        </div>
+      </div>
 
-                  <div
-                    className="category-box"
-                    onClick={() => window.location.href = "/blog"}
-                    style={{ cursor: "pointer" }}
-                  >
-                    <div className="category-icon">
-                      <img src="/images/navbar4.png" alt="Case Studies" />
-                    </div>
-                    <div className="category-info">
-                      <h4>CASE STUDIES</h4>
-                      <p>REAL-WORLD SUCCESS STORIES</p>
-                      <div className="category-tags">
-                        <span>BUSINESS</span>
-                        <span>PREMIUM</span>
-                      </div>
-                    </div>
-                  </div>
+      <div className="category-box" onClick={() => (window.location.href = "/news")} style={{ cursor: "pointer" }}>
+        <div className="category-icon">
+          <img src="/images/navbar2.png" alt="News" />
+        </div>
+        <div className="category-info">
+          <h4>NEWS</h4>
+          <p>INDUSTRY UPDATES AND ANNOUNCEMENTS</p>
+          <div className="category-tags">
+            <span>BREAKING NEWS</span>
+            <span>LIVE UPDATES</span>
+          </div>
+        </div>
+      </div>
 
-                </div>
-              </div>
-            )}
+      <div className="category-box" onClick={() => (window.location.href = "/insights")} style={{ cursor: "pointer" }}>
+        <div className="category-icon">
+          <img src="/images/navbar3.png" alt="Insights" />
+        </div>
+        <div className="category-info">
+          <h4>INSIGHTS</h4>
+          <p>DATA-DRIVEN ANALYSIS AND RESEARCH</p>
+          <div className="category-tags">
+            <span>ANALYTICS</span>
+            <span>TRENDING</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="category-box" onClick={() => (window.location.href = "/case-studies")} style={{ cursor: "pointer" }}>
+        <div className="category-icon">
+          <img src="/images/navbar4.png" alt="Case Studies" />
+        </div>
+        <div className="category-info">
+          <h4>CASE STUDIES</h4>
+          <p>REAL-WORLD SUCCESS STORIES</p>
+          <div className="category-tags">
+            <span>BUSINESS</span>
+            <span>PREMIUM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
+{/* INSIGHTS HUB MENU (mobile) */}
+{item === "Insights Hub" && extradropdown === "insights hub" && window.innerWidth <= 480 && (
+  <div className="services-dropdown">
+    <div className="service-item" onClick={() => (window.location.href = "/blog")} style={{ cursor: "pointer" }}>
+      <span className="service-icon"></span>
+      <span>BLOG</span>
+    </div>
+
+    <div className="service-item" onClick={() => (window.location.href = "/news")} style={{ cursor: "pointer" }}>
+      <span className="service-icon"></span>
+      <span>NEWS</span>
+    </div>
+
+    <div className="service-item" onClick={() => (window.location.href = "/insights")} style={{ cursor: "pointer" }}>
+      <span className="service-icon"></span>
+      <span>INSIGHTS</span>
+    </div>
+
+    <div className="service-item" onClick={() => (window.location.href = "/case-studies")} style={{ cursor: "pointer" }}>
+      <span className="service-icon"></span>
+      <span>CASE STUDIES</span>
+    </div>
+  </div>
+)}
+
+            
 
             {item === "SERVICES" && openDropdown === "services" && window.innerWidth > 480 && (
               <div
@@ -588,44 +602,95 @@ const Navbar = () => {
             )}
             {item === "SERVICES" && extradropdown === "services" && window.innerWidth <= 480 &&
               <div class="services-dropdown">
-                <div class="service-item">
-                  <span class="service-icon">🌐</span>
-                  <span>Web Development</span>
-                </div>
+               <div
+  className="service-item"
+  onClick={() => (window.location.href = "/vapt")}
+  style={{ cursor: "pointer" }}
+>
+  <span className="service-icon"></span>
+  <span>CYBERSECURITY</span>
+</div>
 
-                <div class="service-item">
-                  <span class="service-icon">📱</span>
-                  <span>Mobile Apps</span>
-                </div>
+              <div
+  className="service-item"
+  onClick={() => (window.location.href = "/AI & Automation Services")}
+  style={{ cursor: "pointer" }}
+>
+  <span className="service-icon"></span>
+  <span>AI & Automation</span>
+</div>
 
-                <div class="service-item">
-                  <span class="service-icon">🛡️</span>
-                  <span>CyberSecurity</span>
-                </div>
+<div
+  className="service-item"
+  onClick={() => (window.location.href = "/CLOUD")}
+  style={{ cursor: "pointer" }}
+>
+  <span className="service-icon"></span>
+  <span>CLOUD</span>
+</div>
 
-                <div class="service-item">
-                  <span class="service-icon">⚡</span>
-                  <span>Marketing Automation</span>
-                </div>
+<div
+  className="service-item"
+  onClick={() => (window.location.href = "/SOFTWARE DEV")}
+  style={{ cursor: "pointer" }}
+>
+  <span className="service-icon"></span>
+  <span>SOFTWARE DEV</span>
+</div>
 
-                <div class="service-item">
-                  <span class="service-icon">⚙️</span>
-                  <span>AI Development</span>
-                </div>
+<div
+  className="service-item"
+  onClick={() => (window.location.href = "/IT INFRA")}
+  style={{ cursor: "pointer" }}
+>
+  <span className="service-icon"></span>
+  <span>IT INFRA</span>
+</div>
+
+<div
+  className="service-item"
+  onClick={() => (window.location.href = "/WEBSITE DEV")}
+  style={{ cursor: "pointer" }}
+>
+  <span className="service-icon"></span>
+  <span>WEBSITE DEV</span>
+</div>
+
+<div
+  className="service-item"
+  onClick={() => (window.location.href = "/MIGRATION")}
+  style={{ cursor: "pointer" }}
+>
+  <span className="service-icon"></span>
+  <span>MIGRATION</span>
+</div>
+
               </div>}
           </div>
         ))}
       </div>
 
-      <div className="navbar-right" ref={rightnav}>
-        <span className="free-trial">FREE TRIAL</span>
-        <FaSearch />
-        <FaUser />
-        <FaPhone />
-        <div className="language">
-          English <IoMdArrowDropdown />
-        </div>
-      </div>
+     <div className="navbar-top">
+  <div className="navbar-contact">
+    <i className="fas fa-phone-alt"></i>
+    <span>+91 85 0000 8902</span>
+  </div>
+
+  <div className="navbar-divider"></div>
+
+  <div className="navbar-contact">
+    <i className="fas fa-envelope"></i>
+    <span>info@yourdomain.com</span>
+  </div>
+
+  <div className="navbar-divider"></div>
+
+  <div className="navbar-contact">
+    <i className="fas fa-headset"></i>
+    <span>Customer Support</span>
+  </div>
+</div>
+
       <div
         id="NavbarStaggeredBarsIcon"
         onClick={() => {

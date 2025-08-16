@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 45px;
+  gap: 25px;
 }
 
 .insights-dropdown {
@@ -117,6 +117,35 @@
 background-color: white;
 color:#000;
 }
+/* Top bar container */
+.navbar-top {
+  display: flex;
+  justify-content: flex-end;  /* pushes items to the right */
+  align-items: center;
+  gap: 10px;                  /* spacing between each contact block */
+      /* adjust as per your navbar background */
+  padding: 8px 40px;          /* top/bottom, left/right padding */
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Individual contact item */
+.navbar-contact {
+  display: flex;
+  align-items: center;
+  gap: 6px;                   /* space between icon and text */
+  color: #fff;
+  white-space: nowrap;        /* prevent text breaking */
+}
+
+/* Divider between contact items */
+.navbar-divider {
+  width: 1px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.4);  /* subtle divider line */
+}
+
 
 /* Responsive */
 @media (max-width: 480px) {
@@ -130,6 +159,14 @@ color:#000;
   .insight-icon {
     width: 32px;
     height: 32px;
+  }
+   .navbar-top {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-top {
+    display: none;
   }
 }
 
@@ -182,7 +219,7 @@ color:#000;
   position: absolute;
   top: 3rem;
   right: 0;
-  width: 1000px;
+  width: 950px;
   height: 580px;
   background-color: white;
   color: black;

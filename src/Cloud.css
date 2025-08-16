@@ -8,28 +8,28 @@
 }
 
 .cloud-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 5vw;
-  column-gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
 .cloud-left {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex: 1;
+  min-width: 320px;
+  max-width: 700px;
 }
 
 .cloud-heading {
-  font-size: 2vw;
+  font-size: 48px;
   font-weight: 700;
   color: #2a3eb1;
   margin-bottom: 1.5rem;
 }
 
 .cloud-subtext {
-  font-size: 1vw;
+  font-size: 18px;
   color: #333;
   line-height: 1.7;
   margin-bottom: 3rem;
@@ -58,33 +58,38 @@
 }
 
 .cloud-icon img {
-  width: 4vw;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   flex-shrink: 0;
 }
 
 .cloud-feature h3 {
   margin: 0;
-  font-size: 1vw;
+  font-size: 18px;
   font-weight: 700;
   color: #111;
 }
 
 .cloud-feature p {
   margin: 4px 0 0;
-  font-size: 0.9vw;
+  font-size: 15px;
   color: #555;
   line-height: 1.5;
 }
 
 /* Image Section */
 .cloud-right {
-  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cloud-right img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 /* Tablet: max 768px */
@@ -140,3 +145,67 @@
   }
 }
 
+/* TV screens: min 1600px */
+@media (min-width: 1600px) {
+  .cloud-section {
+    padding: 8rem 12rem;
+  }
+
+  .cloud-heading {
+    font-size: 72px;
+  }
+
+  .cloud-subtext {
+    font-size: 24px;
+    line-height: 1.9;
+  }
+
+  .cloud-feature {
+    padding: 2.5rem 2rem;
+  }
+
+  .cloud-feature h3 {
+    font-size: 26px;
+  }
+
+  .cloud-feature p {
+    font-size: 18px;
+  }
+
+  .cloud-icon img {
+    width: 60px;
+    height: 60px;
+  }
+}
+/* TV screens: min 1600px */
+@media (min-width: 1600px) {
+  .cloud-section {
+    padding: 8rem 12rem;
+  }
+
+  .cloud-heading {
+    font-size: 72px;
+  }
+
+  .cloud-subtext {
+    font-size: 24px;
+    line-height: 1.9;
+  }
+
+  .cloud-feature {
+    padding: 2.5rem 2rem;
+  }
+
+  .cloud-feature h3 {
+    font-size: 26px;
+  }
+
+  .cloud-feature p {
+    font-size: 18px;
+  }
+
+  .cloud-icon img {
+    width: 60px;
+    height: 60px;
+  }
+}

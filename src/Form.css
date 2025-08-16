@@ -81,6 +81,19 @@ button {
 button:hover {
   background: #333;
 }
+.form-row select {
+  position: relative;
+}
+
+/* Force dropdown to always open downward */
+.form-row select {
+  background-position: right 12px center;
+  overflow: visible;
+}
+
+.form-row select option {
+  position: relative;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
