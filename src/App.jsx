@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import LazyLoader from "./LazyLoader";
 import ScrollToTop from "./ScrollToTop";
 import { BrowserRouter } from "react-router-dom";
@@ -114,6 +114,7 @@ const AdBlogthree = lazy(() => import("./AdminBlogthree"))
 
 
 function App() {
+  
   return (
     <Suspense fallback={<div className="page-loading"></div>}>
      <ScrollToTop />

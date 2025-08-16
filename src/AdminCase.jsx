@@ -45,7 +45,7 @@ const AdminCaseStudy = () => {
           <h2>Todyl updates</h2>
           <p>Sign-up to get the latest from Todyl sent straight to your inbox.</p>
           <label>
-            <span>Business Email<span className="required">*</span></span>
+            <span>Busiiness Email<span className="required">*</span></span>
             <input type="email" placeholder="you@yourcompany.com" />
           </label>
           <button>Sign-up now</button>

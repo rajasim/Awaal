@@ -1,7 +1,14 @@
 import React from "react";
 import "./Hoft.css";
+import { useEffect } from "react";
 
 const Hofpt = () => {
+    useEffect(()=>{
+      window.scrollTo({
+        top:0,
+        behavior:"smooth"
+      })
+    },[])
   return (
     <div className="hm-wrapperer">
       <div className="hm-headline">

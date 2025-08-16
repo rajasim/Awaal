@@ -31,7 +31,7 @@ const Poteker = () => {
         {/* Backend */}
         <div className="tech-card tech-backend">
           <div className="card-header">
-            <img src="assets/icons/backend.png" alt="Backend" />
+            <img src="/images/Tech Stack & Toolses2.png" alt="Backend" />
             Backend
           </div>
           <ul>
@@ -46,7 +46,7 @@ const Poteker = () => {
         {/* Mobile */}
         <div className="tech-card tech-mobile">
           <div className="card-header">
-            <img src="assets/icons/mobile.png" alt="Mobile" />
+            <img src="/images/Tech Stack & Tools3.png" alt="Mobile" />
             Mobile
           </div>
           <ul>
@@ -60,7 +60,7 @@ const Poteker = () => {
         {/* Databases */}
         <div className="tech-card tech-database">
           <div className="card-header">
-            <img src="assets/icons/database.png" alt="Databases" />
+            <img src="/images/Tech Stack & Tools4.png" alt="Databases" />
             Databases
           </div>
           <ul>
@@ -74,7 +74,7 @@ const Poteker = () => {
         {/* DevOps & Cloud */}
         <div className="tech-card tech-devops">
           <div className="card-header">
-            <img src="assets/icons/devops.png" alt="DevOps" />
+            <img src="/images/Tech Stack & Tools5.png" alt="DevOps" />
             DevOps & Cloud
           </div>
           <ul>
@@ -89,7 +89,7 @@ const Poteker = () => {
         {/* API Tools */}
         <div className="tech-card tech-api">
           <div className="card-header">
-            <img src="assets/icons/api.png" alt="API Tools" />
+            <img src="/images/Tech Stack & Tools6.png" alt="API Tools" />
             API Tools
           </div>
           <ul>

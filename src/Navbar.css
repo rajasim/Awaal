@@ -672,3 +672,25 @@ transition: background-color 0.3s ease, transform 0.3s ease;
 .mega-dropdown .mega-left-menu div {
   animation-delay: 0.8s;
 }
+.services-dropdown {
+  background: #0d1b2a; /* Dark background */
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #d1d5db;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.service-item:hover {
+  color: #4f9eff;
+}
+
+.service-icon {
+  font-size: 18px;
+}

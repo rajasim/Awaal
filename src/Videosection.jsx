@@ -4,12 +4,7 @@ import "./Videosection.css";
 const VideoSection = () => {
   return (
     <section className="videoo-section">
-      {/* ✅ Background Image */}
-      <img
-        src="/images/bg-grid.jpg"
-        alt="Background Grid"
-        className="bg-image"
-      />
+     
 
       <div className="video-overlay">
         {/* ✅ Left Content */}

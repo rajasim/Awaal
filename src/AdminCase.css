@@ -1,6 +1,5 @@
 .case-wrapper {
   text-align: center;
-  padding: 100px 120px;
   gap: 70px;
   font-family: 'Segoe UI', sans-serif;
   background: #f9f9f9;
@@ -62,33 +61,9 @@
 }
 
 /* NEWSLETTER SECTION */
-.newsletter-section {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  background-color: #c4d0d7;
-  padding: 0;
-  min-height: 700px;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-/* LEFT IMAGE SIDE */
-.newsletter-left-img {
-  width: 50%;
-  max-height: 700px;
-  overflow: hidden;
-}
-.newsletter-left-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* RIGHT CONTENT SIDE */
 .newsletter-content {
   width: 50%;
-  padding: 100px;
+  padding: 60px;
   box-sizing: border-box;
   color: #000;
   display: flex;
@@ -96,36 +71,36 @@
   justify-content: center;
 }
 .newsletter-content h2 {
-  font-size: 48px;
-  margin-bottom: 30px;
+  font-size: 36px;
+  margin-bottom: 20px;
   font-weight: 800;
 }
 .newsletter-content p {
-  font-size: 24px;
-  margin-bottom: 48px;
+  font-size: 20px;
+  margin-bottom: 36px;
   color: #222;
 }
 .newsletter-content label {
   display: block;
-  margin-bottom: 30px;
-  font-size: 20px;
+  margin-bottom: 24px;
+  font-size: 17px;
 }
 .newsletter-content input {
   width: 100%;
-  padding: 20px;
-  font-size: 20px;
+  padding: 16px;
+  font-size: 17px;
   border: none;
   border-radius: 6px;
   box-shadow: 0 0 0 1px #888;
-  margin-top: 14px;
+  margin-top: 10px;
 }
 .newsletter-content button {
-  padding: 20px 40px;
+  padding: 16px 30px;
   background-color: #fdb83c;
   border: none;
   border-radius: 6px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -134,5 +109,78 @@
 }
 .required {
   color: red;
-  margin-left: 6px;
+  margin-left: 4px;
+}
+@media (max-width: 480px) {
+  .case-wrapper {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .case-title {
+    font-size: 28px;
+  }
+
+  .case-author {
+    font-size: 16px;
+  }
+
+  .case-intro, .case-article p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .case-subheading {
+    font-size: 20px;
+  }
+
+  .case-list {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .case-list li {
+    font-size: 16px;
+  }
+
+  /* Newsletter becomes stacked */
+  .newsletter-section {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .newsletter-left-img,
+  .newsletter-content {
+    width: 100%;
+    max-height: none;
+  }
+
+  .newsletter-content {
+    padding: 30px 20px;
+  }
+
+  .newsletter-content h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .newsletter-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .newsletter-content label {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .newsletter-content input {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .newsletter-content button {
+    padding: 14px 20px;
+    font-size: 16px;
+  }
 }

@@ -1,9 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./Navbar.css";
-import { FaSearch, FaUser, FaPhone } from "react-icons/fa";
+import { FaSearch, FaUser, FaPhone, FaArrowDown, FaAngleDown } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -18,6 +19,12 @@ const Navbar = () => {
   };
 
   const nav = useNavigate();
+  useEffect(()=>{
+    window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })
+  },[])
 
   return (
     <nav className="navbar" id="navbar">
@@ -53,6 +60,8 @@ const Navbar = () => {
             }}
           >
             {item}
+            &nbsp;
+            {item == "SERVICES" && window.innerWidth <=480 && <FaAngleDown></FaAngleDown>}
             {item === "Insights Hub" && openDropdown === "insights hub" && (
               <div
                 className="insights-hub-menu"
@@ -84,6 +93,33 @@ const Navbar = () => {
                   </div>
                 </div>
                 
+                <div class="services-dropdown">
+  <div class="service-item">
+    <span class="service-icon">🌐</span>
+    <span>Web Development</span>
+  </div>
+
+  <div class="service-item">
+    <span class="service-icon">📱</span>
+    <span>Mobile Apps</span>
+  </div>
+
+  <div class="service-item">
+    <span class="service-icon">🛡️</span>
+    <span>CyberSecurity</span>
+  </div>
+
+  <div class="service-item">
+    <span class="service-icon">⚡</span>
+    <span>Marketing Automation</span>
+  </div>
+
+  <div class="service-item">
+    <span class="service-icon">⚙️</span>
+    <span>AI Development</span>
+  </div>
+</div>
+
 
                 {/* RIGHT SIDE */}
                 <div className="insights-right-panel">
@@ -165,7 +201,7 @@ const Navbar = () => {
               </div>
             )}
 
-            {item === "SERVICES" && openDropdown === "services" && (
+            {item === "SERVICES" && openDropdown === "services" && window.innerWidth >480 && (
               <div
                 className="mega-dropdown"
                 onMouseLeave={() => {
@@ -214,6 +250,7 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
+                
 
                 <div className="mega-right">
                   {hoveredSubItem === "CYBERSECURITY" && (
@@ -550,35 +587,31 @@ const Navbar = () => {
 
                   {!hoveredSubItem && (
                     <>
-                      <h3>Strengthen Your Organization's Cyber Defence</h3>
-                      <p>
-                        We provide end-to-end cybersecurity services that reduce
-                        risk, detect threats early, and improve your overall
-                        security posture.
-                      </p>
-                      <button className="plans-btnon">Services →</button>
+                     <h3>
+      Stay Secure, Stay in Control with End-to-End Cybersecurity Solutions
+    </h3>
+    <p>
+      We provide complete cybersecurity solutions to protect your business,
+      detect threats in real time, and ensure compliance keeping you secure
+      and in control.
+    </p>
+    <button className="plans-btnon">Services →</button>
 
-                      <div className="links-grid">
-                        <a href="#">Phishing and Impersonation Protection</a>
-                        <a href="#">Security Awareness Training</a>
-                        <a href="#">Incident Response</a>
-                        <a href="#">Email Encryption</a>
-                        <a href="#">Account Takeover Protection</a>
-                        <a href="#">Microsoft 365 Backup</a>
-                        <a href="#">Domain Fraud Protection (DMARC)</a>
-                        <a href="#">Cloud Archiving</a>
-                        <a href="#">
-                          Spam, Malware, and Advanced Threat Protection
-                        </a>
-                        <a href="#">Data Inspector™</a>
-                      </div>
+    <div className="links-grid" onClick={() => nav("/vapt")}>
+      <a href="#">VAPT</a>
+      <a href="#">Managed XDR / MXDR</a>
+      <a href="#">EDR / NGAV Protection</a>
+      <a href="#">Network Security</a>
+      <a href="#">GRC</a>
+      <a href="#">Email Protection</a>
+      <a href="#">Ransomware Defense</a>
+      <a href="#">Data Loss Prevention (DLP)</a>
+    </div>
 
-                      <hr style={{ margin: "1rem 0" }} />
-                      <h4>Free Tools</h4>
-                      <div className="links-grid">
-                        <a href="#">Free Email Threat Scan</a>
-                        <a href="#">Build and Price</a>
-                      </div>
+    <hr style={{ margin: "1rem 0" }} />
+    <h4>Try at zero cost</h4>
+    <button className="plans-btn">FREE DEMO →</button>
+                      
                     </>
                   )}
                 </div>

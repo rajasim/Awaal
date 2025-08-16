@@ -1,7 +1,9 @@
 import React from "react";
 import "./Footermain.css";
+import { useNavigate } from "react-router-dom";
 
 const Footermain = () => {
+  const navigate = useNavigate();
   return (
     <footer className="footermain-wrapper">
       {/* Newsletter / CTA */}
@@ -34,34 +36,55 @@ const Footermain = () => {
 
       {/* Services Row */}
       <div className="footermain-services-row">
-        <button className="footermain-svc-btn">
-          <img src="/images/foter1.png" alt="" className="footermain-svc-ico" />
-          <span>Cybersecurity</span>
-        </button>
-        <button className="footermain-svc-btn">
-         <img src="/images/foter2.png" alt="" className="footermain-svc-ico" />
-          <span>AI/Automation</span>
-        </button>
-        <button className="footermain-svc-btn">
-          <img src="/images/foter3.png" alt="" className="footermain-svc-ico" />
-          <span>Cloud</span>
-        </button>
-        <button className="footermain-svc-btn">
-          <img src="/images/foter4.png" alt="" className="footermain-svc-ico" />
-          <span>Software Dev</span>
-        </button>
-        <button className="footermain-svc-btn">
-          <img src="/images/foter5.png" alt="" className="footermain-svc-ico" />
-          <span>IT Infra</span>
-        </button>
-        <button className="footermain-svc-btn">
-          <img src="/images/foter6.png" alt="" className="footermain-svc-ico" />
-          <span>Website Dev</span>
-        </button>
-        <button className="footermain-svc-btn">
-          <img src="/images/foter7.png" alt="" className="footermain-svc-ico" />
-          <span>Migration</span>
-        </button>
+        <button
+      className="footermain-svc-btn"
+      onClick={() => navigate("/vapt")}
+    >
+      <img src="/images/foter1.png" alt="" className="footermain-svc-ico" />
+      <span>Cybersecurity</span>
+    </button>
+        <button
+      className="footermain-svc-btn"
+      onClick={() => navigate("/AI & Automation Services")}
+    >
+      <img src="/images/foter2.png" alt="" className="footermain-svc-ico" />
+      <span>AI/Automation</span>
+    </button>
+       <button
+      className="footermain-svc-btn"
+      onClick={() => navigate("/CLOUD")}
+    >
+      <img src="/images/foter3.png" alt="" className="footermain-svc-ico" />
+      <span>Cloud</span>
+    </button>
+        <button
+      className="footermain-svc-btn"
+      onClick={() => navigate("/SOFTWARE DEV")}
+    >
+      <img src="/images/foter4.png" alt="" className="footermain-svc-ico" />
+      <span>Software Dev</span>
+    </button>
+        <button
+      className="footermain-svc-btn"
+      onClick={() => navigate("/IT INFRA")}
+    >
+      <img src="/images/foter5.png" alt="" className="footermain-svc-ico" />
+      <span>IT Infra</span>
+    </button>
+        <button
+      className="footermain-svc-btn"
+      onClick={() => navigate("/WEBSITE DEV")}
+    >
+      <img src="/images/foter6.png" alt="" className="footermain-svc-ico" />
+      <span>Website Dev</span>
+    </button>
+        <button
+      className="footermain-svc-btn"
+      onClick={() => navigate("/MIGRATION")}
+    >
+      <img src="/images/foter7.png" alt="" className="footermain-svc-ico" />
+      <span>Migration</span>
+    </button>
       </div>
 
       {/* Divider line */}

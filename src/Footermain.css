@@ -177,13 +177,11 @@
 }
 
 .footermain-brand-logo {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
   width: 150px;
   height: 150px;
-=======
+
   width: 4vw;
->>>>>>> Stashed changes
 }
 
 .footermain-brand-name {
@@ -193,7 +191,7 @@
 
 .footermain-brand-desc {
   font-size: 0.9vw;
-=======
+
   height: 190px; 
  margin-top: 1px;
   display: block;
@@ -205,7 +203,7 @@
 
 .footermain-brand-desc {
   font-size: 0.99rem;
->>>>>>> Stashed changes
+
   color: #c7c7c7;
 
 }
@@ -315,45 +313,123 @@
 }
 
 /* ===================== RESPONSIVE ===================== */
-@media (max-width: 768px) {
+/* ===================== MOBILE RESPONSIVE (≤480px) ===================== */
+@media (max-width: 480px) {
+  .footermain-wrapper {
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* CTA */
+  .footermain-cta-head {
+    font-size: 6vw; /* Bigger on small screens */
+  }
+
   .footermain-cta-form {
     flex-direction: column;
-    border-radius: 16px;
-    gap: 8px;
-    padding: 10px;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .footermain-cta-input {
+    font-size: 4vw;
+    padding: 12px;
   }
 
   .footermain-cta-btn {
     width: 100%;
+    font-size: 4vw;
+    padding: 12px;
   }
 
+  .footermain-cta-tagline {
+    font-size: 3.5vw;
+  }
+
+  /* Services row */
+  .footermain-services-row {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+  }
+
+  .footermain-svc-btn {
+    width: 100%;
+    font-size: 4vw;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  .footermain-svc-ico {
+    width: 6vw;
+  }
+
+  /* Grid columns stack */
   .footermain-grid {
-    text-align: left;
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 20px;
+    row-gap: 20px;
   }
 
-  .footermain-socials {
+  .footermain-col-head {
+    font-size: 5vw;
+  }
+
+  .footermain-link-list li {
+    font-size: 4vw;
+  }
+
+  /* Brand section */
+  .footermain-brand-logo {
+    width: 120px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .footermain-brand-name {
+    font-size: 5vw;
+  }
+
+  .footermain-brand-desc {
+    font-size: 3.5vw;
+  }
+
+  .footermain-brand-line {
+    width: 100px;
+    height: 4px;
+    margin: 6px auto 12px;
+  }
+
+  /* Contact list */
+  .footermain-contact-list li {
+    font-size: 3.5vw;
     justify-content: center;
   }
+
+  /* Socials */
+  .footermain-socials {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .footermain-social-link {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Watermark */
+  .footermain-watermark-text {
+    font-size: 12vw;
+  }
+
+  .footermain-watermark-mark {
+    height: 12vw;
+  }
+
+  /* Legal */
+  .footermain-legal {
+    font-size: 3.5vw;
+  }
 }
 
-/* Scroll to top button */
-.scroll-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #000;
-  color: #fff;
-  font-size: 24px;
-  padding: 12px 16px;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  z-index: 1000;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.scroll-to-top:hover {
-  background-color: #333;
-  transform: scale(1.1);
-}

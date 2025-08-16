@@ -34,7 +34,7 @@ Cloud done right. Business done better.</p>
       {/* Right: Newsletter Signup */}
       <div className="newsletter-section">
         <div className="newsletter-left-img">
-          <img src="./images/box9.jpeg" alt="Newsletter Visual" />
+          <img src="./images/iMAEGETitle .gif" alt="Newsletter Visual" />
         </div>
         <div className="newsletter-content">
           <h2>Todyl updates</h2>

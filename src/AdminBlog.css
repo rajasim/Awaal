@@ -119,3 +119,57 @@
   color: red;
   margin-left: 4px;
 }
+@media (max-width: 480px) {
+  /* Reduce header padding and font size */
+  .header-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .header-section h1 {
+    font-size: 32px;
+  }
+
+  /* Stack main content vertically */
+  .content-section {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  .main-text {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .quote-box {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  /* Newsletter stacks vertically */
+  .newsletter-section {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .newsletter-left-img,
+  .newsletter-content {
+    width: 100%;
+    max-height: none;
+  }
+  .newsletter-content {
+    padding: 30px 20px;
+  }
+  .newsletter-content h2 {
+    font-size: 26px;
+  }
+  .newsletter-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .newsletter-content input {
+    padding: 12px;
+    font-size: 15px;
+  }
+  .newsletter-content button {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+}

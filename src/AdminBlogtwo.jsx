@@ -76,7 +76,7 @@ the hospital to plan expansion of Company into their radiology and pharmacy depa
       {/* Email Subscription Section with Image */}
       <div className="newsletter-section">
         <div className="newsletter-left-img">
-          <img src="./images/box9.jpeg" alt="Newsletter Visual" />
+          <img src="./images/iMAEGETitle .gif" alt="Newsletter Visual" />
         </div>
         <div className="newsletter-content">
           <h2>Todyl updates</h2>

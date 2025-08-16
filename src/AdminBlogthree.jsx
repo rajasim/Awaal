@@ -80,7 +80,7 @@ With planned future upgrades such as AI powered recommendations, loyalty program
       {/* Email Subscription Section with Image */}
       <div className="newsletter-section">
         <div className="newsletter-left-img">
-          <img src="./images/box9.jpeg" alt="Newsletter Visual" />
+          <img src="./images/iMAEGETitle .gif" alt="Newsletter Visual" />
         </div>
         <div className="newsletter-content">
           <h2>Todyl updates</h2>
