@@ -13,8 +13,7 @@ const Dashboard = () => {
   const [insightsData, setInsightsData] = useState([]);
 
   const [showForm, setShowForm] = useState({ blogs: false, news: false, caseStudies: false, insights: false });
-  const [newContent, setNewContent] = useState({ title: "", content: "", author: "Admin", imageUrl: "" });
-
+  const [newContent, setNewContent] = useState({ title: "", content: "", author: "Admin", imageUrl: "", date: "" });
 
   const API_BASE = "http://localhost:5000/api";
 
@@ -22,23 +21,23 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [blogs, news, cases, insights] = await Promise.all([
-          axios.get(`${API_BASE}/blogs`),
+        const [blogsRes, newsRes, casesRes, insightsRes] = await Promise.all([
+          axios.get(`${API_BASE}/blogs?page=1&limit=1000`),
           axios.get(`${API_BASE}/news`),
           axios.get(`${API_BASE}/case-studies`),
           axios.get(`${API_BASE}/insights`)
         ]);
 
-        setBlogsData(blogs.data);
-        setNewsData(news.data);
-        setCaseStudiesData(cases.data);
-        setInsightsData(insights.data);
+        setBlogsData(blogsRes.data.blogs || []);
+        setNewsData(newsRes.data || []);
+        setCaseStudiesData(casesRes.data || []);
+        setInsightsData(insightsRes.data || []);
 
         setCounts({
-          blogs: blogs.data.length,
-          news: news.data.length,
-          caseStudies: cases.data.length,
-          insights: insights.data.length
+          blogs: blogsRes.data.total || 0,
+          news: newsRes.data.length,
+          caseStudies: casesRes.data.length,
+          insights: insightsRes.data.length
         });
 
         const storedEmails = JSON.parse(localStorage.getItem("formSubmissions")) || [];
@@ -69,25 +68,35 @@ const Dashboard = () => {
       const endpoint = endpointMap[activeSection];
       if (!endpoint) return;
 
-      const res = await axios.post(endpoint, newContent);
+      const payload = {
+        title: newContent.title,
+        content: newContent.content,
+        author: newContent.author || "Admin",
+        imageUrl: newContent.imageUrl || "",
+        createdAt: newContent.date || new Date()
+      };
+
+      const res = await axios.post(endpoint, payload);
 
       switch (activeSection) {
         case "blogs":
-          setBlogsData([...blogsData, res.data]);
+          setBlogsData([res.data, ...blogsData]);
           break;
         case "news":
-          setNewsData([...newsData, res.data]);
+          setNewsData([res.data, ...newsData]);
           break;
         case "caseStudies":
-          setCaseStudiesData([...caseStudiesData, res.data]);
+          setCaseStudiesData([res.data, ...caseStudiesData]);
           break;
         case "insights":
-          setInsightsData([...insightsData, res.data]);
+          setInsightsData([res.data, ...insightsData]);
+          break;
+        default:
           break;
       }
 
       setCounts((prev) => ({ ...prev, [activeSection]: prev[activeSection] + 1 }));
-      setNewContent({ image: "", title: "", description: "", date: "" });
+      setNewContent({ title: "", content: "", author: "Admin", imageUrl: "", date: "" });
       setShowForm({ ...showForm, [activeSection]: false });
 
     } catch (error) {
@@ -100,11 +109,11 @@ const Dashboard = () => {
       {data.map((item, idx) => (
         <div className="blog-card" key={idx}>
           <div className="blog-card-image">
-            <img src={item.image} alt={item.title} className="blog-top-img" />
+            <img src={item.imageUrl || item.image} alt={item.title} className="blog-top-img" />
           </div>
           <div className="blog-card-content">
             <h3 className="blog-card-title">{item.title}</h3>
-            <p className="blog-card-text">{item.description}</p>
+            <p className="blog-card-text">{item.content || item.description}</p>
             <button
               className="delete-button"
               onClick={async () => {
@@ -213,11 +222,11 @@ const Dashboard = () => {
             <div className="blog-form">
               <h3>Add New {activeSection}</h3>
               <input
-  type="text"
-  placeholder="Image URL"
-  value={newContent.imageUrl}
-  onChange={(e) => setNewContent({ ...newContent, imageUrl: e.target.value })}
-/>
+                type="text"
+                placeholder="Image URL"
+                value={newContent.imageUrl}
+                onChange={(e) => setNewContent({ ...newContent, imageUrl: e.target.value })}
+              />
               <input
                 type="text"
                 placeholder="Title"
@@ -225,10 +234,10 @@ const Dashboard = () => {
                 onChange={(e) => setNewContent({ ...newContent, title: e.target.value })}
               />
               <textarea
-  placeholder="Content"
-  value={newContent.content}
-  onChange={(e) => setNewContent({ ...newContent, content: e.target.value })}
-/>
+                placeholder="Content"
+                value={newContent.content}
+                onChange={(e) => setNewContent({ ...newContent, content: e.target.value })}
+              />
               <input
                 type="date"
                 value={newContent.date}

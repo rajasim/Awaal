@@ -6,23 +6,40 @@ const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [page, setPage] = useState(1);
+  const [total, setTotal] = useState(0);
+  const limit = 6; // Blogs per page
+  const totalPages = Math.ceil(total / limit);
+
+  const fetchBlogs = async (pageNumber) => {
+    setLoading(true);
+    try {
+      const res = await axios.get(
+        `http://localhost:5000/api/blogs?page=${pageNumber}&limit=${limit}`
+      );
+      setBlogs(res.data.blogs || []);
+      setTotal(res.data.total || 0);
+      setPage(res.data.page || 1);
+      setLoading(false);
+    } catch (err) {
+      console.error(err);
+      setError("Failed to load blogs");
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    axios
-      .get("http://localhost:5000/api/blogs") // Your API route
-      .then((res) => {
-        setBlogs(res.data.blogs || []);
-        setLoading(false);
-      })
-      .catch((err) => {
-        console.error(err);
-        setError("Failed to load blogs");
-        setLoading(false);
-      });
-  }, []);
+    fetchBlogs(page);
+  }, [page]);
 
   if (loading) return <p>Loading blogs...</p>;
   if (error) return <p>{error}</p>;
+
+  // Generate array of page numbers for numbered buttons
+  const pageNumbers = [];
+  for (let i = 1; i <= totalPages; i++) {
+    pageNumbers.push(i);
+  }
 
   return (
     <div className="blog-wrapper">
@@ -56,6 +73,36 @@ const Blog = () => {
           ))
         )}
       </section>
+
+      {/* Pagination Controls */}
+      {totalPages > 1 && (
+        <div className="pagination">
+          <button
+            disabled={page <= 1}
+            onClick={() => setPage((prev) => prev - 1)}
+          >
+            Prev
+          </button>
+
+          {/* Numbered page buttons */}
+          {pageNumbers.map((num) => (
+            <button
+              key={num}
+              className={num === page ? "active" : ""}
+              onClick={() => setPage(num)}
+            >
+              {num}
+            </button>
+          ))}
+
+          <button
+            disabled={page >= totalPages}
+            onClick={() => setPage((prev) => prev + 1)}
+          >
+            Next
+          </button>
+        </div>
+      )}
     </div>
   );
 };
