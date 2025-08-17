@@ -149,12 +149,9 @@ function App() {
       <LazyLoader Component={Form}/>
       <LazyLoader Component={Waptexr} />
       <LazyLoader Component={Footermain} />
-      <LazyLoader Component={AdminCase} />
-      <LazyLoader Component={AdminBlog} />
-      <LazyLoader Component={Dashboard} />
-      
+     
       <LazyLoader Component={Blooogs}/>
-      <Blog/>
+      
     </>
   }
 />
