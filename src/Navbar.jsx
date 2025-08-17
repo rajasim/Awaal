@@ -160,10 +160,14 @@ const Navbar = () => {
 {/* INSIGHTS HUB MENU (mobile) */}
 {item === "Insights Hub" && extradropdown === "insights hub" && window.innerWidth <= 480 && (
   <div className="services-dropdown">
-    <div className="service-item" onClick={() => (window.location.href = "/blog")} style={{ cursor: "pointer" }}>
-      <span className="service-icon"></span>
-      <span>BLOG</span>
-    </div>
+   <div
+  className="service-item"
+  onClick={() => nav("/blog")}
+  style={{ cursor: "pointer" }}
+>
+  <span className="service-icon"></span>
+  <span>BLOG</span>
+</div>
 
     <div className="service-item" onClick={() => (window.location.href = "/news")} style={{ cursor: "pointer" }}>
       <span className="service-icon"></span>
