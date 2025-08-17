@@ -169,20 +169,32 @@ const Navbar = () => {
   <span>BLOG</span>
 </div>
 
-    <div className="service-item" onClick={() => (window.location.href = "/news")} style={{ cursor: "pointer" }}>
-      <span className="service-icon"></span>
-      <span>NEWS</span>
-    </div>
+  <div
+  className="service-item"
+  onClick={() => nav("/blog")}
+  style={{ cursor: "pointer" }}
+>
+  <span className="service-icon"></span>
+  <span>NEWS</span>
+</div>
 
-    <div className="service-item" onClick={() => (window.location.href = "/insights")} style={{ cursor: "pointer" }}>
-      <span className="service-icon"></span>
-      <span>INSIGHTS</span>
-    </div>
+   <div
+  className="service-item"
+  onClick={() => nav("/blog")}
+  style={{ cursor: "pointer" }}
+>
+  <span className="service-icon"></span>
+  <span>INSIGHTS</span>
+</div>
 
-    <div className="service-item" onClick={() => (window.location.href = "/case-studies")} style={{ cursor: "pointer" }}>
-      <span className="service-icon"></span>
-      <span>CASE STUDIES</span>
-    </div>
+   <div
+  className="service-item"
+  onClick={() => nav("/blog")}
+  style={{ cursor: "pointer" }}
+>
+  <span className="service-icon"></span>
+  <span>CASE STUDIES</span>
+</div>
   </div>
 )}
 
@@ -606,18 +618,18 @@ const Navbar = () => {
             )}
             {item === "SERVICES" && extradropdown === "services" && window.innerWidth <= 480 &&
               <div class="services-dropdown">
-               <div
+         <div
   className="service-item"
-  onClick={() => (window.location.href = "/vapt")}
+  onClick={() => nav("/vapt")}
   style={{ cursor: "pointer" }}
 >
   <span className="service-icon"></span>
   <span>CYBERSECURITY</span>
 </div>
 
-              <div
+<div
   className="service-item"
-  onClick={() => (window.location.href = "/AI & Automation Services")}
+  onClick={() => nav("/AI & Automation Services")}
   style={{ cursor: "pointer" }}
 >
   <span className="service-icon"></span>
@@ -626,7 +638,7 @@ const Navbar = () => {
 
 <div
   className="service-item"
-  onClick={() => (window.location.href = "/CLOUD")}
+  onClick={() => nav("/CLOUD")}
   style={{ cursor: "pointer" }}
 >
   <span className="service-icon"></span>
@@ -635,7 +647,7 @@ const Navbar = () => {
 
 <div
   className="service-item"
-  onClick={() => (window.location.href = "/SOFTWARE DEV")}
+  onClick={() => nav("/SOFTWARE DEV")}
   style={{ cursor: "pointer" }}
 >
   <span className="service-icon"></span>
@@ -644,7 +656,7 @@ const Navbar = () => {
 
 <div
   className="service-item"
-  onClick={() => (window.location.href = "/IT INFRA")}
+  onClick={() => nav("/IT INFRA")}
   style={{ cursor: "pointer" }}
 >
   <span className="service-icon"></span>
@@ -653,7 +665,7 @@ const Navbar = () => {
 
 <div
   className="service-item"
-  onClick={() => (window.location.href = "/WEBSITE DEV")}
+  onClick={() => nav("/WEBSITE DEV")}
   style={{ cursor: "pointer" }}
 >
   <span className="service-icon"></span>
@@ -662,12 +674,13 @@ const Navbar = () => {
 
 <div
   className="service-item"
-  onClick={() => (window.location.href = "/MIGRATION")}
+  onClick={() => nav("/MIGRATION")}
   style={{ cursor: "pointer" }}
 >
   <span className="service-icon"></span>
   <span>MIGRATION</span>
 </div>
+
 
               </div>}
           </div>
