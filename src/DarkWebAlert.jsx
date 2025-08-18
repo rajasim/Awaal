@@ -26,8 +26,7 @@ const DarkWebAlert = () => {
 
       <div className="right">
         <div className="top-buttons">
-          <button>Request demo</button>
-          <button>Request callback</button>
+         
         </div>
         <img
           src="/images/WhatsApp Image 2025-06-09 at 2.09.31 PM.jpeg"

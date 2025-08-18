@@ -27,9 +27,9 @@ const Footermain = () => {
             placeholder="Your email address"
             className="footermain-cta-input"
           />
-          <button type="submit" className="footermain-cta-btn">
-            SEND
-          </button>
+         <button type="submit" className="new-cta-btn">
+  SEND
+</button>
         </form>
         <p className="footermain-cta-tagline">
           Big enough to serve you, small enough to know you.
@@ -95,23 +95,26 @@ const Footermain = () => {
       {/* Main Footer Grid */}
       <div className="footermain-grid">
         {/* Brand / About */}
-        <div className="footermain-col footermain-col-brand">
-          <div className="footermain-brand-row">
-            <img
-              src="/images/Awwal (8).png"
-              alt="Awwal logo"
-              className="footermain-brand-logo"
-            />
-           
-          </div>
-          <div className="footermain-brand-line"></div>
-
-          <p className="footermain-brand-desc">
-            Driving Digital Innovation<br />
-            Through Smart IT and<br />
-            Automation Solutions
-          </p>
+         <div 
+        className="footermain-col footermain-col-brand" 
+        onClick={() => navigate("/")}  // Navigate to homepage when clicked
+        style={{ cursor: "pointer" }}  // Optional: to show it's clickable
+      >
+        <div className="footermain-brand-row">
+          <img
+            src="/images/Awwal (8).png"
+            alt="Awwal logo"
+            className="footermain-brand-logo"
+          />
         </div>
+        <div className="footermain-brand-line"></div>
+
+        <p className="footermain-brand-desc">
+          Driving Digital Innovation<br />
+          Through Smart IT and<br />
+          Automation Solutions
+        </p>
+      </div>
 
         {/* Quick Links */}
        <div className="footermain-col">

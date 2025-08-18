@@ -6,13 +6,13 @@ const HomeMain = () => {
     <div className="hm-wrapper">
       <div className="hm-headline">
         <h1>
-          <span className="hm-green">Securing, Automating and,</span><br />
+          <span className="hm-green">Securing, Automating and</span><br />
          
           <span className="hm-yellow">Building the Future of Your Business</span>
         </h1>
         <div className="hm-subscribe">
           <input type="email" placeholder="Enter work email" className="hm-input" />
-          <button className="hm-try-btn">Try for free</button>
+          <button className="hm-try-btn">Try at zero cost</button>
         </div>
       </div>
 

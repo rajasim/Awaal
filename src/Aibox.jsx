@@ -20,13 +20,14 @@ const Aibox = () => {
              Smarter Systems. Faster Results. Scalable Innovation.
 Unlock the power of AI & Automation to accelerate workflows, reduce costs, and make data-driven decisions.
             </p>
-            <ul className="bullet-points">
-              <li><span className="dot green"></span> Intelligent Workflow Design</li>
-  <li><span className="dot blue"></span> Data-driven Decision Support</li>
-  <li><span className="dot purplee"></span> Computer Vision Solutions</li>
-  <li><span className="dot yellowe"></span> AI Model Development & Integration</li>
-  <li><span className="dot red"></span> Natural Language Processing (NLP)</li>
-            </ul>
+           <ul className="bullet-points">
+  <li><span className="dot aibox-green"></span> Intelligent Workflow Design</li>
+  <li><span className="dot aibox-blue"></span> Data-driven Decision Support</li>
+  <li><span className="dot aibox-purpl"></span> Computer Vision Solutions</li>
+  <li><span className="dot aibox-yellow"></span> AI Model Development & Integration</li>
+  <li><span className="dot aibox-red"></span> Natural Language Processing (NLP)</li>
+</ul>
+
           </div>
 
           {/* Right Side – Horizontal Cards */}

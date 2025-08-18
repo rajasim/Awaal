@@ -6,6 +6,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
 
+
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [navbaroption, setnavbaroption] = useState("");
@@ -73,7 +74,9 @@ const Navbar = () => {
       setnavbaroption("");
       setHoveredSubItem("");
     }}
+     onClick={() => setOpenDropdown(null)}
   >
+  
     {/* LEFT SIDE */}
     <div className="insights-left-panel">
       <span className="featured-badge">FEATURED THIS WEEK</span>
@@ -98,7 +101,9 @@ const Navbar = () => {
     <div className="insights-right-panel">
       <h3 className="categories-title">EXPLORE CATEGORIES</h3>
 
-      <div className="category-box" onClick={() => (window.location.href = "/blog")} style={{ cursor: "pointer" }}>
+      <div className="category-box"  onClick={() => nav("/blog")} // Use navigate instead of window.location.href
+        style={{ cursor: "pointer" }}
+      > 
         <div className="category-icon">
           <img src="/images/navbar1.png" alt="Blog" />
         </div>
@@ -112,7 +117,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="category-box" onClick={() => (window.location.href = "/blog")} style={{ cursor: "pointer" }}>
+      <div className="category-box" onClick={() => nav("/blog")} // Use navigate instead of window.location.href
+        style={{ cursor: "pointer" }}
+      >
         <div className="category-icon">
           <img src="/images/navbar2.png" alt="News" />
         </div>
@@ -126,7 +133,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="category-box" onClick={() => (window.location.href = "/blog")} style={{ cursor: "pointer" }}>
+      <div className="category-box"  onClick={() => nav("/blog")} // Use navigate instead of window.location.href
+        style={{ cursor: "pointer" }}
+      >
         <div className="category-icon">
           <img src="/images/navbar3.png" alt="Insights" />
         </div>
@@ -140,7 +149,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="category-box" onClick={() => (window.location.href = "/blog")} style={{ cursor: "pointer" }}>
+      <div className="category-box" onClick={() => nav("/blog")} // Use navigate instead of window.location.href
+        style={{ cursor: "pointer" }}
+      >
         <div className="category-icon">
           <img src="/images/navbar4.png" alt="Case Studies" />
         </div>
@@ -280,7 +291,9 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
 
-                      <button className="plans-btn">FREE DEMO →</button>
+                      <button className="plans-btn" onClick={() => nav("/blog")}>
+        FREE DEMO →
+      </button>
                     </>
                   )}
 
@@ -308,7 +321,9 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
 
-                      <button className="plans-btn">FREE DEMO →</button>
+                      <button className="plans-btn" onClick={() => nav("/blog")}>
+        FREE DEMO →
+      </button>
                     </>
                   )}
 
@@ -337,7 +352,9 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
 
-                      <button className="plans-btn">FREE DEMO →</button>
+                     <button className="plans-btn" onClick={() => nav("/blog")}>
+        FREE DEMO →
+      </button>
                     </>
                   )}
 
@@ -352,7 +369,7 @@ const Navbar = () => {
                         match your business needs. From idea to launch, we
                         deliver fast, secure, and user-friendly solutions.
                       </p>
-                      <button className="plans-btnon">Explore Network →</button>
+                      <button className="plans-btnon">Services →</button>
                       <div
                         className="links-grid"
                         onClick={() => nav("/SOFTWARE DEV")}
@@ -367,7 +384,9 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
 
-                      <button className="plans-btn">FREE DEMO →</button>
+                     <button className="plans-btn" onClick={() => nav("/blog")}>
+        FREE DEMO →
+      </button>
                     </>
                   )}
 
@@ -398,7 +417,9 @@ const Navbar = () => {
 
                       <h4>Try at zero cost</h4>
 
-                      <button className="plans-btn">FREE DEMO →</button>
+                     <button className="plans-btn" onClick={() => nav("/blog")}>
+        FREE DEMO →
+      </button>
                     </>
                   )}
 
@@ -440,7 +461,9 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
 
-                      <button className="plans-btn">FREE DEMO →</button>
+                     <button className="plans-btn" onClick={() => nav("/blog")}>
+        FREE DEMO →
+      </button>
                     </>
                   )}
                   {hoveredSubItem === "MIGRATION" && (
@@ -469,7 +492,9 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
 
-                      <button className="plans-btn">FREE DEMO →</button>
+                     <button className="plans-btn" onClick={() => nav("/blog")}>
+        FREE DEMO →
+      </button>
                     </>
                   )}
                   {hoveredSubItem === "Managed XDR/MXDR" && (
@@ -609,7 +634,9 @@ const Navbar = () => {
 
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
-                      <button className="plans-btn">FREE DEMO →</button>
+                      <button className="plans-btn" onClick={() => nav("/blog")}>
+        FREE DEMO →
+      </button>
 
                     </>
                   )}

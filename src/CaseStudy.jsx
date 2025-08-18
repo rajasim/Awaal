@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./CaseStudy.css";
+import { useNavigate } from 'react-router-dom';
 
 const CaseStudy = () => {
+    const nav = useNavigate(); 
   return (
     <section className="case-study-section">
       <div className="case-study-top">
@@ -73,7 +75,10 @@ and administrative systems..
         </Link>
       </div>
 
-      <div className="view-all-btn">
+      <div className="view-all-btn" 
+      onClick={() => nav("/blog")}  // Navigate to the /blog page when the div is clicked
+      style={{ cursor: "pointer" }}  // Show pointer cursor on hover
+    >
         <button>View All Case Studies</button>
       </div>
     </section>

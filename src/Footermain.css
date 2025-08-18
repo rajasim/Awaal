@@ -54,22 +54,26 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footermain-cta-btn {
-  padding: 10px 34px;
-  font-size: 1vw;
-  font-weight: 700;
-  border: none;
-  border-radius: 40px;
-  background: var(--accent-green);
-  color: #000;
-  cursor: pointer;
-  transition: 0.3s ease;
+.new-cta-btn {
+  padding: 12px 40px; /* Increase padding for better sizing */
+  font-size: 1vw; /* Adjust font size */
+  font-weight: 700; /* Bold font */
+  border: none; /* No border */
+  border-radius: 40px; /* Rounded corners */
+  background: var(--accent-green); /* Green background */
+  color: #000; /* Black text */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  width: 100%; /* Full width */
+  text-align: center; /* Center text */
+  display: inline-block; /* To avoid taking full space in some cases */
 }
 
-.footermain-cta-btn:hover {
-  background: #00e678;
-  box-shadow: 0 0 12px var(--accent-green);
+.new-cta-btn:hover {
+  background: #00e678; /* Lighter green background on hover */
+  box-shadow: 0 0 12px var(--accent-green); /* Add green glow effect */
 }
+
 
 .footermain-cta-tagline {
   font-size: 0.9vw;

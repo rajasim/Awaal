@@ -31,7 +31,7 @@ function Form() {
           ...prev,
           country: match.name,
           dialCode: match.dial_code,
-          phone: match.dial_code,
+          phone: match.dial_code, // Initially set phone number to just dial code
         }));
       }
     } catch (error) {
@@ -48,15 +48,24 @@ function Form() {
         ...prev,
         country: countryName,
         dialCode: dialCode,
-        phone: dialCode, // auto-fill dial code
+        phone: prev.phone && prev.phone.startsWith(dialCode) ? prev.phone : dialCode, // Set phone with dial code only if it's not already there
       }));
     } else if (name === "phone") {
-      const numericValue = value.replace(/\D/g, "");
+      let phoneValue = value.replace(/\D/g, ""); // Remove all non-numeric characters
+
+      // If phone is empty, just set it to the dial code
+      if (phoneValue === "" && formData.dialCode) {
+        phoneValue = formData.dialCode;
+      }
+
+      // Ensure the phone number starts with the dial code, if not, prepend it
+      if (formData.dialCode && !phoneValue.startsWith(formData.dialCode)) {
+        phoneValue = formData.dialCode + phoneValue; // Prepend dial code if not present
+      }
+
       setFormData((prev) => ({
         ...prev,
-        phone: prev.dialCode
-          ? prev.dialCode + numericValue.replace(prev.dialCode, "")
-          : numericValue,
+        phone: phoneValue,
       }));
     } else {
       setFormData((prev) => ({

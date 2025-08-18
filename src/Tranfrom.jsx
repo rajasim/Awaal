@@ -17,7 +17,7 @@ const Tranfrom = () => {
         </h1>
 
         <p className="subtitle">
-          Simplifying Complex Technology — So You Can Focus on What Matters
+          Simplifying Complex Technology  So You Can Focus on What Matters
         </p>
 
         <div className="services-row">
@@ -50,7 +50,7 @@ const Tranfrom = () => {
 
         <div className="features-row">
           <span>✅ Free Strategy Session</span>
-          <span>✅ Industry-Specific Solutions</span>
+          <span>✅ Industry Specific Solutions</span>
           <span>✅ Proven Results</span>
         </div>
 

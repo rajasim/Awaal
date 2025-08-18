@@ -45,9 +45,7 @@ const SmartPharmacy = () => {
           <div className="top-image">
             <img src="/images/1.gif" alt="Hospital Network" />
             <div className="top-labels">
-              <span>Multi Site Connectivity</span>
-              <span>Secure Data Exchange</span>
-              <span>24/7 Monitoring</span>
+             
             </div>
           </div>
           <h2>Hospital Network Infrastructure</h2>
