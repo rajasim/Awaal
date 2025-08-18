@@ -117,10 +117,12 @@ function App() {
 
   const urlpath = useLocation().pathname;
   useEffect(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      })
+    
+    document.body.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })   
+      
   }, [urlpath])
 
   return (
