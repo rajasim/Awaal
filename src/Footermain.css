@@ -362,14 +362,15 @@ width: 100%;
 
   /* Grid columns stack */
   .footermain-grid {
-    grid-template-columns: 1fr;
-    width: 100%;
-    padding: 20px;
-    row-gap: 20px;
-  }
+    grid-template-columns: 1fr;  /* Already stacked */
+  width: 100%;
+  padding: 20px;
+  row-gap: 20px;
+  text-align: center;}
 
   .footermain-col-head {
-    font-size: 5vw;
+      font-size: 5vw;
+  text-align: center;
   }
 
   .footermain-link-list li {
@@ -389,12 +390,14 @@ width: 100%;
 
   .footermain-brand-desc {
     font-size: 3.5vw;
+    text-align: center;
   }
 
   .footermain-brand-line {
     width: 100px;
     height: 4px;
     margin: 6px auto 12px;
+    display: block;
   }
 
   /* Contact list */
@@ -415,13 +418,24 @@ width: 100%;
   }
 
   /* Watermark */
-  .footermain-watermark-text {
-    font-size: 12vw;
-  }
+  .footermain-watermark {
+   display: flex;
+  align-items: center;        /* Vertically center text and image */
+  justify-content: center; 
+}
 
-  .footermain-watermark-mark {
-    height: 12vw;
-  }
+.footermain-watermark-text {
+  font-size: 12vw;
+  line-height: 1;
+}
+
+.footermain-watermark-mark {
+  height: 5.9em;   /* match text height */
+  width: auto; 
+  padding-bottom: 32px;  /* keep aspect ratio */
+}
+
+  
 
   /* Legal */
   .footermain-legal {

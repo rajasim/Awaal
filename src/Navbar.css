@@ -454,7 +454,7 @@ transition: background-color 0.3s ease, transform 0.3s ease;
     position: absolute;
     top: 4rem;
     z-index: 5;
-    background-color: gray;
+    background-color: #0d1b2a;
     align-items: start;
   }
 

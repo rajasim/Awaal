@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footermain.css";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 const Footermain = () => {
   const navigate = useNavigate();
@@ -112,24 +114,25 @@ const Footermain = () => {
         </div>
 
         {/* Quick Links */}
-        <div className="footermain-col">
-          <h4 className="footermain-col-head">Quick Links</h4>
-          <ul className="footermain-link-list">
-            <li><a href="/why-awwal">› Why Awwal</a></li>
-            <li><a href="/what-we-do">› What We do</a></li>
-            <li><a href="/contact">› Contact</a></li>
-          </ul>
-        </div>
+       <div className="footermain-col">
+  <h4 className="footermain-col-head">Quick Links</h4>
+  <ul className="footermain-link-list">
+    <li><Link to="/why-awwal">› Why Awwal</Link></li>
+    <li><Link to="/what-we-do">› What We Do</Link></li>
+    <li><Link to="/contact">› Contact</Link></li>
+  </ul>
+</div>
 
-        {/* Insights Hub */}
-        <div className="footermain-col">
-          <h4 className="footermain-col-head">Insights Hub</h4>
-          <ul className="footermain-link-list">
-            <li><a href="/blogs">› Blogs</a></li>
-            <li><a href="/case-studies">› Case Studies</a></li>
-            <li><a href="/news">› News</a></li>
-          </ul>
-        </div>
+{/* Insights Hub */}
+<div className="footermain-col">
+  <h4 className="footermain-col-head">Insights Hub</h4>
+  <ul className="footermain-link-list">
+    <li><Link to="/blog">› Blogs</Link></li>
+    <li><Link to="/blog">› Case Studies</Link></li>
+    <li><Link to="/blog">› News</Link></li>
+  </ul>
+</div>
+
        
 
 

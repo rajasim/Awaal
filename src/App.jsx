@@ -370,7 +370,7 @@ function App() {
 <LazyLoader Component={NextGen} />
 <LazyLoader Component={KeyBenefits} />
 <LazyLoader Component={TechnologyPlatforms} />
-<LazyLoader Component={Videofoot} />
+
 <LazyLoader Component={Optimize} />
 <LazyLoader Component={Footermain} />
           </>

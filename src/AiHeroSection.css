@@ -225,33 +225,76 @@
   }
 }
 
-/* Small Mobile */
+/* Extra Small Devices (≤480px) */
 @media (max-width: 480px) {
-  .ai-left {
-    padding: 3% 4%;
+  .ai-hero-section {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 5vh auto;
+    row-gap: 1.5rem;
   }
 
+  /* Text */
   .ai-content h1 {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
+    line-height: 1.2;
   }
 
   .ai-content h2 {
     font-size: 1.25rem;
+    margin-top: 1rem;
   }
 
   .ai-content p {
     font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  /* Badge */
+  .ai-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Right image */
+  .ai-right img {
+    max-width: 260px;
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  /* Buttons */
+  .ai-button-row {
+    flex-direction: column;
+    gap: 0.75rem;
   }
 
   .ai-btn-primary {
+    width: 100%;
     font-size: 0.9rem;
-    padding: 0.5rem 1rem;
+    padding: 0.65rem 1rem;
   }
 
-  .ai-right img {
-    max-width: 240px;
-    width: 90vw;
+  /* Stats */
+  .ai-stats-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .ai-stat-box {
+    min-width: 100%;
+  }
+
+  .ai-stat-box h3 {
+    font-size: 1.25rem;
+  }
+
+  .ai-stat-box p {
+    font-size: 0.85rem;
   }
 }
-
 

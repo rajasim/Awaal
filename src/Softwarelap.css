@@ -204,23 +204,57 @@
 }
 
 /* ========== MOBILE (MAX 480px) ========== */
+/* Default (Desktop / Tablet styles stay as you already have) */
+
+/* Mobile styles */
 @media (max-width: 480px) {
-  .soft-wrapper {
-    padding: 60px 16px;
-  }
+  .soft-layout {
+  flex-direction: column;
+}
 
-  .soft-heading h2 {
-    font-size: 28px;
-    margin: 16px 0;
-  }
+.soft-left-buttons {
+  width: 100%;
+}
 
-  .soft-heading p {
-    font-size: 16px;
-    margin-top: 10px;
-  }
+.soft-left-buttons button {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+}
 
-  .soft-heading-line {
-    width: 80px;
-    height: 4px;
-  }
+.soft-content-box {
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 12px; /* so it looks attached to button */
+  padding: 20px;
+}
+
+.soft-text-section {
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.soft-text-section h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.soft-text-section p,
+.soft-text-section ul li {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.soft-image-section {
+  width: 100%;
+  text-align: center;
+}
+
+.soft-image-section img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
 }

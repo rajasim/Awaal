@@ -112,7 +112,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="category-box" onClick={() => (window.location.href = "/news")} style={{ cursor: "pointer" }}>
+      <div className="category-box" onClick={() => (window.location.href = "/blog")} style={{ cursor: "pointer" }}>
         <div className="category-icon">
           <img src="/images/navbar2.png" alt="News" />
         </div>
@@ -126,7 +126,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="category-box" onClick={() => (window.location.href = "/insights")} style={{ cursor: "pointer" }}>
+      <div className="category-box" onClick={() => (window.location.href = "/blog")} style={{ cursor: "pointer" }}>
         <div className="category-icon">
           <img src="/images/navbar3.png" alt="Insights" />
         </div>
@@ -140,7 +140,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="category-box" onClick={() => (window.location.href = "/case-studies")} style={{ cursor: "pointer" }}>
+      <div className="category-box" onClick={() => (window.location.href = "/blog")} style={{ cursor: "pointer" }}>
         <div className="category-icon">
           <img src="/images/navbar4.png" alt="Case Studies" />
         </div>
@@ -382,7 +382,7 @@ const Navbar = () => {
                         business. From servers to networks, we ensure everything
                         runs smoothly, securely, and efficiently.
                       </p>
-                      <button className="plans-btnon">View Details →</button>
+                      <button className="plans-btnon">Services →</button>
                       <div
                         className="links-grid"
                         onClick={() => nav("/IT INFRA")}

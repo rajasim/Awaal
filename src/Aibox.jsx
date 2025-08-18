@@ -23,7 +23,7 @@ Unlock the power of AI & Automation to accelerate workflows, reduce costs, and m
             <ul className="bullet-points">
               <li><span className="dot green"></span> Intelligent Workflow Design</li>
   <li><span className="dot blue"></span> Data-driven Decision Support</li>
-  <li><span className="dot purple"></span> Computer Vision Solutions</li>
+  <li><span className="dot purplee"></span> Computer Vision Solutions</li>
   <li><span className="dot yellowe"></span> AI Model Development & Integration</li>
   <li><span className="dot red"></span> Natural Language Processing (NLP)</li>
             </ul>

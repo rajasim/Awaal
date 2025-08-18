@@ -200,22 +200,46 @@
 }
 
 @media (max-width: 480px) {
-  .security-wrapper {
-    padding: 60px 16px;
+  .security-layout {
+    flex-direction: column;
   }
 
-  .security-heading h2 {
-    font-size: 28px;
-    margin: 16px 0;
+  /* Stack buttons full width */
+  .left-buttons {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
   }
 
-  .security-heading p {
-    font-size: 16px;
-    margin-top: 10px;
+  .left-buttons button {
+    width: 100%;
+    font-size: 18px;
+    padding: 14px;
+    border-radius: 8px;
   }
 
-  .heading-line {
-    width: 80px;
-    height: 4px;
+  /* Make right-content appear below button */
+  .right-content {
+    width: 100%;
+  }
+
+  .content-box {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 12px; /* so it looks attached to button */
+    padding: 20px;
+  }
+
+  .blue-section {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .image-section img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
   }
 }
+
+
