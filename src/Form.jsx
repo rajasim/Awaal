@@ -19,60 +19,13 @@ function Form() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  // Auto-detect country from browser locale
-  useEffect(() => {
-    try {
-      const locale = Intl.DateTimeFormat().resolvedOptions().locale; // e.g. "en-IN"
-      const countryCode = locale.split("-")[1]; // "IN"
-
-      const match = countryData.find((c) => c.code === countryCode);
-      if (match) {
-        setFormData((prev) => ({
-          ...prev,
-          country: match.name,
-          dialCode: match.dial_code,
-          phone: match.dial_code, // Initially set phone number to just dial code
-        }));
-      }
-    } catch (error) {
-      console.log("Country detection failed:", error);
-    }
-  }, []);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
-
-    if (name === "country") {
-      const [countryName, dialCode] = value.split("|");
-      setFormData((prev) => ({
-        ...prev,
-        country: countryName,
-        dialCode: dialCode,
-        phone: prev.phone && prev.phone.startsWith(dialCode) ? prev.phone : dialCode, // Set phone with dial code only if it's not already there
-      }));
-    } else if (name === "phone") {
-      let phoneValue = value.replace(/\D/g, ""); // Remove all non-numeric characters
-
-      // If phone is empty, just set it to the dial code
-      if (phoneValue === "" && formData.dialCode) {
-        phoneValue = formData.dialCode;
-      }
-
-      // Ensure the phone number starts with the dial code, if not, prepend it
-      if (formData.dialCode && !phoneValue.startsWith(formData.dialCode)) {
-        phoneValue = formData.dialCode + phoneValue; // Prepend dial code if not present
-      }
-
-      setFormData((prev) => ({
-        ...prev,
-        phone: phoneValue,
-      }));
-    } else {
       setFormData((prev) => ({
         ...prev,
         [name]: value,
       }));
-    }
+    
   };
 
   const handleSubmit = (e) => {
@@ -157,20 +110,21 @@ function Form() {
             />
             <div className="custom-select-wrapper">
               <select
-                name="country"
-                value={
-                  formData.country && formData.dialCode
-                    ? `${formData.country}|${formData.dialCode}`
-                    : ""
-                }
-                onChange={handleChange}
+                onChange={e=>{
+                  const arr = e.target.value.split("|")
+                  setFormData({
+                      ...formData,
+                      country: arr[0],
+                      dialCode: arr[1]
+                  })
+                }}
                 required
               >
                 <option value="">Country *</option>
                 {countryData.map((country) => (
                   <option
-                    key={country.code}
                     value={`${country.name}|${country.dial_code}`}
+                    selected={`${country.name}|${country.dial_code}`===`${formData.country}|${formData.dialCode}`}
                   >
                     {country.name} ({country.dial_code})
                   </option>
@@ -234,15 +188,21 @@ function Form() {
               <option>Other</option>
             </select>
 
+           <blockquote>
+            <p>{formData.dialCode}</p>
             <input
               name="phone"
               value={formData.phone}
-              onChange={handleChange}
               type="tel"
               placeholder="Phone Number"
               maxLength="15"
               required
+              onChange={e=>{
+                setFormData({...formData, phone:e.target.value})
+              }}
+              style={{outline:"none", border:"none", padding:0, borderRadius:0}}
             />
+            </blockquote>
           </div>
 
           <div className="form-row">
