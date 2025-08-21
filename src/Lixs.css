@@ -3,14 +3,14 @@
   padding: 10px;
   background-color: #f5f7fb;
   color: #1f1f1f;
+  padding-bottom: 72px;
 }
 
 .header {
   text-align: center;
-  margin-bottom: 90px;
-  font-size: 45px;
-  height: 300px;
- 
+  margin-bottom: 30px;  /* Reduced margin to remove excess space */
+  font-size: 28px;
+  height: 200px;
 }
 
 .gradient-text {
@@ -23,14 +23,14 @@
 
 .header p {
   color: #121212;
-  font-size: 29px;
+  font-size: 21px;
   max-width: 700px;
   margin: 0 auto;
-
 }
 
 .comparison-section {
   text-align: center;
+  margin-top: 0;  /* Remove any top margin */
 }
 
 .comparison-section h2 {
@@ -41,7 +41,7 @@
 .subtitler {
   color: #0a0909;
   font-size: 26px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;  /* Reduce bottom margin to remove gap */
 }
 
 .comparison-table {

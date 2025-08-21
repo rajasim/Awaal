@@ -1,9 +1,13 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
 import "./Optimize.css";
 
 function Optimize() {
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  // Handler for button click to navigate
   const handleRedirect = () => {
-    window.location.href = "/form"; // Change this to your actual form route or URL
+    navigate("/form"); // Navigate to the /form route
   };
 
   return (
@@ -36,6 +40,7 @@ function Optimize() {
               Schedule a free consultation with our expert team to discuss your specific
               needs.
             </p>
+            {/* The button now uses navigate instead of window.location.href */}
             <button className="cta-button" onClick={handleRedirect}>
               Get Started
             </button>

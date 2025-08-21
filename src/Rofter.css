@@ -40,8 +40,10 @@
   align-items: center;
   justify-content: flex-start;
   box-sizing: border-box;
-  width: 510PX;
- height: 350px; /* increased height */
+  max-width: 100%;  /* Ensure box doesn't overflow */
+  width: 100%;
+  height: auto; /* Remove fixed height */
+  box-sizing: border-box;
 }
 
 .rof-step {
@@ -65,8 +67,8 @@
 }
 
 .rof-box img {
-  width: 60vh;   /* increased size */
-  height: 90px;  /* increased size */
+  width: 60%;   /* changed to a relative width */
+  height: auto;  /* keep aspect ratio */
   object-fit: contain;
   margin-bottom: 20px;
   display: flex;
@@ -146,6 +148,7 @@
   font-size: 19px;
   font-weight: 600;
 }
+
 @media (max-width: 480px) {
   .rof-wrapper {
     padding: 40px 20px;

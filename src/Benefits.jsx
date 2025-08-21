@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 import './Benefits.css';
 
 const Benefits = () => {
+  const navigate = useNavigate(); // Initialize the navigate function
+
   return (
     <div className="benefits-wrapper">
       <video
@@ -17,7 +20,6 @@ const Benefits = () => {
           height: '100%',
           objectFit: 'cover',
           zIndex: 0,
-          
         }}
       >
         <source src="/video/WhatsApp Video 2025-06-17 at 11.46.51 AM.mp4" type="video/mp4" />
@@ -59,7 +61,13 @@ const Benefits = () => {
       </div>
 
       <div className="benefit-button-wrapper">
-        <button className="benefit-button">ASSESS YOUR INFRASTRUCTURE</button>
+        {/* Button with onClick using navigate("/form") */}
+        <button 
+          className="benefit-button" 
+          onClick={() => navigate("/form")} // Corrected: navigate directly to /form
+        >
+          ASSESS YOUR INFRASTRUCTURE
+        </button>
       </div>
     </div>
   );

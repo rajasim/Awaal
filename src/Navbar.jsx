@@ -291,7 +291,7 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
 
-                      <button className="plans-btn" onClick={() => nav("/blog")}>
+                      <button className="plans-btn" onClick={() => nav("/form")}>
         FREE DEMO →
       </button>
                     </>
@@ -321,7 +321,7 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
 
-                      <button className="plans-btn" onClick={() => nav("/blog")}>
+                      <button className="plans-btn" onClick={() => nav("/form")}>
         FREE DEMO →
       </button>
                     </>
@@ -352,7 +352,7 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
 
-                     <button className="plans-btn" onClick={() => nav("/blog")}>
+                     <button className="plans-btn" onClick={() => nav("/form")}>
         FREE DEMO →
       </button>
                     </>
@@ -384,7 +384,7 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
 
-                     <button className="plans-btn" onClick={() => nav("/blog")}>
+                     <button className="plans-btn" onClick={() => nav("/form")}>
         FREE DEMO →
       </button>
                     </>
@@ -417,7 +417,7 @@ const Navbar = () => {
 
                       <h4>Try at zero cost</h4>
 
-                     <button className="plans-btn" onClick={() => nav("/blog")}>
+                     <button className="plans-btn" onClick={() => nav("/form")}>
         FREE DEMO →
       </button>
                     </>
@@ -461,7 +461,7 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
 
-                     <button className="plans-btn" onClick={() => nav("/blog")}>
+                     <button className="plans-btn" onClick={() => nav("/form")}>
         FREE DEMO →
       </button>
                     </>
@@ -492,7 +492,7 @@ const Navbar = () => {
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
 
-                     <button className="plans-btn" onClick={() => nav("/blog")}>
+                     <button className="plans-btn" onClick={() => nav("/form")}>
         FREE DEMO →
       </button>
                     </>
@@ -634,7 +634,7 @@ const Navbar = () => {
 
                       <hr style={{ margin: "1rem 0" }} />
                       <h4>Try at zero cost</h4>
-                      <button className="plans-btn" onClick={() => nav("/blog")}>
+                      <button className="plans-btn" onClick={() => nav("/form")}>
         FREE DEMO →
       </button>
 

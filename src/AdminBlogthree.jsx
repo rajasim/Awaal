@@ -83,8 +83,8 @@ With planned future upgrades such as AI powered recommendations, loyalty program
           <img src="./images/iMAEGETitle .gif" alt="Newsletter Visual" />
         </div>
         <div className="newsletter-content">
-          <h2>Todyl updates</h2>
-          <p>Sign-up to get the latest from Todyl sent straight to your inbox.</p>
+          <h2>Awwal updates</h2>
+          <p>Sign-up to get the latest from Awwal sent straight to your inbox.</p>
           <label>
             <span>Business Email<span className="required">*</span></span>
             <input type="email" placeholder="you@yourcompany.com" />

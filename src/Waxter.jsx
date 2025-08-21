@@ -1,10 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate from react-router-dom
 import "./Waxter.css";
 
 const Waxter = () => {
-  const handleRedirect = () => {
-    window.location.href = "/form"; // Change this to your actual form URL or route
-  };
+  const navigate = useNavigate(); // Initialize the navigate function
 
   return (
     <div className="waxter-container">
@@ -19,7 +18,8 @@ const Waxter = () => {
             Need a custom app or software? Let&apos;s make it real. <br />
             Book a free consultation to discuss your idea with our development team.
           </p>
-          <button className="waxter-button" onClick={handleRedirect}>
+          {/* Button now uses navigate directly as per your request */}
+          <button className="waxter-button" onClick={() => navigate("/form")}>
             📞 Schedule a Call →
           </button>
         </div>

@@ -56,7 +56,7 @@
 
 .new-cta-btn {
   padding: 12px 40px; /* Increase padding for better sizing */
-  font-size: 1vw; /* Adjust font size */
+
   font-weight: 700; /* Bold font */
   border: none; /* No border */
   border-radius: 40px; /* Rounded corners */
@@ -338,7 +338,7 @@ width: 100%;
 
   .footermain-cta-btn {
     width: 100%;
-    font-size: 4vw;
+    font-size: 8vw;
     padding: 12px;
   }
 

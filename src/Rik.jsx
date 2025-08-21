@@ -3,11 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./rik.css";
 
 function Rik() {
-  const navigate = useNavigate();
-
-  const handleGetStartedClick = () => {
-    navigate("/Form"); // Redirect to Form page
-  };
+  const navigate = useNavigate();  // Corrected variable name for useNavigate
 
   return (
     <div className="rik-section">
@@ -123,7 +119,7 @@ function Rik() {
         <div className="rik-cta-buttons">
           <button
             className="rik-btn-primary"
-            onClick={handleGetStartedClick}
+            onClick={() => navigate("/form")}  // Corrected: navigating to /form
           >
             Get Started Today →
           </button>

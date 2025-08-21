@@ -1,10 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 import './Yaptor.css';
 
 const Laptor = () => {
-  const handleRedirect = () => {
-    window.location.href = '/form'; // Change '/form' to your actual form route or URL
-  };
+  const navigate = useNavigate();  // Initialize navigate function from useNavigate hook
 
   return (
     <div className="laptor-container">
@@ -58,7 +57,11 @@ const Laptor = () => {
         </div>
       </div>
 
-      <button className="laptor-button" onClick={handleRedirect}>
+      {/* Button now uses navigate for routing */}
+      <button 
+        className="laptor-button" 
+        onClick={() => navigate("/form")}  // Navigate directly to /form as per your example
+      >
         Get Support Now
       </button>
     </div>

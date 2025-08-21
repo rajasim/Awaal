@@ -16,7 +16,7 @@ function UniqueHero() {
         </h1>
         <div className="hm-subscribe">
           <input type="email" placeholder="Enter work email" className="hm-input" />
-          <button className="hm-try-btn">Try for free</button>
+          <button className="hm-try-btn">Try at zero cost</button>
         </div>
       </div>
 

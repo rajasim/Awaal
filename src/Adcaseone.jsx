@@ -9,7 +9,7 @@ const Adcaseone = () => {
         <h1 className="case-title">
           The New Face of Cyber Threats in 2025 – Are You Prepared?
         </h1>
-        <p className="case-author">Cybersecurity isn’t just about firewalls and antivirus anymore. In 2025,</p>
+        <p className="case-author">Home blogs</p>
 
         <p className="case-intro">
          Cybersecurity in 2025 looks nothing like it did a few years ago. Firewalls and antivirus software are still part of the toolkit, but they are no longer enough to stop the new wave of attacks. Hackers have stepped up their game, using artificial intelligence to launch smarter, faster, and more targeted threats. {" "}
@@ -36,8 +36,8 @@ Stay secure. Stay ahead.</p>
           <img src="./images/iMAEGETitle .gif" alt="Newsletter Visual" />
         </div>
         <div className="newsletter-content">
-          <h2>Todyl updates</h2>
-          <p>Sign-up to get the latest from Todyl sent straight to your inbox.</p>
+          <h2>Awwal updates</h2>
+          <p>Sign-up to get the latest from Awwal sent straight to your inbox.</p>
           <label>
             <span>Business Email<span className="required">*</span></span>
             <input type="email" placeholder="you@yourcompany.com" />

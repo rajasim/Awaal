@@ -116,6 +116,8 @@
 
 background-color: white;
 color:#000;
+cursor: pointer;
+
 }
 /* Top bar container */
 .navbar-top {
@@ -173,7 +175,7 @@ color:#000;
 .navbar-center,
 .navbar-center a {
   position: relative;
-  cursor: pointer;
+
   color: white;
   text-decoration: none;
   font-weight: bold;

@@ -122,9 +122,9 @@
   margin-top: 50px;
 }
 
-.view-all-btn button {
-  padding: 14px 30px;
-  background-color: #22c55e;
+.view-alll-btn  {
+  padding: 34px 30px;
+
   color: #fff;
   font-weight: 600;
   font-size: 16px;
@@ -134,7 +134,7 @@
   transition: background-color 0.3s ease;
 }
 
-.view-all-btn button:hover {
+.view-alll-btn :hover {
   background-color: #16a34a;
 }
 .case-card {

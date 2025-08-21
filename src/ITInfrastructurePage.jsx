@@ -1,10 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";  // Import useNavigate from react-router-dom
 import "./ITInfrastructurePage.css";
 
 const ITInfrastructurePage = () => {
-  const handleRedirect = () => {
-    window.location.href = "/form"; // Change to your actual form URL or route
-  };
+  const navigate = useNavigate(); // Initialize navigate function from useNavigate hook
 
   return (
     <section className="infra-wrapper">
@@ -54,7 +53,11 @@ const ITInfrastructurePage = () => {
           </div>
 
           <div className="infra-butns">
-            <button className="get-started" onClick={handleRedirect}>
+            {/* Button with onClick using navigate directly */}
+            <button 
+              className="get-started" 
+              onClick={() => navigate("/form")}  // Directly using navigate("/form") as per your request
+            >
               Get Started
             </button>
           </div>

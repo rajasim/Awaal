@@ -75,7 +75,7 @@ and administrative systems..
         </Link>
       </div>
 
-      <div className="view-all-btn" 
+      <div className="view-alll-btn" 
       onClick={() => nav("/blog")}  // Navigate to the /blog page when the div is clicked
       style={{ cursor: "pointer" }}  // Show pointer cursor on hover
     >
