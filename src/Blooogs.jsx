@@ -276,7 +276,7 @@ const Blooogs = () => {
             <div className="blog-card">
               <div className="blog-card-image">
                 <img
-                  src="/images/Blog9.png"
+                  src="/images/Blog5.png"
                   alt="Cloud Computing Trends"
                   className="blog-top-img"
                 />
@@ -299,7 +299,7 @@ const Blooogs = () => {
             <div className="blog-card">
               <div className="blog-card-image">
                 <img
-                  src="/images/Blog10.png"
+                  src="/images/Blog7.png"
                   alt="Blockchain in Finance"
                   className="blog-top-img"
                 />
