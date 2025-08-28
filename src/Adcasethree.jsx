@@ -9,7 +9,7 @@ const Adcasethree = () => {
         <h1 className="case-title">
           Why Cloud Is Now the Backbone of Business in 2025
         </h1>
-        <p className="case-author">The cloud is no longer a “nice to have” it has become the foundation</p>
+        <p className="case-author">Home blogs</p>
 
         <p className="case-intro">
          which modern businesses are built. In 2025, every competitive company relies on cloud platforms to stay agile, cut costs, and scale without limits. From running business critical applications to storing and analyzing massive datasets, the cloud powers it all. {" "}

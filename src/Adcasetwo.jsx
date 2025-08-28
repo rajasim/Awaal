@@ -9,7 +9,7 @@ const Adcasetwo = () => {
         <h1 className="case-title">
           AI, Automation & the Future of Work  What Businesses Need to Know in 2025
         </h1>
-        <p className="case-author">AI and Machine Learning have moved from buzzwords to business essentials.</p>
+        <p className="case-author">Home blogs</p>
 
         <p className="case-intro">
          They’re powering modern transformation automating repetitive tasks, predicting customer behavior, strengthening security, and creating more personalized user experiences. {" "}
