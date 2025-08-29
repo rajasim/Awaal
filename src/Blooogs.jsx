@@ -87,7 +87,7 @@ const Blooogs = () => {
                   alt="TechCorp Efficiency"
                   className="blog-top-img"
                 />
-                <span className="blog-tag green">Case Study</span>
+                <span className="blog-tag green">Insights</span>
               </div>
               <div className="blog-card-content">
                 <h3 className="blog-card-title">

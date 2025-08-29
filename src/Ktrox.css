@@ -42,7 +42,7 @@
   overflow: hidden;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04);
   min-height: 330px; /* Makes cards taller */
- 
+
 }
 
 .tech-card::before {
