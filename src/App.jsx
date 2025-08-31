@@ -109,6 +109,7 @@ import Adcasethree from "./Adcasethree";
 import AdBlogone from "./AdminBlogone";
 import AdBlogtwo from "./AdminBlogtwo";
 import AdBlogthree from "./AdminBlogthree";
+import Rik from "./Rik";
 
 
 
@@ -278,7 +279,7 @@ function App() {
 <EfficiencyBoxes />
 <Pater />
 <Piter />
-<Pik />
+<Rik />
 <Footermain />
 
        

@@ -16,7 +16,7 @@ function Rik() {
       </div>
 
       <div className="rik-cards">
-        <div className="rik-card rik-primary">
+        <div className="rik-card blue">
           <div className="rik-line"></div>
           <div className="rik-top-icon">
             <img src="/images/automation-benefits1.png" alt="Productivity Icon" />
@@ -26,7 +26,7 @@ function Rik() {
           <div className="rik-stat">
             <label>AUTOMATION IMPACT</label>
             <div className="rik-bar">
-              <div className="rik-fill rik-primary-fill" style={{ width: "70%" }}></div>
+              <div className="rik-fill blue-fill" style={{ width: "70%" }}></div>
             </div>
           </div>
           <div className="rik-footer">⚙️ 40–65%+ ROI</div>
@@ -35,7 +35,7 @@ function Rik() {
         <div className="rik-card purple">
           <div className="rik-line"></div>
           <div className="rik-top-icon">
-            <img src="/images/Automation Benefits2.png" alt="Speed Icon" />
+            <img src="/images/Automationbenefits2.png" alt="Speed Icon" />
           </div>
           <h4>Faster Decision-Making</h4>
           <p>Access <b>real-time</b> insights based on live data, enabling immediate and informed decisions.</p>
@@ -48,7 +48,7 @@ function Rik() {
           <div className="rik-footer">⚡ Real-time data processing</div>
         </div>
 
-        <div className="rik-card rik-success">
+        <div className="rik-card green">
           <div className="rik-line"></div>
           <div className="rik-top-icon">
             <img src="/images/Automation Benefits3.png" alt="Cost Icon" />
@@ -58,7 +58,7 @@ function Rik() {
           <div className="rik-stat">
             <label>COST REDUCTION</label>
             <div className="rik-bar">
-              <div className="rik-fill rik-success-fill" style={{ width: "60%" }}></div>
+              <div className="rik-fill green-fill" style={{ width: "60%" }}></div>
             </div>
           </div>
           <div className="rik-footer">💰 ROI within 6 months</div>
@@ -67,7 +67,7 @@ function Rik() {
         <div className="rik-card yellow">
           <div className="rik-line"></div>
           <div className="rik-top-icon">
-            <img src="/images/1.gif" alt="Accuracy Icon" />
+            <img src="/images/Automation Benefits4.png" alt="Accuracy Icon" />
           </div>
           <h4>Higher Accuracy</h4>
           <p>Eliminate human error and ensure consistent outputs across all your business processes.</p>
@@ -124,9 +124,9 @@ function Rik() {
             Get Started Today →
           </button>
           <div className="rik-tags">
-            <span className="rik-primary-dot">Free Demo</span>
+            <span className="blue-dot">Free Demo</span>
             <span className="pink-dot">24/7 Support</span>
-            <span className="rik-success-dot">No Credit Card</span>
+            <span className="green-dot">No Credit Card</span>
           </div>
         </div>
       </div>
