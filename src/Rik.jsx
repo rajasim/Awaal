@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./rik.css";
+import "./Rik.css";
 
 function Rik() {
   const navigate = useNavigate();  // Corrected variable name for useNavigate
